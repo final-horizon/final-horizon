@@ -1,0 +1,15 @@
+- type: gameMap
+  id: SmallVillage
+  mapName: 'Small Village'
+  mapPath: /Maps/_FinalHorizon/smallvillage.yml
+  minPlayers: 0
+  stations:
+    SmallVillage:
+      stationProto: FinalHorizonStation
+      components:
+        - type: StationJobs
+          availableJobs:
+            USMCTeamLeader: [ -1, -1 ]
+            USMCRifleMan: [ -1, -1 ]
+            USSRTeamLeader: [ -1, -1 ]
+            USSRRifleMan: [ -1, -1 ]

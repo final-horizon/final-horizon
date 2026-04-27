@@ -15,10 +15,10 @@ public sealed partial class SunShadowCycleComponent : Component
     /// How long an entire cycle lasts
     /// </summary>
     [DataField, AutoNetworkedField]
-    public TimeSpan Duration = TimeSpan.FromMinutes(30);
+    public TimeSpan Duration = TimeSpan.FromHours(6); // FH
 
     [DataField, AutoNetworkedField]
-    public TimeSpan Offset;
+    public TimeSpan Offset = TimeSpan.FromHours(2.5); // FH
 
     // Originally had this as ratios but it was slightly annoying to use.
 

@@ -1,0 +1,8 @@
+- type: entity
+  id: FinalHorizonStation
+  parent:
+    - BaseStation
+    - BaseStationJobsSpawning
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Transform

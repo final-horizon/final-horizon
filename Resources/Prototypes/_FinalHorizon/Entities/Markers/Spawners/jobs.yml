@@ -1,0 +1,31 @@
+- type: entity
+  id: SpawnPointUSMCTeamLeader
+  parent: SpawnPointJobBase
+  name: USMC team leader
+  components:
+  - type: SpawnPoint
+    job_id: USMCTeamLeader
+
+- type: entity
+  id: SpawnPointUSMCRifleMan
+  parent: SpawnPointJobBase
+  name: USMC rifle man
+  components:
+  - type: SpawnPoint
+    job_id: USMCRifleMan
+
+- type: entity
+  id: SpawnPointUSSRTeamLeader
+  parent: SpawnPointJobBase
+  name: USSR team leader
+  components:
+  - type: SpawnPoint
+    job_id: USSRTeamLeader
+
+- type: entity
+  id: SpawnPointUSSRRifleMan
+  parent: SpawnPointJobBase
+  name: USSR rifle man
+  components:
+  - type: SpawnPoint
+    job_id: USSRRifleMan
