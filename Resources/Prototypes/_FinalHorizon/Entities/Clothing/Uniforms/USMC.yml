@@ -1,0 +1,10 @@
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpsuitUSMCWoodland
+  name: woodland USMC uniform
+  description: A standard issue uniform of the USMC.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Uniforms/usmc_woodland.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Uniforms/usmc_woodland.rsi

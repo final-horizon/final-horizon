@@ -17,7 +17,8 @@
 - type: startingGear
   id: USMCSleepingUniform
   equipment:
-    ears: ClothingHeadsetScience
+    uniform: ClothingUniformJumpsuitUSMCWoodland
+    shoes: ClothingShoesBootsJack
 
 - type: playTimeTracker
   id: USMCTeamLeader

@@ -17,7 +17,8 @@
 - type: startingGear
   id: USSRSleepingUniform
   equipment:
-    ears: ClothingHeadsetScience
+    uniform: ClothingUniformJumpsuitUSSRYellow
+    shoes: ClothingShoesBootsJack
 
 - type: playTimeTracker
   id: USSRTeamLeader

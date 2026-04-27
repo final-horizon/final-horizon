@@ -1,0 +1,10 @@
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpsuitUSSRYellow
+  name: USSR uniform
+  description: A standard issue uniform of the USSR.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Uniforms/ussr_yellow.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Uniforms/ussr_yellow.rsi
