@@ -1,0 +1,35 @@
+- type: job
+  id: USMCTeamLeader
+  name: job-name-USMC-teamleader
+  description: job-description-USMC-teamleader
+  playTimeTracker: USMCTeamLeader
+  startingGear: USMCSleepingUniform
+  icon: "USMC"
+
+- type: job
+  id: USMCRifleMan
+  name: job-name-USMC-rifleman
+  description: job-description-USMC-rifleman
+  playTimeTracker: USMCRifleMan
+  startingGear: USMCSleepingUniform
+  icon: "USMC"
+
+- type: startingGear
+  id: USMCSleepingUniform
+  equipment:
+    ears: ClothingHeadsetScience
+
+- type: playTimeTracker
+  id: USMCTeamLeader
+
+- type: playTimeTracker
+  id: USMCRifleMan
+
+- type: jobIcon
+  parent: JobIcon
+  id: USMC
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: NATO
+  jobName: job-name-USMC-rifleman
+  isCrewJob: false

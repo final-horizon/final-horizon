@@ -1,0 +1,17 @@
+- type: department
+  id: USMC
+  name: department-USMC
+  description: department-USMC-description
+  color: "#4168DB"
+  roles:
+  - USMCTeamLeader
+  - USMCRifleMan
+
+- type: department
+  id: USSR
+  name: department-USSR
+  description: department-USSR-description
+  color: "#B5201B"
+  roles:
+  - USSRTeamLeader
+  - USSRRifleMan

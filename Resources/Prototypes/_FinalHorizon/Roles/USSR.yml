@@ -1,0 +1,35 @@
+- type: job
+  id: USSRTeamLeader
+  name: job-name-USSR-teamleader
+  description: job-description-USSR-teamleader
+  playTimeTracker: USSRTeamLeader
+  startingGear: USSRSleepingUniform
+  icon: "USSR"
+
+- type: job
+  id: USSRRifleMan
+  name: job-name-USSR-rifleman
+  description: job-description-USSR-rifleman
+  playTimeTracker: USSRRifleMan
+  startingGear: USSRSleepingUniform
+  icon: "USSR"
+
+- type: startingGear
+  id: USSRSleepingUniform
+  equipment:
+    ears: ClothingHeadsetScience
+
+- type: playTimeTracker
+  id: USSRTeamLeader
+
+- type: playTimeTracker
+  id: USSRRifleMan
+
+- type: jobIcon
+  parent: JobIcon
+  id: USSR
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: WARSAW
+  jobName: job-name-USSR-rifleman
+  isCrewJob: false
