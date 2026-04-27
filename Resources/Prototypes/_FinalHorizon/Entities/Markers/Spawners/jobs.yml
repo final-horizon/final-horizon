@@ -5,6 +5,8 @@
   components:
   - type: SpawnPoint
     job_id: USMCTeamLeader
+  - type: Sprite
+    state: green
 
 - type: entity
   id: SpawnPointUSMCRifleMan
@@ -13,6 +15,8 @@
   components:
   - type: SpawnPoint
     job_id: USMCRifleMan
+  - type: Sprite
+    state: green
 
 - type: entity
   id: SpawnPointUSSRTeamLeader
@@ -21,6 +25,8 @@
   components:
   - type: SpawnPoint
     job_id: USSRTeamLeader
+  - type: Sprite
+    state: green
 
 - type: entity
   id: SpawnPointUSSRRifleMan
@@ -29,3 +35,5 @@
   components:
   - type: SpawnPoint
     job_id: USSRRifleMan
+  - type: Sprite
+    state: green

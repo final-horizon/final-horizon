@@ -1,0 +1,54 @@
+- type: tile
+  id: FHBaseNaturalTile
+  abstract: true
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  weather: true
+  indestructible: true
+
+# Snow
+- type: tile
+  id: FHSnow
+  parent: FHBaseNaturalTile
+  name: FH Snow
+  sprite: /Textures/Tiles/Planet/Snow/snow.png
+  variants: 13
+  placementVariants:
+  - 0.8
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0166
+  - 0.0116
+  - 0.0116
+  edgeSpritePriority: 2
+  edgeSprites:
+    South: /Textures/Tiles/Planet/Snow/snow_double_edge_south.png
+    East: /Textures/Tiles/Planet/Snow/snow_double_edge_east.png
+    North: /Textures/Tiles/Planet/Snow/snow_double_edge_north.png
+    West: /Textures/Tiles/Planet/Snow/snow_double_edge_west.png
+  footstepSounds:
+    collection: FootstepSnow
+  indestructible: false
+  baseTurf: FHSnowDirt
+
+- type: tile
+  id: FHSnowDirt
+  parent: FHBaseNaturalTile
+  name: FH Snow Dirt
+  sprite: /Textures/Tiles/Planet/Snow/snow_dug.png
+  edgeSpritePriority: 1
+  edgeSprites:
+    South: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_south.png
+    East: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_east.png
+    North: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_north.png
+    West: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_west.png
+  footstepSounds:
+    collection: FootstepSnow

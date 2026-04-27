@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  parent: [UnsensoredClothingUniformBase, ClothingUniformFoldableBase]
   id: ClothingUniformJumpsuitUSSRYellow
   name: USSR uniform
   description: A standard issue uniform of the USSR.

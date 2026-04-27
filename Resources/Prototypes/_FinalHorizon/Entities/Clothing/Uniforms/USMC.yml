@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  parent: [UnsensoredClothingUniformBase, ClothingUniformFoldableBase]
   id: ClothingUniformJumpsuitUSMCWoodland
   name: woodland USMC uniform
   description: A standard issue uniform of the USMC.
