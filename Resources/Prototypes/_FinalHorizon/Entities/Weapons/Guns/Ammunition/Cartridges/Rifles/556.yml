@@ -1,0 +1,20 @@
+- type: entity
+  parent: BaseCartridge
+  id: FHCartridge556
+  name: 5.56 cartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge556
+  - type: CartridgeAmmo
+    proto: Bullet556
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: Tag
+  id: Cartridge556
