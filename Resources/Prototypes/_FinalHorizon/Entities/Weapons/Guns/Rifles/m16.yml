@@ -1,6 +1,6 @@
 - type: entity
   name: M16A1
-  parent: [BaseItem, BaseGunWieldable]
+  parent: FHWeaponBase
   id: FHWeaponRifleM16A1
   description: A rooty tooty point and shooty.
   components:
