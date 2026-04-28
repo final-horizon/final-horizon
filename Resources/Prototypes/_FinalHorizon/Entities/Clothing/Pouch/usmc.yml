@@ -1,0 +1,116 @@
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSMCAmmoDump
+  name: USMC dump pouch
+  description: A pouch for carrying discarded mags.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/usmc_ammo.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/usmc_ammo.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,5 # make this have a slower time to pull items out of it
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSMCAmmoRifle
+  name: USMC ammo pouch
+  description: Two pouches that can hold two mags each.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/usmc_ammo_21.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/usmc_ammo_21.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,1
+    - 3,0,4,1 # make this restricted to mags and instant to pull out
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSMCAmmo40
+  name: USMC ammo pouch 40mm
+  description: A pouch for holding 40mm grenades.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/usmc_ammo_40.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/usmc_ammo_40.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,0,0
+    - 2,0,2,0
+    - 4,0,4,0
+    - 0,2,0,2
+    - 2,2,2,2
+    - 4,2,4,2
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSMCAmmoLMG
+  name: USMC ammo pouch LMG
+  description: A pouch for carrying LMG boxes.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/usmc_ammo_lmg.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/usmc_ammo_lmg.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,1 # make this slightly slower to pull out
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSMCAmmoSG
+  name: USMC ammo pouch SG
+  description: A pouch for carrying ammo boxes.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/usmc_ammo_SG.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/usmc_ammo_SG.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,1 # make this restricted to ammo boxes
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSMCGrenade
+  name: USMC grenade pouch
+  description: A pouch for carrying grenadess.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/usmc_grenade.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/usmc_grenade.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,0,1
+    - 2,0,2,1
+    - 4,0,4,1
+    - 6,0,6,1 # make this restricted to grenades
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSMCSapper
+  name: USMC sapper pouch
+  description: A pouch for carrying sapper supply.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/usmc_sapper.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/usmc_sapper.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,0,1
+    - 2,0,2,1
+    - 4,0,4,1
+    - 6,0,6,1 # make this restricted to tools and materials

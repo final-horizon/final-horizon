@@ -43,6 +43,8 @@
     - map: [ "back" ]
     - map: [ "neck" ]
     - map: [ "suitstorage" ]
+    - map: [ "pouchleft" ] # FH
+    - map: [ "pouchright" ] # FH
 
     # Stuff that goes in front of equipment
     - map: [ "enum.HumanoidVisualLayers.SnoutCover" ]

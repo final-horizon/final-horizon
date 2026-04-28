@@ -103,7 +103,7 @@
       strippingWindowPos: 2,4
       #dependsOn: jumpsuit # FH
       displayName: ID
-    - name: beltpouchleft # FH start
+    - name: pouchleft # FH start
       slotTexture: pocket
       fullTextureName: template_small
       slotFlags: BELTPOUCH
@@ -122,7 +122,7 @@
       uiWindowPos: 3,1
       strippingWindowPos: 1,5
       displayName: Belt
-    - name: beltpouchright # FH start
+    - name: pouchright # FH start
       slotTexture: pocket
       fullTextureName: template_small
       slotFlags: BELTPOUCH

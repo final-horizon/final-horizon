@@ -1,0 +1,14 @@
+- type: entity
+  abstract: true
+  parent: Clothing
+  id: FHClothingBeltBase
+  components:
+  - type: Sprite
+    state: icon
+  - type: Item
+    size: Ginormous
+  - type: Clothing
+    slots: [belt]
+    equipSound:
+      path: /Audio/Items/belt_equip.ogg
+    quickEquip: false
