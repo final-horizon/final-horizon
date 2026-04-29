@@ -23,8 +23,10 @@
     - suitStorage
   - type: AmmoCounter
   - type: Gun
-    fireRate: 5
-    selectedMode: FullAuto
+    fireRate: 13
+    burstFireRate: 13
+    burstCooldown: 0.10
+    selectedMode: SemiAuto
     availableModes:
       - FullAuto
       - SemiAuto
@@ -59,3 +61,18 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+
+- type: entity
+  name: M16A2
+  parent: FHWeaponRifleM16A1
+  id: FHWeaponRifleM16A2
+  description: A rooty tooty point and shooty.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/m16a1.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/m16a1.rsi
+  - type: Gun
+    availableModes:
+      - Burst
+      - SemiAuto
