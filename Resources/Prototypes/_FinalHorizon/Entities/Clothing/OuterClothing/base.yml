@@ -1,0 +1,22 @@
+- type: entity
+  abstract: true
+  parent: Clothing
+  id: FHClothingOuterBase
+  components:
+  - type: Clothing
+    slots:
+    - outerClothing
+  - type: Sprite
+    state: icon
+
+- type: entity
+  abstract: true
+  parent: FHClothingOuterBase
+  id: FHClothingOuterArmorBase
+  components:
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.05
+  - type: ExplosionResistance
+    damageCoefficient: 0.85

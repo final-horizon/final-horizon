@@ -1,0 +1,36 @@
+- type: entity
+  parent: FHClothingOuterArmorBase
+  id: FHClothingOuterArmorFlak
+  name: flak vest
+  description: A standard issue armored vest for several nato militarys. Not very effective against rifle rounds.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/OuterClothing/Vests/flak.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/OuterClothing/Vests/flak.rsi
+
+- type: entity
+  parent: FHClothingOuterArmorBase
+  id: FHClothingOuterArmor6b2
+  name: 6b2 vest
+  description: A standard issue armored vest for the soviets. Not very effective against rifle rounds.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/OuterClothing/Vests/6b2.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/OuterClothing/Vests/6b2.rsi
+
+- type: entity
+  parent: FHClothingOuterArmorBase
+  id: FHClothingOuterArmor6b3
+  name: 6b3 vest
+  description: A standard issue armored vest for the soviets and a slight upgrade to the 6b2. Not very effective against rifle rounds.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/OuterClothing/Vests/6b3.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/OuterClothing/Vests/6b3.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.07
