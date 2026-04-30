@@ -1,0 +1,33 @@
+- type: entity
+  parent: FHClothingHeadHelmetBaseFoldable
+  id: FHClothingHeadHelmetSSH68
+  name: green ssh68 helmet
+  description: Standard issue helmet for the soviet army.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Helmets/ssh68_green.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Helmets/ssh68_green.rsi
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+  - type: Armor # rework later
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+
+- type: entity
+  parent: FHClothingHeadHelmetBaseFoldable
+  id: FHClothingHeadHelmetSSH68Medic
+  name: medic ssh68 helmet
+  description: Standard issue helmet for the soviet army.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Helmets/ssh68_medic.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Helmets/ssh68_medic.rsi
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD

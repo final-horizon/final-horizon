@@ -1,0 +1,24 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: FHClothingHeadHelmetBase
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    layers:
+      HeadTop : HEAD
+      HeadSide : HEAD
+
+- type: entity
+  parent: FHClothingHeadHelmetBase
+  id: FHClothingHeadHelmetBaseFoldable
+  abstract: true
+  components:
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: unfold-verb-clothing-jacket
+    foldVerbText: fold-verb-clothing-jacket
+  - type: FoldableClothing
+    foldedEquippedPrefix: folded
