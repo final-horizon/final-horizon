@@ -1,0 +1,119 @@
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSSRAmmo
+  name: USSR ammo pouch
+  description: A pouch for carrying mags.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_ammo.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_ammo.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,5
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSSRLMG
+  name: USSR lmg ammo pouch
+  description: A pouch for holding lmg boxes.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_lmg.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_lmg.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,5
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSSRSVD
+  name: USSR svd ammo pouch
+  description: A pouch for carrying svd mags.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_svd.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_svd.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,5
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSSRGrenade
+  name: USSR grenade pouch
+  description: A pouch for carrying discarded mags.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_grenade.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_grenade.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,5
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSSRSapper
+  name: USSR sapper pouch
+  description: A pouch for carrying tools and materials.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_sapper.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_sapper.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,5
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSSRUtility
+  name: USSR utility pouch
+  description: A pouch for carrying various things.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_utility.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_utility.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,5
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSSRVOG
+  name: USSR vog pouch
+  description: A pouch for carrying vog underbarrel grenades.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_vog.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_vog.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,5
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSSRSG
+  name: USSR squad gunner pouch
+  description: A pouch for carrying ammo boxes.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_sg.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_sg.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,5
