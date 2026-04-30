@@ -1,0 +1,5 @@
+- type: lobbyBackground
+  id: ChinookSky
+  background: /Textures/_FinalHorizon/LobbyScreens/ChinookSky.webp
+  title: Chinook Sky
+  artist: Dallas
