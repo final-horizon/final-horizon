@@ -1,4 +1,4 @@
-﻿<widgets:InventoryGui
+<widgets:InventoryGui
     xmlns="https://spacestation14.io"
     xmlns:inventory="clr-namespace:Content.Client.UserInterface.Systems.Inventory.Controls"
     xmlns:widgets="clr-namespace:Content.Client.UserInterface.Systems.Inventory.Widgets"
@@ -22,11 +22,11 @@
             Name="InventoryHotbar"
             Access="Public"
             Visible="False"
-            MaxColumns="3"
+            MaxColumns="5"
             SlotGroup="Default"
             ExpandBackwards="True"
             VerticalExpand="True"
             HorizontalAlignment="Center"
-        />
+        /> <!-- FH change - change max columns-->
     </Control>
 </widgets:InventoryGui>

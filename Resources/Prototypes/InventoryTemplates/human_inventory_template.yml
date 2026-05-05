@@ -5,68 +5,68 @@
       slotTexture: shoes
       slotFlags: FEET
       stripTime: 3
-      uiWindowPos: 1,0
+      uiWindowPos: 1,2 # FH
       strippingWindowPos: 1,3
       displayName: Shoes
     - name: jumpsuit
       slotTexture: uniform
       slotFlags: INNERCLOTHING
       stripTime: 6
-      uiWindowPos: 0,1
+      uiWindowPos: 0,3 # FH
       strippingWindowPos: 0,2
       displayName: Jumpsuit
     - name: outerClothing
       slotTexture: suit
       slotFlags: OUTERCLOTHING
       stripTime: 6
-      uiWindowPos: 1,1
+      uiWindowPos: 1,3 # FH
       strippingWindowPos: 1,2
       displayName: Suit
     - name: gloves
       slotTexture: gloves
       slotFlags: GLOVES
-      uiWindowPos: 2,1
+      uiWindowPos: 2,3 # FH
       strippingWindowPos: 2,2
       displayName: Gloves
     - name: neck
       slotTexture: neck
       slotFlags: NECK
-      uiWindowPos: 0,2
+      uiWindowPos: 0,4 # FH
       strippingWindowPos: 0,1
       displayName: Neck
     - name: mask
       slotTexture: mask
       slotFlags: MASK
-      uiWindowPos: 1,2
+      uiWindowPos: 1,4 # FH
       strippingWindowPos: 1,1
       displayName: Mask
     - name: eyes
       slotTexture: glasses
       slotFlags: EYES
       stripTime: 3
-      uiWindowPos: 0,3
+      uiWindowPos: 0,5 # FH
       strippingWindowPos: 0,0
       displayName: Eyes
     - name: ears
       slotTexture: ears
       slotFlags: EARS
       stripTime: 3
-      uiWindowPos: 2,2
+      uiWindowPos: 2,4 # FH
       strippingWindowPos: 2,0
       displayName: Ears
     - name: head
       slotTexture: head
       slotFlags: HEAD
-      uiWindowPos: 1,3
+      uiWindowPos: 1,5 # FH
       strippingWindowPos: 1,0
       displayName: Head
     - name: pocket1
       slotTexture: pocket
       fullTextureName: template_small
       slotFlags: POCKET
-      slotGroup: MainHotbar
+      #slotGroup: MainHotbar # FH
       stripTime: 3
-      uiWindowPos: 0,3
+      uiWindowPos: 1,0 # FH
       strippingWindowPos: 0,4
       dependsOn: jumpsuit
       displayName: Pocket 1
@@ -75,9 +75,9 @@
       slotTexture: pocket
       fullTextureName: template_small
       slotFlags: POCKET
-      slotGroup: MainHotbar
+      #slotGroup: MainHotbar # FH
       stripTime: 3
-      uiWindowPos: 2,3
+      uiWindowPos: 2,0 # FH
       strippingWindowPos: 1,4
       dependsOn: jumpsuit
       displayName: Pocket 2
@@ -85,9 +85,9 @@
     - name: suitstorage
       slotTexture: suit_storage
       slotFlags:   SUITSTORAGE
-      slotGroup: MainHotbar
+      #slotGroup: MainHotbar # FH
       stripTime: 3
-      uiWindowPos: 2,0
+      uiWindowPos: 2,2 # FH
       strippingWindowPos: 2,5
       #dependsOn: outerClothing # FH start
       #dependsOnComponents:
@@ -97,9 +97,9 @@
       slotTexture: id
       fullTextureName: template_small
       slotFlags: IDCARD
-      slotGroup: SecondHotbar
+      #slotGroup: SecondHotbar # FH
       stripTime: 6
-      uiWindowPos: 2,1
+      uiWindowPos: 2,5 # FH
       strippingWindowPos: 2,4
       #dependsOn: jumpsuit # FH
       displayName: ID
@@ -107,9 +107,8 @@
       slotTexture: pocket
       fullTextureName: template_small
       slotFlags: BELTPOUCH
-      slotGroup: SecondHotbar
       stripTime: 3
-      uiWindowPos: 4,0
+      uiWindowPos: 0,1
       strippingWindowPos: 4,0
       dependsOn: belt
       displayName: Left Belt Pouch # FH end
@@ -117,18 +116,17 @@
       slotTexture: belt
       fullTextureName: template_small
       slotFlags: BELT
-      slotGroup: SecondHotbar
+      #slotGroup: SecondHotbar # FH
       stripTime: 6
-      uiWindowPos: 3,1
+      uiWindowPos: 1,1 # FH
       strippingWindowPos: 1,5
       displayName: Belt
     - name: pouchright # FH start
       slotTexture: pocket
       fullTextureName: template_small
       slotFlags: BELTPOUCH
-      slotGroup: SecondHotbar
       stripTime: 3
-      uiWindowPos: 4,1
+      uiWindowPos: 2,1
       strippingWindowPos: 4,1
       dependsOn: belt
       displayName: Right Belt Pouch # FH end
@@ -136,9 +134,9 @@
       slotTexture: back
       fullTextureName: template_small
       slotFlags: BACK
-      slotGroup: SecondHotbar
+      #slotGroup: SecondHotbar # FH
       stripTime: 6
-      uiWindowPos: 3,0
+      uiWindowPos: 0,2 # FH
       strippingWindowPos: 0,5
       displayName: Back
       blacklist:
