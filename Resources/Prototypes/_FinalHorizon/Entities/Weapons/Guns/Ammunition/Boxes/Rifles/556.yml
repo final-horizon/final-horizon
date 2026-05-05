@@ -10,7 +10,8 @@
       tags:
         - Cartridge556
     proto: FHCartridge556
-    capacity: 60
+    capacity: 30
+    fillDelay: 0.25
   - type: Item
     size: Small
   - type: ContainerContainer

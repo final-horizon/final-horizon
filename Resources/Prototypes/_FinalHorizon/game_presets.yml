@@ -7,3 +7,5 @@
   maxPlayers: 100
   showInVote: true
   supportedMaps: FinalHorizon
+  rules:
+    - Sandbox

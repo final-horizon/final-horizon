@@ -23,9 +23,9 @@
     - suitStorage
   - type: AmmoCounter
   - type: Gun
-    fireRate: 13
-    burstFireRate: 13
-    burstCooldown: 0.10
+    fireRate: 8
+    burstFireRate: 8
+    burstCooldown: 0.2
     selectedMode: SemiAuto
     availableModes:
       - FullAuto

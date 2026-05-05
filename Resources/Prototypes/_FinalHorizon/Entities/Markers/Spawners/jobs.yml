@@ -1,3 +1,4 @@
+# USMC
 - type: entity
   id: SpawnPointUSMCTeamLeader
   parent: SpawnPointJobBase
@@ -5,6 +6,18 @@
   components:
   - type: SpawnPoint
     job_id: USMCTeamLeader
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSMCTeamLeaderLate
+  parent: SpawnPointJobBase
+  name: USMC team leader
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USMCTeamLeader
+    spawn_type: LateJoinJob
   - type: Sprite
     state: green
 
@@ -19,6 +32,19 @@
     state: green
 
 - type: entity
+  id: SpawnPointUSMCRifleManLate
+  parent: SpawnPointJobBase
+  name: USMC rifle man
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USMCRifleMan
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+# USSR
+- type: entity
   id: SpawnPointUSSRTeamLeader
   parent: SpawnPointJobBase
   name: USSR team leader
@@ -29,11 +55,35 @@
     state: green
 
 - type: entity
+  id: SpawnPointUSSRTeamLeaderLate
+  parent: SpawnPointJobBase
+  name: USSR team leader
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USSRTeamLeader
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
   id: SpawnPointUSSRRifleMan
   parent: SpawnPointJobBase
   name: USSR rifle man
   components:
   - type: SpawnPoint
     job_id: USSRRifleMan
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSSRRifleManLate
+  parent: SpawnPointJobBase
+  name: USSR rifle man
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USSRRifleMan
+    spawn_type: LateJoinJob
   - type: Sprite
     state: green

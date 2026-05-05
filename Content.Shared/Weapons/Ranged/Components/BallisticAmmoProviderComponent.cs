@@ -57,4 +57,13 @@ public sealed partial class BallisticAmmoProviderComponent : Component
     /// </summary>
     [DataField]
     public TimeSpan FillDelay = TimeSpan.FromSeconds(0.5);
+
+    // FH start - stops the doafter when trying to transfer
+    [DataField]
+    public bool StopDoafter = true;
+
+    // feels like a hacky way to fix mispredicts
+    [DataField]
+    public bool HasDoafter = false;
+    // FH end
 }

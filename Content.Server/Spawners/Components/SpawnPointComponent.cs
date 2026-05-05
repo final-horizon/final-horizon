@@ -31,4 +31,5 @@ public enum SpawnPointType
     LateJoin,
     Job,
     Observer,
+    LateJoinJob, // FH - used for latejoin with a specific job
 }

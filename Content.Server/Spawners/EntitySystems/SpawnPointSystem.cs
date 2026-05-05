@@ -1,4 +1,4 @@
-﻿using Content.Server.GameTicking;
+using Content.Server.GameTicking;
 using Content.Server.Spawners.Components;
 using Content.Server.Station.Systems;
 using Robust.Shared.Map;
@@ -26,6 +26,7 @@ public sealed class SpawnPointSystem : EntitySystem
         // TODO: Cache all this if it ends up important.
         var points = EntityQueryEnumerator<SpawnPointComponent, TransformComponent>();
         var possiblePositions = new List<EntityCoordinates>();
+        var possibleLateJobPositions = new List<EntityCoordinates>(); // FH
 
         while (points.MoveNext(out var uid, out var spawnPoint, out var xform))
         {
@@ -36,6 +37,13 @@ public sealed class SpawnPointSystem : EntitySystem
             {
                 possiblePositions.Add(xform.Coordinates);
             }
+
+            // FH start
+            if (_gameTicker.RunLevel == GameRunLevel.InRound && spawnPoint.SpawnType == SpawnPointType.LateJoinJob && args.Job == spawnPoint.Job)
+            {
+                possibleLateJobPositions.Add(xform.Coordinates);
+            }
+            // FH end
 
             if (_gameTicker.RunLevel != GameRunLevel.InRound &&
                 spawnPoint.SpawnType == SpawnPointType.Job &&
@@ -64,7 +72,8 @@ public sealed class SpawnPointSystem : EntitySystem
         }
 
         var spawnLoc = _random.Pick(possiblePositions);
-
+        if (possibleLateJobPositions.Count != 0) // FH start
+            spawnLoc = _random.Pick(possibleLateJobPositions); // FH end
         args.SpawnResult = _stationSpawning.SpawnPlayerMob(
             spawnLoc,
             args.Job,
