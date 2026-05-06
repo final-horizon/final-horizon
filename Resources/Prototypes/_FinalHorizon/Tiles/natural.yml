@@ -5,6 +5,22 @@
   footstepSounds:
     collection: FootstepAsteroid
   weather: true
+  indestructible: false
+
+# Dirt - all tiles will break down into this
+- type: tile
+  id: FHDirt
+  parent: FHBaseNaturalTile
+  name: FH Dirt
+  sprite: /Textures/Tiles/dirt.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  isSubfloor: true
+  heatCapacity: 10000
   indestructible: true
 
 # Snow
@@ -36,11 +52,10 @@
     West: /Textures/Tiles/Planet/Snow/snow_double_edge_west.png
   footstepSounds:
     collection: FootstepSnow
-  indestructible: false
-  baseTurf: FHSnowDirt
+  baseTurf: FHDirt
 
 - type: tile
-  id: FHSnowDirt
+  id: FHSnowDug
   parent: FHBaseNaturalTile
   name: FH Snow Dirt
   sprite: /Textures/Tiles/Planet/Snow/snow_dug.png
@@ -52,3 +67,4 @@
     West: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_west.png
   footstepSounds:
     collection: FootstepSnow
+  baseTurf: FHDirt

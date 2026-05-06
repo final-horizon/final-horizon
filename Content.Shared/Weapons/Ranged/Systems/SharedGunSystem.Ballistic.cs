@@ -19,7 +19,6 @@ public abstract partial class SharedGunSystem
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly SharedInteractionSystem _interaction = default!;
     [Dependency] private readonly SharedStackSystem _stack = null!;
-    [Dependency] private readonly IGameTiming _gameTiming = default!; // FH
 
     [MustCallBase]
     protected virtual void InitializeBallistic()
@@ -81,7 +80,7 @@ public abstract partial class SharedGunSystem
         if (component.StopDoafter) // FH start
         {
             var active = TryComp<ActiveDoAfterComponent>(args.User, out _);
-            if (_netManager.IsClient && _gameTiming.IsFirstTimePredicted)
+            if (_netManager.IsClient && Timing.IsFirstTimePredicted)
                 component.HasDoafter = active;
 
             if (_netManager.IsClient && component.HasDoafter || !_netManager.IsClient && active)

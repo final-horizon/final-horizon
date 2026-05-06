@@ -14,10 +14,10 @@ orphans: []
 nullspace: []
 tilemap:
   2: Space
-  6: FHFloorWoodSnow
-  5: FHRoadSnow
+  6: FHWood
+  5: FHRoad
   4: FHSnow
-  7: FHSnowDirt
+  7: FHSnowDug
   1: FloorPlanetDirt
   0: FloorPlanetGrass
   3: FloorWood

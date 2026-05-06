@@ -1,27 +1,25 @@
 - type: tile
-  id: FHBasePlating
-  abstract: true
+  id: FHPlating
   friction: 1
   isSubfloor: true
   footstepSounds:
     collection: FootstepPlating
   weather: true
   sprite: /Textures/Tiles/plating.png
+  baseTurf: FHDirt
 
 - type: tile
-  id: FHBaseTile
-  abstract: true
+  id: FHTile
   isSubfloor: false
   footstepSounds:
     collection: FootstepFloor
   heatCapacity: 10000
-  baseTurf: FHBasePlating
   weather: true
+  baseTurf: FHPlating
 
 - type: tile
-  id: FHBaseFloorWood
-  abstract: true
-  parent: FHBaseTile
+  id: FHWood
+  parent: FHTile
   sprite: /Textures/Tiles/wood.png
   variants: 4
   placementVariants:
@@ -33,11 +31,11 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
+  baseTurf: FHDirt
 
 - type: tile
-  id: FHBaseRoad
-  abstract: true
-  parent: FHBasePlating
+  id: FHRoad
+  parent: FHPlating
   name: tiles-gray-concrete-smooth
   sprite: /Textures/Tiles/Planet/Concrete/grayconcrete_smooth.png
   variants: 4
@@ -48,22 +46,4 @@
   - 1.0
   footstepSounds:
     collection: FootstepTile
-
-# Snow
-- type: tile
-  id: FHPlatingSnow
-  name: FH Plating Snow
-  parent: FHBasePlating
-  baseTurf: FHSnowDirt
-
-- type: tile
-  id: FHFloorWoodSnow
-  name: FH Wood Snow
-  parent: FHBaseFloorWood
-  baseTurf: FHPlatingSnow
-
-- type: tile
-  id: FHRoadSnow
-  name: FH Road Snow
-  parent: FHBaseRoad
-  baseTurf: FHSnowDirt
+  baseTurf: FHDirt
