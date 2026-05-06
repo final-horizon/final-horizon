@@ -2,7 +2,7 @@
   name: M16A1
   parent: FHWeaponBase
   id: FHWeaponRifleM16A1
-  description: A rooty tooty point and shooty.
+  description: A rooty tooty point and shooty. # fix this
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/m16a1.rsi
@@ -66,12 +66,12 @@
   name: M16A2
   parent: FHWeaponRifleM16A1
   id: FHWeaponRifleM16A2
-  description: A rooty tooty point and shooty.
+  description: A rooty tooty point and shooty. # fix this
   components:
   - type: Sprite
-    sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/m16a1.rsi
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/m16a2.rsi
   - type: Clothing
-    sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/m16a1.rsi
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/m16a2.rsi
   - type: Gun
     availableModes:
       - Burst
