@@ -1,0 +1,8 @@
+- type: soundCollection
+  id: FHLobbyMusic
+  files:
+    - /Audio/_FinalHorizon/Lobby/atriumcarcerifacesofwar.ogg
+    - /Audio/_FinalHorizon/Lobby/AuroraBorealis.ogg
+    - /Audio/_FinalHorizon/Lobby/lobby.ogg
+    - /Audio/_FinalHorizon/Lobby/watervapour.ogg
+    - /Audio/_FinalHorizon/Lobby/wearethearmyofthepeoplesynth.ogg
