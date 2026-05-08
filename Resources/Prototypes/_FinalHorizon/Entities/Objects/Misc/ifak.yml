@@ -1,0 +1,79 @@
+- type: entity
+  parent: BaseStorageItem
+  id: IFAKBase
+  abstract: true
+  description: An individual first aid kit
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Storage/ifak.rsi
+    state: usmc
+  - type: Item
+    sprite: _FinalHorizon/Objects/Storage/ifak.rsi
+    state: usmc
+    size: Small
+    shape:
+    - 0,0,2,2
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,2,1
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+
+- type: entity
+  parent: IFAKBase
+  id: IFAKBaseFilled
+  suffix: Filled
+  abstract: true
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: Brutepack
+        - id: Gauze
+        - id: PillCanisterTricordrazine
+        - id: PillCanisterIron
+
+# USMC
+- type: entity
+  parent: IFAKBase
+  id: IFAKUSMC
+  name: USMC IFAK
+  components:
+  - type: Sprite
+    state: usmc
+  - type: Item
+    state: usmc
+
+- type: entity
+  parent: IFAKBaseFilled
+  id: IFAKUSMCFilled
+  name: USMC IFAK
+  components:
+  - type: Sprite
+    state: usmc
+  - type: Item
+    state: usmc
+
+# Soviet
+- type: entity
+  parent: IFAKBase
+  id: IFAKUSSR
+  name: Soviet IFAK
+  components:
+  - type: Sprite
+    state: soviet
+  - type: Item
+    state: soviet
+
+- type: entity
+  parent: IFAKBaseFilled
+  id: IFAKUSSRFilled
+  name: Soviet IFAK
+  components:
+  - type: Sprite
+    state: soviet
+  - type: Item
+    state: soviet

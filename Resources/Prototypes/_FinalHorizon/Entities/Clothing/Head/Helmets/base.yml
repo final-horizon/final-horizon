@@ -10,6 +10,8 @@
     layers:
       HeadTop : HEAD
       HeadSide : HEAD
+  - type: ExplosionResistance
+    damageCoefficient: 0.90 # rework this later
 
 - type: entity
   parent: FHClothingHeadHelmetBase
