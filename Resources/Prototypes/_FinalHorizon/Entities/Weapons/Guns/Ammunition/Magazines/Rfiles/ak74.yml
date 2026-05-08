@@ -6,6 +6,7 @@
   - type: Tag
     tags:
       - Magazine545
+      - MagazineLightRifle
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
@@ -43,6 +44,3 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-
-- type: Tag
-  id: Magazine545

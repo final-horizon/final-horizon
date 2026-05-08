@@ -6,6 +6,7 @@
   - type: Tag
     tags:
       - Magazine556
+      - MagazineLightRifle
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
@@ -30,6 +31,3 @@
     steps: 2
     zeroVisible: false
   - type: Appearance
-
-- type: Tag
-  id: Magazine556

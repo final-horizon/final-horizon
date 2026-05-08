@@ -2,16 +2,19 @@
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRAmmo
   name: USSR ammo pouch
-  description: A pouch for carrying mags.
+  description: A pouch that can carry 4 mags.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Pouch/ussr_ammo.rsi
   - type: Clothing
     sprite: _FinalHorizon/Clothing/Pouch/ussr_ammo.rsi
   - type: Storage
-    maxItemSize: Normal
+    maxItemSize: Small
     grid:
-    - 0,0,1,5
+    - 0,0,3,1
+    whitelist:
+      tags:
+      - MagazineLightRifle
 
 - type: entity
   parent: FHClothingPouchBase
@@ -26,7 +29,10 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,1,5
+    - 0,0,1,1
+    whitelist:
+      tags:
+      - MagazineLightRifleBox
 
 - type: entity
   parent: FHClothingPouchBase
@@ -41,7 +47,10 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,1,5
+    - 0,0,1,1
+    whitelist:
+      tags:
+      - MagazineLightRifleBox
 
 - type: entity
   parent: FHClothingPouchBase
@@ -54,9 +63,12 @@
   - type: Clothing
     sprite: _FinalHorizon/Clothing/Pouch/ussr_grenade.rsi
   - type: Storage
-    maxItemSize: Normal
+    maxItemSize: Small
     grid:
-    - 0,0,1,5
+    - 0,0,5,1
+    whitelist:
+      tags:
+      - HandGrenade
 
 - type: entity
   parent: FHClothingPouchBase
@@ -71,7 +83,7 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,1,5
+    - 0,0,2,1 # make this restricted to tools and materials
 
 - type: entity
   parent: FHClothingPouchBase
@@ -86,7 +98,7 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,1,5
+    - 0,0,2,1 # make this restricted to tools and materials
 
 - type: entity
   parent: FHClothingPouchBase
@@ -99,9 +111,12 @@
   - type: Clothing
     sprite: _FinalHorizon/Clothing/Pouch/ussr_vog.rsi
   - type: Storage
-    maxItemSize: Normal
+    maxItemSize: Tiny
     grid:
-    - 0,0,1,5
+    - 0,0,4,1
+    whitelist:
+      tags:
+      - Grenade
 
 - type: entity
   parent: FHClothingPouchBase
@@ -116,4 +131,4 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,1,5
+    - 0,0,3,1 # whitelist this to hold deployable ammo cans

@@ -15,6 +15,3 @@
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
-
-- type: Tag
-  id: Cartridge545

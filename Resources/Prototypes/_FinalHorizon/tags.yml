@@ -1,0 +1,13 @@
+# Mags
+- type: Tag
+  id: Magazine556
+
+- type: Tag
+  id: Magazine545
+
+# Cartridge
+- type: Tag
+  id: Cartridge556
+
+- type: Tag
+  id: Cartridge545
