@@ -14,9 +14,5 @@
   parent: FHClothingOuterBase
   id: FHClothingOuterArmorBase
   components:
-  - type: Armor
-    modifiers:
-      coefficients:
-        Piercing: 0.05
   - type: ExplosionResistance
-    damageCoefficient: 0.85
+    damageCoefficient: 0.80

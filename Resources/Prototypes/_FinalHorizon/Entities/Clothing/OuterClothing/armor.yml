@@ -30,7 +30,5 @@
     sprite: _FinalHorizon/Clothing/OuterClothing/Vests/6b3.rsi
   - type: Clothing
     sprite: _FinalHorizon/Clothing/OuterClothing/Vests/6b3.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Piercing: 0.07
+  - type: ExplosionResistance
+    damageCoefficient: 0.70

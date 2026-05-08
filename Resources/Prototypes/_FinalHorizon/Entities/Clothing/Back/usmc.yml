@@ -1,0 +1,51 @@
+- type: entity
+  parent: FHClothingBackpackBase
+  id: FHClothingBackpackAliceMedium
+  name: medium ALICE pack
+  description: The standard backpack of the USMC, this one is medium sized
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Back/alice_medium.rsi
+  - type: Storage
+    grid:
+    - 2,0,4,3
+    - 0,2,0,3
+    - 6,2,6,3
+    maxItemSize: Large
+
+- type: entity
+  parent: FHClothingBackpackBase
+  id: FHClothingBackpackAliceLarge
+  name: large ALICE pack
+  description: The standard backpack of the USMC, this one is large sized
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Back/alice_large.rsi
+  - type: Storage
+    grid:
+    - 2,0,4,4
+    - 0,2,0,4
+    - 6,2,6,4
+    maxItemSize: Large
+
+- type: entity
+  parent: FHClothingBackpackBase
+  id: FHClothingBackpackUSMCButtPack
+  name: USMC butt pack
+  description: The standard butt pack of the USMC
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Back/usmc_butt.rsi
+  - type: Storage
+    grid:
+    - 0,0,2,2
+    maxItemSize: Normal
+
+- type: entity
+  parent: FHClothingBackpackUSMCButtPack
+  id: FHClothingBackpackUSMCButtPackMedic
+  name: USMC medic butt pack
+  description: The standard butt pack of the USMC, used by medics
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Back/usmc_butt_medic.rsi
