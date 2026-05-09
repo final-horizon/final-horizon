@@ -28,6 +28,11 @@ public sealed partial class ChamberMagazineAmmoProviderComponent : MagazineAmmoP
     [DataField, AutoNetworkedField]
     public bool CanRack = true;
 
+    // FH start - will prevent racking or bolting with activate inhand if false
+    [DataField, AutoNetworkedField]
+    public bool CanActivateInhand = true;
+    // FH end
+
     [DataField("soundBoltClosed"), AutoNetworkedField]
     public SoundSpecifier? BoltClosedSound = new SoundPathSpecifier("/Audio/Weapons/Guns/Bolt/rifle_bolt_closed.ogg");
 

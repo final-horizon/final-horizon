@@ -35,6 +35,7 @@
   - type: ChamberMagazineAmmoProvider
     soundRack:
       path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+    canActivateInhand: false
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -61,6 +62,8 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+    appearanceDataInit:
+     enum.AmmoVisuals.MagLoaded: false
 
 - type: entity
   name: M16A2

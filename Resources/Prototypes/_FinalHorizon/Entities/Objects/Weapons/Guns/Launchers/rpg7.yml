@@ -1,0 +1,46 @@
+- type: entity
+  name: RPG-7
+  parent: FHWeaponBase
+  id: FHWeaponLauncherRPG7
+  description: The standard anti-tank weapon of the soviet army
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Launchers/rpg7.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+        visible: false
+  - type: Clothing
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Launchers/rpg7.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Item
+    size: Ginormous
+  - type: Gun
+    fireRate: 0.5
+    projectileSpeed: 25
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeRPG7
+    capacity: 1
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance

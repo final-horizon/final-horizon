@@ -1,4 +1,12 @@
 - type: entity
-  parent: [BaseItem, BaseGunWieldable]
+  parent: BaseItem
   abstract: true
   id: FHWeaponBase
+  components:
+  - type: Wieldable
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
+  - type: Gun
+    minAngle: 21
+    maxAngle: 32   

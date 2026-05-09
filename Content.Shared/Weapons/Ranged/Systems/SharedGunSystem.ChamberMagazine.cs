@@ -64,6 +64,10 @@ public abstract partial class SharedGunSystem
         if (args.Handled)
             return;
 
+        // FH start
+        if (!component.CanActivateInhand)
+            return;
+        // FH end
         args.Handled = true;
         if (component.CanRack)
             UseChambered(uid, component, args.User);

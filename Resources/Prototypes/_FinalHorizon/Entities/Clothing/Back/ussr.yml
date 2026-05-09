@@ -24,7 +24,7 @@
     - 0,0,0,2
     - 2,0,2,2
     - 4,0,4,2
-    maxItemSize: Large
+    maxItemSize: Huge
     whitelist:
       tags:
       - CartridgeRocket
