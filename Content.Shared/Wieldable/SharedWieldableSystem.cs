@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Shared._FinalHorizon.Wieldable; // FH
 using Content.Shared.Examine;
 using Content.Shared.Hands;
 using Content.Shared.Hands.Components;
@@ -39,7 +40,7 @@ public abstract class SharedWieldableSystem : EntitySystem
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedVirtualItemSystem _virtualItem = default!;
     [Dependency] private readonly UseDelaySystem _delay = default!;
-
+    [Dependency] private readonly WieldableDoAfterSystem _wieldableDoAfter = default!; // FH
     public override void Initialize()
     {
         base.Initialize();
@@ -190,6 +191,14 @@ public abstract class SharedWieldableSystem : EntitySystem
     {
         if (args.Handled)
             return;
+        // FH start
+        if (TryComp<WieldableDoAfterComponent>(uid, out var doafterComp) && !doafterComp.CachedWieldState)
+        {
+            _wieldableDoAfter.TryWieldDoAfter(uid, args.User, doafterComp, component);
+            args.Handled = true;
+            return;
+        }
+        // FH end
 
         if (!component.Wielded)
         {
@@ -329,9 +338,11 @@ public abstract class SharedWieldableSystem : EntitySystem
             return false;
         }
 
-        var selfMessage = Loc.GetString("wieldable-component-successful-wield", ("item", used));
-        var othersMessage = Loc.GetString("wieldable-component-successful-wield-other", ("user", Identity.Entity(user, EntityManager)), ("item", used));
-        _popup.PopupPredicted(selfMessage, othersMessage, user, user);
+        // FH start - comment out immersion breaking popups
+        //var selfMessage = Loc.GetString("wieldable-component-successful-wield", ("item", used));
+        //var othersMessage = Loc.GetString("wieldable-component-successful-wield-other", ("user", Identity.Entity(user, EntityManager)), ("item", used));
+        //_popup.PopupPredicted(selfMessage, othersMessage, user, user);
+        // FH end
 
         var ev = new ItemWieldedEvent(user);
         RaiseLocalEvent(used, ref ev);
@@ -403,9 +414,11 @@ public abstract class SharedWieldableSystem : EntitySystem
             if (component.UnwieldSound != null)
                 _audio.PlayPredicted(component.UnwieldSound, uid, user);
 
-            var selfMessage = Loc.GetString("wieldable-component-failed-wield", ("item", uid));
-            var othersMessage = Loc.GetString("wieldable-component-failed-wield-other", ("user", Identity.Entity(args.User, EntityManager)), ("item", uid));
-            _popup.PopupPredicted(selfMessage, othersMessage, user, user);
+            // FH start - disable immersion breaking popup
+            //var selfMessage = Loc.GetString("wieldable-component-failed-wield", ("item", uid));
+            //var othersMessage = Loc.GetString("wieldable-component-failed-wield-other", ("user", Identity.Entity(args.User, EntityManager)), ("item", uid));
+            //_popup.PopupPredicted(selfMessage, othersMessage, user, user);
+            // FH end
         }
     }
 
