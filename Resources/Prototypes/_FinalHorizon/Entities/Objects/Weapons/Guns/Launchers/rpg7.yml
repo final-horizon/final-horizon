@@ -1,6 +1,6 @@
 - type: entity
   name: RPG-7
-  parent: FHWeaponBase
+  parent: FHWeaponBaseLauncher
   id: FHWeaponLauncherRPG7
   description: The standard anti-tank weapon of the soviet army
   components:

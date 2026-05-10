@@ -155,7 +155,12 @@ namespace Content.Client.Chat.UI
             var offset = (-_eyeManager.CurrentEye.Rotation).ToWorldVec() * -(EntityVerticalOffset + baseOffset);
             var worldPos = _transformSystem.GetWorldPosition(xform) + offset;
 
-            var lowerCenter = _eyeManager.WorldToScreen(worldPos) / UIScale;
+            var lowerCenter = _eyeManager.WorldToScreen(worldPos); // FH start - unfucks the bubble position since this doesnt handle weird viewport positions correctly
+
+            if (Parent != null)
+                lowerCenter -= Parent.GlobalPixelPosition;
+
+            lowerCenter /= UIScale; // FH end
             var screenPos = lowerCenter - new Vector2(ContentSize.X / 2, ContentSize.Y + _verticalOffsetAchieved);
             // Round to nearest 0.5
             screenPos = (screenPos * 2).Rounded() / 2;

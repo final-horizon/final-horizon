@@ -75,6 +75,7 @@ public sealed class CombatModeIndicatorsOverlay : Overlay
 
 
         var mousePos = mouseScreenPosition.Position;
+        mousePos -= (args.ViewportControl as Control)?.GlobalPixelPosition ?? new Vector2i(0, 0); // FH - fix the weird viewport configuration
         var uiScale = (args.ViewportControl as Control)?.UIScale ?? 1f;
         var limitedScale = uiScale > 1.25f ? 1.25f : uiScale;
 

@@ -8,7 +8,9 @@ using Content.Shared.Popups;
 using Content.Shared.Stacks;
 using Content.Shared.Storage;
 using Content.Shared.Storage.EntitySystems;
+using Content.Shared.CCVar; // FH
 using Content.Shared.Whitelist;
+using Robust.Shared.Configuration; // FH
 using Robust.Shared.Containers;
 using Robust.Shared.Input.Binding;
 using Robust.Shared.Player;
@@ -28,10 +30,14 @@ public sealed class SmartEquipSystem : EntitySystem
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
+    [Dependency] private readonly IConfigurationManager _config = default!; // FH
+
+    private bool _allowSmartEquip = true; // FH
 
     /// <inheritdoc/>
     public override void Initialize()
     {
+        _allowSmartEquip = _config.GetCVar(CCVars.AllowSmartEquip); // FH
         CommandBinds.Builder
             .Bind(ContentKeyFunctions.SmartEquipBackpack, InputCmdHandler.FromDelegate(HandleSmartEquipBackpack, handle: false, outsidePrediction: false))
             .Bind(ContentKeyFunctions.SmartEquipBelt, InputCmdHandler.FromDelegate(HandleSmartEquipBelt, handle: false, outsidePrediction: false))
@@ -75,6 +81,9 @@ public sealed class SmartEquipSystem : EntitySystem
 
     private void HandleSmartEquip(ICommonSession? session, string equipmentSlot)
     {
+        if (!_allowSmartEquip) // FH
+            return; // FH
+
         if (session is not { } playerSession)
             return;
 

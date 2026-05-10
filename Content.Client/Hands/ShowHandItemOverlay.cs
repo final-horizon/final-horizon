@@ -67,6 +67,7 @@ namespace Content.Client.Hands
             var screen = args.ScreenHandle;
             var offset = _cfg.GetCVar(CCVars.HudHeldItemOffset);
             var offsetVec = new Vector2(offset, offset);
+            offsetVec -= (args.ViewportControl as Control)?.GlobalPixelPosition ?? new Vector2i(0, 0); // FH - fix the weird viewport configuration
 
             if (IconOverride != null)
             {
