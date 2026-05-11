@@ -55,6 +55,9 @@ public sealed class MultiHandedItemSystem : EntitySystem
         if (args.BlockingEntity != ent.Owner || _timing.ApplyingState)
             return;
 
+        if (_hands.GetActiveItem(args.User) == ent) // FH
+            return; // FH
+
         _hands.TryDrop(args.User, ent.Owner);
     }
 }

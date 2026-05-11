@@ -24,7 +24,7 @@ public abstract partial class SharedDoAfterSystem : EntitySystem
     /// <summary>
     ///     We'll use an excess time so stuff like finishing effects can show.
     /// </summary>
-    private static readonly TimeSpan ExcessTime = TimeSpan.FromSeconds(0.5f);
+    private static readonly TimeSpan ExcessTime = TimeSpan.FromSeconds(0f); // FH
 
     private static readonly ProtoId<TagPrototype> InstantDoAftersTag = "InstantDoAfters";
 

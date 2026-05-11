@@ -12,13 +12,3 @@
   - type: Gun
     minAngle: 21
     maxAngle: 32
-
-- type: entity # is not wieldable but requires two hands - make it have an extra long drawtime later once that code exists
-  parent: BaseItem
-  abstract: true
-  id: FHWeaponBaseLauncher
-  components:
-  - type: MultiHandedItem
-  - type: Gun
-    minAngle: 1
-    maxAngle: 5

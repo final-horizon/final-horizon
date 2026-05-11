@@ -26,6 +26,7 @@ public sealed class DoAfterOverlay : Overlay
     private readonly SpriteSystem _sprite;
 
     private readonly Texture _barTexture;
+    private readonly SpriteSpecifier _barSprite; // FH start - overhaul the bar to use the fully animated sprite instead
     private readonly ShaderInstance _unshadedShader;
 
     /// <summary>
@@ -49,8 +50,8 @@ public sealed class DoAfterOverlay : Overlay
         _container = _entManager.EntitySysManager.GetEntitySystem<SharedContainerSystem>();
         _progressColor = _entManager.System<ProgressColorSystem>();
         _sprite = _entManager.System<SpriteSystem>();
-        var sprite = new SpriteSpecifier.Rsi(new("/Textures/Interface/Misc/progress_bar.rsi"), "icon");
-        _barTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(sprite);
+        _barSprite = new SpriteSpecifier.Rsi(new("/Textures/_FinalHorizon/Interface/Misc/progress_bar.rsi"), "progress_bar");
+        _barTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(_barSprite);
 
         _unshadedShader = protoManager.Index(UnshadedShader).Instance();
     }
@@ -85,12 +86,7 @@ public sealed class DoAfterOverlay : Overlay
             if (!bounds.Contains(worldPosition))
                 continue;
 
-            // shades the do-after bar if the do-after bar belongs to other players
-            // does not shade do-afters belonging to the local player
-            if (uid != localEnt)
-                handle.UseShader(null);
-            else
-                handle.UseShader(_unshadedShader);
+            handle.UseShader(null);
 
             // If the entity is paused, we will draw the do-after as it was when the entity got paused.
             var meta = metaQuery.GetComponent(uid);
@@ -109,16 +105,6 @@ public sealed class DoAfterOverlay : Overlay
 
             foreach (var doAfter in comp.DoAfters.Values)
             {
-                // Hide some DoAfters from other players for stealthy actions (ie: thieving gloves)
-                var alpha = 1f;
-                if (doAfter.Args.Hidden || isInContainer)
-                {
-                    if (uid != localEnt)
-                        continue;
-
-                    // Hints to the local player that this do-after is not visible to other players.
-                    alpha = 0.5f;
-                }
 
                 // Use the sprite itself if we know its bounds. This means short or tall sprites don't get overlapped
                 // by the bar.
@@ -127,34 +113,16 @@ public sealed class DoAfterOverlay : Overlay
                 // Position above the entity (we've already applied the matrix transform to the entity itself)
                 // Offset by the texture size for every do_after we have.
                 var position = new Vector2(-_barTexture.Width / 2f / EyeManager.PixelsPerMeter,
-                    yOffset / scale + offset / EyeManager.PixelsPerMeter * scale);
+                    yOffset / scale + offset / EyeManager.PixelsPerMeter * scale * 0.25f);
 
-                // Draw the underlying bar texture
-                handle.DrawTexture(_barTexture, position);
 
-                Color color;
-                float elapsedRatio;
 
-                // if we're cancelled then flick red / off.
-                if (doAfter.CancelledTime != null)
-                {
-                    var elapsed = doAfter.CancelledTime.Value - doAfter.StartTime;
-                    elapsedRatio = (float)Math.Min(1, elapsed.TotalSeconds / doAfter.Args.Delay.TotalSeconds);
-                    var cancelElapsed = (time - doAfter.CancelledTime.Value).TotalSeconds;
-                    var flash = Math.Floor(cancelElapsed / FlashTime) % 2 == 0;
-                    color = GetProgressColor(0, flash ? alpha : 0);
-                }
-                else
-                {
-                    var elapsed = time - doAfter.StartTime;
-                    elapsedRatio = (float)Math.Min(1, elapsed.TotalSeconds / doAfter.Args.Delay.TotalSeconds);
-                    color = GetProgressColor(elapsedRatio, alpha);
-                }
+                var elapsed = time - doAfter.StartTime;
+                var elapsedRatio = (float)Math.Min(1, elapsed.TotalSeconds / doAfter.Args.Delay.TotalSeconds);
 
-                var xProgress = (EndX - StartX) * elapsedRatio + StartX;
-                var box = new Box2(new Vector2(StartX, 3f) / EyeManager.PixelsPerMeter, new Vector2(xProgress, 4f) / EyeManager.PixelsPerMeter);
-                box = box.Translated(position);
-                handle.DrawRect(box, color);
+                var spriteBar = _sprite.GetFrame(_barSprite, TimeSpan.FromSeconds(elapsedRatio * 21), false);
+                handle.DrawTexture(spriteBar, position);
+                 // FH end
                 offset += _barTexture.Height / scale;
             }
         }

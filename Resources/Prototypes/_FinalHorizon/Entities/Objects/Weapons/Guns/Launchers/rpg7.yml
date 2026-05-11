@@ -1,8 +1,8 @@
 - type: entity
   name: RPG-7
-  parent: FHWeaponBaseLauncher
+  parent: BaseItem
   id: FHWeaponLauncherRPG7
-  description: The standard anti-tank weapon of the soviet army
+  description: The standard heavy anti-tank weapon of the soviet army
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/Launchers/rpg7.rsi
@@ -11,7 +11,6 @@
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
-        visible: false
   - type: Clothing
     sprite: _FinalHorizon/Objects/Weapons/Guns/Launchers/rpg7.rsi
     quickEquip: false
@@ -21,13 +20,14 @@
   - type: Item
     size: Ginormous
   - type: Gun
-    fireRate: 0.5
+    fireRate: 5
     projectileSpeed: 25
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+  - type: MultiHandedItem
   - type: BallisticAmmoProvider
     whitelist:
       tags:
