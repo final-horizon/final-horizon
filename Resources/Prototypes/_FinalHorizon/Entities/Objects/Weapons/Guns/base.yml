@@ -12,3 +12,16 @@
   - type: Gun
     minAngle: 21
     maxAngle: 32
+    soundEmpty:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Empty/gen_empty.ogg
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.8
+    sprintModifier: 0.8
+
+- type: entity
+  parent: BaseItem
+  id: FHWeaponLauncherBase
+  components:
+  - type: HeldSpeedModifier
+    walkModifier: 0.6
+    sprintModifier: 0.6

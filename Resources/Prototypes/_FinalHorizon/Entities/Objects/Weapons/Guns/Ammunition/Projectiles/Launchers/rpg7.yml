@@ -10,11 +10,20 @@
       - state: frag
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
-    maxIntensity: 40
-    intensitySlope: 6
-    totalIntensity: 200
-    maxTileBreak: 1
+    explosionType: FHDefault
+    maxIntensity: 10
+    intensitySlope: 3.5
+    totalIntensity: 120
+    maxTileBreak: 3
+  - type: ProjectileGrenade
+    fillPrototype: PelletClusterLethal
+    capacity: 13
+    randomAngle: true
+    triggerKey: trigger
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 5000
   - type: PointLight
     radius: 3.5
     color: orange

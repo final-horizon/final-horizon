@@ -1,0 +1,31 @@
+- type: explosion
+  id: FHDefault
+  damagePerIntensity:
+    types:
+      Blunt: 5
+      Piercing: 5
+  tileBreakChance: [0, 0.5, 1]
+  tileBreakIntensity: [0, 10, 30]
+  tileBreakRerollReduction: 20
+  lightColor: Orange
+  intensityPerState: 4
+  texturePath: /Textures/_RMC14/Effects/fog.rsi
+  fireStates: 1
+  temperature: 300
+  smallSoundIterationThreshold: 3
+  sound:
+    collection: FHExplosionLarge
+    params:
+      variation: 0.3
+  soundSmall:
+    collection: FHExplosionSmall
+    params:
+      variation: 0.3
+  soundFar:
+    collection: FHExplosionFarLarge
+    params:
+      variation: 0.3
+  smallSoundFar:
+    collection: FHExplosionFarSmall
+    params:
+      variation: 0.3

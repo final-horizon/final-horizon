@@ -1,6 +1,6 @@
 - type: entity
-  name: M-72
-  parent: BaseItem
+  name: M-72 LAW
+  parent: FHWeaponLauncherBase
   id: FHWeaponLauncherM72
   description: The standard light disposable anti-tank weapon of the USMC, must be deployed to use
   components:
@@ -26,7 +26,7 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+      path: /Audio/_FinalHorizon/Weapons/Guns/Gunshots/m72.ogg
   - type: BallisticAmmoProvider
     mayTransfer: false
     cycleable: false
@@ -35,7 +35,9 @@
   - type: Appearance
   - type: FoldableGun
     folded: true
-    foldTime: 1
+    foldTime: 7
+    foldSound:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Deploy/law_deploy.ogg
   - type: MultiHandedItem
   - type: GenericVisualizer
     visuals:

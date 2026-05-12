@@ -5,8 +5,10 @@ using Content.Shared.Item;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
 using Content.Shared.Weapons.Ranged.Events;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Components;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Serialization;
-using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
 namespace Content.Shared._FinalHorizon.FoldableGun;
@@ -19,6 +21,7 @@ public sealed partial class FoldableGunSystem : EntitySystem
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly SharedItemSystem _item = default!;
     [Dependency] private readonly SharedVirtualItemSystem _virtualItem = default!;
+    [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
 
     public override void Initialize()
     {
@@ -68,7 +71,13 @@ public sealed partial class FoldableGunSystem : EntitySystem
 
     public void TrySetFolded(EntityUid uid, FoldableGunComponent comp, FoldableGunDoafterEvent args)
     {
-        if (!_hand.IsHolding(args.User, uid) || args.Cancelled)
+        if (args.Cancelled)
+        {
+            _audioSystem.Stop(comp.AudioStream);
+            return;
+        }
+
+        if (!_hand.IsHolding(args.User, uid))
             return;
 
         SetFolded(uid, comp, args.Folding, args.User);
@@ -102,6 +111,7 @@ public sealed partial class FoldableGunSystem : EntitySystem
 
                 if (result)
                 {
+                    component.AudioStream = _audioSystem.PlayPredicted(component.FoldSound, uid, args.User)?.Entity ?? component.AudioStream;
                     if (component.Folded)
                         _popup.PopupClient("Undeploying", uid, args.User);
                     else

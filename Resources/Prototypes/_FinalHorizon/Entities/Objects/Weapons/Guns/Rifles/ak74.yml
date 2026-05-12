@@ -29,7 +29,12 @@
       - FullAuto
       - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/rifle2.ogg
+      path: /Audio/_FinalHorizon/Weapons/Guns/Gunshots/ak74.ogg
+      params:
+        variation: 0.1
+        volume: -2
+    soundEmpty:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Empty/gen_empty.ogg
   - type: ChamberMagazineAmmoProvider
     soundRack:
       path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
@@ -42,8 +47,8 @@
     slots:
       gun_magazine:
         name: Magazine
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        insertSound: /Audio/_FinalHorizon/Weapons/Guns/MagIn/ak74_magin.ogg
+        ejectSound: /Audio/_FinalHorizon/Weapons/Guns/MagOut/ak74_magout.ogg
         priority: 2
         whitelist:
           tags:

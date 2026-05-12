@@ -1,6 +1,6 @@
 - type: entity
   name: RPG-7
-  parent: BaseItem
+  parent: FHWeaponLauncherBase
   id: FHWeaponLauncherRPG7
   description: The standard heavy anti-tank weapon of the soviet army
   components:
@@ -26,7 +26,7 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+      path: /Audio/_FinalHorizon/Weapons/Guns/Gunshots/rpg_fire.ogg
   - type: MultiHandedItem
   - type: BallisticAmmoProvider
     whitelist:
@@ -34,7 +34,7 @@
         - CartridgeRPG7
     capacity: 1
     soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      path: /Audio/_FinalHorizon/Weapons/Guns/magIn/rpgreload.ogg
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container

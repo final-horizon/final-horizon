@@ -4,6 +4,7 @@ using JetBrains.Annotations;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.ResourceManagement;
+using Robust.Client.UserInterface;
 using Robust.Shared.Enums;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
@@ -91,6 +92,7 @@ public sealed class ExplosionDebugOverlay : Overlay
         Dictionary<int, List<Vector2i>> tileSets,
         ushort tileSize)
     {
+        var viewportOffset = (_eyeManager.MainViewport as Control)?.GlobalPixelPosition ?? new Vector2i(0, 0); // FH change
         for (var i = 1; i < Intensity.Count; i++)
         {
             if (!tileSets.TryGetValue(i, out var tiles))
@@ -107,6 +109,7 @@ public sealed class ExplosionDebugOverlay : Overlay
                 var worldCenter = Vector2.Transform(centre, transform);
 
                 var screenCenter = _eyeManager.WorldToScreen(worldCenter);
+                screenCenter -= viewportOffset; // FH change
 
                 if (Intensity[i] > 9)
                     screenCenter += new Vector2(-12, -8);
@@ -122,6 +125,7 @@ public sealed class ExplosionDebugOverlay : Overlay
             var epicenter = set.First();
             var worldCenter = Vector2.Transform((epicenter + Vector2Helpers.Half) * tileSize, transform);
             var screenCenter = _eyeManager.WorldToScreen(worldCenter) + new Vector2(-24, -24);
+            screenCenter -= viewportOffset; // FH change
             var text = $"{Intensity[0]:F2}\nΣ={TotalIntensity:F1}\nΔ={Slope:F1}";
             handle.DrawString(_font, screenCenter, text);
         }

@@ -1,6 +1,6 @@
 - type: entity
   name: RPG-18
-  parent: BaseItem
+  parent: FHWeaponLauncherBase
   id: FHWeaponLauncherRPG18
   description: The standard light disposable anti-tank weapon of the soviet army, must be deployed to use
   components:
@@ -26,7 +26,7 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+      path: /Audio/_FinalHorizon/Weapons/Guns/Gunshots/rpg22.ogg
   - type: BallisticAmmoProvider
     mayTransfer: false
     cycleable: false
@@ -35,7 +35,9 @@
   - type: Appearance
   - type: FoldableGun
     folded: true
-    foldTime: 1
+    foldTime: 6
+    foldSound:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Deploy/rpgoneuse_deploying.ogg
   - type: MultiHandedItem
   - type: GenericVisualizer
     visuals:

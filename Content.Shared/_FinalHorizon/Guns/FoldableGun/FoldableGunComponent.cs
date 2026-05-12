@@ -1,3 +1,5 @@
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Components;
 using Robust.Shared.GameStates;
 
 namespace Content.Shared._FinalHorizon.FoldableGun;
@@ -10,4 +12,10 @@ public sealed partial class FoldableGunComponent : Component
 
     [DataField, AutoNetworkedField]
     public TimeSpan FoldTime = TimeSpan.FromSeconds(1);
+
+    [DataField, AutoNetworkedField]
+    public SoundSpecifier FoldSound;
+
+    [DataField, AutoNetworkedField]
+    public EntityUid? AudioStream;
 }

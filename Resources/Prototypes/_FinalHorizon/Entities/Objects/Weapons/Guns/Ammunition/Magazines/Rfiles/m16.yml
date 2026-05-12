@@ -10,6 +10,10 @@
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
+    soundInsert:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Misc/rifle_load.ogg
+      params:
+        variation: 0.1
     mayTransfer: true
     whitelist:
       tags:

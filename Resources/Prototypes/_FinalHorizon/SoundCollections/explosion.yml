@@ -1,0 +1,26 @@
+- type: soundCollection
+  id: FHExplosionSmall
+  files:
+  - /Audio/_FinalHorizon/Effects/Explosion/Explosion_Small1.ogg
+  - /Audio/_FinalHorizon/Effects/Explosion/Explosion_Small2.ogg
+  - /Audio/_FinalHorizon/Effects/Explosion/Explosion_Small3.ogg
+
+- type: soundCollection
+  id: FHExplosionLarge
+  files:
+  - /Audio/_FinalHorizon/Effects/Explosion/Explosion1.ogg
+  - /Audio/_FinalHorizon/Effects/Explosion/Explosion2.ogg
+  - /Audio/_FinalHorizon/Effects/Explosion/explosion3.ogg
+  - /Audio/_FinalHorizon/Effects/Explosion/explosion4.ogg
+  - /Audio/_FinalHorizon/Effects/Explosion/explosion5.ogg
+  - /Audio/_FinalHorizon/Effects/Explosion/explosion6.ogg
+
+- type: soundCollection
+  id: FHExplosionFarSmall
+  files:
+  - /Audio/_FinalHorizon/Effects/Explosion/explosionsmallfarnew.ogg
+
+- type: soundCollection
+  id: FHExplosionFarLarge
+  files:
+  - /Audio/_FinalHorizon/Effects/Explosion/explosionfarnew.ogg
