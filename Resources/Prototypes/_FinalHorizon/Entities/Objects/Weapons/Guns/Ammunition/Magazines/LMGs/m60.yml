@@ -1,14 +1,14 @@
 - type: entity
   parent: BaseItem
-  id: FHMagazineRifleM16
-  name: M16 Magazine (30)
+  id: FHMagazineLMGM60
+  name: M60 Box (100)
   components:
   - type: Tag
     tags:
-      - Magazine556
-      - MagazineLightRifle
+      - MagazineBox762x51
+      - MagazineLightRifleBox
   - type: Item
-    size: Small
+    size: Normal
   - type: BallisticAmmoProvider
     soundInsert:
       path: /Audio/_FinalHorizon/Weapons/Guns/Misc/rifle_load.ogg
@@ -17,14 +17,14 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Cartridge556
-    capacity: 30
+        - Cartridge762x51
+    capacity: 100
     fillDelay: 0.30
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Magazine/Rifles/m16.rsi
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Magazine/LMGs/m60.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -37,9 +37,9 @@
   - type: Appearance
 
 - type: entity
-  parent: FHMagazineRifleM16
-  id: FHMagazineRifleM16Full
+  parent: FHMagazineLMGM60
+  id: FHMagazineLMGM60Full
   suffix: Full
   components:
   - type: BallisticAmmoProvider
-    proto: FHCartridge556
+    proto: FHCartridge762x51

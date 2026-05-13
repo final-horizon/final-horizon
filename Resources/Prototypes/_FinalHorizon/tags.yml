@@ -5,12 +5,18 @@
 - type: Tag
   id: Magazine545
 
+- type: Tag
+  id: MagazineBox762x51 # nato
+
 # Cartridge
 - type: Tag
   id: Cartridge556
 
 - type: Tag
   id: Cartridge545
+
+- type: Tag
+  id: Cartridge762x51 # nato
 
 - type: Tag
   id: CartridgeRPG7

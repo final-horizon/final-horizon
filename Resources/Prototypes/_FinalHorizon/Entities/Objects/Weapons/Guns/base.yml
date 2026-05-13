@@ -21,6 +21,19 @@
     pullTime: 0.6
 
 - type: entity
+  parent: FHWeaponBase
+  abstract: true
+  id: FHWeaponBaseLMG
+  components:
+  - type: WieldableDoAfter
+    timer: 1
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.6
+    sprintModifier: 0.6
+  - type: PullDoAfter
+    pullTime: 1
+
+- type: entity
   parent: BaseItem
   id: FHWeaponLauncherBase
   components:
