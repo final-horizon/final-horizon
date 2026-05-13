@@ -15,8 +15,8 @@
     soundEmpty:
       path: /Audio/_FinalHorizon/Weapons/Guns/Empty/gen_empty.ogg
   - type: SpeedModifiedOnWield
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: PullDoAfter
     pullTime: 0.6
 
@@ -28,8 +28,8 @@
   - type: WieldableDoAfter
     timer: 1
   - type: SpeedModifiedOnWield
-    walkModifier: 0.6
-    sprintModifier: 0.6
+    walkModifier: 0.7
+    sprintModifier: 0.7
   - type: PullDoAfter
     pullTime: 1
 
@@ -38,7 +38,7 @@
   id: FHWeaponLauncherBase
   components:
   - type: HeldSpeedModifier
-    walkModifier: 0.6
-    sprintModifier: 0.6
+    walkModifier: 0.8
+    sprintModifier: 0.8
   - type: PullDoAfter
     pullTime: 2

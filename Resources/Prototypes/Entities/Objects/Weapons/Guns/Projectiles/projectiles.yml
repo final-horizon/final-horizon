@@ -3,14 +3,14 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
-    lifetime: 0.4
+    lifetime: 0.2 # FH
   - type: Sprite
-    drawdepth: BelowMobs
+    drawdepth: Effects # FH
     layers:
     - shader: unshaded
       map: ["enum.EffectLayers.Unshaded"]
-      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
-      state: muzzle_bullet
+      sprite: _FinalHorizon/Objects/Weapons/Guns/Projectiles/muzzle_flash.rsi # FH
+      state: flash # FH
   - type: EffectVisuals
   - type: Tag
     tags:
@@ -59,8 +59,8 @@
     noRot: false
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
-    - state: bullet
-      shader: unshaded
+    - state: buckshot # FH
+      #shader: unshaded # FH
   - type: Physics
     bodyType: Dynamic
   - type: TileFrictionModifier

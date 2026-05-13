@@ -74,7 +74,7 @@ public abstract partial class SharedGunSystem : EntitySystem
     /// <summary>
     /// Default projectile speed
     /// </summary>
-    public const float ProjectileSpeed = 40f;
+    public const float ProjectileSpeed = 100f; // FH
 
     /// <summary>
     ///     Name of the container slot used as the gun's chamber

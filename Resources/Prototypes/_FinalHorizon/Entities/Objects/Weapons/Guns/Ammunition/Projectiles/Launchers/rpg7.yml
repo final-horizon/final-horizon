@@ -5,9 +5,9 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Projectiles/rocket.rsi
     layers:
-      - state: frag
+      - state: rocket
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: FHDefault
@@ -16,8 +16,8 @@
     totalIntensity: 120
     maxTileBreak: 3
   - type: ProjectileGrenade
-    fillPrototype: PelletClusterLethal
-    capacity: 13
+    fillPrototype: FHBulletFragment
+    capacity: 15
     randomAngle: true
     triggerKey: trigger
   - type: Projectile
