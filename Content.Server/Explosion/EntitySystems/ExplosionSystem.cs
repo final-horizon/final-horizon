@@ -393,8 +393,8 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
 
         // ES START
         var farTranslationShake = iterationIntensity.Count < queued.Proto.SmallSoundIterationThreshold
-            ? new ESScreenshakeParameters() { Trauma = 0.4f, DecayRate = 0.2f, Frequency = 0.014f }
-            : new ESScreenshakeParameters() { Trauma = 0.6f, DecayRate = 0.05f, Frequency = 0.014f };
+            ? new ESScreenshakeParameters() { Trauma = 0.4f, DecayRate = 0.6f, Frequency = 0.014f } // FH - tweak numbers
+            : new ESScreenshakeParameters() { Trauma = 0.6f, DecayRate = 0.2f, Frequency = 0.014f }; // FH - tweak numbers
         _shake.Screenshake(filter, farTranslationShake, null);
         // ES END
 
