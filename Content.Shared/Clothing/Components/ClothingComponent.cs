@@ -82,10 +82,10 @@ public sealed partial class ClothingComponent : Component
     // And when doing this, combine InSlot and InSlotFlag, as it'd be a breaking change for downstreams anyway
 
     [DataField]
-    public TimeSpan EquipDelay = TimeSpan.Zero;
+    public TimeSpan EquipDelay = TimeSpan.FromSeconds(0.1f); // Stalker-Changes
 
     [DataField]
-    public TimeSpan UnequipDelay = TimeSpan.Zero;
+    public TimeSpan UnequipDelay = TimeSpan.FromSeconds(0.1f); // Stalker-Changes
 
     /// <summary>
     /// Only works when EquipDelay or UnequipDelay > 0.

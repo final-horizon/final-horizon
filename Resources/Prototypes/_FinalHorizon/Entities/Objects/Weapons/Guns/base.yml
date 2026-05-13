@@ -17,6 +17,8 @@
   - type: SpeedModifiedOnWield
     walkModifier: 0.8
     sprintModifier: 0.8
+  - type: PullDoAfter
+    pullTime: 0.6
 
 - type: entity
   parent: BaseItem
@@ -25,3 +27,5 @@
   - type: HeldSpeedModifier
     walkModifier: 0.6
     sprintModifier: 0.6
+  - type: PullDoAfter
+    pullTime: 2

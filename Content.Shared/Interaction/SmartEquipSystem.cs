@@ -1,5 +1,8 @@
+using Content.Shared._Stalker.PullDoAfter;
 using Content.Shared.ActionBlocker;
+using Content.Shared.CCVar;
 using Content.Shared.Containers.ItemSlots;
+using Content.Shared.DoAfter;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Input;
@@ -8,12 +11,12 @@ using Content.Shared.Popups;
 using Content.Shared.Stacks;
 using Content.Shared.Storage;
 using Content.Shared.Storage.EntitySystems;
-using Content.Shared.CCVar; // FH
 using Content.Shared.Whitelist;
-using Robust.Shared.Configuration; // FH
+using Robust.Shared.Configuration;
 using Robust.Shared.Containers;
 using Robust.Shared.Input.Binding;
 using Robust.Shared.Player;
+using Robust.Shared.Serialization;
 
 namespace Content.Shared.Interaction;
 
@@ -31,6 +34,7 @@ public sealed class SmartEquipSystem : EntitySystem
     [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly IConfigurationManager _config = default!; // FH
+    [Dependency] private readonly SharedDoAfterSystem _doAfter = default!; // FH
 
     private bool _allowSmartEquip = true; // FH
 
@@ -163,6 +167,13 @@ public sealed class SmartEquipSystem : EntitySystem
                     return;
                 case null:
                     var removing = storage.Container.ContainedEntities[^1];
+                    // Stalker-Changes-Start
+                    if (TryComp<PullDoAfterComponent>(removing, out var pullComp))
+                    {
+                        StartSmartRemoveDoAfter((removing, pullComp), uid, slotItem);
+                        return;
+                    }
+                    // Stalker-Changes-End
                     _container.RemoveEntity(slotItem, removing);
                     _hands.TryPickup(uid, removing, handsComp: hands);
                     return;
@@ -248,4 +259,32 @@ public sealed class SmartEquipSystem : EntitySystem
         _inventory.TryUnequip(uid, equipmentSlot, inventory: inventory, predicted: true, checkDoafter: true);
         _hands.TryPickup(uid, slotItem, handsComp: hands);
     }
+
+    // Stalker-Changes-Start
+    private void StartSmartRemoveDoAfter(Entity<PullDoAfterComponent> used, EntityUid user, EntityUid container)
+    {
+        var args = new DoAfterArgs(EntityManager,
+            user, used.Comp.PullTime,
+            new SmartPullDoAfterEvent(GetNetEntity(container)), used, used, used)
+        {
+            BreakOnDamage = true,
+            BlockDuplicate = true,
+            BreakOnHandChange = true,
+            Hidden = used.Comp.Hidden,
+            NeedHand = true
+        };
+        _doAfter.TryStartDoAfter(args);
+    }
 }
+
+[Serializable, NetSerializable]
+public sealed partial class SmartPullDoAfterEvent : SimpleDoAfterEvent
+{
+    public NetEntity StorageEnt;
+
+    public SmartPullDoAfterEvent(NetEntity storageEnt)
+    {
+        StorageEnt = storageEnt;
+    }
+}
+// Stalker-Changes-End

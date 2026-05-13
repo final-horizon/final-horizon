@@ -1,4 +1,4 @@
-using System.Diagnostics.CodeAnalysis;
+using Content.Shared._Stalker.PullDoAfter;
 using Content.Shared.Armor;
 using Content.Shared.Clothing.Components;
 using Content.Shared.DoAfter;
@@ -18,6 +18,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Content.Shared.Inventory;
 
@@ -161,19 +162,19 @@ public abstract partial class InventorySystem
             clothing.EquipDelay > TimeSpan.Zero &&
             (clothing.Slots & slotDefinition.SlotFlags) != 0 &&
             _containerSystem.CanInsert(itemUid, slotContainer))
-        {
+        { // stalker-changes-start
             var args = new DoAfterArgs(
                 EntityManager,
                 actor,
-                clothing.EquipDelay,
+                TryComp<PullDoAfterComponent>(itemUid, out var pullDoAfterComponent) ? TimeSpan.FromSeconds(pullDoAfterComponent.PullTime) : clothing.EquipDelay,
                 new ClothingEquipDoAfterEvent(slot),
                 itemUid,
                 target,
                 itemUid)
             {
-                BreakOnMove = !clothing.EquipWhileMoving,
+                BreakOnMove = false,
                 NeedHand = true,
-            };
+            }; // stalker-changes-end
 
             _doAfter.TryStartDoAfter(args);
             return false;
@@ -440,19 +441,19 @@ public abstract partial class InventorySystem
             Resolve(removedItem.Value, ref clothing, false) &&
             (clothing.Slots & slotDefinition.SlotFlags) != 0 &&
             clothing.UnequipDelay > TimeSpan.Zero)
-        {
+        { // stalker-changes-start
             var args = new DoAfterArgs(
                 EntityManager,
                 actor,
-                clothing.UnequipDelay,
+                TryComp<PullDoAfterComponent>(removedItem, out var pullDoAfterComponent) ? TimeSpan.FromSeconds(pullDoAfterComponent.PullTime) : clothing.UnequipDelay,
                 new ClothingUnequipDoAfterEvent(slot),
                 removedItem.Value,
                 target,
                 removedItem.Value)
             {
-                BreakOnMove = !clothing.EquipWhileMoving,
+                BreakOnMove = false,
                 NeedHand = true,
-            };
+            }; // stalker-changes-end
 
             _doAfter.TryStartDoAfter(args);
             return false;

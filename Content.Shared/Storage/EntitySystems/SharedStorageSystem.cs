@@ -1,6 +1,4 @@
-using System.Collections.Frozen;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
+using Content.Shared._Stalker.PullDoAfter;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Administration.Logs;
 using Content.Shared.CCVar;
@@ -21,29 +19,32 @@ using Content.Shared.Lock;
 using Content.Shared.Materials;
 using Content.Shared.Placeable;
 using Content.Shared.Popups;
+using Content.Shared.Rounding;
 using Content.Shared.Stacks;
 using Content.Shared.Storage.Components;
+using Content.Shared.Storage.Events;
 using Content.Shared.Tag;
 using Content.Shared.Timing;
-using Content.Shared.Storage.Events;
 using Content.Shared.Verbs;
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
+using Robust.Shared.Collections;
 using Robust.Shared.Configuration;
 using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
 using Robust.Shared.Input.Binding;
 using Robust.Shared.Map;
+using Robust.Shared.Map.Enumerators;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
-using Content.Shared.Rounding;
-using Robust.Shared.Collections;
-using Robust.Shared.Map.Enumerators;
+using System.Collections.Frozen;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 
 namespace Content.Shared.Storage.EntitySystems;
 
@@ -77,6 +78,7 @@ public abstract class SharedStorageSystem : EntitySystem
     [Dependency] private readonly EntityQuery<StackComponent> _stackQuery = default!;
     [Dependency] private readonly EntityQuery<TransformComponent> _xformQuery = default!;
     [Dependency] private readonly EntityQuery<UserInterfaceUserComponent> _userQuery = default!;
+    [Dependency] private readonly SharedPullDoAfterSystem _pullDoAfter = default!; // Stalker-Changes
 
     /// <summary>
     /// Whether we're allowed to go up-down storage via UI.
@@ -163,6 +165,8 @@ public abstract class SharedStorageSystem : EntitySystem
         SubscribeAllEvent<StorageSaveItemLocationEvent>(OnSaveItemLocation);
 
         SubscribeLocalEvent<ItemSizeChangedEvent>(OnItemSizeChanged);
+
+        SubscribeLocalEvent<StorageComponent, PullDoAfterEvent>(OnPull); // Stalker-Changes
 
         CommandBinds.Builder
             .Bind(ContentKeyFunctions.OpenBackpack, InputCmdHandler.FromDelegate(HandleOpenBackpack, handle: false))
@@ -731,6 +735,15 @@ public abstract class SharedStorageSystem : EntitySystem
         // If the user's active hand is empty, try pick up the item.
         if (!_sharedHandsSystem.TryGetActiveItem(player.AsNullable(), out var activeItem))
         {
+            // Stalker-Changes-Start
+            var entity = GetEntity(msg.InteractedItemUid);
+            var uid = GetEntity(msg.StorageUid);
+            if (TryComp<PullDoAfterComponent>(entity, out var pullComp))
+            {
+                _pullDoAfter.StartInteractDoAfter((entity, pullComp), player, uid);
+                return;
+            }
+            // Stalker-Changes-End
             _adminLog.Add(
                 LogType.Storage,
                 LogImpact.Low,
@@ -1993,6 +2006,53 @@ public abstract class SharedStorageSystem : EntitySystem
         item = new(itemUid.Value, itemComp);
         return true;
     }
+
+    // Stalker-Changes-Start
+    private void OnPull(Entity<StorageComponent> ent, ref PullDoAfterEvent args)
+    {
+        if (args.Target == null || args.Cancelled)
+            return;
+
+        var entity = args.Target.Value;
+
+        if (!TryComp<PullDoAfterComponent>(args.Target.Value, out _))
+            return;
+
+        var storageEnt = GetEntity(args.StorageEnt);
+        if (!TryComp<StorageComponent>(storageEnt, out var storageComp))
+            return;
+
+        if (args.Interact)
+        {
+            if (!TryComp(args.User, out HandsComponent? hands) || hands.Count == 0)
+                return;
+
+            if (_sharedHandsSystem.TryPickupAnyHand(args.User, entity, handsComp: hands)
+                && storageComp.StorageRemoveSound != null)
+                Audio.PlayPredicted(storageComp.StorageRemoveSound, storageEnt, args.User);
+            {
+                return;
+            }
+        }
+        TransformSystem.DropNextTo(entity, args.User);
+        Audio.PlayPredicted(storageComp.StorageRemoveSound, storageEnt, args.User);
+        var ev = new StorageAfterRemoveItemEvent(entity, storageEnt, args.User);
+        RaiseLocalEvent(args.User, ev, true);
+    }
+
+    public sealed class StorageAfterRemoveItemEvent : EntityEventArgs
+    {
+        public readonly EntityUid StorageEnt;
+        public readonly EntityUid ItemEnt;
+        public readonly EntityUid User;
+        public StorageAfterRemoveItemEvent(EntityUid itemEnt, EntityUid storageEnt, EntityUid user)
+        {
+            ItemEnt = itemEnt;
+            StorageEnt = storageEnt;
+            User = user;
+        }
+    }
+    // Stalker-Changes-End
 
     [Serializable, NetSerializable]
     protected sealed class StorageComponentState : ComponentState

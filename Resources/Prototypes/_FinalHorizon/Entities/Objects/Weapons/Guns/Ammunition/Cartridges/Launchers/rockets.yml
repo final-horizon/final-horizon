@@ -20,3 +20,5 @@
     state: base
   - type: StaticPrice
     price: 20
+  - type: PullDoAfter
+    pullTime: 2
