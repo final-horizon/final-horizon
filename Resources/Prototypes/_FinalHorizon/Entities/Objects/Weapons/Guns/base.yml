@@ -20,11 +20,12 @@
   - type: PullDoAfter
     pullTime: 0.6
   - type: Scope
+    requireWielding: true
     zoomLevels:
     - zoom: 1.6
       offset: 14
       allowMovement: true
-      doAfter: 1
+      doAfter: 0.1
 
 - type: entity
   parent: FHWeaponBase
@@ -48,3 +49,9 @@
     sprintModifier: 0.8
   - type: PullDoAfter
     pullTime: 2
+  - type: Scope
+    zoomLevels:
+    - zoom: 1.6
+      offset: 14
+      allowMovement: true
+      doAfter: 0.1

@@ -24,13 +24,13 @@ public sealed partial class ScopeComponent : Component
     public EntityUid? User;
 
     [DataField, AutoNetworkedField]
-    public EntProtoId? ScopingToggleAction = "CMActionToggleScope";
+    public EntProtoId? ScopingToggleAction = "ActionToggleScope"; // FH
 
     [DataField, AutoNetworkedField]
     public EntityUid? ScopingToggleActionEntity;
 
     [DataField, AutoNetworkedField]
-    public EntProtoId CycleZoomLevelAction = "RMCActionCycleZoomLevel";
+    public EntProtoId CycleZoomLevelAction = "ActionCycleZoomLevel"; // FH
 
     [DataField, AutoNetworkedField]
     public EntityUid? CycleZoomLevelActionEntity;

@@ -29,7 +29,7 @@ public abstract partial class SharedScopeSystem : EntitySystem
     [Dependency] private readonly SharedContentEyeSystem _contentEye = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly SharedEyeSystem _eye = default!;
-    [Dependency] private readonly SharedHandsSystem _hands = default!;
+    //[Dependency] private readonly SharedHandsSystem _hands = default!; // FH
     [Dependency] private readonly SharedItemSystem _item = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly PullingSystem _pulling = default!;

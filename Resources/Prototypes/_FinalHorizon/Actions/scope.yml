@@ -1,20 +1,20 @@
 - type: entity
-  parent: ActionMarineBase
-  id: CMActionToggleScope
-  name: Toggle Optics
-  description: Scope in or out with your optics.
+  id: ActionToggleScope
+  categories: [ HideSpawnMenu ]
+  name: Use Iron Sights
+  description: Aim down your iron sights.
   components:
   - type: Action
     icon:
       sprite: _RMC14/Actions/scope_actions.rsi
       state: sniperscope
-    useDelay: 0.25
+    useDelay: 0.5
   - type: InstantAction
     event: !type:ToggleActionEvent
 
 - type: entity
-  parent: ActionMarineBase
-  id: RMCActionCycleZoomLevel
+  id: ActionCycleZoomLevel
+  categories: [ HideSpawnMenu ]
   name: Cycle Zoom Level
   description: Change the level of magnification of your optics.
   components:
@@ -22,12 +22,12 @@
     icon:
       sprite: _RMC14/Actions/scope_actions.rsi
       state: sniperscope
-    useDelay: 0.25
+    useDelay: 0.5
   - type: InstantAction
     event: !type:ScopeCycleZoomLevelEvent
   - type: Tag
     tags:
-    - RMCActionCycleZoomLevel
+    - ActionCycleZoomLevel
 
 - type: Tag
-  id: RMCActionCycleZoomLevel
+  id: ActionCycleZoomLevel
