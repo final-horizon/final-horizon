@@ -1,11 +1,11 @@
 - type: entity
-  name: M60
+  name: PKM
   parent: FHWeaponBaseLMG
-  id: FHWeaponLMGM60
+  id: FHWeaponLMGPKM
   description: A rooty tooty point and shooty. # fix this
   components:
   - type: Sprite
-    sprite: _FinalHorizon/Objects/Weapons/Guns/LMGs/m60.rsi
+    sprite: _FinalHorizon/Objects/Weapons/Guns/LMGs/pkm.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -16,19 +16,19 @@
     shape:
     - 0,0,3,2
   - type: Clothing
-    sprite: _FinalHorizon/Objects/Weapons/Guns/LMGs/m60.rsi
+    sprite: _FinalHorizon/Objects/Weapons/Guns/LMGs/pkm.rsi
     quickEquip: false
     slots:
     - Back
     - suitStorage
   - type: AmmoCounter
   - type: Gun
-    fireRate: 6.5
+    fireRate: 7
     selectedMode: FullAuto
     availableModes:
       - FullAuto
     soundGunshot:
-      path: /Audio/_FinalHorizon/Weapons/Guns/Gunshots/m60.ogg
+      path: /Audio/_FinalHorizon/Weapons/Guns/Gunshots/pkm.ogg
       params:
         variation: 0.1
         volume: -2
@@ -55,14 +55,14 @@
         priority: 2
         whitelist:
           tags:
-            - MagazineBox762x51
+            - MagazineBox762x54
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         priority: 1
         whitelist:
           tags:
-            - Cartridge762x51
+            - Cartridge762x54
   - type: MagazineVisuals
     magState: mag
     steps: 1

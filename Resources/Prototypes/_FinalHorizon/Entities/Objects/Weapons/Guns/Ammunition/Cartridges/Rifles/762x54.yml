@@ -1,0 +1,17 @@
+- type: entity
+  parent: BaseCartridge
+  id: FHCartridge762x54 # wp
+  name: 7.62x54 cartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge762x54
+  - type: CartridgeAmmo
+    proto: Bullet762x54
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
