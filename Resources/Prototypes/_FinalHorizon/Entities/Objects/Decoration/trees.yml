@@ -1,0 +1,129 @@
+- type: entity
+  id: FHBaseTree
+  name: tree
+  description: Yep, it's a tree.
+  abstract: true
+  components:
+  - type: SpriteFade
+  - type: Clickable
+  - type: Sprite
+    noRot: true
+    sprite: _FinalHorizon/Objects/Decoration/Flora/tree_96.rsi
+    drawdepth: Overdoors
+    offset: 0,0.9
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.25
+        density: 1000
+        layer:
+        - WallLayer
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/Effects/chop.ogg
+        params:
+          variation: 0.05
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 2
+            max: 8
+
+- type: entity
+  parent: FHBaseTree
+  id: FHTreeDeadWhite
+  suffix: dead white
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Decoration/Flora/tree_96.rsi
+    state: tree1
+    offset: 0,1.50
+
+- type: entity
+  parent: FHBaseTree
+  id: FHTreeDeadTemperate1
+  suffix: temperate 1
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Decoration/Flora/tree_96.rsi
+    state: tree2
+    offset: 0,1.50
+
+- type: entity
+  parent: FHBaseTree
+  id: FHTreeDeadTemperate2
+  suffix: temperate 2
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Decoration/Flora/tree_96.rsi
+    state: tree3
+    offset: 0,1.50
+
+- type: entity
+  parent: FHBaseTree
+  id: FHTreeWinter
+  suffix: winter
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Decoration/Flora/tree_96.rsi
+    state: tree4
+    offset: 0,1.50
+
+- type: entity
+  parent: FHBaseTree
+  id: FHTreeTall1
+  suffix: tall 1
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Decoration/Flora/tree_164.rsi
+    state: tree1
+    offset: 0,2
+
+- type: entity
+  parent: FHBaseTree
+  id: FHTreeTall2
+  suffix: tall 2
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Decoration/Flora/tree_164.rsi
+    state: tree2
+    offset: 0,2
+
+- type: entity
+  parent: FHBaseTree
+  id: FHTreeTall3
+  suffix: tall 3
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Decoration/Flora/tree_164.rsi
+    state: tree3
+    offset: 0,2

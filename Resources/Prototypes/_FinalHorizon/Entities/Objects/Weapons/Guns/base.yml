@@ -49,9 +49,3 @@
     sprintModifier: 0.8
   - type: PullDoAfter
     pullTime: 2
-  - type: Scope
-    zoomLevels:
-    - zoom: 1.6
-      offset: 14
-      allowMovement: true
-      doAfter: 0.1

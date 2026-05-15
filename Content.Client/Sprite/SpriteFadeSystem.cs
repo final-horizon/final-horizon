@@ -9,6 +9,7 @@ using Robust.Client.UserInterface;
 using Robust.Shared.Map;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Physics;
+using Content.Shared.Mind.Components;
 
 namespace Content.Client.Sprite;
 
@@ -73,6 +74,17 @@ public sealed class SpriteFadeSystem : EntitySystem
         {
             _points.Add((_transform.GetMapCoordinates(_playerManager.LocalEntity!.Value, xform: playerXform), false));
         }
+
+        // FH start - make players fade out trees regardless of the mouse
+        var query = EntityQuery<MindContainerComponent>();
+        foreach (var ent in query)
+        {
+            if (TryComp(ent.Owner, out TransformComponent? entityXform))
+            {
+                _points.Add((_transform.GetMapCoordinates(ent.Owner, xform: entityXform), false));
+            }
+        }
+        // FH end
 
         if (_stateManager.CurrentState is GameplayState state && _spriteQuery.TryGetComponent(player, out var playerSprite))
         {

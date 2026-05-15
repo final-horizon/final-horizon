@@ -1,0 +1,100 @@
+# temperate
+- type: entity
+  id: FHRandomFloraSpawnerTemperate
+  name: random flora spawner
+  suffix: temperate
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    sprite: Markers/atmos.rsi
+    state: base
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - !type:GroupSelector
+        prob: 0.15
+        children:
+        - id: FHTreeDeadTemperate1
+        - id: FHTreeDeadTemperate2
+        - id: FHTreeTall1
+        - id: FHTreeTall2
+        - id: FHTreeTall3
+      - !type:GroupSelector
+        prob: 0.20
+        children:
+        - id: FHDecalSpawnerRockTemperate
+      - !type:GroupSelector
+        prob: 0.45
+        children:
+        - id: FHDecalSpawnerGrassTemperate
+
+- type: entity
+  id: FHRandomFloraSpawnerTemperateNoTree
+  name: random flora spawner NO TREES
+  suffix: temperate
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    sprite: Markers/atmos.rsi
+    state: base-hot
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - !type:GroupSelector
+        prob: 0.20
+        children:
+        - id: FHDecalSpawnerRockTemperate
+      - !type:GroupSelector
+        prob: 0.45
+        children:
+        - id: FHDecalSpawnerGrassTemperate
+
+- type: entity
+  parent: DecalSpawnerBase
+  id: FHDecalSpawnerGrassTemperate
+  suffix: temperate grass
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: decal
+  - type: RandomDecalSpawner
+    radius: 0.3
+    zIndex: 5
+    deleteSpawnerAfterSpawn: true
+    decals:
+    - Grassd1
+    - Grassd2
+    - Grassd3
+    - FHGrassTall1
+    - FHGrassTall2
+    - FHGrassTall3
+    - FHGrassTall4
+    - Bushh1
+    - Bushh2
+    - Bushh3
+
+- type: entity
+  parent: DecalSpawnerBase
+  id: FHDecalSpawnerRockTemperate
+  suffix: temperate rock
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: decal
+  - type: RandomDecalSpawner
+    radius: 0.3
+    zIndex: 5
+    deleteSpawnerAfterSpawn: true
+    decals:
+    - FHRockBlack1
+    - FHRockBlack2
+    - FHRockBlack3
+    - FHRockBlack4
+    - FHRockBlack5
+    - FHRockBlack6
+    - FHRockBlack7
+    - FHRockBlack8
+    - FHRockBlack9
+    - FHRockBlack10

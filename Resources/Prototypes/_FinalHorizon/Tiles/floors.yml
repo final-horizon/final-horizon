@@ -1,5 +1,6 @@
 - type: tile
   id: FHPlating
+  name: FH Plating
   friction: 1
   isSubfloor: true
   footstepSounds:
@@ -9,17 +10,8 @@
   baseTurf: FHDirt
 
 - type: tile
-  id: FHTile
-  isSubfloor: false
-  footstepSounds:
-    collection: FootstepFloor
-  heatCapacity: 10000
-  weather: true
-  baseTurf: FHPlating
-
-- type: tile
   id: FHWood
-  parent: FHTile
+  name: FH Wood
   sprite: /Textures/Tiles/wood.png
   variants: 4
   placementVariants:
@@ -31,12 +23,11 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
-  baseTurf: FHDirt
+  baseTurf: FHPlating
 
 - type: tile
   id: FHRoad
-  parent: FHPlating
-  name: tiles-gray-concrete-smooth
+  name: FH Road
   sprite: /Textures/Tiles/Planet/Concrete/grayconcrete_smooth.png
   variants: 4
   placementVariants:
@@ -46,4 +37,4 @@
   - 1.0
   footstepSounds:
     collection: FootstepTile
-  baseTurf: FHDirt
+  baseTurf: FHPlating

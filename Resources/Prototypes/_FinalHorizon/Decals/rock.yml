@@ -1,0 +1,89 @@
+- type: decal
+  id: FHRockBlack1
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _FinalHorizon/Decals/rocks_black.rsi
+    state: rock1
+
+- type: decal
+  id: FHRockBlack2
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _FinalHorizon/Decals/rocks_black.rsi
+    state: rock2
+
+- type: decal
+  id: FHRockBlack3
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _FinalHorizon/Decals/rocks_black.rsi
+    state: rock3
+
+- type: decal
+  id: FHRockBlack4
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _FinalHorizon/Decals/rocks_black.rsi
+    state: rock4
+
+- type: decal
+  id: FHRockBlack5
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _FinalHorizon/Decals/rocks_black.rsi
+    state: rock5
+
+- type: decal
+  id: FHRockBlack6
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _FinalHorizon/Decals/rocks_black.rsi
+    state: rock6
+
+- type: decal
+  id: FHRockBlack7
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _FinalHorizon/Decals/rocks_black.rsi
+    state: rock7
+
+- type: decal
+  id: FHRockBlack8
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _FinalHorizon/Decals/rocks_black.rsi
+    state: rock8
+
+- type: decal
+  id: FHRockBlack9
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _FinalHorizon/Decals/rocks_black.rsi
+    state: rock9
+
+- type: decal
+  id: FHRockBlack10
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _FinalHorizon/Decals/rocks_black.rsi
+    state: rock10

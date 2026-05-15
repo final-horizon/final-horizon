@@ -1,0 +1,35 @@
+- type: decal
+  id: FHGrassTall1
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass1
+
+- type: decal
+  id: FHGrassTall2
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass2
+
+- type: decal
+  id: FHGrassTall3
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass3
+
+- type: decal
+  id: FHGrassTall4
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Stalker/Decals/flor.rsi
+    state: grass4

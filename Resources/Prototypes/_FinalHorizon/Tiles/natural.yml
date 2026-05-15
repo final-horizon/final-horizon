@@ -1,5 +1,6 @@
 - type: tile
   id: FHBaseNaturalTile
+  name: FH Base Natural Tile
   abstract: true
   isSubfloor: true
   footstepSounds:
@@ -12,16 +13,66 @@
   id: FHDirt
   parent: FHBaseNaturalTile
   name: FH Dirt
-  sprite: /Textures/Tiles/dirt.png
+  sprite: /Textures/_FinalHorizon/Tiles/Natural/dirt.png
+  isSubfloor: true
+  heatCapacity: 10000
+  indestructible: true
   variants: 4
   placementVariants:
   - 1.0
   - 1.0
   - 1.0
   - 1.0
+
+# Stone
+- type: tile
+  id: FHStone
+  parent: FHBaseNaturalTile
+  name: FH Stone
+  sprite: /Textures/_FinalHorizon/Tiles/Natural/stone.png
   isSubfloor: true
   heatCapacity: 10000
-  indestructible: true
+  baseTurf: FHDirt
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+
+# Grass
+- type: tile
+  id: FHGrass
+  parent: FHBaseNaturalTile
+  name: FH Grass
+  sprite: /Textures/_FinalHorizon/Tiles/Natural/grass.png
+  baseTurf: FHDirt
+  isSubfloor: true
+  heatCapacity: 10000
+  footstepSounds:
+    collection: FootstepGrass
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+
+# Sand
+- type: tile
+  id: FHSand
+  parent: FHBaseNaturalTile
+  name: FH Sand
+  sprite: /Textures/_FinalHorizon/Tiles/Natural/sand.png
+  isSubfloor: true
+  heatCapacity: 10000
+  baseTurf: FHDirt
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
 
 # Snow
 - type: tile
