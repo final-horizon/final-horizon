@@ -37,4 +37,4 @@
   - 1.0
   footstepSounds:
     collection: FootstepTile
-  baseTurf: FHPlating
+  baseTurf: FHDirt
