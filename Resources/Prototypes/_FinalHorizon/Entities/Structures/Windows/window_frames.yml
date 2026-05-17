@@ -1,0 +1,69 @@
+- type: entity
+  id: FHWindowFrameWood
+  parent: BaseStructure
+  name: wood window frame
+  description: A window frame.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/structures/WindowFrames/wood.rsi
+    state: base
+  - type: Icon
+    sprite: _FinalHorizon/structures/WindowFrames/wood.rsi
+    state: base
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 55
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+  - type: Climbable
+
+- type: entity
+  id: FHWindowFrameMetal
+  parent: BaseStructure
+  name: metal window frame
+  description: A window frame.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/structures/WindowFrames/metal.rsi
+    state: base
+  - type: Icon
+    sprite: _FinalHorizon/structures/WindowFrames/metal.rsi
+    state: base
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 55
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+  - type: Climbable

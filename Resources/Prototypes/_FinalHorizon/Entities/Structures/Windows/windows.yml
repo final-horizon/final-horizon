@@ -1,0 +1,12 @@
+- type: entity
+  id: FHWindow
+  parent: Window
+  name: window
+  description: Don't smudge up the glass down there.
+  components:
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: _FinalHorizon/Structures/Windows/window.rsi
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Windows/window.rsi
+    state: full
