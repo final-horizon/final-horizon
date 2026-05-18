@@ -1,0 +1,99 @@
+- type: entity
+  parent: BaseSign
+  id: FHFlagUSA
+  name: USA flag
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/flags.rsi
+    state: usa
+
+- type: entity
+  parent: BaseSign
+  id: FHFlagUSSR
+  name: USSR flag
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/flags.rsi
+    state: ussr
+
+- type: entity
+  parent: BaseSign
+  id: FHFlagUSMC
+  name: USMC flag
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/flags_wide.rsi
+    state: usmc
+
+# flag poles
+- type: entity
+  id: FHFlagPoleUSA
+  parent: BaseStructure
+  name: USA flag pole
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _FinalHorizon/Structures/Decoration/flags_pole.rsi
+    state: usa
+    drawdepth: Mobs
+    offset: "0.4,1.6"
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.20,-0.20,0.20,0.20"
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  id: FHFlagPoleUSSR
+  parent: BaseStructure
+  name: USSR flag pole
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _FinalHorizon/Structures/Decoration/flags_pole.rsi
+    state: ussr
+    drawdepth: Mobs
+    offset: "0.4,1.6"
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.20,-0.20,0.20,0.20"
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  id: FHFlagPoleNATO
+  parent: BaseStructure
+  name: NATO flag pole
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _FinalHorizon/Structures/Decoration/flags_pole.rsi
+    state: nato
+    drawdepth: Mobs
+    offset: "0.4,1.6"
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.20,-0.20,0.20,0.20"
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
