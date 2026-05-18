@@ -9,6 +9,7 @@
   sprite: /Textures/Tiles/plating.png
   baseTurf: FHDirt
 
+# Wood
 - type: tile
   id: FHWood
   name: FH Wood
@@ -26,9 +27,78 @@
   baseTurf: FHPlating
 
 - type: tile
+  id: FHWoodBroken
+  name: FH Wood Broken
+  sprite: /Textures/Tiles/wood_broken.png
+  variants: 7
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  baseTurf: FHPlating
+
+- type: tile
+  id: FHWood
+  name: FH Wood
+  sprite: /Textures/Tiles/wood.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  baseTurf: FHPlating
+
+- type: tile
+  id: FHWoodFancy1
+  name: FH Fancy 1
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/wood1.png
+  variants: 1
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  baseTurf: FHPlating
+
+- type: tile
+  id: FHWoodFancy2
+  name: FH Fancy 2
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/wood2.png
+  variants: 1
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  baseTurf: FHPlating
+
+- type: tile
+  id: FHWoodFancy3
+  name: FH Fancy 3
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/wood3.png
+  variants: 1
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  baseTurf: FHPlating
+
+# Concrete
+- type: tile
   id: FHRoad
   name: FH Road
-  sprite: /Textures/Tiles/Planet/Concrete/grayconcrete_smooth.png
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/road.png
   variants: 4
   placementVariants:
   - 1.0
@@ -38,3 +108,52 @@
   footstepSounds:
     collection: FootstepTile
   baseTurf: FHDirt
+
+# floor tiles
+- type: tile
+  id: FHTileSteel
+  name: FH Tile Steel
+  friction: 1
+  footstepSounds:
+    collection: FootstepPlating
+  weather: true
+  baseTurf: FHPlating
+  sprite: /Textures/Tiles/steel.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+
+- type: tile
+  id: FHTileWhiteDiagonal
+  name: FH Tile White Diagonal
+  friction: 1
+  footstepSounds:
+    collection: FootstepPlating
+  weather: true
+  baseTurf: FHPlating
+  sprite: /Textures/Tiles/white_diagonal.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+
+- type: tile
+  id: FHTileBar
+  name: FH Tile Bar
+  friction: 1
+  footstepSounds:
+    collection: FootstepPlating
+  weather: true
+  baseTurf: FHPlating
+  sprite: /Textures/Tiles/bar.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
