@@ -5,6 +5,21 @@
   playTimeTracker: USMCTeamLeader
   startingGear: USMCSleepingUniform
   icon: "USMC"
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskBluFor
+            layer:
+            - MobLayer
 
 - type: job
   id: USMCRifleMan
@@ -13,6 +28,21 @@
   playTimeTracker: USMCRifleMan
   startingGear: USMCSleepingUniform
   icon: "USMC"
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskBluFor
+            layer:
+            - MobLayer
 
 - type: startingGear
   id: USMCSleepingUniform

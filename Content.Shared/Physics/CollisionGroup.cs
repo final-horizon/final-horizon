@@ -25,6 +25,11 @@ public enum CollisionGroup
     // Y dis door passable when all the others impassable / collision.
     DoorPassable       = 1 << 8, // 256 Allows door to close over top, Like blast doors over conveyors for disposals rooms/cargo.
 
+    // FH start
+    BluFor = 1 << 9,
+    RedFor = 1 << 10,
+    // FH end
+
     MapGrid = MapGridHelpers.CollisionGroup, // Map grids, like shuttles. This is the actual grid itself, not the walls or other entities connected to the grid.
 
     // 32 possible groups
@@ -36,6 +41,11 @@ public enum CollisionGroup
     // Humanoids, etc.
     MobMask = Impassable | HighImpassable | MidImpassable | LowImpassable,
     MobLayer = Opaque | BulletImpassable,
+    // FH start
+    MobMaskBluFor = Impassable | HighImpassable | MidImpassable | LowImpassable | BluFor,
+
+    MobMaskRedFor = Impassable | HighImpassable | MidImpassable | LowImpassable | RedFor,
+    // FH end
     // Mice, drones
     SmallMobMask = Impassable | LowImpassable,
     SmallMobLayer = Opaque | BulletImpassable,

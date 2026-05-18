@@ -1,8 +1,11 @@
 - type: entity
   id: FinalHorizonStation
-  parent:
-    - BaseStation
-    - BaseStationJobsSpawning
   categories: [ HideSpawnMenu ]
   components:
     - type: Transform
+    - type: StationData
+    - type: StationJobs
+      availableJobs: {}
+    - type: StationSpawning
+    - type: GraceWallManager
+      delay: 420
