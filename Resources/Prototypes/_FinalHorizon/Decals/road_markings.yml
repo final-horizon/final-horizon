@@ -1,0 +1,62 @@
+- type: decal
+  id: FHRoadMarkingDashed
+  tags: ["planet", "markings"]
+  snapCardinals: true
+  defaultSnap: true
+  sprite:
+    sprite: _FinalHorizon/Decals/road_markings.rsi
+    state: dashed
+
+- type: decal
+  id: FHRoadMarkingSolid
+  tags: ["planet", "markings"]
+  snapCardinals: true
+  defaultSnap: true
+  sprite:
+    sprite: _FinalHorizon/Decals/road_markings.rsi
+    state: solid
+
+- type: decal
+  id: FHRoadMarkingStraight
+  tags: ["planet", "markings"]
+  snapCardinals: true
+  defaultSnap: true
+  sprite:
+    sprite: _FinalHorizon/Decals/road_markings.rsi
+    state: straight
+
+- type: decal
+  id: FHRoadMarkingStraightLeft
+  tags: ["planet", "markings"]
+  snapCardinals: true
+  defaultSnap: true
+  sprite:
+    sprite: _FinalHorizon/Decals/road_markings.rsi
+    state: straight-left
+
+- type: decal
+  id: FHRoadMarkingStraightRight
+  tags: ["planet", "markings"]
+  snapCardinals: true
+  defaultSnap: true
+  sprite:
+    sprite: _FinalHorizon/Decals/road_markings.rsi
+    state: straight-right
+
+- type: decal
+  id: FHRoadMarkingLeftRight
+  tags: ["planet", "markings"]
+  snapCardinals: true
+  defaultSnap: true
+  sprite:
+    sprite: _FinalHorizon/Decals/road_markings.rsi
+    state: left-right
+
+- type: decal
+  id: FHRoadMarkingCrossing
+  tags: ["planet", "markings"]
+  snapCardinals: true
+  defaultSnap: true
+  sprite:
+    sprite: _FinalHorizon/Decals/road_markings.rsi
+    state: crossing
