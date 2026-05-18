@@ -46,22 +46,6 @@
   baseTurf: FHPlating
 
 - type: tile
-  id: FHWood
-  name: FH Wood
-  sprite: /Textures/Tiles/wood.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  footstepSounds:
-    collection: FootstepWood
-  barestepSounds:
-    collection: BarestepWood
-  baseTurf: FHPlating
-
-- type: tile
   id: FHWoodFancy1
   name: FH Fancy 1
   sprite: /Textures/_FinalHorizon/Tiles/Floors/wood1.png

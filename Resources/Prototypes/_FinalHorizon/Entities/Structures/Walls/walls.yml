@@ -1,0 +1,43 @@
+- type: entity
+  parent: BaseWall
+  id: FHWallTent
+  name: tent wall
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Walls/tent.rsi
+    color: "#5a7252"
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Walls/tent.rsi
+    color: "#5a7252"
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: walls
+    base: tent
+
+- type: entity
+  parent: BaseWall
+  id: FHWallConcrete
+  name: concrete wall
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Walls/concrete.rsi
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Walls/concrete.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 800
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: walls
+    base: concrete
