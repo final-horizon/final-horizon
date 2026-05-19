@@ -8,7 +8,6 @@
     sprite: _FinalHorizon/Clothing/Mask/balaclava_black.rsi
   - type: Clothing
     sprite: _FinalHorizon/Clothing/Mask/balaclava_black.rsi
-  - type: Appearance
 
 - type: entity
   parent: FHClothingMaskBalaclavaBlack
@@ -20,4 +19,3 @@
     sprite: _FinalHorizon/Clothing/Mask/balaclava_green.rsi
   - type: Clothing
     sprite: _FinalHorizon/Clothing/Mask/balaclava_green.rsi
-  - type: Appearance

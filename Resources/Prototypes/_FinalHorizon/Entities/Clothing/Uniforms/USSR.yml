@@ -8,3 +8,14 @@
     sprite: _FinalHorizon/Clothing/Uniforms/ussr_yellow.rsi
   - type: Clothing
     sprite: _FinalHorizon/Clothing/Uniforms/ussr_yellow.rsi
+
+- type: entity
+  parent: UnsensoredClothingUniformBase
+  id: ClothingUniformJumpsuitUSSRYellowHalf
+  name: USSR half uniform
+  description: A standard issue uniform of the USSR. Just the pants.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Uniforms/ussr_yellow_half.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Uniforms/ussr_yellow_half.rsi

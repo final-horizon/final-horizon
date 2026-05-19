@@ -3,9 +3,6 @@
   id: FHClothingHeadHelmetBase
   abstract: true
   components:
-  - type: Tag
-    tags:
-    - WhitelistChameleon
   - type: HideLayerClothing
     layers:
       HeadTop : HEAD

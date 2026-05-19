@@ -1,0 +1,25 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: FHClothingHeadHatBeretUSMC
+  name: USMC beret
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Hats/usmc_beret.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Hats/usmc_beret.rsi
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+
+- type: entity
+  parent: ClothingHeadBase
+  id: FHClothingHeadHatBeretSA
+  name: soviet army beret
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Hats/sa_beret.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Hats/sa_beret.rsi
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD

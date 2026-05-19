@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "taken from escalation certain fury",
+  "copyright": "taken from cf escal",
   "size": {
     "x": 32,
     "y": 32
@@ -11,11 +11,7 @@
       "name": "icon"
     },
     {
-      "name": "equipped-INNERCLOTHING",
-      "directions": 4
-    },
-    {
-      "name": "folded-equipped-INNERCLOTHING",
+      "name": "equipped-MASK",
       "directions": 4
     }
   ]
