@@ -1,5 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
-using System.Numerics;
 using Content.Shared._ES.Camera;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Actions;
@@ -12,6 +10,7 @@ using Content.Shared.Damage.Systems;
 using Content.Shared.Examine;
 using Content.Shared.Hands;
 using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Movement.Components;
 using Content.Shared.Popups;
 using Content.Shared.Projectiles;
 using Content.Shared.Tag;
@@ -36,6 +35,8 @@ using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using System.Diagnostics.CodeAnalysis;
+using System.Numerics;
 
 namespace Content.Shared.Weapons.Ranged.Systems;
 
@@ -74,7 +75,7 @@ public abstract partial class SharedGunSystem : EntitySystem
     /// <summary>
     /// Default projectile speed
     /// </summary>
-    public const float ProjectileSpeed = 100f; // FH
+    public const float ProjectileSpeed = 60f; // FH
 
     /// <summary>
     ///     Name of the container slot used as the gun's chamber
@@ -494,6 +495,44 @@ public abstract partial class SharedGunSystem : EntitySystem
         else
             TagSystem.RemoveTag(uid, TrashTag);
     }
+
+    #region Starlight
+    public Angle GetCurrentAngle(Entity<GunComponent?> gun, TimeSpan? curTime = null)
+    {
+        if (!Resolve(gun, ref gun.Comp))
+            return new Angle(0);
+        curTime ??= Timing.CurTime;
+        var timeSinceLastFire = (curTime - gun.Comp.LastFire).Value.TotalSeconds;
+        var newTheta = MathHelper.Clamp(gun.Comp.CurrentAngle.Theta + gun.Comp.AngleIncreaseModified.Theta - gun.Comp.AngleDecayModified.Theta * timeSinceLastFire, gun.Comp.MinAngleModified.Theta, gun.Comp.MaxAngleModified.Theta);
+        gun.Comp.CurrentAngle = new Angle(newTheta);
+        return gun.Comp.CurrentAngle;
+    }
+
+    public Angle GetRecoilAngle(Entity<GunComponent> gun, Angle direction, TimeSpan? curTime = null)
+    {
+        GetCurrentAngle(gun.AsNullable(), curTime);
+        var spreadModifier = 1f;
+
+        var xform = Transform(gun);
+        if (TryComp<InputMoverComponent>(xform.ParentUid, out var mover) && mover.CanMove && mover.HasDirectionalMovement)
+        {
+            if (mover.Sprinting)
+                spreadModifier += gun.Comp.SprintSpreadModifier;
+            else
+                spreadModifier += gun.Comp.WalkSpreadModifier;
+        }
+
+        // Convert it so angle can go either side.
+        var random = Random.NextFloat(-0.5f, 0.5f);
+
+        var finalSpread = gun.Comp.CurrentAngle.Theta * spreadModifier;
+        var spread = finalSpread * random;
+
+        var angle = new Angle(direction.Theta + gun.Comp.CurrentAngle.Theta * random);
+        DebugTools.Assert(spread <= gun.Comp.MaxAngleModified.Theta);
+        return angle;
+    }
+    #endregion
 
     /// <summary>
     /// Drops a single cartridge / shell

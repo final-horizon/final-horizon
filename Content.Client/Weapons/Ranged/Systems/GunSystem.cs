@@ -1,4 +1,3 @@
-using System.Numerics;
 using Content.Client.Animations;
 using Content.Client.Gameplay;
 using Content.Client.Items;
@@ -26,6 +25,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using System.Numerics;
 using SharedGunSystem = Content.Shared.Weapons.Ranged.Systems.SharedGunSystem;
 using TimedDespawnComponent = Robust.Shared.Spawners.TimedDespawnComponent;
 
@@ -47,7 +47,6 @@ public sealed partial class GunSystem : SharedGunSystem
     [Dependency] private readonly SpriteSystem _sprite = default!;
 
     public static readonly EntProtoId HitscanProto = "HitscanEffect";
-
     public bool SpreadOverlay
     {
         get => _spreadOverlay;
@@ -226,6 +225,11 @@ public sealed partial class GunSystem : SharedGunSystem
         // This also means any ammo specific stuff can be grabbed as necessary.
         var direction = TransformSystem.ToMapCoordinates(fromCoordinates).Position - TransformSystem.ToMapCoordinates(toCoordinates).Position;
         var worldAngle = direction.ToAngle().Opposite();
+
+        // Starlight-start: Update angle on client
+        GetCurrentAngle(gun.AsNullable());
+        gun.Comp.LastFire = gun.Comp.NextFire;
+        // Starlight-end
 
         foreach (var (ent, shootable) in ammo)
         {

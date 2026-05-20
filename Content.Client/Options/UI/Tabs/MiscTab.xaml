@@ -1,4 +1,4 @@
-﻿<tabs:MiscTab xmlns="https://spacestation14.io"
+<tabs:MiscTab xmlns="https://spacestation14.io"
               xmlns:tabs="clr-namespace:Content.Client.Options.UI.Tabs"
               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
               xmlns:ui="clr-namespace:Content.Client.Options.UI">
@@ -20,7 +20,7 @@
                 <CheckBox Name="FancyNameBackgroundsCheckBox" Text="{Loc 'ui-options-fancy-name-background'}" />
                 <Label Text="{Loc 'ui-options-general-cursor'}"
                        StyleClasses="LabelKeyText"/>
-                <CheckBox Name="ShowHeldItemCheckBox" Text="{Loc 'ui-options-show-held-item'}" />
+                <!-- <CheckBox Name="ShowHeldItemCheckBox" Text="{Loc 'ui-options-show-held-item'}" /> FH change-->
                 <CheckBox Name="ShowCombatModeIndicatorsCheckBox" Text="{Loc 'ui-options-show-combat-mode-indicators'}" />
                 <Label Text="{Loc 'ui-options-general-storage'}"
                        StyleClasses="LabelKeyText"/>

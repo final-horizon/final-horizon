@@ -59,7 +59,7 @@
     noRot: false
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
-    - state: buckshot # FH
+    - state: bullet # FH
       #shader: unshaded # FH
   - type: Physics
     bodyType: Dynamic
