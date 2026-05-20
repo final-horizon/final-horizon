@@ -50,7 +50,6 @@ namespace Content.Client.Hands
 
         protected override bool BeforeDraw(in OverlayDrawArgs args)
         {
-            return false; // FH
             if (!_cfg.GetCVar(CCVars.HudHeldItemShow))
                 return false;
 

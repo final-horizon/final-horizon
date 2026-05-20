@@ -69,6 +69,11 @@ public sealed partial class ScopeComponent : Component
 
     [ViewVariables, AutoNetworkedField]
     public string? UnscopedHeldPrefix;
+
+    // FH start
+    [DataField, AutoNetworkedField]
+    public bool? RequireHolding;
+    // FH end
 }
 
 /// <param name="Name">This is used in the popup when cycling through zoom levels.</param>

@@ -29,7 +29,7 @@ public abstract partial class SharedScopeSystem : EntitySystem
     [Dependency] private readonly SharedContentEyeSystem _contentEye = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly SharedEyeSystem _eye = default!;
-    //[Dependency] private readonly SharedHandsSystem _hands = default!; // FH
+    [Dependency] private readonly SharedHandsSystem _hands = default!; // FH
     [Dependency] private readonly SharedItemSystem _item = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly PullingSystem _pulling = default!;
@@ -213,14 +213,13 @@ public abstract partial class SharedScopeSystem : EntitySystem
         //    return false;
         //}
 
-        //var holdingItem = _hands.TryGetActiveItem(user, out var heldItem) && (scope.Comp.Attachment || heldItem == scope.Owner);
-        //if (!holdingItem && !scope.Comp.CanUseInsideContainer)
-        //{
-        //    var msgError = Loc.GetString("cm-action-popup-scoping-user-must-hold", ("scope", ent));
-        //    _popup.PopupClient(msgError, user, user);
-        //    return false;
-        //}
-        // FH end
+        var holdingItem = _hands.TryGetActiveItem(user, out var heldItem) && heldItem == scope.Owner; // FH change - remove reference to attachable scopes
+        if (!holdingItem && !scope.Comp.CanUseInsideContainer)
+        {
+            var msgError = Loc.GetString("cm-action-popup-scoping-user-must-hold", ("scope", ent));
+            _popup.PopupClient(msgError, user, user);
+            return false;
+        }
 
         if (_pulling.IsPulled(user))
         {

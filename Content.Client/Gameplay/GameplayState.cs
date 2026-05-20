@@ -48,7 +48,7 @@ namespace Content.Client.Gameplay
             _configurationManager.OnValueChanged(CCVars.UILayout, ReloadMainScreenValueChange);
 
             // Add the hand-item overlay.
-            _overlayManager.AddOverlay(new ShowHandItemOverlay());
+            //_overlayManager.AddOverlay(new ShowHandItemOverlay()); // FH change
 
             // FPS counter.
             // yeah this can just stay here, whatever

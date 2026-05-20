@@ -8,14 +8,14 @@
     timer: 0.4
   - type: GunWieldBonus
     minAngle: -49
-    maxAngle: -30
-    angleIncrease: 3.5
-    angleDecay: 8
+    maxAngle: -25
+    angleIncrease: 0
+    angleDecay: 0
   - type: Gun
     minAngle: 50
     maxAngle: 50
-    angleIncrease: 3.5
-    angleDecay: 3
+    angleIncrease: 2.5
+    angleDecay: 8
     soundEmpty:
       path: /Audio/_FinalHorizon/Weapons/Guns/Empty/gen_empty.ogg
   - type: SpeedModifiedOnWield
@@ -26,8 +26,8 @@
   - type: Scope
     requireWielding: true
     zoomLevels:
-    - zoom: 1.6
-      offset: 14
+    - zoom: 1.4
+      offset: 13
       allowMovement: true
       doAfter: 0.1
 
@@ -37,19 +37,35 @@
   id: FHWeaponBaseLMG
   components:
   - type: WieldableDoAfter
-    timer: 1
+    timer: 1.5
+  - type: GunWieldBonus
+    minAngle: -40
+    maxAngle: -35
   - type: SpeedModifiedOnWield
     walkModifier: 0.6
     sprintModifier: 0.6
   - type: PullDoAfter
     pullTime: 1
+  - type: Scope
+    requireWielding: true
+    zoomLevels:
+    - zoom: 1.6
+      offset: 13
+      allowMovement: false
+      doAfter: 0.2
 
 - type: entity
   parent: BaseItem
   id: FHWeaponLauncherBase
   components:
   - type: HeldSpeedModifier
-    walkModifier: 0.757
+    walkModifier: 0.6
     sprintModifier: 0.6
   - type: PullDoAfter
     pullTime: 2
+  - type: Scope
+    zoomLevels:
+    - zoom: 1.4
+      offset: 13
+      allowMovement: false
+      doAfter: 0.4
