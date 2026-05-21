@@ -4,7 +4,9 @@
   abstract: true
   isSubfloor: true
   footstepSounds:
-    collection: FootstepAsteroid
+    collection: FHFootstepDirt
+    params:
+      variation: 0.2
   weather: true
   indestructible: false
 
@@ -30,6 +32,10 @@
   parent: FHBaseNaturalTile
   name: FH Stone
   sprite: /Textures/_FinalHorizon/Tiles/Natural/stone.png
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
   isSubfloor: true
   heatCapacity: 10000
   baseTurf: FHDirt
@@ -49,8 +55,6 @@
   baseTurf: FHDirt
   isSubfloor: true
   heatCapacity: 10000
-  footstepSounds:
-    collection: FootstepGrass
   variants: 4
   placementVariants:
   - 1.0
@@ -102,7 +106,9 @@
     North: /Textures/Tiles/Planet/Snow/snow_double_edge_north.png
     West: /Textures/Tiles/Planet/Snow/snow_double_edge_west.png
   footstepSounds:
-    collection: FootstepSnow
+    collection: FHFootstepSnow
+    params:
+      variation: 0.2
   baseTurf: FHDirt
 
 - type: tile
@@ -117,5 +123,7 @@
     North: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_north.png
     West: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_west.png
   footstepSounds:
-    collection: FootstepSnow
+    collection: FHFootstepSnow
+    params:
+      variation: 0.2
   baseTurf: FHDirt

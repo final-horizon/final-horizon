@@ -1,0 +1,111 @@
+- type: Tag
+  id: Cassete
+
+- type: entity
+  parent: BaseItem
+  id: FHBoomBoxNato
+  name: boombox
+  suffix: nato
+  description: Either the only thing keeping you sane or the sole source of insanity.
+  components:
+  - type: Boombox
+  - type: ContainerContainer
+    containers:
+      cassette_slot: !type:ContainerSlot {}
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        whitelist:
+          tags:
+            - Cassete
+  - type: Sprite
+    sprite: /Textures/_FinalHorizon/Objects/Misc/cassetes.rsi
+    state: nato
+
+- type: entity
+  parent: BaseItem
+  id: FHBoomBoxPact
+  name: boombox
+  suffix: pact
+  description: Either the only thing keeping you sane or the sole source of insanity.
+  components:
+  - type: Boombox
+  - type: ContainerContainer
+    containers:
+      cassette_slot: !type:ContainerSlot {}
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        whitelist:
+          tags:
+            - Cassete
+  - type: Sprite
+    sprite: /Textures/_FinalHorizon/Objects/Misc/cassetes.rsi
+    state: pact
+
+- type: entity
+  parent: BaseItem
+  id: FHCasseteBase
+  name: Cassete
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - Cassete
+  - type: Sprite
+    sprite: /Textures/_FinalHorizon/Objects/Misc/cassetes.rsi
+    state: 0
+
+- type: entity
+  parent: FHCasseteBase
+  id: FHCasseteBlueMonday
+  suffix: blue monday
+  description: Blue Monday
+  components:
+  - type: Cassete
+    sound: /Audio/_FinalHorizon/Cassete/blue_monday.ogg
+    params:
+      volume: 4
+  - type: Sprite
+    state: 3
+
+- type: entity
+  parent: FHCasseteBase
+  id: FHCasseteFortunateSon
+  suffix: fortunate son
+  description: fortunate son
+  components:
+  - type: Cassete
+    sound: /Audio/_FinalHorizon/Cassete/fortunate_son.ogg
+    params:
+      volume: 4
+  - type: Sprite
+    state: 10
+
+- type: entity
+  parent: FHCasseteBase
+  id: FHCasseteManWhoSoldTheWorld
+  suffix: man who sold the world
+  description: Man Who Sold The World
+  components:
+  - type: Cassete
+    sound: /Audio/_FinalHorizon/Cassete/manwhosoldtheworld.ogg
+    params:
+      volume: 4
+  - type: Sprite
+    state: 6
+
+- type: entity
+  parent: FHCasseteBase
+  id: FHCasseteVDV
+  suffix: vdv
+  description: VDV
+  components:
+  - type: Cassete
+    sound: /Audio/_FinalHorizon/Cassete/vdv.ogg
+    params:
+      volume: 4
+  - type: Sprite
+    state: 8

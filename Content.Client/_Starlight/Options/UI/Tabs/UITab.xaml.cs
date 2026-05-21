@@ -79,8 +79,8 @@ public sealed partial class UITab : Control
         Control.AddOptionDropDown(CCVars.UILayout, DropDownHudLayout, layoutEntries);
         Control.AddOptionDropDown(StarlightCCVars.RangedSight, DropDownRangedSight, rangedSights);
         Control.AddOptionDropDown(StarlightCCVars.MeleeSight, DropDownMeleeSight, meleeSights);
-        Control.AddOptionSlider(StarlightCCVars.RangedSightScale, RangedSightScaleSlider, 10, 100);
-        Control.AddOptionSlider(StarlightCCVars.RangedSightOffset, RangedSightOffsetSlider, 0, 100);
+        Control.AddOptionSlider(StarlightCCVars.RangedSightScale, RangedSightScaleSlider, 2, 300); // FH change
+        Control.AddOptionSlider(StarlightCCVars.RangedSightOffset, RangedSightOffsetSlider, -10, 300); // FH change
         Control.AddOptionCheckBox(StarlightCCVars.SightRotation, SightRotationCheckBox);
         Control.AddOptionColorSlider(StarlightCCVars.SightMainColor, SightMainColorSlider);
         Control.AddOptionColorSlider(StarlightCCVars.SightSecondColor, SightSecondColorSlider);

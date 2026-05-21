@@ -1,0 +1,95 @@
+- type: soundCollection
+  id: FHFootstepCarpet
+  files:
+  - /Audio/_FinalHorizon/Effects/Footsteps/carpet1.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/carpet2.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/carpet3.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/carpet4.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/carpet5.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/carpet6.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/carpet7.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/carpet8.ogg
+
+- type: soundCollection
+  id: FHFootstepConcrete
+  files:
+  - /Audio/_FinalHorizon/Effects/Footsteps/concrete1.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/concrete2.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/concrete3.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/concrete4.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/concrete5.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/concrete6.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/concrete7.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/concrete8.ogg
+
+- type: soundCollection
+  id: FHFootstepDirt
+  files:
+  - /Audio/_FinalHorizon/Effects/Footsteps/dirt1.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/dirt2.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/dirt3.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/dirt4.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/dirt5.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/dirt6.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/dirt7.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/dirt8.ogg
+
+- type: soundCollection
+  id: FHFootstepMetal
+  files:
+  - /Audio/_FinalHorizon/Effects/Footsteps/metal1.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/metal2.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/metal3.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/metal4.ogg
+
+- type: soundCollection
+  id: FHFootstepMetalGrate
+  files:
+  - /Audio/_FinalHorizon/Effects/Footsteps/metalgrate1.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/metalgrate2.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/metalgrate3.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/metalgrate4.ogg
+
+- type: soundCollection
+  id: FHFootstepSnow
+  files:
+  - /Audio/_FinalHorizon/Effects/Footsteps/snow1.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/snow2.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/snow3.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/snow4.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/snow5.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/snow6.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/snow7.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/snow8.ogg
+
+- type: soundCollection
+  id: FHFootstepTile
+  files:
+  - /Audio/_FinalHorizon/Effects/Footsteps/tile1.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/tile2.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/tile3.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/tile4.ogg
+
+- type: soundCollection
+  id: FHFootstepWade # wading through water
+  files:
+  - /Audio/_FinalHorizon/Effects/Footsteps/wade1.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/wade2.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/wade3.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/wade4.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/wade5.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/wade6.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/wade7.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/wade8.ogg
+
+- type: soundCollection
+  id: FHFootstepWood
+  files:
+  - /Audio/_FinalHorizon/Effects/Footsteps/wood1.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/wood2.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/wood3.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/wood4.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/wood5.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/wood6.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/wood7.ogg
+  - /Audio/_FinalHorizon/Effects/Footsteps/wood8.ogg

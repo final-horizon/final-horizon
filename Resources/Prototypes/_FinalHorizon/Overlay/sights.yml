@@ -1,0 +1,9 @@
+- type: sight
+  id: FHSightOKP7
+  name: OKP-7
+  sightType: Ranged
+  boltVariant: GunSightBolt
+  showCursor: false
+  sprite:
+    sprite: _FinalHorizon/Interface/Misc/crosshair_military.rsi
+    state: okp7

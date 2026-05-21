@@ -105,7 +105,7 @@ public sealed class CombatModeIndicatorsOverlay : Overlay
             else
                 _clyde.SetCursor(null);
 
-            var scale = limitedScale * Math.Clamp(_scale ?? 0.6f, 0f, 1f);
+            var scale = limitedScale * Math.Clamp(_scale ?? 0.6f, 0f, 3f); // FH
 
             var eyePos = _eye.CurrentEye.Position;
             var eyeScreen = _eye.MapToScreen(eyePos);

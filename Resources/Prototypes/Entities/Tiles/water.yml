@@ -51,9 +51,10 @@
         hard: false
   - type: FootstepModifier
     footstepSoundCollection:
-      collection: FootstepWater
+      collection: FHFootstepWade # FH start
       params:
-        volume: 8
+        volume: -3
+        variation: 0.2 # FH end
   - type: StepTrigger
     requiredTriggeredSpeed: 0
     intersectRatio: 0.1

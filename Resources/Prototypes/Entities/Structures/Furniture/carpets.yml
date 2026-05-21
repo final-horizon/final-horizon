@@ -46,6 +46,11 @@
     - id: MaterialCloth1
       amount: 1
   - type: TrayScanReveal
+  - type: FootstepModifier # FH start - why the hell doesnt it already do this
+    footstepSoundCollection:
+      collection: FHFootstepCarpet
+      params:
+        variation: 0.2 # FH end
 
 - type: entity
   id: Carpet

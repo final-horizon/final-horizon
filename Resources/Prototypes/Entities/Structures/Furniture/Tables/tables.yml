@@ -620,7 +620,7 @@
     - Wooden
   - type: FootstepModifier
     footstepSoundCollection:
-      collection: FootstepCarpet
+      collection: FHFootstepCarpet # FH change
 
 - type: entity
   id: TableStone

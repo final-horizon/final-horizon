@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA",
+  "copyright": "made by dallaszzz",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "okp7",
+      "delays": [
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    }
+  ]
+}
