@@ -78,9 +78,9 @@
   description: A pouch for carrying ammo boxes.
   components:
   - type: Sprite
-    sprite: _FinalHorizon/Clothing/Pouch/usmc_ammo_SG.rsi
+    sprite: _FinalHorizon/Clothing/Pouch/usmc_ammo_sg.rsi
   - type: Clothing
-    sprite: _FinalHorizon/Clothing/Pouch/usmc_ammo_SG.rsi
+    sprite: _FinalHorizon/Clothing/Pouch/usmc_ammo_sg.rsi
   - type: Storage
     maxItemSize: Normal
     grid:

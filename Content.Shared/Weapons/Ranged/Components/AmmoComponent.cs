@@ -50,5 +50,5 @@ public sealed partial class CartridgeAmmoComponent : AmmoComponent
     /// Sound the case makes when it leaves the weapon.
     /// </summary>
     [DataField("soundEject")]
-    public SoundSpecifier? EjectSound = new SoundCollectionSpecifier("CasingEject");
+    public SoundSpecifier? EjectSound = new SoundCollectionSpecifier("FHCasings"); // FH change
 }

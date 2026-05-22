@@ -9,6 +9,7 @@
   description: Either the only thing keeping you sane or the sole source of insanity.
   components:
   - type: Boombox
+    volume: -4
   - type: ContainerContainer
     containers:
       cassette_slot: !type:ContainerSlot {}
@@ -31,6 +32,7 @@
   description: Either the only thing keeping you sane or the sole source of insanity.
   components:
   - type: Boombox
+    volume: -4
   - type: ContainerContainer
     containers:
       cassette_slot: !type:ContainerSlot {}
@@ -66,8 +68,6 @@
   components:
   - type: Cassete
     sound: /Audio/_FinalHorizon/Cassete/blue_monday.ogg
-    params:
-      volume: 4
   - type: Sprite
     state: 3
 
@@ -79,8 +79,6 @@
   components:
   - type: Cassete
     sound: /Audio/_FinalHorizon/Cassete/fortunate_son.ogg
-    params:
-      volume: 4
   - type: Sprite
     state: 10
 
@@ -92,8 +90,6 @@
   components:
   - type: Cassete
     sound: /Audio/_FinalHorizon/Cassete/manwhosoldtheworld.ogg
-    params:
-      volume: 4
   - type: Sprite
     state: 6
 
@@ -105,7 +101,27 @@
   components:
   - type: Cassete
     sound: /Audio/_FinalHorizon/Cassete/vdv.ogg
-    params:
-      volume: 4
   - type: Sprite
     state: 8
+
+- type: entity
+  parent: FHCasseteBase
+  id: FHCasseteSvoboden
+  suffix: ya svoboden
+  description: я свободен
+  components:
+  - type: Cassete
+    sound: /Audio/_FinalHorizon/Cassete/ya_svoboden.ogg
+  - type: Sprite
+    state: 11
+
+- type: entity
+  parent: FHCasseteBase
+  id: FHCasseteMamaAnarkhiya
+  suffix: mama anarkhiya
+  description: мама анархия 
+  components:
+  - type: Cassete
+    sound: /Audio/_FinalHorizon/Cassete/mama_anarkhiya.ogg
+  - type: Sprite
+    state: 9

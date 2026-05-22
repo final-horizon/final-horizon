@@ -1,0 +1,6 @@
+- type: soundCollection
+  id: FHCasings
+  files:
+  - /Audio/_FinalHorizon/Weapons/Guns/Casing/casing_drop1.ogg
+  - /Audio/_FinalHorizon/Weapons/Guns/Casing/casing_drop2.ogg
+  - /Audio/_FinalHorizon/Weapons/Guns/Casing/casing_drop3.ogg

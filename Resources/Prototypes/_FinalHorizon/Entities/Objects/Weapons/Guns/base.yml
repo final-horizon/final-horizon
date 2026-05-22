@@ -30,6 +30,9 @@
       offset: 13
       allowMovement: true
       doAfter: 0.1
+  - type: FarGunshot
+    range: 260
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak_dist.ogg
 
 - type: entity
   parent: FHWeaponBase
@@ -53,6 +56,9 @@
       offset: 13
       allowMovement: false
       doAfter: 0.2
+  - type: FarGunshot
+    range: 300
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/mg_dist.ogg
 
 - type: entity
   parent: BaseItem
@@ -69,3 +75,6 @@
       offset: 13
       allowMovement: false
       doAfter: 0.4
+  - type: FarGunshot
+    range: 190
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/rpg_dist.ogg
