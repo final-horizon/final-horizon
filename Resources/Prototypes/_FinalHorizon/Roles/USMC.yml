@@ -5,6 +5,7 @@
   playTimeTracker: USMCTeamLeader
   startingGear: USMCSleepingUniform
   icon: "USMC"
+  whitelisted: true
   special:
   - !type:AddComponentSpecial
     components:
@@ -28,6 +29,7 @@
   playTimeTracker: USMCRifleMan
   startingGear: USMCSleepingUniform
   icon: "USMC"
+  whitelisted: true
   special:
   - !type:AddComponentSpecial
     components:

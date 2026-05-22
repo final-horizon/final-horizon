@@ -5,6 +5,7 @@
   playTimeTracker: USSRTeamLeader
   startingGear: USSRSleepingUniform
   icon: "USSR"
+  whitelisted: true
   special:
   - !type:AddComponentSpecial
     components:
@@ -28,6 +29,7 @@
   playTimeTracker: USSRRifleMan
   startingGear: USSRSleepingUniform
   icon: "USSR"
+  whitelisted: true
   special:
   - !type:AddComponentSpecial
     components:

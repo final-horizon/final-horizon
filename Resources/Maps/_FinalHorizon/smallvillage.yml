@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/19/2026 02:40:30
-  entityCount: 73612
+  time: 05/22/2026 18:46:40
+  entityCount: 73634
 maps:
 - 1
 grids:
@@ -8693,6 +8693,18 @@ entities:
     - type: Transform
       pos: -172.3277,-191.52995
       parent: 1
+- proto: Defibrillator
+  entities:
+  - uid: 73613
+    components:
+    - type: Transform
+      pos: 89.462456,260.42532
+      parent: 1
+  - uid: 73630
+    components:
+    - type: Transform
+      pos: -171.63443,-220.54787
+      parent: 1
 - proto: Dresser
   entities:
   - uid: 2007
@@ -9139,11 +9151,6 @@ entities:
       parent: 1
 - proto: DrinkVodkaBottleFull
   entities:
-  - uid: 72583
-    components:
-    - type: Transform
-      pos: 68.73319,251.99834
-      parent: 1
   - uid: 72584
     components:
     - type: Transform
@@ -10924,6 +10931,84 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -181.5,-184.5
       parent: 1
+- proto: FHBinocularsNato
+  entities:
+  - uid: 73624
+    components:
+    - type: Transform
+      pos: -184.35626,-222.30402
+      parent: 1
+  - uid: 73625
+    components:
+    - type: Transform
+      pos: -184.46043,-222.35957
+      parent: 1
+  - uid: 73626
+    components:
+    - type: Transform
+      pos: -184.52293,-222.40819
+      parent: 1
+  - uid: 73627
+    components:
+    - type: Transform
+      pos: -184.59932,-222.5054
+      parent: 1
+  - uid: 73628
+    components:
+    - type: Transform
+      pos: -184.62016,-222.6304
+      parent: 1
+  - uid: 73629
+    components:
+    - type: Transform
+      pos: -184.51599,-222.4429
+      parent: 1
+- proto: FHBinocularsPact
+  entities:
+  - uid: 72570
+    components:
+    - type: Transform
+      pos: 88.6675,269.626
+      parent: 1
+  - uid: 73618
+    components:
+    - type: Transform
+      pos: 88.514725,269.55655
+      parent: 1
+  - uid: 73619
+    components:
+    - type: Transform
+      pos: 88.46611,269.42462
+      parent: 1
+  - uid: 73620
+    components:
+    - type: Transform
+      pos: 88.41056,269.29266
+      parent: 1
+  - uid: 73621
+    components:
+    - type: Transform
+      pos: 88.486946,269.44543
+      parent: 1
+  - uid: 73622
+    components:
+    - type: Transform
+      pos: 88.611946,269.501
+      parent: 1
+- proto: FHBoomBoxNato
+  entities:
+  - uid: 73634
+    components:
+    - type: Transform
+      pos: -178.12042,-192.34018
+      parent: 1
+- proto: FHBoomBoxPact
+  entities:
+  - uid: 72583
+    components:
+    - type: Transform
+      pos: 69.10436,252.21689
+      parent: 1
 - proto: FHBoxRifle545
   entities:
   - uid: 72397
@@ -11514,6 +11599,48 @@ entities:
     components:
     - type: Transform
       pos: 93.42577,272.51935
+      parent: 1
+- proto: FHCasseteBlueMonday
+  entities:
+  - uid: 73631
+    components:
+    - type: Transform
+      pos: -179.80792,-192.40268
+      parent: 1
+- proto: FHCasseteFortunateSon
+  entities:
+  - uid: 73632
+    components:
+    - type: Transform
+      pos: -179.32877,-192.33324
+      parent: 1
+- proto: FHCasseteMamaAnarkhiya
+  entities:
+  - uid: 73616
+    components:
+    - type: Transform
+      pos: 69.15297,251.72383
+      parent: 1
+- proto: FHCasseteManWhoSoldTheWorld
+  entities:
+  - uid: 73633
+    components:
+    - type: Transform
+      pos: -178.77321,-192.3749
+      parent: 1
+- proto: FHCasseteSvoboden
+  entities:
+  - uid: 73615
+    components:
+    - type: Transform
+      pos: 68.44464,251.91133
+      parent: 1
+- proto: FHCasseteVDV
+  entities:
+  - uid: 73614
+    components:
+    - type: Transform
+      pos: 68.576584,252.47383
       parent: 1
 - proto: FHClothingBackpackAliceLarge
   entities:
@@ -355950,11 +356077,6 @@ entities:
     - type: Transform
       pos: 73.76676,256.47745
       parent: 1
-  - uid: 72570
-    components:
-    - type: Transform
-      pos: 69.189804,252.22664
-      parent: 1
   - uid: 72571
     components:
     - type: Transform
@@ -357842,6 +357964,16 @@ entities:
     components:
     - type: Transform
       pos: 62.5,256.5
+      parent: 1
+  - uid: 73617
+    components:
+    - type: Transform
+      pos: 88.5,269.5
+      parent: 1
+  - uid: 73623
+    components:
+    - type: Transform
+      pos: -184.5,-222.5
       parent: 1
 - proto: Railing
   entities:
