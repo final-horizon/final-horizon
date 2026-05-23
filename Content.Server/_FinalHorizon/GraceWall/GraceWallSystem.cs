@@ -1,8 +1,9 @@
-using Content.Server.Audio;
 using Content.Server.Chat.Managers;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Timing;
 using Robust.Shared.Player;
+using Content.Server.Station.Components;
+using Content.Server.Station.Systems;
 
 namespace Content.Server._FinalHorizon.GraceWall;
 
@@ -11,6 +12,7 @@ public sealed partial class GraceWallSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly IChatManager _chat = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly StationJobsSystem _jobsSystem = default!;
 
     private GraceWallManagerComponent _graceManager = null!;
     private bool _hasWarned = true;
@@ -58,6 +60,14 @@ public sealed partial class GraceWallSystem : EntitySystem
             _chat.DispatchServerAnnouncement("Grace wall falling!", Color.DarkRed);
             if (_graceManager.Sound != null)
                 _audio.PlayGlobal(_graceManager.Sound, Filter.Broadcast(), false);
+
+            if (TryComp<StationJobsComponent>(_graceManager.Owner, out var jobs))
+            {
+                foreach (var job in jobs.JobList)
+                {
+                    _jobsSystem.TrySetJobSlot(_graceManager.Owner, job.Key, 0);
+                }
+            }
             _graceManager = null!;
         }
 
