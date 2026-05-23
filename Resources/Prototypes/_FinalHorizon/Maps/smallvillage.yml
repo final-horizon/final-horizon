@@ -3,6 +3,7 @@
   mapName: 'Small Village'
   mapPath: /Maps/_FinalHorizon/smallvillage.yml
   minPlayers: 0
+  maxPlayers: 60
   stations:
     SmallVillage:
       stationProto: FinalHorizonStation
