@@ -3,15 +3,17 @@ using Content.Client.Gameplay;
 using Content.Client.Lobby;
 using Content.Client.RoundEnd;
 using Content.Shared.GameTicking;
+using Content.Shared.GameTicking.Prototypes;
 using Content.Shared.GameWindow;
 using Content.Shared.Roles;
 using JetBrains.Annotations;
 using Robust.Client.Graphics;
 using Robust.Client.State;
 using Robust.Client.UserInterface;
-using Robust.Shared.Prototypes;
+using Robust.Shared;
 using Robust.Shared.Audio;
-using Content.Shared.GameTicking.Prototypes;
+using Robust.Shared.Configuration;
+using Robust.Shared.Prototypes;
 
 namespace Content.Client.GameTicking.Managers
 {
@@ -22,6 +24,7 @@ namespace Content.Client.GameTicking.Managers
         [Dependency] private readonly IClientAdminManager _admin = default!;
         [Dependency] private readonly IClyde _clyde = default!;
         [Dependency] private readonly IUserInterfaceManager _userInterfaceManager = default!;
+        [Dependency] private readonly IConfigurationManager _configurationManager = default!; // FH change
 
         private Dictionary<NetEntity, Dictionary<ProtoId<JobPrototype>, int?>>  _jobsAvailable = new();
         private Dictionary<NetEntity, string> _stationNames = new();
@@ -59,6 +62,7 @@ namespace Content.Client.GameTicking.Managers
             SubscribeNetworkEvent<RequestWindowAttentionEvent>(OnAttentionRequest);
             SubscribeNetworkEvent<TickerLateJoinStatusEvent>(LateJoinStatus);
             SubscribeNetworkEvent<TickerJobsAvailableEvent>(UpdateJobsAvailable);
+            _configurationManager.OverrideDefault(CVars.AudioDefaultConcurrent, 100); // FH change - maybe find a better spot for this
 
             _admin.AdminStatusUpdated += OnAdminUpdated;
             OnAdminUpdated();

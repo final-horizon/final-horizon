@@ -9,7 +9,7 @@
   description: Either the only thing keeping you sane or the sole source of insanity.
   components:
   - type: Boombox
-    volume: -4
+    volume: 1
   - type: ContainerContainer
     containers:
       cassette_slot: !type:ContainerSlot {}
@@ -125,3 +125,36 @@
     sound: /Audio/_FinalHorizon/Cassete/mama_anarkhiya.ogg
   - type: Sprite
     state: 9
+
+- type: entity
+  parent: FHCasseteBase
+  id: FHCasseteRun
+  suffix: run
+  description: Run
+  components:
+  - type: Cassete
+    sound: /Audio/_FinalHorizon/Cassete/run.ogg
+  - type: Sprite
+    state: 13
+
+- type: entity
+  parent: FHCasseteBase
+  id: FHCasseteLePerv
+  suffix: le perv
+  description: Le Perv
+  components:
+  - type: Cassete
+    sound: /Audio/_FinalHorizon/Cassete/le_perv.ogg
+  - type: Sprite
+    state: 14
+
+- type: entity
+  parent: FHCasseteBase
+  id: FHCasseteRollerMobster
+  suffix: roller mobster
+  description: Roller Mobster
+  components:
+  - type: Cassete
+    sound: /Audio/_FinalHorizon/Cassete/roller_mobster.ogg
+  - type: Sprite
+    state: 15

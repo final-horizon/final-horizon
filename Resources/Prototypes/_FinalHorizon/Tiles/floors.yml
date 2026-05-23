@@ -15,6 +15,7 @@
 - type: tile
   id: FHWood
   name: FH Wood
+  weather: true
   sprite: /Textures/Tiles/wood.png
   variants: 4
   placementVariants:
@@ -33,6 +34,7 @@
 - type: tile
   id: FHWoodBroken
   name: FH Wood Broken
+  weather: true
   sprite: /Textures/Tiles/wood_broken.png
   variants: 7
   placementVariants:
@@ -52,6 +54,7 @@
 - type: tile
   id: FHWoodFancy1
   name: FH Fancy 1
+  weather: true
   sprite: /Textures/_FinalHorizon/Tiles/Floors/wood1.png
   variants: 1
   footstepSounds:
@@ -63,6 +66,7 @@
 - type: tile
   id: FHWoodFancy2
   name: FH Fancy 2
+  weather: true
   sprite: /Textures/_FinalHorizon/Tiles/Floors/wood2.png
   variants: 1
   footstepSounds:
@@ -74,6 +78,7 @@
 - type: tile
   id: FHWoodFancy3
   name: FH Fancy 3
+  weather: true
   sprite: /Textures/_FinalHorizon/Tiles/Floors/wood3.png
   variants: 1
   footstepSounds:
@@ -86,6 +91,7 @@
 - type: tile
   id: FHRoad
   name: FH Road
+  weather: true
   sprite: /Textures/_FinalHorizon/Tiles/Floors/road.png
   variants: 4
   placementVariants:
@@ -103,6 +109,7 @@
 - type: tile
   id: FHTileSteel
   name: FH Tile Steel
+  weather: true
   friction: 1
   footstepSounds:
     collection: FHFootstepTile
@@ -121,12 +128,12 @@
 - type: tile
   id: FHTileWhiteDiagonal
   name: FH Tile White Diagonal
+  weather: true
   friction: 1
   footstepSounds:
     collection: FHFootstepTile
     params:
       variation: 0.2
-  weather: true
   baseTurf: FHPlating
   sprite: /Textures/Tiles/white_diagonal.png
   variants: 4
@@ -139,6 +146,7 @@
 - type: tile
   id: FHTileBar
   name: FH Tile Bar
+  weather: true
   friction: 1
   footstepSounds:
     collection: FHFootstepTile

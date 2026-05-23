@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-NC-SA-3.0",
-    "copyright": "taken from cf escal",
+    "copyright": "taken from cf escal, all numbered states including and past 13 were made by dallaszzz",
     "size": {
         "x": 32,
         "y": 32
@@ -51,6 +51,15 @@
         },
         {
             "name": "12"
+        },
+        {
+            "name": "13"
+        },
+        {
+            "name": "14"
+        },
+        {
+            "name": "15"
         }
     ]
 }
