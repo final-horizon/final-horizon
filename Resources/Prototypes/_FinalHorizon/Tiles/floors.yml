@@ -115,7 +115,6 @@
     collection: FHFootstepTile
     params:
       variation: 0.2
-  weather: true
   baseTurf: FHPlating
   sprite: /Textures/Tiles/steel.png
   variants: 4
@@ -152,7 +151,6 @@
     collection: FHFootstepTile
     params:
       variation: 0.2
-  weather: true
   baseTurf: FHPlating
   sprite: /Textures/Tiles/bar.png
   variants: 4
