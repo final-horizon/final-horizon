@@ -63,6 +63,7 @@
   - type: Occluder
   - type: BlockWeather
   - type: NavMapDoor
+  - type: SunShadowCast
 
 - type: entity
   parent: FHBaseDoor

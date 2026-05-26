@@ -7,7 +7,6 @@
   - type: SpriteFade
   - type: Clickable
   - type: Sprite
-    noRot: true
     sprite: _FinalHorizon/Objects/Decoration/Flora/tree_96.rsi
     drawdepth: Overdoors
     offset: 0,0.9
@@ -36,13 +35,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 1000
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 50
+        damage: 500
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -57,6 +56,8 @@
           Log:
             min: 2
             max: 8
+  - type: Occluder
+    boundingBox: "-0.3, -0.3, 0.3, 0.3"
 
 - type: entity
   parent: FHBaseTree

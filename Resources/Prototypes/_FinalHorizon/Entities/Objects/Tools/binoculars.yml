@@ -19,8 +19,8 @@
   - type: Scope
     useInHand: true
     zoomLevels:
-    - zoom: 2.2
-      offset: 13
+    - zoom: 2.5
+      offset: 11
       doAfter: 0.4
 
 - type: entity
@@ -44,6 +44,6 @@
   - type: Scope
     useInHand: true
     zoomLevels:
-    - zoom: 2.2
-      offset: 13
+    - zoom: 2.5
+      offset: 11
       doAfter: 0.4

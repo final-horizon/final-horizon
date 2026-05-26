@@ -1013,7 +1013,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 600 # FH
+        damage: 1200 # FH
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1299,7 +1299,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 500 # FH
+        damage: 700 # FH
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -1308,7 +1308,7 @@
           collection: WoodDestroyHeavy
     - trigger:
         !type:DamageTrigger
-        damage: 300 # FH
+        damage: 500 # FH
       behaviors:
       - !type:PlaySoundBehavior
         sound:
