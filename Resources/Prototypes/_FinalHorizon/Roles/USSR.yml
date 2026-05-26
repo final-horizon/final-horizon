@@ -1,10 +1,85 @@
 - type: job
+  id: USSRPlatoonLeader
+  name: job-name-USSR-platoonleader
+  description: job-description-USSR-platoonleader
+  playTimeTracker: USSRPlatoonLeader
+  startingGear: USSRSleepingUniform
+  icon: "USSRPlatoonLeader"
+  whitelisted: true
+  joinNotifiyCrew: false
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+
+- type: job
   id: USSRTeamLeader
   name: job-name-USSR-teamleader
   description: job-description-USSR-teamleader
   playTimeTracker: USSRTeamLeader
   startingGear: USSRSleepingUniform
-  icon: "USSR"
+  icon: "USSRTeamLeader"
+  whitelisted: true
+  joinNotifiyCrew: false
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+
+- type: job
+  id: USSRMachineGunner
+  name: job-name-USSR-machinegunner
+  description: job-description-USSR-machinegunner
+  playTimeTracker: USSRMachineGunner
+  startingGear: USSRSleepingUniform
+  icon: "USSRMachineGunner"
+  whitelisted: true
+  joinNotifiyCrew: false
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+
+- type: job
+  id: USSRMedic
+  name: job-name-USSR-medic
+  description: job-description-USSR-medic
+  playTimeTracker: USSRMedic
+  startingGear: USSRSleepingUniform
+  icon: "USSRMedic"
   whitelisted: true
   joinNotifiyCrew: false
   special:
@@ -29,7 +104,7 @@
   description: job-description-USSR-rifleman
   playTimeTracker: USSRRifleMan
   startingGear: USSRSleepingUniform
-  icon: "USSR"
+  icon: "USSRRifleMan"
   whitelisted: true
   joinNotifiyCrew: false
   special:
@@ -55,16 +130,61 @@
     shoes: ClothingShoesBootsJack
 
 - type: playTimeTracker
+  id: USSRPlatoonLeader
+
+- type: playTimeTracker
   id: USSRTeamLeader
+
+- type: playTimeTracker
+  id: USSRMachineGunner
+
+- type: playTimeTracker
+  id: USSRMedic
 
 - type: playTimeTracker
   id: USSRRifleMan
 
 - type: jobIcon
   parent: JobIcon
-  id: USSR
+  id: USSRPlatoonLeader
   icon:
     sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: WARSAW
+    state: pact_platoonleader
+  jobName: job-name-USSR-platoonleader
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: USSRTeamLeader
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: pact_teamleader
+  jobName: job-name-USSR-teamleader
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: USSRMachineGunner
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: pact_machinegunner
+  jobName: job-name-USSR-machinegunner
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: USSRMedic
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: pact_medic
+  jobName: job-name-USSR-medic
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: USSRRifleMan
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: pact_rifleman
   jobName: job-name-USSR-rifleman
   isCrewJob: false

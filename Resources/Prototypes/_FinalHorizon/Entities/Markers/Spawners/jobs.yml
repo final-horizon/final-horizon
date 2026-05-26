@@ -1,5 +1,27 @@
 # USMC
 - type: entity
+  id: SpawnPointUSMCPlatoonLeader
+  parent: SpawnPointJobBase
+  name: USMC platoon leader
+  components:
+  - type: SpawnPoint
+    job_id: USMCPlatoonLeader
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSMCPlatoonLeaderLate
+  parent: SpawnPointJobBase
+  name: USMC platoon leader
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USMCPlatoonLeader
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
   id: SpawnPointUSMCTeamLeader
   parent: SpawnPointJobBase
   name: USMC team leader
@@ -17,6 +39,50 @@
   components:
   - type: SpawnPoint
     job_id: USMCTeamLeader
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSMCMedic
+  parent: SpawnPointJobBase
+  name: USMC medic
+  components:
+  - type: SpawnPoint
+    job_id: USMCMedic
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSMCMedicLate
+  parent: SpawnPointJobBase
+  name: USMC medic
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USMCMedic
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSMCMachineGunner
+  parent: SpawnPointJobBase
+  name: USMC machine gunner
+  components:
+  - type: SpawnPoint
+    job_id: USMCMachineGunner
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSMCMachineGunnerLate
+  parent: SpawnPointJobBase
+  name: USMC machine gunner
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USMCMachineGunner
     spawn_type: LateJoinJob
   - type: Sprite
     state: green
@@ -45,6 +111,28 @@
 
 # USSR
 - type: entity
+  id: SpawnPointUSSRPlatoonLeader
+  parent: SpawnPointJobBase
+  name: USSR platoon leader
+  components:
+  - type: SpawnPoint
+    job_id: USSRPlatoonLeader
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSSRPlatoonLeaderLate
+  parent: SpawnPointJobBase
+  name: USSR platoon leader
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USSRPlatoonLeader
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
   id: SpawnPointUSSRTeamLeader
   parent: SpawnPointJobBase
   name: USSR team leader
@@ -62,6 +150,50 @@
   components:
   - type: SpawnPoint
     job_id: USSRTeamLeader
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSSRMedic
+  parent: SpawnPointJobBase
+  name: USSR medic
+  components:
+  - type: SpawnPoint
+    job_id: USSRMedic
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSSRMedicLate
+  parent: SpawnPointJobBase
+  name: USSR medic
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USSRMedic
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSSRMachineGunner
+  parent: SpawnPointJobBase
+  name: USSR machine gunner
+  components:
+  - type: SpawnPoint
+    job_id: USSRMachineGunner
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSSRMachineGunnerLate
+  parent: SpawnPointJobBase
+  name: USSR machine gunner
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USSRMachineGunner
     spawn_type: LateJoinJob
   - type: Sprite
     state: green

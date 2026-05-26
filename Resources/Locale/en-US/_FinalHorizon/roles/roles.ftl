@@ -1,0 +1,21 @@
+job-name-USMC-platoonleader = USMC Platoon Leader
+job-description-USMC-platoonleader = Lead your platoon of soldiers.
+job-name-USMC-teamleader = USMC Team Leader
+job-description-USMC-teamleader = Lead your squad of soldiers.
+job-name-USMC-machinegunner = USMC Machine Gunner
+job-description-USMC-machinegunner = Operate a light machine gun.
+job-name-USMC-medic = USMC Medic
+job-description-USMC-medic = Heal your teammates in the field.
+job-name-USMC-rifleman = USMC Rifleman
+job-description-USMC-rifleman = A soldier who uses a rifle.
+
+job-name-USSR-platoonleader = USSR Platoon Leader
+job-description-USSR-platoonleader = Lead your platoon of soldiers.
+job-name-USSR-teamleader = USSR Team Leader
+job-description-USSR-teamleader = Lead your squad of soldiers.
+job-name-USSR-machinegunner = USSR Machine Gunner
+job-description-USSR-machinegunner = Operate a light machine gun.
+job-name-USSR-medic = USSR Medic
+job-description-USSR-medic = Heal your teammates in the field.
+job-name-USSR-rifleman = USSR Rifleman
+job-description-USSR-rifleman = A soldier who uses a rifle.

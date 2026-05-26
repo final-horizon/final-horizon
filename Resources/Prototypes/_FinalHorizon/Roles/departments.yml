@@ -4,7 +4,10 @@
   description: department-USMC-description
   color: "#4168DB"
   roles:
+  - USMCPlatoonLeader
   - USMCTeamLeader
+  - USMCMachineGunner
+  - USMCMedic
   - USMCRifleMan
 
 - type: department
@@ -13,5 +16,8 @@
   description: department-USSR-description
   color: "#B5201B"
   roles:
+  - USSRPlatoonLeader
   - USSRTeamLeader
+  - USSRMachineGunner
+  - USSRMedic
   - USSRRifleMan

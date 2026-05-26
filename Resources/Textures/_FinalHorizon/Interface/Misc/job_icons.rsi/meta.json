@@ -8,10 +8,34 @@
     },
     "states": [
         {
-            "name": "NATO"
+            "name": "nato_rifleman"
         },
         {
-            "name": "WARSAW"
+            "name": "nato_medic"
+        },
+        {
+            "name": "nato_machinegunner"
+        },
+        {
+            "name": "nato_teamleader"
+        },
+        {
+            "name": "nato_platoonleader"
+        },
+        {
+            "name": "pact_rifleman"
+        },
+        {
+            "name": "pact_medic"
+        },
+        {
+            "name": "pact_machinegunner"
+        },
+        {
+            "name": "pact_teamleader"
+        },
+        {
+            "name": "pact_platoonleader"
         }
     ]
 }

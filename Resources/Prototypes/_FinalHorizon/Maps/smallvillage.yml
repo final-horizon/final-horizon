@@ -10,7 +10,13 @@
       components:
         - type: StationJobs
           availableJobs:
+            USMCPlatoonLeader: [ -1, -1 ]
             USMCTeamLeader: [ -1, -1 ]
+            USMCMedic: [ -1, -1 ]
+            USMCMachineGunner: [ -1, -1 ]
             USMCRifleMan: [ -1, -1 ]
+            USSRPlatoonLeader: [ -1, -1 ]
             USSRTeamLeader: [ -1, -1 ]
+            USSRMedic: [ -1, -1 ]
+            USSRMachineGunner: [ -1, -1 ]
             USSRRifleMan: [ -1, -1 ]
