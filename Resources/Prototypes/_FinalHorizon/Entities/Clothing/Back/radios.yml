@@ -23,6 +23,13 @@
     slots:
     - back
     sprite: _FinalHorizon/Clothing/Back/anprc77.rsi
+  - type: RadioSound
+    sound:
+      path: /Audio/_FinalHorizon/Effects/radio-beep.ogg
+      params:
+        volume: -6
+        rolloffFactor: 5
+        variation: 0.1
 
 - type: entity
   parent: Clothing
@@ -49,3 +56,10 @@
     slots:
     - back
     sprite: _FinalHorizon/Clothing/Back/r105d.rsi
+  - type: RadioSound
+    sound:
+      path: /Audio/_FinalHorizon/Effects/radio-beep.ogg
+      params:
+        volume: -6
+        rolloffFactor: 5
+        variation: 0.1
