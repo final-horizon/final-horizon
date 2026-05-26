@@ -1,0 +1,15 @@
+- type: radioChannel
+  id: Nato
+  name: Nato
+  keycode: "i"
+  frequency: 1800
+  color: "#1a44ed"
+  longRange: true
+
+- type: radioChannel
+  id: Pact
+  name: Pact
+  keycode: "o"
+  frequency: 1700
+  color: "#b72222"
+  longRange: true

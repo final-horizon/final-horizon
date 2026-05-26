@@ -1,0 +1,51 @@
+- type: entity
+  parent: Clothing
+  id: FHClothingBackRadioANPRC77
+  name: AN/PRC-77
+  components:
+  - type: ContainerContainer
+    containers:
+      key_slots: !type:Container
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyNato
+  - type: Headset
+    requiredSlot: back
+  - type: EncryptionKeyHolder
+    keySlots: 1
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Back/anprc77.rsi
+    state: icon
+  - type: Item
+    size: Large
+  - type: Clothing
+    slots:
+    - back
+    sprite: _FinalHorizon/Clothing/Back/anprc77.rsi
+
+- type: entity
+  parent: Clothing
+  id: FHClothingBackRadioR105D
+  name: R105D
+  components:
+  - type: ContainerContainer
+    containers:
+      key_slots: !type:Container
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyPact
+  - type: Headset
+    requiredSlot: back
+  - type: EncryptionKeyHolder
+    keySlots: 1
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Back/r105d.rsi
+    state: icon
+  - type: Item
+    size: Large
+  - type: Clothing
+    slots:
+    - back
+    sprite: _FinalHorizon/Clothing/Back/r105d.rsi
