@@ -1,0 +1,63 @@
+- type: entity
+  id: FHTeleporterBase
+  name: teleporter
+  abstract: true
+  components:
+  - type: Marker
+  - type: Transform
+  - type: Physics
+    bodyType: Static
+    canCollide: True
+  - type: Fixtures
+    fixtures:
+      portalFixture:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        hard: false
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Sprite
+    sprite: /Textures/Effects/portal.rsi
+    state: portal-red
+  - type: Portal
+    canTeleportToOtherMaps: true
+    randomTeleport: false
+
+# bluefor
+- type: entity
+  parent: FHTeleporterBase
+  id: FHTeleporterBlueforAlpha
+  suffix: Bluefor, Alpha
+  components:
+  - type: LinkByString
+    linkString: bluefor-alpha
+
+- type: entity
+  parent: FHTeleporterBase
+  id: FHTeleporterBlueforBravo
+  suffix: Bluefor, Bravo
+  components:
+  - type: LinkByString
+    linkString: bluefor-bravo
+
+# opfor
+- type: entity
+  parent: FHTeleporterBase
+  id: FHTeleporterOpforAlpha
+  suffix: Opfor, Alpha
+  components:
+  - type: LinkByString
+    linkString: Opfor-alpha
+
+- type: entity
+  parent: FHTeleporterBase
+  id: FHTeleporterOpforBravo
+  suffix: Opfor, Bravo
+  components:
+  - type: LinkByString
+    linkString: Opfor-bravo
