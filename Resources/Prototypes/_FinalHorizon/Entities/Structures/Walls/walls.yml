@@ -41,3 +41,27 @@
   - type: IconSmooth
     key: walls
     base: concrete
+
+- type: entity
+  parent: BaseWall
+  id: FHWallRockIndestructible
+  name: rock wall
+  suffix: indestructible
+  components:
+  - type: Sprite
+    sprite: Structures/Walls/rock.rsi
+    state: rock_asteroid
+  - type: Icon
+    sprite: Structures/Walls/rock.rsi
+    state: rock_asteroid
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 4000
