@@ -1,6 +1,6 @@
 - type: gameMap
   id: SmallVillage
-  mapName: 'Small Village'
+  mapName: Small Village
   mapPath: /Maps/_FinalHorizon/smallvillage.yml
   minPlayers: 0
   maxPlayers: 60
@@ -8,6 +8,8 @@
     SmallVillage:
       stationProto: FinalHorizonStation
       components:
+        - type: MetaData
+          name: Small Village
         - type: StationJobs
           availableJobs:
             USMCPlatoonLeader: [ -1, -1 ]
@@ -20,3 +22,5 @@
             USSRMedic: [ -1, -1 ]
             USSRMachineGunner: [ -1, -1 ]
             USSRRifleMan: [ -1, -1 ]
+        - type: MultiMapLoader
+          maps: [ "/Maps/_FinalHorizon/Bases/usmc.yml", "/Maps/_FinalHorizon/Bases/ussr.yml" ]
