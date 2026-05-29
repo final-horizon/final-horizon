@@ -17,6 +17,18 @@
       - MagazineLightRifle
 
 - type: entity
+  parent: FHClothingPouchUSMCAmmo
+  id: FHClothingPouchUSMCAmmoFilled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHMagazineRifleM16Full
+        - id: FHMagazineRifleM16Full
+        - id: FHMagazineRifleM16Full
+
+- type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSMCAmmoDouble
   name: USMC double ammo pouch
@@ -34,6 +46,21 @@
     whitelist:
       tags:
       - MagazineLightRifle
+
+- type: entity
+  parent: FHClothingPouchUSMCAmmoDouble
+  id: FHClothingPouchUSMCAmmoDoubleFilled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHMagazineRifleM16Full
+        - id: FHMagazineRifleM16Full
+        - id: FHMagazineRifleM16Full
+        - id: FHMagazineRifleM16Full
+        - id: FHMagazineRifleM16Full
+        - id: FHMagazineRifleM16Full
 
 - type: entity
   parent: FHClothingPouchBase
@@ -70,6 +97,16 @@
     whitelist:
       tags:
       - MagazineLightRifleBox
+
+- type: entity
+  parent: FHClothingPouchUSMCAmmoLMG
+  id: FHClothingPouchUSMCAmmoLMGFilled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHMagazineLMGM60Full
 
 - type: entity
   parent: FHClothingPouchBase

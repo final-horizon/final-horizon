@@ -10,7 +10,7 @@ public sealed class SpawnPointSystem : EntitySystem
 {
     [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly StationSystem _stationSystem = default!;
+    //[Dependency] private readonly StationSystem _stationSystem = default!; // FH
     [Dependency] private readonly StationSpawningSystem _stationSpawning = default!;
 
     public override void Initialize()
@@ -26,12 +26,13 @@ public sealed class SpawnPointSystem : EntitySystem
         // TODO: Cache all this if it ends up important.
         var points = EntityQueryEnumerator<SpawnPointComponent, TransformComponent>();
         var possiblePositions = new List<EntityCoordinates>();
-        var possibleLateJobPositions = new List<EntityCoordinates>(); // FH
 
         while (points.MoveNext(out var uid, out var spawnPoint, out var xform))
         {
-            if (args.Station != null && _stationSystem.GetOwningStation(uid, xform) != args.Station)
-                continue;
+            // FH start
+            //if (args.Station != null && _stationSystem.GetOwningStation(uid, xform) != args.Station)
+            //    continue;
+            // FH end
 
             if (_gameTicker.RunLevel == GameRunLevel.InRound && spawnPoint.SpawnType == SpawnPointType.LateJoin)
             {
@@ -41,7 +42,7 @@ public sealed class SpawnPointSystem : EntitySystem
             // FH start
             if (_gameTicker.RunLevel == GameRunLevel.InRound && spawnPoint.SpawnType == SpawnPointType.LateJoinJob && args.Job == spawnPoint.Job)
             {
-                possibleLateJobPositions.Add(xform.Coordinates);
+                possiblePositions.Add(xform.Coordinates);
             }
             // FH end
 
@@ -72,8 +73,6 @@ public sealed class SpawnPointSystem : EntitySystem
         }
 
         var spawnLoc = _random.Pick(possiblePositions);
-        if (possibleLateJobPositions.Count != 0) // FH start
-            spawnLoc = _random.Pick(possibleLateJobPositions); // FH end
         args.SpawnResult = _stationSpawning.SpawnPlayerMob(
             spawnLoc,
             args.Job,

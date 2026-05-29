@@ -3,7 +3,7 @@
   name: job-name-USMC-platoonleader
   description: job-description-USMC-platoonleader
   playTimeTracker: USMCPlatoonLeader
-  startingGear: USMCSleepingUniform
+  startingGear: USMCUniformPlatoonLeader
   icon: "USMCPlatoonLeader"
   whitelisted: true
   joinNotifiyCrew: false
@@ -28,7 +28,7 @@
   name: job-name-USMC-teamleader
   description: job-description-USMC-teamleader
   playTimeTracker: USMCTeamLeader
-  startingGear: USMCSleepingUniform
+  startingGear: USMCUniformTeamLeader
   icon: "USMCTeamLeader"
   whitelisted: true
   joinNotifiyCrew: false
@@ -53,7 +53,7 @@
   name: job-name-USMC-machinegunner
   description: job-description-USMC-machinegunner
   playTimeTracker: USMCMachineGunner
-  startingGear: USMCSleepingUniform
+  startingGear: USMCUniformMachineGunner
   icon: "USMCMachineGunner"
   whitelisted: true
   joinNotifiyCrew: false
@@ -78,7 +78,7 @@
   name: job-name-USMC-medic
   description: job-description-USMC-medic
   playTimeTracker: USMCMedic
-  startingGear: USMCSleepingUniform
+  startingGear: USMCUniformMedic
   icon: "USMCMedic"
   whitelisted: true
   joinNotifiyCrew: false
@@ -103,7 +103,7 @@
   name: job-name-USMC-rifleman
   description: job-description-USMC-rifleman
   playTimeTracker: USMCRifleMan
-  startingGear: USMCSleepingUniform
+  startingGear: USMCUniformRifleMan
   icon: "USMCRifleMan"
   whitelisted: true
   joinNotifiyCrew: false
@@ -122,12 +122,6 @@
             - MobMaskBluFor
             layer:
             - MobLayer
-
-- type: startingGear
-  id: USMCSleepingUniform
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
-    shoes: ClothingShoesBootsJack
 
 - type: playTimeTracker
   id: USMCPlatoonLeader
@@ -188,3 +182,73 @@
     state: nato_rifleman
   jobName: job-name-USMC-rifleman
   isCrewJob: false
+
+- type: startingGear
+  id: USMCUniformPlatoonLeader
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
+    shoes: ClothingShoesBootsJack
+    outerClothing: FHClothingOuterArmorFlak
+    back: FHClothingBackRadioANPRC77
+    belt: FHClothingBeltUSMCHarness
+    pouchleft: FHClothingPouchUSMCGrenade
+    pouchright: FHClothingPouchUSMCAmmoDoubleFilled
+    suitstorage: FHWeaponRifleM16A1
+    head: FHClothingHeadHatBeretUSMC
+    eyes: ClothingEyesGlassesCheapSunglasses
+    pocket1: IFAKUSMCFilled
+
+- type: startingGear
+  id: USMCUniformTeamLeader
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
+    shoes: ClothingShoesBootsJack
+    outerClothing: FHClothingOuterArmorFlak
+    back: FHClothingBackRadioANPRC77
+    belt: FHClothingBeltUSMCHarness
+    pouchleft: FHClothingPouchUSMCGrenade
+    pouchright: FHClothingPouchUSMCAmmoDoubleFilled
+    suitstorage: FHWeaponRifleM16A1
+    head: FHClothingHeadHelmetM1Woodland
+    pocket1: IFAKUSMCFilled
+
+- type: startingGear
+  id: USMCUniformMachineGunner
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackAliceMediumFilledMachineGunner
+    belt: FHClothingBeltUSMCHarness
+    pouchleft: FHClothingPouchUSMCAmmoLMGFilled
+    pouchright: FHClothingPouchUSMCAmmoLMGFilled
+    suitstorage: FHWeaponLMGM60
+    head: FHClothingHeadHelmetM1Net
+    pocket1: IFAKUSMCFilled
+
+- type: startingGear
+  id: USMCUniformMedic
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackUSMCButtPackMedic
+    belt: FHClothingBeltUSMCHarness
+    pouchleft: FHClothingPouchUSMCAmmoFilled
+    pouchright: FHClothingPouchUSMCAmmoFilled
+    suitstorage: FHWeaponRifleM16A2
+    head: FHClothingHeadHelmetM1Medic
+    pocket1: IFAKUSMCFilled
+    mask: ClothingMaskSterile
+    gloves: ClothingHandsGlovesLatex
+
+- type: startingGear
+  id: USMCUniformRifleMan
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackUSMCButtPack
+    belt: FHClothingBeltUSMCHarness
+    pouchleft: FHClothingPouchUSMCAmmoFilled
+    pouchright: FHClothingPouchUSMCAmmoFilled
+    suitstorage: FHWeaponRifleM16A2
+    head: FHClothingHeadHelmetM1
+    pocket1: IFAKUSMCFilled

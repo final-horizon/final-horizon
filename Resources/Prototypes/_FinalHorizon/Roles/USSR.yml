@@ -3,7 +3,7 @@
   name: job-name-USSR-platoonleader
   description: job-description-USSR-platoonleader
   playTimeTracker: USSRPlatoonLeader
-  startingGear: USSRSleepingUniform
+  startingGear: USSRUniformPlatoonLeader
   icon: "USSRPlatoonLeader"
   whitelisted: true
   joinNotifiyCrew: false
@@ -28,7 +28,7 @@
   name: job-name-USSR-teamleader
   description: job-description-USSR-teamleader
   playTimeTracker: USSRTeamLeader
-  startingGear: USSRSleepingUniform
+  startingGear: USSRUniformTeamLeader
   icon: "USSRTeamLeader"
   whitelisted: true
   joinNotifiyCrew: false
@@ -53,7 +53,7 @@
   name: job-name-USSR-machinegunner
   description: job-description-USSR-machinegunner
   playTimeTracker: USSRMachineGunner
-  startingGear: USSRSleepingUniform
+  startingGear: USSRUniformMachineGunner
   icon: "USSRMachineGunner"
   whitelisted: true
   joinNotifiyCrew: false
@@ -78,7 +78,7 @@
   name: job-name-USSR-medic
   description: job-description-USSR-medic
   playTimeTracker: USSRMedic
-  startingGear: USSRSleepingUniform
+  startingGear: USSRUniformMedic
   icon: "USSRMedic"
   whitelisted: true
   joinNotifiyCrew: false
@@ -103,7 +103,7 @@
   name: job-name-USSR-rifleman
   description: job-description-USSR-rifleman
   playTimeTracker: USSRRifleMan
-  startingGear: USSRSleepingUniform
+  startingGear: USSRUniformRifleMan
   icon: "USSRRifleMan"
   whitelisted: true
   joinNotifiyCrew: false
@@ -122,12 +122,6 @@
             - MobMaskRedFor
             layer:
             - MobLayer
-
-- type: startingGear
-  id: USSRSleepingUniform
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitUSSRYellow
-    shoes: ClothingShoesBootsJack
 
 - type: playTimeTracker
   id: USSRPlatoonLeader
@@ -188,3 +182,73 @@
     state: pact_rifleman
   jobName: job-name-USSR-rifleman
   isCrewJob: false
+
+- type: startingGear
+  id: USSRUniformPlatoonLeader
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSSRYellow
+    shoes: ClothingShoesBootsJack
+    outerClothing: FHClothingOuterArmor6b2
+    back: FHClothingBackRadioR105D
+    belt: FHClothingBeltUSSRHarness
+    pouchleft: FHClothingPouchUSSRGrenade
+    pouchright: FHClothingPouchUSSRAmmoFilled
+    suitstorage: FHWeaponRifleAK74
+    head: FHClothingHeadHatBeretSA
+    eyes: ClothingEyesGlassesCheapSunglasses
+    pocket1: IFAKUSSRFilled
+
+- type: startingGear
+  id: USSRUniformTeamLeader
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSSRYellow
+    shoes: ClothingShoesBootsJack
+    outerClothing: FHClothingOuterArmor6b2
+    back: FHClothingBackRadioR105D
+    belt: FHClothingBeltUSSRHarness
+    pouchleft: FHClothingPouchUSSRGrenade
+    pouchright: FHClothingPouchUSSRAmmoFilled
+    suitstorage: FHWeaponRifleAK74
+    head: FHClothingHeadHelmetSSH68
+    pocket1: IFAKUSSRFilled
+
+- type: startingGear
+  id: USSRUniformMachineGunner
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSSRYellow
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackUSSRKitMachineGunnerFilled
+    belt: FHClothingBeltUSSRHarness
+    pouchleft: FHClothingPouchUSSRLMGFilled
+    pouchright: FHClothingPouchUSSRLMGFilled
+    suitstorage: FHWeaponLMGPKM
+    head: FHClothingHeadHelmetSSH68
+    pocket1: IFAKUSSRFilled
+
+- type: startingGear
+  id: USSRUniformMedic
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSSRYellow
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackUSSRKit
+    belt: FHClothingBeltUSSRHarness
+    pouchleft: FHClothingPouchUSSRAmmoFilled
+    pouchright: FHClothingPouchUSSRAmmoFilled
+    suitstorage: FHWeaponRifleAK74
+    head: FHClothingHeadHelmetSSH68Medic
+    pocket1: IFAKUSSRFilled
+    mask: ClothingMaskSterile
+    gloves: ClothingHandsGlovesLatex
+
+- type: startingGear
+  id: USSRUniformRifleMan
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSSRYellow
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackUSSRKit
+    belt: FHClothingBeltUSSRHarness
+    pouchleft: FHClothingPouchUSSRAmmoFilled
+    pouchright: FHClothingPouchUSSRAmmoFilled
+    suitstorage: FHWeaponRifleAK74
+    head: FHClothingHeadHelmetSSH68
+    pocket1: IFAKUSSRFilled

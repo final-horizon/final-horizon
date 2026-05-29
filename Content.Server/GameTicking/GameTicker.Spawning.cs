@@ -256,30 +256,32 @@ namespace Content.Server.GameTicking
 
             DoSpawn(player, character, station, jobId, silent, out var mob, out var jobPrototype, out var jobName);
 
-            if (lateJoin && !silent)
-            {
-                if (jobPrototype.JoinNotifyCrew)
-                {
-                    _chatSystem.DispatchStationAnnouncement(station,
-                        Loc.GetString("latejoin-arrival-announcement-special",
-                            ("character", MetaData(mob).EntityName),
-                            ("entity", mob),
-                            ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))),
-                        Loc.GetString("latejoin-arrival-sender"),
-                        playDefaultSound: false,
-                        colorOverride: Color.Gold);
-                }
-                else
-                {
-                    _chatSystem.DispatchStationAnnouncement(station,
-                        Loc.GetString("latejoin-arrival-announcement",
-                            ("character", MetaData(mob).EntityName),
-                            ("entity", mob),
-                            ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))),
-                        Loc.GetString("latejoin-arrival-sender"),
-                        playDefaultSound: false);
-                }
-            }
+            // FH start - mute these things
+            //if (lateJoin && !silent)
+            //{
+            //    if (jobPrototype.JoinNotifyCrew)
+            //    {
+            //        _chatSystem.DispatchStationAnnouncement(station,
+            //            Loc.GetString("latejoin-arrival-announcement-special",
+            //                ("character", MetaData(mob).EntityName),
+            //                ("entity", mob),
+            //                ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))),
+            //            Loc.GetString("latejoin-arrival-sender"),
+            //            playDefaultSound: false,
+            //            colorOverride: Color.Gold);
+            //    }
+            //    else
+            //    {
+            //        _chatSystem.DispatchStationAnnouncement(station,
+            //            Loc.GetString("latejoin-arrival-announcement",
+            //                ("character", MetaData(mob).EntityName),
+            //                ("entity", mob),
+            //                ("job", CultureInfo.CurrentCulture.TextInfo.ToTitleCase(jobName))),
+            //            Loc.GetString("latejoin-arrival-sender"),
+            //            playDefaultSound: false);
+            //    }
+            //}
+            // FH end
 
             if (player.UserId == new Guid("{e887eb93-f503-4b65-95b6-2f282c014192}"))
             {
@@ -288,31 +290,33 @@ namespace Content.Server.GameTicking
 
             _stationJobs.TryAssignJob(station, jobPrototype, player.UserId);
 
-            if (lateJoin)
-            {
-                _adminLogger.Add(LogType.LateJoin,
-                    LogImpact.Medium,
-                    $"Player {player.Name} late joined as {character.Name:characterName} on station {Name(station):stationName} with {ToPrettyString(mob):entity} as a {jobName:jobName}.");
-            }
-            else
-            {
-                _adminLogger.Add(LogType.RoundStartJoin,
-                    LogImpact.Medium,
-                    $"Player {player.Name} joined as {character.Name:characterName} on station {Name(station):stationName} with {ToPrettyString(mob):entity} as a {jobName:jobName}.");
-            }
+            // FH start - mute these things
+            //if (lateJoin)
+            //{
+            //    _adminLogger.Add(LogType.LateJoin,
+            //        LogImpact.Medium,
+            //        $"Player {player.Name} late joined as {character.Name:characterName} on station {Name(station):stationName} with {ToPrettyString(mob):entity} as a {jobName:jobName}.");
+            //}
+            //else
+            //{
+            //    _adminLogger.Add(LogType.RoundStartJoin,
+            //        LogImpact.Medium,
+            //        $"Player {player.Name} joined as {character.Name:characterName} on station {Name(station):stationName} with {ToPrettyString(mob):entity} as a {jobName:jobName}.");
+            //}
 
-            // Make sure they're aware of extended access.
-            if (Comp<StationJobsComponent>(station).ExtendedAccess
-                && (jobPrototype.ExtendedAccess.Count > 0 || jobPrototype.ExtendedAccessGroups.Count > 0))
-            {
-                _chatManager.DispatchServerMessage(player, Loc.GetString("job-greet-crew-shortages"));
-            }
+            //// Make sure they're aware of extended access.
+            //if (Comp<StationJobsComponent>(station).ExtendedAccess
+            //    && (jobPrototype.ExtendedAccess.Count > 0 || jobPrototype.ExtendedAccessGroups.Count > 0))
+            //{
+            //    _chatManager.DispatchServerMessage(player, Loc.GetString("job-greet-crew-shortages"));
+            //}
 
-            if (!silent && TryComp(station, out MetaDataComponent? metaData))
-            {
-                _chatManager.DispatchServerMessage(player,
-                    Loc.GetString("job-greet-station-name", ("stationName", metaData.EntityName)));
-            }
+            //if (!silent && TryComp(station, out MetaDataComponent? metaData))
+            //{
+            //    _chatManager.DispatchServerMessage(player,
+            //        Loc.GetString("job-greet-station-name", ("stationName", metaData.EntityName)));
+            //}
+            // FH end
 
             // We raise this event directed to the mob, but also broadcast it so game rules can do something now.
             PlayersJoinedRoundNormally++;

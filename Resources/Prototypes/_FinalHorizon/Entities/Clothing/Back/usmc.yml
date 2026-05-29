@@ -8,10 +8,21 @@
     sprite: _FinalHorizon/Clothing/Back/alice_medium.rsi
   - type: Storage
     grid:
-    - 2,0,4,3
-    - 0,2,0,3
-    - 6,2,6,3
+    - 0,0,3,3
     maxItemSize: Large
+
+- type: entity
+  parent: FHClothingBackpackAliceMedium
+  id: FHClothingBackpackAliceMediumFilledMachineGunner
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHMagazineLMGM60Full
+        - id: FHMagazineLMGM60Full
+        - id: FHMagazineLMGM60Full
+        - id: FHMagazineLMGM60Full
 
 - type: entity
   parent: FHClothingBackpackBase
@@ -23,9 +34,7 @@
     sprite: _FinalHorizon/Clothing/Back/alice_large.rsi
   - type: Storage
     grid:
-    - 2,0,4,4
-    - 0,2,0,4
-    - 6,2,6,4
+    - 0,0,3,4
     maxItemSize: Large
 
 - type: entity

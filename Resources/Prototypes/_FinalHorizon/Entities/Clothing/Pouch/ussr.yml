@@ -17,6 +17,19 @@
       - MagazineLightRifle
 
 - type: entity
+  parent: FHClothingPouchUSSRAmmo
+  id: FHClothingPouchUSSRAmmoFilled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHMagazineRifleAK74BakeliteFull
+        - id: FHMagazineRifleAK74BakeliteFull
+        - id: FHMagazineRifleAK74BakeliteFull
+        - id: FHMagazineRifleAK74BakeliteFull
+
+- type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRLMG
   name: USSR lmg ammo pouch
@@ -33,6 +46,16 @@
     whitelist:
       tags:
       - MagazineLightRifleBox
+
+- type: entity
+  parent: FHClothingPouchUSSRLMG
+  id: FHClothingPouchUSSRLMGFilled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHMagazineLMGPKMFull
 
 - type: entity
   parent: FHClothingPouchBase
