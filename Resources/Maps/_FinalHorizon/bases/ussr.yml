@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/29/2026 22:47:32
-  entityCount: 6037
+  time: 05/30/2026 16:50:39
+  entityCount: 6036
 maps:
 - 1
 grids:
@@ -276,7 +276,6 @@ entities:
             color: '#FF0000FF'
             id: BoxGreyscale
           decals:
-            63: -32,-20
             64: -36,-20
         - node:
             color: '#FFFFFF7B'
@@ -356,48 +355,6 @@ entities:
             25: -36,-4
             26: -36,-5
             27: -36,-6
-        - node:
-            color: '#FFFFFFFF'
-            id: StencilLetterA
-          decals:
-            65: -36,-15
-            69: -36,-19
-            72: -32,-17
-        - node:
-            color: '#FFFFFFFF'
-            id: StencilLetterB
-          decals:
-            70: -32,-15
-        - node:
-            color: '#FFFFFFFF'
-            id: StencilLetterH
-          decals:
-            68: -36,-18
-        - node:
-            color: '#FFFFFFFF'
-            id: StencilLetterL
-          decals:
-            66: -36,-16
-        - node:
-            color: '#FFFFFFFF'
-            id: StencilLetterO
-          decals:
-            75: -32,-19
-        - node:
-            color: '#FFFFFFFF'
-            id: StencilLetterP
-          decals:
-            67: -36,-17
-        - node:
-            color: '#FFFFFFFF'
-            id: StencilLetterR
-          decals:
-            71: -32,-16
-        - node:
-            color: '#FFFFFFFF'
-            id: StencilLetterV
-          decals:
-            74: -32,-18
     - type: ExplosionAirtightGrid
     - type: RadiationGridResistance
 - proto: AlwaysPoweredWallLight
@@ -26961,13 +26918,6 @@ entities:
     components:
     - type: Transform
       pos: -35.5,-19.5
-      parent: 1
-- proto: FHTeleporterOpforBravo
-  entities:
-  - uid: 5995
-    components:
-    - type: Transform
-      pos: -31.5,-19.5
       parent: 1
 - proto: FHWallConcrete
   entities:
