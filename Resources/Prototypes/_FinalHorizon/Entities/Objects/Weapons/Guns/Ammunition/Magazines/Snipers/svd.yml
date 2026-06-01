@@ -1,0 +1,45 @@
+- type: entity
+  parent: BaseItem
+  id: FHMagazineSniperSVD
+  name: SVD Magazine (10)
+  components:
+  - type: Tag
+    tags:
+      - Magazine762x54
+      - MagazineLightRifle
+  - type: Item
+    size: Normal
+  - type: BallisticAmmoProvider
+    soundInsert:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Misc/rifle_load.ogg
+      params:
+        variation: 0.1
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge762x54
+    capacity: 10
+    fillDelay: 0.30
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Magazine/Snipers/svd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: FHMagazineSniperSVD
+  id: FHMagazineSniperSVDFull
+  suffix: Full
+  components:
+  - type: BallisticAmmoProvider
+    proto: FHCartridge762x54

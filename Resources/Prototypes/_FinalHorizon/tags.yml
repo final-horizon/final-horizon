@@ -6,7 +6,13 @@
   id: Magazine545
 
 - type: Tag
+  id: Magazine762x51 # nato
+
+- type: Tag
   id: MagazineBox762x51 # nato
+
+- type: Tag
+  id: Magazine762x54 # wp
 
 - type: Tag
   id: MagazineBox762x54 # wp
