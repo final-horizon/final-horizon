@@ -1,9 +1,0 @@
-- type: gamePreset
-  id: FinalHorizon
-  alias:
-    - finalhorizon
-  name: Final Horizon
-  description: The standard Final Horizon gamemode.
-  maxPlayers: 100
-  showInVote: true
-  supportedMaps: FinalHorizon
