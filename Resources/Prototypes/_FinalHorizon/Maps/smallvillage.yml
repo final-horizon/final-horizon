@@ -24,3 +24,35 @@
             USSRRifleMan: [ 40, 40 ]
         - type: MultiMapLoader
           maps: [ "/Maps/_FinalHorizon/Bases/usmc.yml", "/Maps/_FinalHorizon/Bases/ussr.yml" ]
+        - type: StationRoster
+          startingRosters:
+            - USMC
+            - SovietArmy
+
+- type: roster
+  id: USMC
+  roster:
+    name: "United States Marine Corp"
+    squads:
+      - name: "Alpha Squad"
+        slots:
+          - job: USMCRifleMan
+          - job: USMCRifleMan
+      - name: "Bravo Squad"
+        slots:
+          - job: USMCRifleMan
+          - job: USMCRifleMan
+
+- type: roster
+  id: SovietArmy
+  roster:
+    name: "Soviet Army"
+    squads:
+      - name: "Apple Squad"
+        slots:
+          - job: USSRRifleMan
+          - job: USSRRifleMan
+      - name: "Butter Squad"
+        slots:
+          - job: USSRRifleMan
+          - job: USSRRifleMan

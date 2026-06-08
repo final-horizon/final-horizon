@@ -1,3 +1,4 @@
+using Content.Client._FinalHorizon.Roles.UI;
 using Content.Client.Audio;
 using Content.Client.GameTicking.Managers;
 using Content.Client.LateJoin;
@@ -109,12 +110,15 @@ namespace Content.Client.Lobby
 
         private void OnReadyPressed(BaseButton.ButtonEventArgs args)
         {
-            if (!_gameTicker.IsGameStarted)
-            {
-                return;
-            }
+            // FH change start
+            new RosterGui().OpenCentered();
+            //if (!_gameTicker.IsGameStarted)
+            //{
+            //    return;
+            //}
 
-            new LateJoinGui().OpenCentered();
+            //new LateJoinGui().OpenCentered();
+            // FH change end
         }
 
         private void OnReadyToggled(BaseButton.ButtonToggledEventArgs args)
