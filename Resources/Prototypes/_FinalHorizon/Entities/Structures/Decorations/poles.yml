@@ -1,0 +1,22 @@
+- type: entity
+  id: FHPoleElectric
+  parent: BaseStructure
+  name: electric pole
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/poles.rsi
+    state: electricpole
+    drawdepth: Mobs
+    offset: "0,1.2"
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.20,-0.20,0.20,0.20"
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable

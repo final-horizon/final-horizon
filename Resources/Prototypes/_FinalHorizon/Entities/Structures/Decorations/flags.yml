@@ -32,7 +32,6 @@
   name: USA flag pole
   components:
   - type: Sprite
-    noRot: true
     sprite: _FinalHorizon/Structures/Decoration/flags_pole.rsi
     state: usa
     drawdepth: Mobs
@@ -56,7 +55,6 @@
   name: USSR flag pole
   components:
   - type: Sprite
-    noRot: true
     sprite: _FinalHorizon/Structures/Decoration/flags_pole.rsi
     state: ussr
     drawdepth: Mobs
@@ -80,7 +78,6 @@
   name: NATO flag pole
   components:
   - type: Sprite
-    noRot: true
     sprite: _FinalHorizon/Structures/Decoration/flags_pole.rsi
     state: nato
     drawdepth: Mobs
