@@ -1,0 +1,25 @@
+- type: soundCollection
+  id: FHMaleScream
+  files:
+    - /Audio/_FinalHorizon/Voice/Scream/m_scream1.ogg
+    - /Audio/_FinalHorizon/Voice/Scream/m_scream2.ogg
+    - /Audio/_FinalHorizon/Voice/Scream/m_scream3.ogg
+    - /Audio/_FinalHorizon/Voice/Scream/m_scream4.ogg
+    - /Audio/_FinalHorizon/Voice/Scream/m_scream5.ogg
+    - /Audio/_FinalHorizon/Voice/Scream/m_scream6.ogg
+    - /Audio/_FinalHorizon/Voice/Scream/m_scream7.ogg
+    - /Audio/_FinalHorizon/Voice/Scream/m_scream8.ogg
+    - /Audio/_FinalHorizon/Voice/Scream/m_scream9.ogg
+
+- type: soundCollection
+  id: FHMaleGasp
+  files:
+    - /Audio/_FinalHorizon/Voice/Gasp/gasp_male1.ogg
+    - /Audio/_FinalHorizon/Voice/Gasp/gasp_male2.ogg
+    - /Audio/_FinalHorizon/Voice/Gasp/gasp_male3.ogg
+    - /Audio/_FinalHorizon/Voice/Gasp/gasp_male4.ogg
+    - /Audio/_FinalHorizon/Voice/Gasp/gasp_male5.ogg
+    - /Audio/_FinalHorizon/Voice/Gasp/gasp_male6.ogg
+    - /Audio/_FinalHorizon/Voice/Gasp/gasp_male7.ogg
+    - /Audio/_FinalHorizon/Voice/Gasp/gasp_male8.ogg
+    - /Audio/_FinalHorizon/Voice/Gasp/gasp_male9.ogg

@@ -1,11 +1,13 @@
 # species
 - type: emoteSounds
   id: MaleHuman
-  params:
-    variation: 0.125
+  #params: # FH
+  #  variation: 0.125 # FH
   sounds:
     Scream:
-      collection: MaleScreams
+      collection: FHMaleScream # FH start
+      params:
+        variation: 0.01 # FH end
     Laugh:
       collection: MaleLaugh
     Sneeze:
@@ -37,17 +39,22 @@
     Hew:
       collection: Hew
     Gasp:
-      collection: MaleGasp
+      collection: FHMaleGasp # FH start
+      params:
+        variation: 0.01
+        volume: -5 # FH end
     DefaultDeathgasp:
       collection: MaleDeathGasp
 
 - type: emoteSounds
   id: FemaleHuman
-  params:
-    variation: 0.125
+  #params: # FH
+  #  variation: 0.125 # FH
   sounds:
     Scream:
-      collection: FemaleScreams
+      collection: FHMaleScream # FH start
+      params:
+        variation: 0.01 # FH end
     Laugh:
       collection: FemaleLaugh
     Sneeze:
@@ -79,7 +86,10 @@
     Hew:
       collection: Hew
     Gasp:
-      collection: FemaleGasp
+      collection: FHMaleGasp # FH start
+      params:
+        variation: 0.01
+        volume: -5 # FH end
     DefaultDeathgasp:
       collection: FemaleDeathGasp
 
