@@ -1,57 +1,4 @@
 - type: tile
-  id: FHPlating
-  name: FH Plating
-  friction: 1
-  isSubfloor: true
-  footstepSounds:
-    collection: FHFootstepMetal
-    params:
-      variation: 0.2
-  weather: true
-  sprite: /Textures/Tiles/plating.png
-  baseTurf: FHDirt
-
-# Wood
-- type: tile
-  id: FHWood
-  name: FH Wood
-  weather: true
-  sprite: /Textures/Tiles/wood.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  footstepSounds:
-    collection: FHFootstepWood
-    params:
-      variation: 0.2
-  barestepSounds:
-    collection: BarestepWood
-  baseTurf: FHPlating
-
-- type: tile
-  id: FHWoodBroken
-  name: FH Wood Broken
-  weather: true
-  sprite: /Textures/Tiles/wood_broken.png
-  variants: 7
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  footstepSounds:
-    collection: FHFootstepWood
-    params:
-      variation: 0.2
-  baseTurf: FHPlating
-
-- type: tile
   id: FHWoodFancy1
   name: FH Fancy 1
   weather: true
@@ -61,7 +8,7 @@
     collection: FHFootstepWood
     params:
       variation: 0.2
-  baseTurf: FHPlating
+  baseTurf: Plating
 
 - type: tile
   id: FHWoodFancy2
@@ -73,7 +20,7 @@
     collection: FHFootstepWood
     params:
       variation: 0.2
-  baseTurf: FHPlating
+  baseTurf: Plating
 
 - type: tile
   id: FHWoodFancy3
@@ -85,7 +32,7 @@
     collection: FHFootstepWood
     params:
       variation: 0.2
-  baseTurf: FHPlating
+  baseTurf: Plating
 
 # Concrete
 - type: tile
@@ -104,58 +51,3 @@
     params:
       variation: 0.2
   baseTurf: FHDirt
-
-# floor tiles
-- type: tile
-  id: FHTileSteel
-  name: FH Tile Steel
-  weather: true
-  friction: 1
-  footstepSounds:
-    collection: FHFootstepTile
-    params:
-      variation: 0.2
-  baseTurf: FHPlating
-  sprite: /Textures/Tiles/steel.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-
-- type: tile
-  id: FHTileWhiteDiagonal
-  name: FH Tile White Diagonal
-  weather: true
-  friction: 1
-  footstepSounds:
-    collection: FHFootstepTile
-    params:
-      variation: 0.2
-  baseTurf: FHPlating
-  sprite: /Textures/Tiles/white_diagonal.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-
-- type: tile
-  id: FHTileBar
-  name: FH Tile Bar
-  weather: true
-  friction: 1
-  footstepSounds:
-    collection: FHFootstepTile
-    params:
-      variation: 0.2
-  baseTurf: FHPlating
-  sprite: /Textures/Tiles/bar.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0

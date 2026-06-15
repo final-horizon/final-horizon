@@ -5,10 +5,12 @@
   heatCapacity: 10000
   isSubfloor: true
   footstepSounds:
-    collection: FootstepPlating
-  baseTurf: Lattice
-  baseWhitelist:
-    - TrainLattice
+    collection: FHFootstepMetal # FH start
+    params:
+      variation: 0.2
+  weather: true
+  sprite: /Textures/Tiles/plating.png
+  baseTurf: FHDirt # FH end
 
 - type: tile
   id: Plating

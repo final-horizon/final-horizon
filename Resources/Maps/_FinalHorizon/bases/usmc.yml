@@ -16,23 +16,20 @@ tilemap:
   2: Space
   11: FHDirt
   9: FHGrass
-  12: FHPlating
+  12: Plating
   5: FHRoad
   10: FHSand
   4: FHSnow
   7: FHSnowDug
   8: FHStone
-  18: FHTileBar
-  14: FHTileSteel
-  16: FHTileWhiteDiagonal
-  6: FHWood
-  15: FHWoodBroken
+  18: FloorBar
+  14: FloorSteel
+  16: FloorWhiteDiagonal
+  6: FloorWoodTile
+  15: FloorBrokenWood
   19: FHWoodFancy1
   13: FHWoodFancy2
   17: FHWoodFancy3
-  1: FloorPlanetDirt
-  0: FloorPlanetGrass
-  3: FloorWood
 entities:
 - proto: ""
   entities:
