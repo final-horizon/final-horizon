@@ -1,0 +1,157 @@
+- type: entity
+  id: FHDrawer
+  parent: BaseStructure
+  name: drawer
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/furniture.rsi
+    state: drawer
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: FHWardrobe
+  parent: BaseStructure
+  name: wardrobe
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/furniture.rsi
+    state: wardrobe
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: FHStove1
+  parent: BaseStructure
+  name: stove
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/furniture.rsi
+    state: stove1
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: FHStove2
+  parent: BaseStructure
+  name: stove
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/furniture.rsi
+    state: stove2
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: FHTub
+  parent: BaseStructure
+  name: tub
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/furniture.rsi
+    state: tub
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  id: FHRadiator
+  name: radiator
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/furniture.rsi
+    state: radiator
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: GravityAffected
+  - type: Physics
+    bodyType: Static
+  - type: Pullable
+  - type: Tag
+    tags:
+      - Structure
+
+- type: entity
+  id: FHCross
+  parent: BaseStructure
+  name: cross
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/furniture.rsi
+    state: cross
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]

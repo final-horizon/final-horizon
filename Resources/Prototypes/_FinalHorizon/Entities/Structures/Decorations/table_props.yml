@@ -139,3 +139,16 @@
   - type: Icon
     sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
     state: money3
+
+- type: entity
+  parent: FHBaseStructureTableProp
+  id: FHStructureTablePropRadio
+  name: radio
+  description: A civilian radio.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: radio
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: radio
