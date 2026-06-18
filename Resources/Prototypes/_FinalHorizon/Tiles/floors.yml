@@ -1,6 +1,7 @@
+# Wood
 - type: tile
   id: FHWoodFancy1
-  name: FH Fancy 1
+  name: FH Fancy Wood 1
   weather: true
   sprite: /Textures/_FinalHorizon/Tiles/Floors/wood1.png
   variants: 1
@@ -12,7 +13,7 @@
 
 - type: tile
   id: FHWoodFancy2
-  name: FH Fancy 2
+  name: FH Fancy Wood 2
   weather: true
   sprite: /Textures/_FinalHorizon/Tiles/Floors/wood2.png
   variants: 1
@@ -24,9 +25,105 @@
 
 - type: tile
   id: FHWoodFancy3
-  name: FH Fancy 3
+  name: FH Fancy Wood 3
   weather: true
   sprite: /Textures/_FinalHorizon/Tiles/Floors/wood3.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepWood
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHWoodFancy4
+  name: FH Fancy Wood 4
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/wood4.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepWood
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHWoodFancy5
+  name: FH Fancy Wood 5
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/wood5.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepWood
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHWoodFancy6
+  name: FH Fancy Wood 6
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/wood6.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepWood
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHWoodFancy7
+  name: FH Fancy Wood 7
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/wood7.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepWood
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHWoodFancy8
+  name: FH Fancy Wood 8
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/wood8.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepWood
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHWoodFancy9
+  name: FH Fancy Wood 9
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/wood9.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepWood
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHWoodFancy10
+  name: FH Fancy Wood 10
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/wood10.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepWood
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHWoodFancy11
+  name: FH Fancy Wood 11
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/wood11.png
   variants: 1
   footstepSounds:
     collection: FHFootstepWood
@@ -51,3 +148,414 @@
     params:
       variation: 0.2
   baseTurf: FHDirt
+
+# Stone
+- type: tile
+  id: FHStone1
+  name: FH Stone 1
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stone1.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHStone2
+  name: FH Stone 2
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stone2.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHStone3
+  name: FH Stone 3
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stone3.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHStone4
+  name: FH Stone 4
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stone4.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHStone5
+  name: FH Stone 5
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stone5.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHStone6
+  name: FH Stone 6
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stone6.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHStone7
+  name: FH Stone 7
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stone7.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHStone8
+  name: FH Stone 8
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stone8.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHStone9
+  name: FH Stone 9
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stone9.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHStone10
+  name: FH Stone 10
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stone10.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+# Stone tile
+- type: tile
+  id: FHStoneTile1
+  name: FH Stone Tile 1
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stonetile1.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHStoneTile2
+  name: FH Stone Tile 2
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stonetile2.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHStoneTile3
+  name: FH Stone Tile 3
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stonetile3.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHStoneTile4
+  name: FH Stone Tile 4
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stonetile4.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHStoneTile5
+  name: FH Stone Tile 5
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stonetile5.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHStoneTile6
+  name: FH Stone Tile 6
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stonetile6.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHStoneTile7
+  name: FH Stone Tile 7
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/stonetile7.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepConcrete
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+# Floor Tiles
+- type: tile
+  id: FHFloorTile1
+  name: FH Floor Tile 1
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile1.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHFloorTile2
+  name: FH Floor Tile 2
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile2.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHFloorTile3
+  name: FH Floor Tile 3
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile3.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHFloorTile4
+  name: FH Floor Tile 4
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile4.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHFloorTile5
+  name: FH Floor Tile 5
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile5.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHFloorTile6
+  name: FH Floor Tile 6
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile6.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHFloorTile7
+  name: FH Floor Tile 7
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile7.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHFloorTile8
+  name: FH Floor Tile 8
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile8.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHFloorTile9
+  name: FH Floor Tile 9
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile9.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHFloorTile10
+  name: FH Floor Tile 10
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile10.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHFloorTile11
+  name: FH Floor Tile 11
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile11.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHFloorTile12
+  name: FH Floor Tile 12
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile12.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHFloorTile13
+  name: FH Floor Tile 13
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile13.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHFloorTile14
+  name: FH Floor Tile 14
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile14.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHFloorTile15
+  name: FH Floor Tile 15
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile15.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHFloorTile16
+  name: FH Floor Tile 16
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile16.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
+
+- type: tile
+  id: FHFloorTile17
+  name: FH Floor Tile 17
+  weather: true
+  sprite: /Textures/_FinalHorizon/Tiles/Floors/floortile17.png
+  variants: 1
+  footstepSounds:
+    collection: FHFootstepTile
+    params:
+      variation: 0.2
+  baseTurf: Plating
