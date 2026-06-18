@@ -1,0 +1,125 @@
+- type: entity
+  parent: BaseSign
+  id: FHStructurePostersClock
+  name: clock
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/posters.rsi
+    state: clock
+
+- type: entity
+  parent: BaseSign
+  id: FHStructurePostersMcD1
+  name: mcdonalds sign
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/posters.rsi
+    state: mcdonalds1
+
+- type: entity
+  parent: BaseSign
+  id: FHStructurePostersMcD2
+  name: mcdonalds sign
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/posters.rsi
+    state: mcdonalds2
+
+- type: entity
+  parent: BaseSign
+  id: FHStructurePostersMcD3
+  name: mcdonalds sign
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/posters.rsi
+    state: mcdonalds3
+
+- type: entity
+  parent: BaseSign
+  id: FHStructurePostersPortrait1
+  name: portrait
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/posters.rsi
+    state: portrait1
+
+- type: entity
+  parent: BaseSign
+  id: FHStructurePostersPortrait2
+  name: portrait
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/posters.rsi
+    state: portrait2
+
+- type: entity
+  parent: BaseSign
+  id: FHStructurePostersPortrait3
+  name: portrait
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/posters.rsi
+    state: portrait3
+
+- type: entity
+  parent: BaseSign
+  id: FHStructurePostersPortrait4
+  name: portrait
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/posters.rsi
+    state: portrait4
+
+- type: entity
+  parent: BaseSign
+  id: FHStructurePostersPoster1
+  name: poster
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/posters.rsi
+    state: poster1
+
+- type: entity
+  parent: BaseSign
+  id: FHStructurePostersPoster2
+  name: poster
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/posters.rsi
+    state: poster2
+
+- type: entity
+  parent: BaseSign
+  id: FHStructurePostersPoster3
+  name: poster
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/posters.rsi
+    state: poster3
+
+- type: entity
+  parent: BaseSign
+  id: FHStructurePostersPoster4
+  name: poster
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/posters.rsi
+    state: poster4
+
+- type: entity
+  parent: BaseSign
+  id: FHStructurePostersPoster5
+  name: poster
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/posters.rsi
+    state: poster5
+
+- type: entity
+  parent: BaseSign
+  id: FHStructurePostersStarOfDavid
+  name: star of david
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/posters.rsi
+    state: starofdavid
