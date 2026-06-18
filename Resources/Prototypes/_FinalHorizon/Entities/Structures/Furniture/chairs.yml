@@ -1,0 +1,26 @@
+- type: entity
+  name: couch
+  id: FHCouchMiddle
+  parent: ChairBase
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/couch.rsi
+    state: middle
+
+- type: entity
+  name: couch
+  id: FHCouchLeft
+  parent: ChairBase
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/couch.rsi
+    state: left
+
+- type: entity
+  name: couch
+  id: FHCouchRight
+  parent: ChairBase
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/couch.rsi
+    state: right
