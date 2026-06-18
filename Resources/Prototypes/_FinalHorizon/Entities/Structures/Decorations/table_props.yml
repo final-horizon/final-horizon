@@ -1,0 +1,141 @@
+- type: entity
+  parent: BaseStructure
+  id: FHBaseStructureTableProp
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    drawdepth: SmallObjects
+    state: icon
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: icon
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 25
+        mask:
+        - TabletopMachineMask
+        layer:
+        - TabletopMachineLayer
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  parent: FHBaseStructureTableProp
+  id: FHStructureTablePropComputer
+  name: computer
+  description: A brand new computer. Looks expensive.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: computer
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: computer
+
+- type: entity
+  parent: FHBaseStructureTableProp
+  id: FHStructureTablePropNES
+  name: nintendo famicom
+  description: A home videogame console released in japan in 1983 and imported here. Must be a rare find.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: nes
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: nes
+
+- type: entity
+  parent: FHBaseStructureTableProp
+  id: FHStructureTablePropRegister
+  name: cash register
+  description: An unattended cash register.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: register
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: register
+
+- type: entity
+  parent: FHBaseStructureTableProp
+  id: FHStructureTablePropVHS
+  name: vhs player
+  description: A device for playing VHS tapes.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: vhsplayer
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: vhsplayer
+
+- type: entity
+  parent: FHBaseStructureTableProp
+  id: FHStructureTablePropVinal
+  name: vinal player
+  description: A device for playing vinals.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: vinalplayer
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: vinalplayer
+
+- type: entity
+  parent: FHBaseStructureTableProp
+  id: FHStructureTablePropMoney1
+  name: stack of money
+  description: Looks like a lot of money.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: money1
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: money1
+
+- type: entity
+  parent: FHBaseStructureTableProp
+  id: FHStructureTablePropMoney2
+  name: stack of money
+  description: Looks like a lot of money.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: money2
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: money2
+
+- type: entity
+  parent: FHBaseStructureTableProp
+  id: FHStructureTablePropMoney3
+  name: stack of money
+  description: Looks like a lot of money.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: money3
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Decoration/table_props.rsi
+    state: money3

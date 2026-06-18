@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "taken from cf escal",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "register"
+    },
+    {
+      "name": "money1"
+    },
+    {
+      "name": "money2"
+    },
+    {
+      "name": "money3"
+    },
+    {
+      "name": "nes"
+    },
+    {
+      "name": "vinalplayer"
+    },
+    {
+      "name": "vhsplayer"
+    },
+    {
+      "name": "computer"
+    }
+  ]
+}
