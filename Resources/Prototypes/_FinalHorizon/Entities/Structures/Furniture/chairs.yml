@@ -24,3 +24,66 @@
   - type: Sprite
     sprite: _FinalHorizon/Structures/Furniture/couch.rsi
     state: right
+
+- type: entity
+  parent: ChairBase
+  id: FHChairBoss
+  name: chair
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/chairs.rsi
+    state: boss
+
+- type: entity
+  parent: ChairBase
+  id: FHChairFancy
+  name: chair
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/chairs.rsi
+    state: fancy
+
+- type: entity
+  parent: ChairBase
+  id: FHChairGoon
+  name: chair
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/chairs.rsi
+    state: goon
+
+- type: entity
+  parent: ChairBase
+  id: FHChairMetal
+  name: chair
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/chairs.rsi
+    state: metal
+
+- type: entity
+  parent: ChairBase
+  id: FHChairSalon
+  name: chair
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/chairs.rsi
+    state: salon
+
+- type: entity
+  parent: ChairBase
+  id: FHChairSoviet
+  name: chair
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/chairs.rsi
+    state: soviet
+
+- type: entity
+  parent: ChairBase
+  id: FHChairWood
+  name: chair
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/chairs.rsi
+    state: wood

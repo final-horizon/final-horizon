@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "taken from CF escal",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "boss",
+      "directions": 4
+    },
+    {
+      "name": "fancy",
+      "directions": 4
+    },
+    {
+      "name": "goon",
+      "directions": 4
+    },
+    {
+      "name": "metal",
+      "directions": 4
+    },
+    {
+      "name": "salon",
+      "directions": 4
+    },
+    {
+      "name": "soviet",
+      "directions": 4
+    },
+    {
+      "name": "wood",
+      "directions": 4
+    }
+  ]
+}
