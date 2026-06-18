@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "taken from CF escal",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "wp"
+    },
+    {
+      "name": "nato"
+    },
+    {
+      "name": "wp_cot"
+    },
+    {
+      "name": "nato_cot"
+    },
+    {
+      "name": "empty"
+    }
+  ]
+}

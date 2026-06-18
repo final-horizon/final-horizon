@@ -1,0 +1,62 @@
+- type: entity
+  parent: Bed
+  id: FHBedWP
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/bed.rsi
+    state: wp
+    noRot: false
+  - type: HealOnBuckle
+    damage:
+      types:
+        Poison: -0.5
+        Blunt: -0.5
+
+- type: entity
+  parent: Bed
+  id: FHBedNato
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/bed.rsi
+    state: nato
+    noRot: false
+  - type: HealOnBuckle
+    damage:
+      types:
+        Poison: -0.5
+        Blunt: -0.5
+
+- type: entity
+  parent: Bed
+  id: FHBedCotWP
+  name: cot
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/bed.rsi
+    state: wp_cot
+    noRot: false
+
+- type: entity
+  parent: Bed
+  id: FHBedCotNato
+  name: cot
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/bed.rsi
+    state: nato_cot
+    noRot: false
+
+- type: entity
+  parent: Bed
+  id: FHBedEmpty
+  name: bed frame
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/bed.rsi
+    state: empty
+    noRot: false
+  - type: HealOnBuckle
+    damage:
+      types:
+        Poison: -0.02
+        Blunt: -0.02

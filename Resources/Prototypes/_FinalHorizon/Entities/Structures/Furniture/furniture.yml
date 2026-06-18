@@ -41,6 +41,27 @@
         acts: ["Destruction"]
 
 - type: entity
+  id: FHPump
+  parent: BaseStructure
+  name: gas pump
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/furniture.rsi
+    state: pump
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
   id: FHStove1
   parent: BaseStructure
   name: stove
@@ -155,3 +176,61 @@
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
+
+- type: entity
+  parent: BaseStructure
+  id: FHShelf
+  name: shelf
+  description: A shelf for storing things on.
+  components:
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path:
+          "/Audio/Weapons/dodgeball.ogg"
+  - type: Anchorable
+  - type: InteractionOutline
+  - type: PlaceableSurface
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Furniture/furniture.rsi
+    state: shelf
+    snapCardinals: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        density: 140
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+          params:
+            volume: -6
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

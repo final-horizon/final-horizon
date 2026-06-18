@@ -26,6 +26,12 @@
       "name": "drawer"
     },
     {
+      "name": "shelf"
+    },
+    {
+      "name": "pump"
+    },
+    {
       "name": "radiator",
       "directions": 4
     }
