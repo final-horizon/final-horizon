@@ -174,30 +174,69 @@
     closingAnimationTime: 1
 
 - type: entity
-  parent: FHBaseDoor
+  parent: BaseStructure
   id: FHDoorWoodInterior
   name: wooden door
+  description: A door, where will it lead?
   components:
+  - type: Anchorable
+    flags:
+    - Anchorable
+  - type: Rotatable
+  - type: InteractionOutline
   - type: Sprite
     sprite: _FinalHorizon/Structures/Doors/wood_interior.rsi
     layers:
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 400
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
+  - type: AnimationPlayer
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0.49"
+        density: 100
+        mask:
+        - FullTileMask
+        layer:
+        - AirlockLayer
   - type: Door
+    bumpOpen: false
+    clickOpen: true
+    canCrush: false
     closeTimeOne: 0.7
     closeTimeTwo: 0.3
     openTimeOne: 0.8
     openTimeTwo: 0.2
     openingAnimationTime: 1
     closingAnimationTime: 1
+    openSound:
+      path: /Audio/Effects/door_open.ogg
+    closeSound:
+      path: /Audio/Effects/door_close.ogg
+  - type: Appearance
+  - type: Airtight
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: RCDDeconstructable
+    cost: 6
+    delay: 6
+    fx: EffectRCDDeconstruct6
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: BlockWeather
+  - type: NavMapDoor
+  - type: SunShadowCast
 
 - type: entity
   parent: FHBaseDoor
