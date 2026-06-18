@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "taken from CF escal",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon_straight"
+    },
+    {
+      "name": "icon_corner"
+    },
+    {
+      "name": "straight",
+      "directions": 4
+    },
+    {
+      "name": "corner",
+      "directions": 4
+    }
+  ]
+}

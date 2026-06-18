@@ -1,0 +1,418 @@
+# wooden fence
+- type: entity
+  parent: BaseStructure
+  id: FHFenceWooden
+  name: wooden fence
+  components:
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path:
+          "/Audio/Weapons/boxingpunch1.ogg"
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    anchored: true
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 125
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Climbable
+    delay: 1
+  - type: Appearance
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Walls/fence_wooden.rsi
+    state: straight
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Walls/fence_wooden.rsi
+    drawdepth: WallTops
+    layers:
+    - state: straight
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.10,-0.5,0.10,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - Opaque
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: FHFenceWooden
+  id: FHFenceWoodenCorner
+  name: wooden fence corner
+  components:
+  - type: Icon
+    sprite: Structures/Walls/wooden_fence.rsi
+    state: corner
+  - type: Sprite
+    layers:
+    - state: corner
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.1,0.1,0.5"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+      fix2:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.1,-0.1,0.1"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - Opaque
+        - MidImpassable
+        - LowImpassable
+
+# green fence
+- type: entity
+  parent: BaseStructure
+  id: FHFenceGreen
+  name: green fence
+  components:
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path:
+          "/Audio/Weapons/grille_hit.ogg"
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    anchored: true
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          PartRodMetal1:
+            min: 3
+            max: 5
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Climbable
+    delay: 1.5
+  - type: Appearance
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Walls/fence_green.rsi
+    state: straight
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Walls/fence_green.rsi
+    drawdepth: WallTops
+    layers:
+    - state: straight
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.10,-0.5,0.10,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - Opaque
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: FHFenceGreen
+  id: FHFenceGreenCorner
+  name: green fence corner
+  components:
+  - type: Icon
+    sprite: Structures/Walls/fence_green.rsi
+    state: corner
+  - type: Sprite
+    layers:
+    - state: corner
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.1,0.1,0.5"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+      fix2:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.1,-0.1,0.1"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - Opaque
+        - MidImpassable
+        - LowImpassable
+
+# concrete fence
+- type: entity
+  parent: BaseStructure
+  id: FHFenceConcrete
+  name: concrete fence
+  components:
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path:
+          "/Audio/Weapons/grille_hit.ogg"
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    anchored: true
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 700
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          PartRodMetal1:
+            min: 3
+            max: 5
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Appearance
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Walls/fence_concrete.rsi
+    state: straight
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Walls/fence_concrete.rsi
+    drawdepth: WallTops
+    layers:
+    - state: straight
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.10,-0.5,0.10,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - Opaque
+        - MidImpassable
+        - LowImpassable
+        - BulletImpassable
+  - type: Occluder
+
+- type: entity
+  parent: FHFenceConcrete
+  id: FHFenceConcreteCorner
+  name: concrete fence corner
+  components:
+  - type: Icon
+    sprite: Structures/Walls/fence_concrete.rsi
+    state: corner
+  - type: Sprite
+    layers:
+    - state: corner
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.1,0.1,0.5"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+      fix2:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.1,-0.1,0.1"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - Opaque
+        - MidImpassable
+        - LowImpassable
+
+# tall fence
+- type: entity
+  parent: BaseStructure
+  id: FHFenceTall
+  name: tall wooden fence
+  components:
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path:
+          "/Audio/Weapons/boxingpunch1.ogg"
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    anchored: true
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Climbable
+    delay: 4
+  - type: Appearance
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Walls/fence_tall.rsi
+    state: straight
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Walls/fence_tall.rsi
+    drawdepth: WallTops
+    layers:
+    - state: straight
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.10,-0.5,0.10,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - Opaque
+        - MidImpassable
+        - LowImpassable
+  - type: Occluder
+
+- type: entity
+  parent: FHFenceTall
+  id: FHFenceTallCorner
+  name: tall wooden fence corner
+  components:
+  - type: Icon
+    sprite: Structures/Walls/fence_tall.rsi
+    state: corner
+  - type: Sprite
+    layers:
+    - state: corner
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.1,0.1,0.5"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+      fix2:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.1,-0.1,0.1"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - Opaque
+        - MidImpassable
+        - LowImpassable
