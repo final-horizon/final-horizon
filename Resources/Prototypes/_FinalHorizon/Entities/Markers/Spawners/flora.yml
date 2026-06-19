@@ -98,3 +98,22 @@
     - FHRockBlack8
     - FHRockBlack9
     - FHRockBlack10
+
+- type: entity
+  parent: DecalSpawnerBase
+  id: FHDecalSpawnerGrassFarmland
+  suffix: farmland grass
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: decal
+  - type: RandomDecalSpawner
+    radius: 0.8
+    zIndex: 5
+    deleteSpawnerAfterSpawn: true
+    decals:
+    - FHGrassTall1
+    - FHGrassTall2
+    - FHGrassTall3
+    - FHGrassTall4
