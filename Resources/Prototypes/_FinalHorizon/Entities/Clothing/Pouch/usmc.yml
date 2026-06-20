@@ -29,6 +29,18 @@
         - id: FHMagazineRifleM16Full
 
 - type: entity
+  parent: FHClothingPouchUSMCAmmo
+  id: FHClothingPouchUSMCAmmoFilledSniper
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHMagazineSniperM21Full
+        - id: FHMagazineSniperM21Full
+        - id: FHMagazineSniperM21Full
+
+- type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSMCAmmoDouble
   name: USMC double ammo pouch

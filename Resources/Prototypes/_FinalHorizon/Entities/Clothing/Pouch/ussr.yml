@@ -30,6 +30,19 @@
         - id: FHMagazineRifleAK74BakeliteFull
 
 - type: entity
+  parent: FHClothingPouchUSSRAmmo
+  id: FHClothingPouchUSSRAmmoFilled45
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHMagazineRifleAK74Bakelite45Full
+        - id: FHMagazineRifleAK74Bakelite45Full
+        - id: FHMagazineRifleAK74Bakelite45Full
+        - id: FHMagazineRifleAK74Bakelite45Full
+
+- type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRLMG
   name: USSR lmg ammo pouch
@@ -68,12 +81,25 @@
   - type: Clothing
     sprite: _FinalHorizon/Clothing/Pouch/ussr_svd.rsi
   - type: Storage
-    maxItemSize: Normal
+    maxItemSize: Small
     grid:
-    - 0,0,1,1
+    - 0,0,3,1
     whitelist:
       tags:
-      - MagazineLightRifleBox
+      - MagazineLightRifle
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSSRSVDFilled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHMagazineSniperSVDFull
+        - id: FHMagazineSniperSVDFull
+        - id: FHMagazineSniperSVDFull
+        - id: FHMagazineSniperSVDFull
 
 - type: entity
   parent: FHClothingPouchBase

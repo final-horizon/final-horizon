@@ -55,7 +55,7 @@
   playTimeTracker: USSRMachineGunner
   startingGear: USSRUniformMachineGunner
   icon: "USSRMachineGunner"
-  whitelisted: true
+  whitelisted: false
   joinNotifiyCrew: false
   special:
   - !type:AddComponentSpecial
@@ -80,7 +80,7 @@
   playTimeTracker: USSRMedic
   startingGear: USSRUniformMedic
   icon: "USSRMedic"
-  whitelisted: true
+  whitelisted: false
   joinNotifiyCrew: false
   special:
   - !type:AddComponentSpecial
@@ -105,7 +105,57 @@
   playTimeTracker: USSRRifleMan
   startingGear: USSRUniformRifleMan
   icon: "USSRRifleMan"
-  whitelisted: true
+  whitelisted: false
+  joinNotifiyCrew: false
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+
+- type: job
+  id: USSRSniper
+  name: job-name-USSR-sniper
+  description: job-description-USSR-sniper
+  playTimeTracker: USSRSniper
+  startingGear: USSRUniformSniper
+  icon: "USSRRifleMan"
+  whitelisted: false
+  joinNotifiyCrew: false
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+
+- type: job
+  id: USSRAutoRifleMan
+  name: job-name-USSR-autorifleman
+  description: job-description-USSR-autorifleman
+  playTimeTracker: USSRAutoRifleMan
+  startingGear: USSRUniformAutoRifleMan
+  icon: "USSRRifleMan"
+  whitelisted: false
   joinNotifiyCrew: false
   special:
   - !type:AddComponentSpecial
@@ -134,6 +184,12 @@
 
 - type: playTimeTracker
   id: USSRMedic
+
+- type: playTimeTracker
+  id: USSRSniper
+
+- type: playTimeTracker
+  id: USSRAutoRifleMan
 
 - type: playTimeTracker
   id: USSRRifleMan
@@ -239,6 +295,32 @@
     pocket1: IFAKUSSRFilled
     mask: ClothingMaskSterile
     gloves: ClothingHandsGlovesLatex
+
+- type: startingGear
+  id: USSRUniformSniper
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSSRYellow
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackUSSRKit
+    belt: FHClothingBeltUSSRHarness
+    pouchleft: FHClothingPouchUSSRSVDFilled
+    pouchright: FHClothingPouchUSSRSVDFilled
+    suitstorage: FHWeaponSnipersSVD
+    head: FHClothingHeadHelmetSSH68
+    pocket1: IFAKUSSRFilled
+
+- type: startingGear
+  id: USSRUniformAutoRifleMan
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSSRYellow
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackUSSRKit
+    belt: FHClothingBeltUSSRHarness
+    pouchleft: FHClothingPouchUSSRAmmoFilled45
+    pouchright: FHClothingPouchUSSRAmmoFilled45
+    suitstorage: FHWeaponLMGRPK74
+    head: FHClothingHeadHelmetSSH68
+    pocket1: IFAKUSSRFilled
 
 - type: startingGear
   id: USSRUniformRifleMan

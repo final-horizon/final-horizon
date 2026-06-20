@@ -23,9 +23,7 @@
     - suitStorage
   - type: AmmoCounter
   - type: Gun
-    fireRate: 3
-    burstFireRate: 8
-    burstCooldown: 0.2
+    fireRate: 4
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -71,3 +69,10 @@
   - type: FarGunshot
     range: 260
     sound: /Audio/_FinalHorizon/Weapons/Guns/Far/toz194_dist.ogg
+  - type: Scope
+    requireWielding: true
+    zoomLevels:
+    - zoom: 2
+      offset: 13
+      allowMovement: false
+      doAfter: 0.2

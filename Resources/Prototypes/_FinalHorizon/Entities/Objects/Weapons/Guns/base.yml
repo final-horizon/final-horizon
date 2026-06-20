@@ -8,7 +8,7 @@
     timer: 0.4
   - type: GunWieldBonus
     minAngle: -49
-    maxAngle: -25
+    maxAngle: -35
     angleIncrease: 0
     angleDecay: 0
   - type: Gun
@@ -19,8 +19,8 @@
     soundEmpty:
       path: /Audio/_FinalHorizon/Weapons/Guns/Empty/gen_empty.ogg
   - type: SpeedModifiedOnWield
-    walkModifier: 0.75
-    sprintModifier: 0.75
+    walkModifier: 0.73
+    sprintModifier: 0.73
   - type: PullDoAfter
     pullTime: 0.6
   - type: Scope
@@ -42,8 +42,10 @@
   - type: WieldableDoAfter
     timer: 1.5
   - type: GunWieldBonus
-    minAngle: -40
-    maxAngle: -35
+    minAngle: -48
+    maxAngle: -40
+  - type: Gun
+    angleIncrease: 1
   - type: SpeedModifiedOnWield
     walkModifier: 0.6
     sprintModifier: 0.6

@@ -8,6 +8,8 @@ job-name-USMC-medic = USMC Medic
 job-description-USMC-medic = Heal your teammates in the field.
 job-name-USMC-rifleman = USMC Rifleman
 job-description-USMC-rifleman = A soldier who uses a rifle.
+job-name-USMC-sniper = USMC Sniper
+job-description-USMC-sniper = A soldier who uses a sniper.
 
 job-name-USSR-platoonleader = USSR Platoon Leader
 job-description-USSR-platoonleader = Lead your platoon of soldiers.
@@ -19,3 +21,7 @@ job-name-USSR-medic = USSR Medic
 job-description-USSR-medic = Heal your teammates in the field.
 job-name-USSR-rifleman = USSR Rifleman
 job-description-USSR-rifleman = A soldier who uses a rifle.
+job-name-USSR-sniper = USSR Sniper
+job-description-USSR-sniper = A soldier who uses a sniper.
+job-name-USSR-autorifleman = USSR AutoRifleman
+job-description-USSR-autorifleman = A soldier who uses a bigger rifle.

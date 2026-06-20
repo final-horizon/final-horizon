@@ -55,7 +55,7 @@
   playTimeTracker: USMCMachineGunner
   startingGear: USMCUniformMachineGunner
   icon: "USMCMachineGunner"
-  whitelisted: true
+  whitelisted: false
   joinNotifiyCrew: false
   special:
   - !type:AddComponentSpecial
@@ -80,7 +80,32 @@
   playTimeTracker: USMCMedic
   startingGear: USMCUniformMedic
   icon: "USMCMedic"
-  whitelisted: true
+  whitelisted: false
+  joinNotifiyCrew: false
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskBluFor
+            layer:
+            - MobLayer
+
+- type: job
+  id: USMCSniper
+  name: job-name-USMC-sniper
+  description: job-description-USMC-sniper
+  playTimeTracker: USMCSniper
+  startingGear: USMCUniformSniper
+  icon: "USMCRifleMan"
+  whitelisted: false
   joinNotifiyCrew: false
   special:
   - !type:AddComponentSpecial
@@ -105,7 +130,7 @@
   playTimeTracker: USMCRifleMan
   startingGear: USMCUniformRifleMan
   icon: "USMCRifleMan"
-  whitelisted: true
+  whitelisted: false
   joinNotifiyCrew: false
   special:
   - !type:AddComponentSpecial
@@ -134,6 +159,9 @@
 
 - type: playTimeTracker
   id: USMCMedic
+
+- type: playTimeTracker
+  id: USMCSniper
 
 - type: playTimeTracker
   id: USMCRifleMan
@@ -239,6 +267,19 @@
     pocket1: IFAKUSMCFilled
     mask: ClothingMaskSterile
     gloves: ClothingHandsGlovesLatex
+
+- type: startingGear
+  id: USMCUniformSniper
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackUSMCButtPack
+    belt: FHClothingBeltUSMCHarness
+    pouchleft: FHClothingPouchUSMCAmmoFilledSniper
+    pouchright: FHClothingPouchUSMCAmmoFilledSniper
+    suitstorage: FHWeaponSnipersM21
+    head: FHClothingHeadHelmetM1
+    pocket1: IFAKUSMCFilled
 
 - type: startingGear
   id: USMCUniformRifleMan

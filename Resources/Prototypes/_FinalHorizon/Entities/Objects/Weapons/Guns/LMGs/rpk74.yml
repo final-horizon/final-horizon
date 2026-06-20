@@ -23,7 +23,8 @@
     - suitStorage
   - type: AmmoCounter
   - type: Gun
-    fireRate: 7
+    fireRate: 7.2
+    angleIncrease: 1.5
     selectedMode: SemiAuto
     availableModes:
       - FullAuto

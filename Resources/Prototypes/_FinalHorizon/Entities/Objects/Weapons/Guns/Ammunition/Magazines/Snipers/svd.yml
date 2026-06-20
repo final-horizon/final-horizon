@@ -8,7 +8,7 @@
       - Magazine762x54
       - MagazineLightRifle
   - type: Item
-    size: Normal
+    size: Small
   - type: BallisticAmmoProvider
     soundInsert:
       path: /Audio/_FinalHorizon/Weapons/Guns/Misc/rifle_load.ogg

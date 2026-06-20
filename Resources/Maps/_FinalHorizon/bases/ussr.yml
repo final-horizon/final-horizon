@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/30/2026 16:50:39
-  entityCount: 6036
+  time: 06/20/2026 14:59:26
+  entityCount: 6049
 maps:
 - 1
 grids:
@@ -16,20 +16,20 @@ tilemap:
   2: Space
   11: FHDirt
   9: FHGrass
-  12: Plating
   5: FHRoad
   10: FHSand
   4: FHSnow
   7: FHSnowDug
   8: FHStone
-  18: FloorBar
-  14: FloorSteel
-  16: FloorWhiteDiagonal
-  6: FloorWoodTile
-  15: FloorBrokenWood
   19: FHWoodFancy1
   13: FHWoodFancy2
   17: FHWoodFancy3
+  18: FloorBar
+  15: FloorBrokenWood
+  14: FloorSteel
+  16: FloorWhiteDiagonal
+  6: FloorWoodTile
+  12: Plating
 entities:
 - proto: ""
   entities:
@@ -468,105 +468,6 @@ entities:
     components:
     - type: Transform
       pos: -40.5,-3.5
-      parent: 1
-- proto: Bed
-  entities:
-  - uid: 553
-    components:
-    - type: Transform
-      pos: -3.5,12.5
-      parent: 1
-  - uid: 566
-    components:
-    - type: Transform
-      pos: -13.5,9.5
-      parent: 1
-  - uid: 567
-    components:
-    - type: Transform
-      pos: -11.5,9.5
-      parent: 1
-  - uid: 568
-    components:
-    - type: Transform
-      pos: -9.5,9.5
-      parent: 1
-  - uid: 569
-    components:
-    - type: Transform
-      pos: -7.5,9.5
-      parent: 1
-  - uid: 570
-    components:
-    - type: Transform
-      pos: -5.5,9.5
-      parent: 1
-  - uid: 571
-    components:
-    - type: Transform
-      pos: -13.5,12.5
-      parent: 1
-  - uid: 572
-    components:
-    - type: Transform
-      pos: -11.5,12.5
-      parent: 1
-  - uid: 573
-    components:
-    - type: Transform
-      pos: -9.5,12.5
-      parent: 1
-  - uid: 574
-    components:
-    - type: Transform
-      pos: -7.5,12.5
-      parent: 1
-  - uid: 575
-    components:
-    - type: Transform
-      pos: -5.5,12.5
-      parent: 1
-  - uid: 578
-    components:
-    - type: Transform
-      pos: -3.5,9.5
-      parent: 1
-  - uid: 618
-    components:
-    - type: Transform
-      pos: -17.5,12.5
-      parent: 1
-- proto: BedsheetMedical
-  entities:
-  - uid: 1351
-    components:
-    - type: Transform
-      pos: -2.5,-7.5
-      parent: 1
-  - uid: 1352
-    components:
-    - type: Transform
-      pos: 0.5,-7.5
-      parent: 1
-  - uid: 1353
-    components:
-    - type: Transform
-      pos: 0.5,-4.5
-      parent: 1
-  - uid: 1354
-    components:
-    - type: Transform
-      pos: -2.5,-4.5
-      parent: 1
-  - uid: 1356
-    components:
-    - type: Transform
-      pos: 3.5,-4.5
-      parent: 1
-  - uid: 1357
-    components:
-    - type: Transform
-      pos: 3.5,-7.5
       parent: 1
 - proto: BedsheetSyndie
   entities:
@@ -2244,6 +2145,182 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -36.5,-3.5
       parent: 1
+- proto: FHBedCotWP
+  entities:
+  - uid: 553
+    components:
+    - type: Transform
+      pos: -3.5,9.5
+      parent: 1
+  - uid: 566
+    components:
+    - type: Transform
+      pos: -13.5,12.5
+      parent: 1
+  - uid: 567
+    components:
+    - type: Transform
+      pos: -11.5,12.5
+      parent: 1
+  - uid: 568
+    components:
+    - type: Transform
+      pos: -9.5,12.5
+      parent: 1
+  - uid: 569
+    components:
+    - type: Transform
+      pos: -7.5,12.5
+      parent: 1
+  - uid: 570
+    components:
+    - type: Transform
+      pos: -5.5,12.5
+      parent: 1
+  - uid: 571
+    components:
+    - type: Transform
+      pos: -13.5,9.5
+      parent: 1
+  - uid: 572
+    components:
+    - type: Transform
+      pos: -11.5,9.5
+      parent: 1
+  - uid: 573
+    components:
+    - type: Transform
+      pos: -9.5,9.5
+      parent: 1
+  - uid: 574
+    components:
+    - type: Transform
+      pos: -7.5,9.5
+      parent: 1
+  - uid: 575
+    components:
+    - type: Transform
+      pos: -5.5,9.5
+      parent: 1
+  - uid: 578
+    components:
+    - type: Transform
+      pos: -3.5,12.5
+      parent: 1
+- proto: FHBedWP
+  entities:
+  - uid: 618
+    components:
+    - type: Transform
+      pos: -17.5,12.5
+      parent: 1
+  - uid: 1237
+    components:
+    - type: Transform
+      pos: 3.5,-7.5
+      parent: 1
+  - uid: 1238
+    components:
+    - type: Transform
+      pos: 3.5,-4.5
+      parent: 1
+  - uid: 1351
+    components:
+    - type: Transform
+      pos: -2.5,-7.5
+      parent: 1
+  - uid: 1352
+    components:
+    - type: Transform
+      pos: 0.5,-7.5
+      parent: 1
+  - uid: 1353
+    components:
+    - type: Transform
+      pos: 0.5,-4.5
+      parent: 1
+  - uid: 1354
+    components:
+    - type: Transform
+      pos: -2.5,-4.5
+      parent: 1
+- proto: FHBinocularsPact
+  entities:
+  - uid: 629
+    components:
+    - type: Transform
+      pos: 6.443498,2.4677854
+      parent: 1
+  - uid: 641
+    components:
+    - type: Transform
+      pos: 6.380998,2.4955633
+      parent: 1
+  - uid: 1206
+    components:
+    - type: Transform
+      pos: 6.5546093,2.516397
+      parent: 1
+  - uid: 1234
+    components:
+    - type: Transform
+      pos: 6.4643316,2.4677854
+      parent: 1
+  - uid: 1235
+    components:
+    - type: Transform
+      pos: 6.6171093,2.6830633
+      parent: 1
+  - uid: 1236
+    components:
+    - type: Transform
+      pos: 6.422665,2.5927854
+      parent: 1
+  - uid: 6039
+    components:
+    - type: Transform
+      pos: 6.36711,2.5580633
+      parent: 1
+  - uid: 6040
+    components:
+    - type: Transform
+      pos: 6.5198874,2.5580633
+      parent: 1
+  - uid: 6041
+    components:
+    - type: Transform
+      pos: 6.5198874,2.4052854
+      parent: 1
+  - uid: 6042
+    components:
+    - type: Transform
+      pos: 6.3323874,2.4122305
+      parent: 1
+  - uid: 6043
+    components:
+    - type: Transform
+      pos: 6.3879423,2.4608412
+      parent: 1
+  - uid: 6044
+    components:
+    - type: Transform
+      pos: 6.4643316,2.4747305
+      parent: 1
+  - uid: 6045
+    components:
+    - type: Transform
+      pos: 6.5337763,2.5719526
+      parent: 1
+  - uid: 6046
+    components:
+    - type: Transform
+      pos: 6.311554,2.5927854
+      parent: 1
+  - uid: 6047
+    components:
+    - type: Transform
+      pos: 6.186554,2.488619
+      parent: 1
 - proto: FHBoomBoxPact
   entities:
   - uid: 6025
@@ -3063,22 +3140,20 @@ entities:
       parent: 1
 - proto: FHFlagPoleUSSR
   entities:
-  - uid: 629
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -23.5,7.5
-      parent: 1
-  - uid: 641
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -1.5,7.5
-      parent: 1
   - uid: 5997
     components:
     - type: Transform
       pos: -29.5,-5.5
+      parent: 1
+  - uid: 6048
+    components:
+    - type: Transform
+      pos: -1.5,7.5
+      parent: 1
+  - uid: 6049
+    components:
+    - type: Transform
+      pos: -23.5,7.5
       parent: 1
 - proto: FHFlagUSSR
   entities:
@@ -30157,38 +30232,6 @@ entities:
     - type: Transform
       pos: 8.912786,-0.41826272
       parent: 1
-- proto: MedicalBed
-  entities:
-  - uid: 1206
-    components:
-    - type: Transform
-      pos: -2.5,-4.5
-      parent: 1
-  - uid: 1234
-    components:
-    - type: Transform
-      pos: -2.5,-7.5
-      parent: 1
-  - uid: 1235
-    components:
-    - type: Transform
-      pos: 0.5,-7.5
-      parent: 1
-  - uid: 1236
-    components:
-    - type: Transform
-      pos: 0.5,-4.5
-      parent: 1
-  - uid: 1237
-    components:
-    - type: Transform
-      pos: 3.5,-4.5
-      parent: 1
-  - uid: 1238
-    components:
-    - type: Transform
-      pos: 3.5,-7.5
-      parent: 1
 - proto: MedicatedSuture
   entities:
   - uid: 1271
@@ -30366,6 +30409,20 @@ entities:
     - type: Transform
       pos: 5.5,-11.5
       parent: 1
+- proto: SpawnPointUSSRAutoRifleMan
+  entities:
+  - uid: 5995
+    components:
+    - type: Transform
+      pos: -3.5,12.5
+      parent: 1
+- proto: SpawnPointUSSRAutoRifleManLate
+  entities:
+  - uid: 6038
+    components:
+    - type: Transform
+      pos: -3.5,12.5
+      parent: 1
 - proto: SpawnPointUSSRMachineGunner
   entities:
   - uid: 623
@@ -30421,6 +30478,20 @@ entities:
     components:
     - type: Transform
       pos: -9.5,12.5
+      parent: 1
+- proto: SpawnPointUSSRSnier
+  entities:
+  - uid: 1356
+    components:
+    - type: Transform
+      pos: -5.5,12.5
+      parent: 1
+- proto: SpawnPointUSSRSniperLate
+  entities:
+  - uid: 1357
+    components:
+    - type: Transform
+      pos: -5.5,12.5
       parent: 1
 - proto: SpawnPointUSSRTeamLeader
   entities:

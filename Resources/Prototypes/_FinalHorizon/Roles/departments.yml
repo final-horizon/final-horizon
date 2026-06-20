@@ -8,6 +8,7 @@
   - USMCTeamLeader
   - USMCMachineGunner
   - USMCMedic
+  - USMCSniper
   - USMCRifleMan
 
 - type: department
@@ -20,4 +21,6 @@
   - USSRTeamLeader
   - USSRMachineGunner
   - USSRMedic
+  - USSRSniper
+  - USSRAutoRifleMan
   - USSRRifleMan
