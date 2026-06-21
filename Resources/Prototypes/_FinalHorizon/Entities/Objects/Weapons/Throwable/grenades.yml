@@ -25,6 +25,9 @@
     triggerKey: timer
   - type: TimerTrigger
     delay: 3.5
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
 
 - type: entity
   name: RDG5 grenade
@@ -53,6 +56,9 @@
     triggerKey: timer
   - type: TimerTrigger
     delay: 3.5
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
 
 - type: entity
   name: M67 grenade
@@ -81,3 +87,6 @@
     triggerKey: timer
   - type: TimerTrigger
     delay: 4.8
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false

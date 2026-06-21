@@ -22,6 +22,9 @@
     price: 20
   - type: PullDoAfter
     pullTime: 2
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
 
 - type: entity
   parent: BaseItem
@@ -50,3 +53,6 @@
     price: 20
   - type: PullDoAfter
     pullTime: 2
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
