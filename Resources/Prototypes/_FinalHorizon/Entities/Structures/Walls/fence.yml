@@ -381,6 +381,7 @@
         - Opaque
         - MidImpassable
         - LowImpassable
+        - BulletImpassable
   - type: Occluder
 
 - type: entity
@@ -416,3 +417,4 @@
         - Opaque
         - MidImpassable
         - LowImpassable
+        - BulletImpassable

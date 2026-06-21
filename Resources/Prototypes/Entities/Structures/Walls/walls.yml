@@ -114,7 +114,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 1500 #FH
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -787,7 +787,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 1200 # FH
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -820,7 +820,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 1200 # FH
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -1299,7 +1299,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 700 # FH
+        damage: 1200 # FH
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -1308,7 +1308,7 @@
           collection: WoodDestroyHeavy
     - trigger:
         !type:DamageTrigger
-        damage: 500 # FH
+        damage: 1000 # FH
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1582,7 +1582,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 1500 # FH
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
