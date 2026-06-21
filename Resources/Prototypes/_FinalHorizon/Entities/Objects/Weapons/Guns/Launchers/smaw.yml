@@ -1,0 +1,48 @@
+- type: entity
+  name: SMAW
+  parent: FHWeaponLauncherBase
+  id: FHWeaponLauncherSMAW
+  description: The Mk 153 Shoulder-Launcher Multipurpose Assault Weapon. A multi role rocket launcher used by the USMC. Yes I know launching the spent rocket is wrong and silly. # fix that
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Launchers/smaw.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Launchers/smaw.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Item
+    size: Ginormous
+  - type: Gun
+    fireRate: 5
+    projectileSpeed: 25
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Gunshots/rpg_fire.ogg
+  - type: MultiHandedItem
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeSMAW
+    capacity: 1
+    soundInsert:
+      path: /Audio/_FinalHorizon/Weapons/Guns/magIn/rpgreload.ogg
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: FarGunshot
+    range: 240

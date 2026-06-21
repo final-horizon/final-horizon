@@ -19,6 +19,7 @@
 - type: entity
   parent: FHClothingPouchUSSRAmmo
   id: FHClothingPouchUSSRAmmoFilled
+  suffix: filled, ak74 30rnd
   components:
   - type: EntityTableContainerFill
     containers:
@@ -32,6 +33,7 @@
 - type: entity
   parent: FHClothingPouchUSSRAmmo
   id: FHClothingPouchUSSRAmmoFilled45
+  suffix: filled, ak74 45rnd
   components:
   - type: EntityTableContainerFill
     containers:
@@ -63,6 +65,7 @@
 - type: entity
   parent: FHClothingPouchUSSRLMG
   id: FHClothingPouchUSSRLMGFilled
+  suffix: filled, pkm
   components:
   - type: EntityTableContainerFill
     containers:
@@ -89,8 +92,9 @@
       - MagazineLightRifle
 
 - type: entity
-  parent: FHClothingPouchBase
+  parent: FHClothingPouchUSSRSVD
   id: FHClothingPouchUSSRSVDFilled
+  suffix: filled, svd
   components:
   - type: EntityTableContainerFill
     containers:
@@ -122,6 +126,7 @@
 - type: entity
   parent: FHClothingPouchUSSRGrenade
   id: FHClothingPouchUSSRGrenadeFilled
+  suffix: filled, rdg5 f1
   components:
   - type: EntityTableContainerFill
     containers:

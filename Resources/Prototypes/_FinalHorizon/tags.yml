@@ -33,6 +33,9 @@
 - type: Tag
   id: CartridgeRPG7
 
+- type: Tag
+  id: CartridgeSMAW
+
 # Radios
 - type: Tag
   id: EncryptionNato

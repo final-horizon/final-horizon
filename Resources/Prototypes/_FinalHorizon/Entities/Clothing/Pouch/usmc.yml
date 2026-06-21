@@ -19,6 +19,7 @@
 - type: entity
   parent: FHClothingPouchUSMCAmmo
   id: FHClothingPouchUSMCAmmoFilled
+  suffix: filled, m16
   components:
   - type: EntityTableContainerFill
     containers:
@@ -31,6 +32,7 @@
 - type: entity
   parent: FHClothingPouchUSMCAmmo
   id: FHClothingPouchUSMCAmmoFilledSniper
+  suffix: filled, m21
   components:
   - type: EntityTableContainerFill
     containers:
@@ -62,6 +64,7 @@
 - type: entity
   parent: FHClothingPouchUSMCAmmoDouble
   id: FHClothingPouchUSMCAmmoDoubleFilled
+  suffix: filled, m16
   components:
   - type: EntityTableContainerFill
     containers:
@@ -113,6 +116,7 @@
 - type: entity
   parent: FHClothingPouchUSMCAmmoLMG
   id: FHClothingPouchUSMCAmmoLMGFilled
+  suffix: filled, m60
   components:
   - type: EntityTableContainerFill
     containers:
@@ -156,6 +160,7 @@
 - type: entity
   parent: FHClothingPouchUSMCGrenade
   id: FHClothingPouchUSMCGrenadeFilled
+  suffix: filled, m67
   components:
   - type: EntityTableContainerFill
     containers:

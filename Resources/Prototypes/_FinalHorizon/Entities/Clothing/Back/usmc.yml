@@ -14,6 +14,7 @@
 - type: entity
   parent: FHClothingBackpackAliceMedium
   id: FHClothingBackpackAliceMediumFilledMachineGunner
+  suffix: filled, machinegunner
   components:
   - type: EntityTableContainerFill
     containers:
@@ -36,6 +37,19 @@
     grid:
     - 0,0,3,4
     maxItemSize: Large
+
+- type: entity
+  parent: FHClothingBackpackAliceLarge
+  id: FHClothingBackpackAliceLargeFilledSmaw
+  suffix: filled, smaw
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHCartridgeRocketSMAW
+        - id: FHCartridgeRocketSMAW
+        - id: FHCartridgeRocketSMAW
 
 - type: entity
   parent: FHClothingBackpackBase

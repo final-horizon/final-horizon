@@ -14,6 +14,7 @@
 - type: entity
   parent: FHClothingBackpackUSSRKit
   id: FHClothingBackpackUSSRKitMachineGunnerFilled
+  suffix: filled, machinegunner
   components:
   - type: EntityTableContainerFill
     containers:
@@ -41,3 +42,16 @@
     whitelist:
       tags:
       - CartridgeRocket
+
+- type: entity
+  parent: FHClothingBackpackUSSRRPG
+  id: FHClothingBackpackUSSRRPGFilled
+  suffix: filled, rpg7
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHCartridgeRocketRPG7
+        - id: FHCartridgeRocketRPG7
+        - id: FHCartridgeRocketRPG7

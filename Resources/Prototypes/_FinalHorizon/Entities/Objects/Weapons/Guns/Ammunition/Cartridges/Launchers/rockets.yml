@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BaseItem, BaseMajorContraband]
+  parent: BaseItem
   id: FHCartridgeRocketRPG7
   name: PG-7VL
   description: A standard single-stage HEAT rocket used in the RPG-7 by the soviet army
@@ -18,6 +18,34 @@
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Cartridges/rpg7.rsi
     state: base
+  - type: StaticPrice
+    price: 20
+  - type: PullDoAfter
+    pullTime: 2
+
+- type: entity
+  parent: BaseItem
+  id: FHCartridgeRocketSMAW
+  name: SMAW HEDM rocket
+  description: A High-Explosive Dual Mode rocket used in the SMAW.
+  components:
+  - type: Tag
+    tags:
+      - CartridgeSMAW
+      - CartridgeRocket
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,1,2
+  - type: CartridgeAmmo
+    proto: FHBulletRocketSMAW
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Cartridges/smaw.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
   - type: StaticPrice
     price: 20
   - type: PullDoAfter
