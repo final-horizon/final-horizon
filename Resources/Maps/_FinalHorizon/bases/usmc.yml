@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 06/20/2026 14:57:35
-  entityCount: 9393
+  time: 06/21/2026 20:00:38
+  entityCount: 9415
 maps:
 - 1
 grids:
@@ -920,6 +920,50 @@ entities:
     components:
     - type: Transform
       pos: 8.89445,1.3661635
+      parent: 1
+- proto: ClothingHandsGlovesColorBlack
+  entities:
+  - uid: 9408
+    components:
+    - type: Transform
+      pos: 5.4942565,-5.1343813
+      parent: 1
+  - uid: 9409
+    components:
+    - type: Transform
+      pos: 5.4817567,-5.2531314
+      parent: 1
+  - uid: 9410
+    components:
+    - type: Transform
+      pos: 5.4880066,-5.328131
+      parent: 1
+  - uid: 9411
+    components:
+    - type: Transform
+      pos: 5.4880066,-5.4906316
+      parent: 1
+- proto: ClothingHandsGlovesFingerless
+  entities:
+  - uid: 9412
+    components:
+    - type: Transform
+      pos: 5.819257,-4.2531314
+      parent: 1
+  - uid: 9413
+    components:
+    - type: Transform
+      pos: 5.7755065,-4.3531313
+      parent: 1
+  - uid: 9414
+    components:
+    - type: Transform
+      pos: 5.7755065,-4.4093814
+      parent: 1
+  - uid: 9415
+    components:
+    - type: Transform
+      pos: 5.7817564,-4.5281315
       parent: 1
 - proto: ClothingUniformJumpsuitUSMCWoodland
   entities:
@@ -2912,12 +2956,43 @@ entities:
     - type: Transform
       pos: -46.61657,-3.3437924
       parent: 1
+- proto: FHCartridgeRocketSMAW
+  entities:
+  - uid: 9397
+    components:
+    - type: Transform
+      pos: 2.6273086,-6.022457
+      parent: 1
+  - uid: 9398
+    components:
+    - type: Transform
+      pos: 2.6314752,-6.122457
+      parent: 1
+  - uid: 9399
+    components:
+    - type: Transform
+      pos: 2.6356418,-6.2766237
+      parent: 1
 - proto: FHCasseteBlueMonday
   entities:
   - uid: 1270
     components:
     - type: Transform
       pos: -48.596893,-3.3651147
+      parent: 1
+- proto: FHCasseteDerKommisar
+  entities:
+  - uid: 9406
+    components:
+    - type: Transform
+      pos: -47.57585,-3.5634608
+      parent: 1
+- proto: FHCasseteDuMusstZurBundeswehr
+  entities:
+  - uid: 9407
+    components:
+    - type: Transform
+      pos: -47.975853,-3.5842943
       parent: 1
 - proto: FHCasseteFortunateSon
   entities:
@@ -2932,6 +3007,13 @@ entities:
     components:
     - type: Transform
       pos: -47.333004,-3.2192814
+      parent: 1
+- proto: FHCasseteOutOfTouch
+  entities:
+  - uid: 9405
+    components:
+    - type: Transform
+      pos: -48.35502,-3.5301275
       parent: 1
 - proto: FHClothingBackpackAliceLarge
   entities:
@@ -2949,6 +3031,23 @@ entities:
     components:
     - type: Transform
       pos: 5.0813265,-5.254812
+      parent: 1
+- proto: FHClothingBackpackAliceLargeFilledSmaw
+  entities:
+  - uid: 9400
+    components:
+    - type: Transform
+      pos: 2.031475,-6.914124
+      parent: 1
+  - uid: 9401
+    components:
+    - type: Transform
+      pos: 2.4564753,-6.897457
+      parent: 1
+  - uid: 9402
+    components:
+    - type: Transform
+      pos: 2.848142,-6.9099574
       parent: 1
 - proto: FHClothingBackpackAliceMedium
   entities:
@@ -45644,6 +45743,23 @@ entities:
       containers:
         ballistic-ammo: !type:Container
           ents: []
+- proto: FHWeaponLauncherSMAW
+  entities:
+  - uid: 9394
+    components:
+    - type: Transform
+      pos: 2.0606418,-6.1557903
+      parent: 1
+  - uid: 9395
+    components:
+    - type: Transform
+      pos: 2.0648086,-6.297457
+      parent: 1
+  - uid: 9396
+    components:
+    - type: Transform
+      pos: 2.0648086,-6.472457
+      parent: 1
 - proto: FHWeaponRifleM16A1
   entities:
   - uid: 1384
@@ -47402,6 +47518,20 @@ entities:
     components:
     - type: Transform
       pos: -27.5,-18.5
+      parent: 1
+- proto: SpawnPointUSMCRTO
+  entities:
+  - uid: 9403
+    components:
+    - type: Transform
+      pos: -23.5,-2.5
+      parent: 1
+- proto: SpawnPointUSMCRTOLate
+  entities:
+  - uid: 9404
+    components:
+    - type: Transform
+      pos: -23.5,-2.5
       parent: 1
 - proto: SpawnPointUSMCSniper
   entities:
