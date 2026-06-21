@@ -7,6 +7,7 @@
   icon: "USSRPlatoonLeader"
   whitelisted: true
   joinNotifiyCrew: false
+  displayWeight: 10
   special:
   - !type:AddComponentSpecial
     components:
@@ -32,6 +33,7 @@
   icon: "USSRTeamLeader"
   whitelisted: true
   joinNotifiyCrew: false
+  displayWeight: 9
   special:
   - !type:AddComponentSpecial
     components:
@@ -57,6 +59,7 @@
   icon: "USSRMachineGunner"
   whitelisted: false
   joinNotifiyCrew: false
+  displayWeight: 6
   special:
   - !type:AddComponentSpecial
     components:
@@ -82,6 +85,7 @@
   icon: "USSRMedic"
   whitelisted: false
   joinNotifiyCrew: false
+  displayWeight: 7
   special:
   - !type:AddComponentSpecial
     components:
@@ -107,6 +111,7 @@
   icon: "USSRRifleMan"
   whitelisted: false
   joinNotifiyCrew: false
+  displayWeight: 3
   special:
   - !type:AddComponentSpecial
     components:
@@ -129,9 +134,36 @@
   description: job-description-USSR-sniper
   playTimeTracker: USSRSniper
   startingGear: USSRUniformSniper
-  icon: "USSRRifleMan"
+  icon: "USSRSniper"
   whitelisted: false
   joinNotifiyCrew: false
+  displayWeight: 4
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+
+- type: job
+  id: USSRRTO
+  name: job-name-USSR-rto
+  description: job-description-USSR-rto
+  playTimeTracker: USSRRTO
+  startingGear: USSRUniformRTO
+  icon: "USSRRTO"
+  whitelisted: false
+  joinNotifiyCrew: false
+  displayWeight: 8
   special:
   - !type:AddComponentSpecial
     components:
@@ -154,9 +186,10 @@
   description: job-description-USSR-autorifleman
   playTimeTracker: USSRAutoRifleMan
   startingGear: USSRUniformAutoRifleMan
-  icon: "USSRRifleMan"
+  icon: "USSRAutoRifleMan"
   whitelisted: false
   joinNotifiyCrew: false
+  displayWeight: 5
   special:
   - !type:AddComponentSpecial
     components:
@@ -190,6 +223,9 @@
 
 - type: playTimeTracker
   id: USSRAutoRifleMan
+
+- type: playTimeTracker
+  id: USSRRTO
 
 - type: playTimeTracker
   id: USSRRifleMan
@@ -232,6 +268,33 @@
 
 - type: jobIcon
   parent: JobIcon
+  id: USSRRTO
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: pact_rto
+  jobName: job-name-USSR-rto
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: USSRAutoRifleMan
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: pact_autorifle
+  jobName: job-name-USSR-autorifleman
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: USSRSniper
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: pact_sniper
+  jobName: job-name-USSR-sniper
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
   id: USSRRifleMan
   icon:
     sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
@@ -247,7 +310,7 @@
     outerClothing: FHClothingOuterArmor6b2
     back: FHClothingBackRadioR105D
     belt: FHClothingBeltUSSRHarness
-    pouchleft: FHClothingPouchUSSRGrenade
+    pouchleft: FHClothingPouchUSSRGrenadeFilled
     pouchright: FHClothingPouchUSSRAmmoFilled
     suitstorage: FHWeaponRifleAK74
     head: FHClothingHeadHatBeretSA
@@ -262,7 +325,7 @@
     outerClothing: FHClothingOuterArmor6b2
     back: FHClothingBackRadioR105D
     belt: FHClothingBeltUSSRHarness
-    pouchleft: FHClothingPouchUSSRGrenade
+    pouchleft: FHClothingPouchUSSRGrenadeFilled
     pouchright: FHClothingPouchUSSRAmmoFilled
     suitstorage: FHWeaponRifleAK74
     head: FHClothingHeadHelmetSSH68
@@ -319,6 +382,19 @@
     pouchleft: FHClothingPouchUSSRAmmoFilled45
     pouchright: FHClothingPouchUSSRAmmoFilled45
     suitstorage: FHWeaponLMGRPK74
+    head: FHClothingHeadHelmetSSH68
+    pocket1: IFAKUSSRFilled
+
+- type: startingGear
+  id: USSRUniformRTO
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSSRYellow
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackRadioR105D
+    belt: FHClothingBeltUSSRHarness
+    pouchleft: FHClothingPouchUSSRAmmoFilled
+    pouchright: FHClothingPouchUSSRAmmoFilled
+    suitstorage: FHWeaponRifleAK74
     head: FHClothingHeadHelmetSSH68
     pocket1: IFAKUSSRFilled
 

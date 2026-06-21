@@ -17,6 +17,7 @@
             USMCMedic: [ 4, 4 ]
             USMCMachineGunner: [ 4, 4 ]
             USMCSniper: [ 1, 1 ]
+            USMCRTO: [ 4, 4 ]
             USMCRifleMan: [ 40, 40 ]
             USSRPlatoonLeader: [ 1, 1 ]
             USSRTeamLeader: [ 4, 4 ]
@@ -24,6 +25,7 @@
             USSRMachineGunner: [ 1, 1 ]
             USSRAutoRifleMan: [ 4, 4 ]
             USSRSniper: [ 1, 1 ]
+            USSRRTO: [ 4, 4 ]
             USSRRifleMan: [ 40, 40 ]
         - type: MultiMapLoader
           maps: [ "/Maps/_FinalHorizon/Bases/usmc.yml", "/Maps/_FinalHorizon/Bases/ussr.yml" ]

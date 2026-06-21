@@ -1,7 +1,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRAmmo
-  name: USSR ammo pouch
+  name: Soviet Army ammo pouch
   description: A pouch that can carry 4 mags.
   components:
   - type: Sprite
@@ -45,7 +45,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRLMG
-  name: USSR lmg ammo pouch
+  name: Soviet Army lmg ammo pouch
   description: A pouch for holding lmg boxes.
   components:
   - type: Sprite
@@ -73,7 +73,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRSVD
-  name: USSR svd ammo pouch
+  name: Soviet Army svd ammo pouch
   description: A pouch for carrying svd mags.
   components:
   - type: Sprite
@@ -104,7 +104,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRGrenade
-  name: USSR grenade pouch
+  name: Soviet Army grenade pouch
   description: A pouch for carrying discarded mags.
   components:
   - type: Sprite
@@ -120,9 +120,24 @@
       - HandGrenade
 
 - type: entity
+  parent: FHClothingPouchUSSRGrenade
+  id: FHClothingPouchUSSRGrenadeFilled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHGrenadeRDG5
+        - id: FHGrenadeRDG5
+        - id: FHGrenadeRDG5
+        - id: FHGrenadeF1
+        - id: FHGrenadeF1
+        - id: FHGrenadeF1
+
+- type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRSapper
-  name: USSR sapper pouch
+  name: Soviet Army sapper pouch
   description: A pouch for carrying tools and materials.
   components:
   - type: Sprite
@@ -137,7 +152,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRUtility
-  name: USSR utility pouch
+  name: Soviet Army utility pouch
   description: A pouch for carrying various things.
   components:
   - type: Sprite
@@ -152,7 +167,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRVOG
-  name: USSR vog pouch
+  name: Soviet Army vog pouch
   description: A pouch for carrying vog underbarrel grenades.
   components:
   - type: Sprite
@@ -170,7 +185,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRSG
-  name: USSR squad gunner pouch
+  name: Soviet Army squad gunner pouch
   description: A pouch for carrying ammo boxes.
   components:
   - type: Sprite

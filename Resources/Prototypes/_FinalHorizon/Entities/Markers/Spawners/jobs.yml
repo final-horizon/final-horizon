@@ -131,11 +131,33 @@
   - type: Sprite
     state: green
 
-# USSR
+- type: entity
+  id: SpawnPointUSMCRTO
+  parent: SpawnPointJobBase
+  name: USMC RTO
+  components:
+  - type: SpawnPoint
+    job_id: USMCRTO
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSMCRTOLate
+  parent: SpawnPointJobBase
+  name: USMC RTO
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USMCRTO
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+# Soviet Army
 - type: entity
   id: SpawnPointUSSRPlatoonLeader
   parent: SpawnPointJobBase
-  name: USSR platoon leader
+  name: Soviet Army platoon leader
   components:
   - type: SpawnPoint
     job_id: USSRPlatoonLeader
@@ -145,7 +167,7 @@
 - type: entity
   id: SpawnPointUSSRPlatoonLeaderLate
   parent: SpawnPointJobBase
-  name: USSR platoon leader
+  name: Soviet Army platoon leader
   suffix: Late Join Spawn
   components:
   - type: SpawnPoint
@@ -157,7 +179,7 @@
 - type: entity
   id: SpawnPointUSSRTeamLeader
   parent: SpawnPointJobBase
-  name: USSR team leader
+  name: Soviet Army team leader
   components:
   - type: SpawnPoint
     job_id: USSRTeamLeader
@@ -167,7 +189,7 @@
 - type: entity
   id: SpawnPointUSSRTeamLeaderLate
   parent: SpawnPointJobBase
-  name: USSR team leader
+  name: Soviet Army team leader
   suffix: Late Join Spawn
   components:
   - type: SpawnPoint
@@ -179,7 +201,7 @@
 - type: entity
   id: SpawnPointUSSRMedic
   parent: SpawnPointJobBase
-  name: USSR medic
+  name: Soviet Army medic
   components:
   - type: SpawnPoint
     job_id: USSRMedic
@@ -189,7 +211,7 @@
 - type: entity
   id: SpawnPointUSSRMedicLate
   parent: SpawnPointJobBase
-  name: USSR medic
+  name: Soviet Army medic
   suffix: Late Join Spawn
   components:
   - type: SpawnPoint
@@ -201,7 +223,7 @@
 - type: entity
   id: SpawnPointUSSRMachineGunner
   parent: SpawnPointJobBase
-  name: USSR machine gunner
+  name: Soviet Army machine gunner
   components:
   - type: SpawnPoint
     job_id: USSRMachineGunner
@@ -211,7 +233,7 @@
 - type: entity
   id: SpawnPointUSSRMachineGunnerLate
   parent: SpawnPointJobBase
-  name: USSR machine gunner
+  name: Soviet Army machine gunner
   suffix: Late Join Spawn
   components:
   - type: SpawnPoint
@@ -223,7 +245,7 @@
 - type: entity
   id: SpawnPointUSSRRifleMan
   parent: SpawnPointJobBase
-  name: USSR rifle man
+  name: Soviet Army rifle man
   components:
   - type: SpawnPoint
     job_id: USSRRifleMan
@@ -233,7 +255,7 @@
 - type: entity
   id: SpawnPointUSSRRifleManLate
   parent: SpawnPointJobBase
-  name: USSR rifle man
+  name: Soviet Army rifle man
   suffix: Late Join Spawn
   components:
   - type: SpawnPoint
@@ -245,7 +267,7 @@
 - type: entity
   id: SpawnPointUSSRSnier
   parent: SpawnPointJobBase
-  name: USSR sniper
+  name: Soviet Army sniper
   components:
   - type: SpawnPoint
     job_id: USSRSniper
@@ -255,7 +277,7 @@
 - type: entity
   id: SpawnPointUSSRSniperLate
   parent: SpawnPointJobBase
-  name: USSR sniper
+  name: Soviet Army sniper
   suffix: Late Join Spawn
   components:
   - type: SpawnPoint
@@ -267,7 +289,7 @@
 - type: entity
   id: SpawnPointUSSRAutoRifleMan
   parent: SpawnPointJobBase
-  name: USSR autorifle man
+  name: Soviet Army autorifle man
   components:
   - type: SpawnPoint
     job_id: USSRAutoRifleMan
@@ -277,11 +299,33 @@
 - type: entity
   id: SpawnPointUSSRAutoRifleManLate
   parent: SpawnPointJobBase
-  name: USSR autorifle man
+  name: Soviet Army autorifle man
   suffix: Late Join Spawn
   components:
   - type: SpawnPoint
     job_id: USSRAutoRifleMan
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSSRRTO
+  parent: SpawnPointJobBase
+  name: Soviet Army RTO
+  components:
+  - type: SpawnPoint
+    job_id: USSRRTO
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSSRRTOLate
+  parent: SpawnPointJobBase
+  name: Soviet Army RTO
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USSRRTO
     spawn_type: LateJoinJob
   - type: Sprite
     state: green

@@ -7,6 +7,7 @@
   icon: "USMCPlatoonLeader"
   whitelisted: true
   joinNotifiyCrew: false
+  displayWeight: 10
   special:
   - !type:AddComponentSpecial
     components:
@@ -32,6 +33,7 @@
   icon: "USMCTeamLeader"
   whitelisted: true
   joinNotifiyCrew: false
+  displayWeight: 9
   special:
   - !type:AddComponentSpecial
     components:
@@ -57,6 +59,7 @@
   icon: "USMCMachineGunner"
   whitelisted: false
   joinNotifiyCrew: false
+  displayWeight: 6
   special:
   - !type:AddComponentSpecial
     components:
@@ -82,6 +85,7 @@
   icon: "USMCMedic"
   whitelisted: false
   joinNotifiyCrew: false
+  displayWeight: 7
   special:
   - !type:AddComponentSpecial
     components:
@@ -104,9 +108,36 @@
   description: job-description-USMC-sniper
   playTimeTracker: USMCSniper
   startingGear: USMCUniformSniper
-  icon: "USMCRifleMan"
+  icon: "USMCSniper"
   whitelisted: false
   joinNotifiyCrew: false
+  displayWeight: 5
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskBluFor
+            layer:
+            - MobLayer
+
+- type: job
+  id: USMCRTO
+  name: job-name-USMC-rto
+  description: job-description-USMC-rto
+  playTimeTracker: USMCRTO
+  startingGear: USMCUniformRTO
+  icon: "USMCRTO"
+  whitelisted: false
+  joinNotifiyCrew: false
+  displayWeight: 8
   special:
   - !type:AddComponentSpecial
     components:
@@ -132,6 +163,7 @@
   icon: "USMCRifleMan"
   whitelisted: false
   joinNotifiyCrew: false
+  displayWeight: 4
   special:
   - !type:AddComponentSpecial
     components:
@@ -162,6 +194,9 @@
 
 - type: playTimeTracker
   id: USMCSniper
+
+- type: playTimeTracker
+  id: USMCRTO
 
 - type: playTimeTracker
   id: USMCRifleMan
@@ -204,6 +239,24 @@
 
 - type: jobIcon
   parent: JobIcon
+  id: USMCRTO
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: nato_rto
+  jobName: job-name-USMC-rto
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: USMCSniper
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: nato_sniper
+  jobName: job-name-USMC-sniper
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
   id: USMCRifleMan
   icon:
     sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
@@ -219,7 +272,7 @@
     outerClothing: FHClothingOuterArmorFlak
     back: FHClothingBackRadioANPRC77
     belt: FHClothingBeltUSMCHarness
-    pouchleft: FHClothingPouchUSMCGrenade
+    pouchleft: FHClothingPouchUSMCGrenadeFilled
     pouchright: FHClothingPouchUSMCAmmoDoubleFilled
     suitstorage: FHWeaponRifleM16A1
     head: FHClothingHeadHatBeretUSMC
@@ -234,7 +287,7 @@
     outerClothing: FHClothingOuterArmorFlak
     back: FHClothingBackRadioANPRC77
     belt: FHClothingBeltUSMCHarness
-    pouchleft: FHClothingPouchUSMCGrenade
+    pouchleft: FHClothingPouchUSMCGrenadeFilled
     pouchright: FHClothingPouchUSMCAmmoDoubleFilled
     suitstorage: FHWeaponRifleM16A1
     head: FHClothingHeadHelmetM1Woodland
@@ -278,6 +331,19 @@
     pouchleft: FHClothingPouchUSMCAmmoFilledSniper
     pouchright: FHClothingPouchUSMCAmmoFilledSniper
     suitstorage: FHWeaponSnipersM21
+    head: FHClothingHeadHelmetM1
+    pocket1: IFAKUSMCFilled
+
+- type: startingGear
+  id: USMCUniformRTO
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackRadioANPRC77
+    belt: FHClothingBeltUSMCHarness
+    pouchleft: FHClothingPouchUSMCAmmoFilled
+    pouchright: FHClothingPouchUSMCAmmoFilled
+    suitstorage: FHWeaponRifleM16A2
     head: FHClothingHeadHelmetM1
     pocket1: IFAKUSMCFilled
 

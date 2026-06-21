@@ -154,6 +154,21 @@
       - HandGrenade
 
 - type: entity
+  parent: FHClothingPouchUSMCGrenade
+  id: FHClothingPouchUSMCGrenadeFilled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHGrenadeM67
+        - id: FHGrenadeM67
+        - id: FHGrenadeM67
+        - id: FHGrenadeM67
+        - id: FHGrenadeM67
+        - id: FHGrenadeM67
+
+- type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSMCSapper
   name: USMC sapper pouch
