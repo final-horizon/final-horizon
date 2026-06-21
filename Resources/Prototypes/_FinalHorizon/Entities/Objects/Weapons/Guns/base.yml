@@ -7,8 +7,8 @@
   - type: WieldableDoAfter
     timer: 0.4
   - type: GunWieldBonus
-    minAngle: -49
-    maxAngle: -35
+    minAngle: -47
+    maxAngle: -38
     angleIncrease: 0
     angleDecay: 0
   - type: Gun
@@ -40,10 +40,10 @@
   id: FHWeaponBaseLMG
   components:
   - type: WieldableDoAfter
-    timer: 1.5
+    timer: 1.2
   - type: GunWieldBonus
-    minAngle: -48
-    maxAngle: -40
+    minAngle: -45
+    maxAngle: -43
   - type: Gun
     angleIncrease: 1
   - type: SpeedModifiedOnWield
@@ -56,11 +56,33 @@
     zoomLevels:
     - zoom: 1.6
       offset: 13
-      allowMovement: false
+      allowMovement: true
       doAfter: 0.2
   - type: FarGunshot
     range: 300
     sound: /Audio/_FinalHorizon/Weapons/Guns/Far/mg_dist.ogg
+
+- type: entity
+  parent: FHWeaponBase
+  abstract: true
+  id: FHWeaponBaseSniper
+  components:
+  - type: GunWieldBonus
+    minAngle: -49
+    maxAngle: -30
+  - type: Gun
+    angleIncrease: 5
+    fireRate: 1.5
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.75
+    sprintModifier: 0.75
+  - type: Scope
+    requireWielding: true
+    zoomLevels:
+    - zoom: 2.2
+      offset: 13
+      allowMovement: false
+      doAfter: 1
 
 - type: entity
   parent: BaseItem

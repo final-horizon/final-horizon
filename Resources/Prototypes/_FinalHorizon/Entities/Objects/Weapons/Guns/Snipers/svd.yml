@@ -1,6 +1,6 @@
 - type: entity
   name: SVD
-  parent: FHWeaponBase
+  parent: FHWeaponBaseSniper
   id: FHWeaponSnipersSVD
   description: A rooty tooty point and shooty. # fix this
   components:
@@ -23,7 +23,7 @@
     - suitStorage
   - type: AmmoCounter
   - type: Gun
-    fireRate: 3
+    fireRate: 1.5
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -69,10 +69,3 @@
   - type: FarGunshot
     range: 260
     sound: /Audio/_FinalHorizon/Weapons/Guns/Far/toz194_dist.ogg
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - zoom: 2
-      offset: 13
-      allowMovement: false
-      doAfter: 0.2

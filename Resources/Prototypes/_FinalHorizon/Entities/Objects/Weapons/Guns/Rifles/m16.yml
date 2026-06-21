@@ -26,7 +26,7 @@
     fireRate: 8
     burstFireRate: 8
     burstCooldown: 0.2
-    selectedMode: SemiAuto
+    selectedMode: FullAuto
     availableModes:
       - FullAuto
       - SemiAuto
@@ -84,6 +84,7 @@
   - type: Clothing
     sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/m16a2.rsi
   - type: Gun
+    selectedMode: Burst
     availableModes:
       - Burst
       - SemiAuto

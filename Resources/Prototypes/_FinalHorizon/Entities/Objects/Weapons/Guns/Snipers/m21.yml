@@ -1,6 +1,6 @@
 - type: entity
   name: M21
-  parent: FHWeaponBase
+  parent: FHWeaponBaseSniper
   id: FHWeaponSnipersM21
   description: A rooty tooty point and shooty. # fix this
   components:
@@ -23,7 +23,7 @@
     - suitStorage
   - type: AmmoCounter
   - type: Gun
-    fireRate: 4
+    fireRate: 2
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -69,10 +69,3 @@
   - type: FarGunshot
     range: 260
     sound: /Audio/_FinalHorizon/Weapons/Guns/Far/toz194_dist.ogg
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - zoom: 2
-      offset: 13
-      allowMovement: false
-      doAfter: 0.2

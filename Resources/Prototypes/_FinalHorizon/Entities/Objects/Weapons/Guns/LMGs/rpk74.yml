@@ -1,6 +1,6 @@
 - type: entity
   name: RPK-74
-  parent: FHWeaponBaseLMG
+  parent: FHWeaponBase
   id: FHWeaponLMGRPK74
   description: A rooty tooty point and shooty. # fix this
   components:
@@ -25,7 +25,7 @@
   - type: Gun
     fireRate: 7.2
     angleIncrease: 1.5
-    selectedMode: SemiAuto
+    selectedMode: FullAuto
     availableModes:
       - FullAuto
       - SemiAuto
@@ -71,3 +71,18 @@
   - type: FarGunshot
     range: 260
     sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak_dist.ogg
+  - type: GunWieldBonus
+    minAngle: -45
+    maxAngle: -43
+  - type: Scope
+    requireWielding: true
+    zoomLevels:
+    - zoom: 1.8
+      offset: 13
+      allowMovement: true
+      doAfter: 0.15
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.6
+    sprintModifier: 0.6
+  - type: WieldableDoAfter
+    timer: 0.6

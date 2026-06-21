@@ -24,7 +24,7 @@
   - type: AmmoCounter
   - type: Gun
     fireRate: 7
-    selectedMode: SemiAuto
+    selectedMode: FullAuto
     availableModes:
       - FullAuto
       - SemiAuto
