@@ -158,3 +158,36 @@
     sound: /Audio/_FinalHorizon/Cassete/roller_mobster.ogg
   - type: Sprite
     state: 15
+
+- type: entity
+  parent: FHCasseteBase
+  id: FHCasseteDerKommisar
+  suffix: der kommisar
+  description: Der Kommisar
+  components:
+  - type: Cassete
+    sound: /Audio/_FinalHorizon/Cassete/derkommisar.ogg
+  - type: Sprite
+    state: 7
+
+- type: entity
+  parent: FHCasseteBase
+  id: FHCasseteDuMusstZurBundeswehr
+  suffix: du musst zur bundeswehr
+  description: Du musst zur Bundeswehr
+  components:
+  - type: Cassete
+    sound: /Audio/_FinalHorizon/Cassete/bdwwin.ogg
+  - type: Sprite
+    state: 12
+
+- type: entity
+  parent: FHCasseteBase
+  id: FHCasseteOutOfTouch
+  suffix: out of touch
+  description: Out of Touch
+  components:
+  - type: Cassete
+    sound: /Audio/_FinalHorizon/Cassete/outoftouch.ogg
+  - type: Sprite
+    state: 4

@@ -1,7 +1,7 @@
 - type: entity
   id: Jukebox
   name: jukebox
-  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  parent: [ BaseMachine, ConstructibleMachine ] # FH
   description: A machine capable of playing a wide variety of tunes. Enjoyment not guaranteed.
   components:
   - type: StationAiWhitelist
@@ -19,12 +19,12 @@
   - type: Machine
     board: JukeboxCircuitBoard
   - type: Appearance
-  - type: ApcPowerReceiver
-    powerLoad: 100
+  #- type: ApcPowerReceiver # FH
+  #  powerLoad: 100 # FH
   - type: ExtensionCableReceiver
   - type: ActivatableUI
     key: enum.JukeboxUiKey.Key
-  - type: ActivatableUIRequiresPower
+  #- type: ActivatableUIRequiresPower # FH
   - type: UserInterface
     interfaces:
         enum.JukeboxUiKey.Key:
