@@ -1,3 +1,4 @@
+using Content.Server._FinalHorizon.Projectiles.Cover;
 using Content.Server.Administration.Logs;
 using Content.Server.Destructible;
 using Content.Server.Effects;
@@ -41,6 +42,16 @@ public sealed class ProjectileSystem : SharedProjectileSystem
             return;
 
         var target = args.OtherEntity;
+
+        // FH start
+        var coverEvent = new CoverHitAttemptEvent(uid, component);
+        RaiseLocalEvent(target, ref coverEvent);
+        if (coverEvent.Missed)
+        {
+            return;
+        }
+        // FH end
+
         // it's here so this check is only done once before possible hit
         var attemptEv = new ProjectileReflectAttemptEvent(uid, component, false);
         RaiseLocalEvent(target, ref attemptEv);

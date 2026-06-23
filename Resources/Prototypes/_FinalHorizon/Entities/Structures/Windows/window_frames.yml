@@ -28,11 +28,13 @@
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 55
         mask:
-        - TableMask
+        - ItemMask
         layer:
-        - TableLayer
-  - type: Climbable
+        - SlipLayer
   - type: SunShadowCast
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.6
+    sprintSpeedModifier: 0.6
 
 - type: entity
   id: FHWindowFrameMetal
@@ -64,8 +66,10 @@
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 55
         mask:
-        - TableMask
+        - ItemMask
         layer:
-        - TableLayer
-  - type: Climbable
+        - SlipLayer
   - type: SunShadowCast
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.6
+    sprintSpeedModifier: 0.6

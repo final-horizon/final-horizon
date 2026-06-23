@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "taken from CF escal",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "brustwehr0",
+      "directions": 4
+    },
+    {
+      "name": "brustwehr1",
+      "directions": 4
+    },
+    {
+      "name": "brustwehr2",
+      "directions": 4
+    },
+    {
+      "name": "brustwehr3",
+      "directions": 4
+    },
+    {
+      "name": "brustwehr4",
+      "directions": 4
+    },
+    {
+      "name": "brustwehr5",
+      "directions": 4
+    },
+    {
+      "name": "brustwehr6",
+      "directions": 4
+    },
+    {
+      "name": "brustwehr7",
+      "directions": 4
+    },
+    {
+      "name": "full"
+    }
+  ]
+}
