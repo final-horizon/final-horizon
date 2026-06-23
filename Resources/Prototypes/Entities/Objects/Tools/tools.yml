@@ -492,7 +492,7 @@
     useSound:
       path: /Audio/Items/crowbar.ogg
   - type: ToolTileCompatible
-    delay: 10 # FH end
+    delay: 8 # FH end
 
 - type: entity
   parent: BaseItem

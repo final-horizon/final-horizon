@@ -15,3 +15,4 @@
   objectType: Structure
   placementMode: SnapgridCenter
   canRotate: true
+  hide: false
