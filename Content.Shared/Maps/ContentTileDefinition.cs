@@ -117,6 +117,14 @@ namespace Content.Shared.Maps
         [DataField("mobAcceleration")]
         public float? MobAcceleration { get; private set; }
 
+        // FH start
+        /// <summary>
+        ///     Speed multiplier for mob mover in <see cref="SharedMoverController"/>
+        /// </summary>
+        [DataField("mobSpeed")]
+        public float? MobSpeed { get; private set; }
+        // FH end
+
         [DataField("sturdy")] public bool Sturdy { get; private set; } = true;
 
         /// <summary>

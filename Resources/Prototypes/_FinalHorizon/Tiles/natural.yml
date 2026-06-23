@@ -19,6 +19,7 @@
   isSubfloor: true
   heatCapacity: 10000
   indestructible: true
+  mobSpeed: 0.7
   variants: 4
   placementVariants:
   - 1.0
@@ -53,6 +54,7 @@
   name: FH Grass
   sprite: /Textures/_FinalHorizon/Tiles/Natural/grass.png
   baseTurf: FHDirt
+  mobSpeed: 0.7
   isSubfloor: true
   heatCapacity: 10000
   variants: 4
@@ -71,6 +73,7 @@
   isSubfloor: true
   heatCapacity: 10000
   baseTurf: FHDirt
+  mobSpeed: 0.7
   variants: 4
   placementVariants:
   - 1.0
@@ -85,6 +88,7 @@
   name: FH Snow
   sprite: /Textures/Tiles/Planet/Snow/snow.png
   variants: 13
+  mobSpeed: 0.7
   placementVariants:
   - 0.8
   - 0.0166
@@ -115,6 +119,7 @@
   id: FHSnowDug
   parent: FHBaseNaturalTile
   name: FH Snow Dirt
+  mobSpeed: 0.8
   sprite: /Textures/Tiles/Planet/Snow/snow_dug.png
   edgeSpritePriority: 1
   edgeSprites:
