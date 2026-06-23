@@ -1,0 +1,13 @@
+- type: constructionGraph
+  id: Brustwehr
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: built
+          steps:
+            - material: Dirt
+              amount: 8
+              doAfter: 5
+    - node: built
+      entity: FHBrustwehr

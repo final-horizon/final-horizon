@@ -1,0 +1,8 @@
+- type: construction
+  id: Brustwehr
+  graph: Brustwehr
+  startNode: start
+  targetNode: built
+  category: construction-category-misc
+  objectType: Structure
+  placementMode: SnapgridCenter

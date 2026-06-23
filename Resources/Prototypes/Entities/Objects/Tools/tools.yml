@@ -486,6 +486,13 @@
   - type: StaticPrice
     price: 25
   - type: Shovel
+  - type: Tool # FH start
+    qualities:
+      - Digging
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: ToolTileCompatible
+    delay: 10 # FH end
 
 - type: entity
   parent: BaseItem

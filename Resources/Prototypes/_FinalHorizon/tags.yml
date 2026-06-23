@@ -42,3 +42,7 @@
 
 - type: Tag
   id: EncryptionPact
+
+# Misc
+- type: Tag
+  id: SandbagItemFull

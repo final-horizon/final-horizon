@@ -1,0 +1,17 @@
+- type: construction
+  id: SandbagItemEmpty
+  graph: SandbagItem
+  startNode: empty
+  targetNode: full
+  category: construction-category-misc
+  objectType: Item
+
+- type: construction
+  id: SandbagCover
+  graph: SandbagCover
+  startNode: start
+  targetNode: built
+  category: construction-category-misc
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true

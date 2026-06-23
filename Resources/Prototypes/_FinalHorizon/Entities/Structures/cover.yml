@@ -48,48 +48,11 @@
   - type: SpeedModifierContacts
     walkSpeedModifier: 0.4
     sprintSpeedModifier: 0.4
+  - type: Construction
+    graph: Brustwehr
+    node: built
 
-- type: entity
-  id: FHSandbagCover
-  parent: BaseStructure
-  name: sandbags
-  description: A wall of sandbags.
-  components:
-  - type: Sprite
-    sprite: _FinalHorizon/Structures/Cover/sandbag.rsi
-    state: base
-  - type: Icon
-    sprite: _FinalHorizon/Structures/Cover/sandbag.rsi
-    state: base
-  - type: Damageable
-    damageModifierSet: Metallic
-  - type: Injurable
-    damageContainer: StructuralInorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 400
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,-0.25"
-        density: 1000
-        mask:
-        - TableMask
-        layer:
-        - TableLayer
-        - BulletImpassable
-  - type: Climbable
-    delay: 1
-  - type: Clickable
-  - type: Cover
-    hitChance: 0.85
+
 
 - type: entity
   id: FHBlockCover
@@ -132,3 +95,91 @@
   - type: Clickable
   - type: Cover
     hitChance: 0.40
+
+# sandbags
+- type: entity
+  id: FHSandbagCoverIncomplete
+  parent: BaseStructure
+  name: unbuilt sandbags
+  description: An unbuilt wall of sandbags. Provides no cover.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Cover/sandbag.rsi
+    state: unbuilt
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Cover/sandbag.rsi
+    state: unbuilt
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,-0.25"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+  - type: Climbable
+    delay: 0.5
+  - type: Clickable
+  - type: Construction
+    graph: SandbagCover
+    node: incomplete
+
+- type: entity
+  id: FHSandbagCover
+  parent: BaseStructure
+  name: sandbags
+  description: A wall of sandbags.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Cover/sandbag.rsi
+    state: base
+  - type: Icon
+    sprite: _FinalHorizon/Structures/Cover/sandbag.rsi
+    state: base
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,-0.25"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+        - BulletImpassable
+  - type: Climbable
+    delay: 1
+  - type: Clickable
+  - type: Cover
+    hitChance: 0.85
+  - type: Construction
+    graph: SandbagCover
+    node: built

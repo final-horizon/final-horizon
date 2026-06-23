@@ -1,0 +1,6 @@
+- type: stack
+  parent: BaseMediumStack
+  id: Dirt
+  name: dirt
+  icon: { sprite: /Textures/_FinalHorizon/Objects/Materials/dirt.rsi, state: dirt }
+  spawn: MaterialDirt

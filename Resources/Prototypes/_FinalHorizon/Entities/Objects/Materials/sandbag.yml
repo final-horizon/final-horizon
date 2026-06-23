@@ -1,0 +1,30 @@
+- type: entity
+  parent: MaterialBase
+  id: MaterialSandbagEmpty
+  name: sandbag
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Materials/sandbag.rsi
+    state: empty
+  - type: Item
+    size: Tiny
+  - type: Construction
+    graph: SandbagItem
+    node: empty
+
+- type: entity
+  parent: MaterialBase
+  id: MaterialSandbagFull
+  name: full sandbag
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Materials/sandbag.rsi
+    state: full
+  - type: Item
+    size: Normal
+  - type: Construction
+    graph: SandbagItem
+    node: full
+  - type: Tag
+    tags:
+    - SandbagItemFull

@@ -1,0 +1,35 @@
+- type: constructionGraph
+  id: SandbagItem
+  start: empty
+  graph:
+    - node: empty
+      edges:
+        - to: full
+          steps:
+            - material: Dirt
+              amount: 3
+              doAfter: 1
+    - node: full
+      entity: MaterialSandbagFull
+
+- type: constructionGraph
+  id: SandbagCover
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: incomplete
+          steps:
+            - tag: SandbagItemFull
+              amount: 1
+              doAfter: 2
+    - node: incomplete
+      entity: FHSandbagCoverIncomplete
+      edges:
+        - to: built
+          steps:
+            - tag: SandbagItemFull
+              amount: 1
+              doAfter: 2
+    - node: built
+      entity: FHSandbagCover

@@ -1,0 +1,6 @@
+- type: tool
+  id: Digging
+  name: digging
+  toolName: digging tool
+  spawn: Shovel
+  icon: { sprite: Objects/Tools/shovel.rsi, state: icon }

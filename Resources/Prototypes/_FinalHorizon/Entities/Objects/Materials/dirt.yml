@@ -1,0 +1,14 @@
+- type: entity
+  parent: MaterialBase
+  id: MaterialDirt
+  name: dirt
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Materials/dirt.rsi
+    state: dirt
+  - type: Item
+    size: Ginormous
+  - type: Stack
+    stackType: Dirt
+    baseLayer: dirt
+    count: 1

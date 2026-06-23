@@ -16,6 +16,9 @@
   parent: FHBaseNaturalTile
   name: FH Dirt
   sprite: /Textures/_FinalHorizon/Tiles/Natural/dirt.png
+  itemDrop: MaterialDirt
+  baseTurf: FHDirt
+  deconstructTools: [ Digging ]
   isSubfloor: true
   heatCapacity: 10000
   indestructible: true
@@ -54,6 +57,8 @@
   name: FH Grass
   sprite: /Textures/_FinalHorizon/Tiles/Natural/grass.png
   baseTurf: FHDirt
+  deconstructTools: [ Digging ]
+  itemDrop: MaterialDirt
   mobSpeed: 0.7
   isSubfloor: true
   heatCapacity: 10000
