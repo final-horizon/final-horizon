@@ -1,0 +1,78 @@
+- type: entity
+  parent: BaseItem
+  id: FHMortarM402
+  name: M402 portable mortar
+  description: A support weapon capable of droping bombs on heads from a distance.
+  components:
+    - type: Sprite
+      sprite: _FinalHorizon/Objects/Weapons/Mortars/m402.rsi
+      layers:
+        - map: ["mortar"]
+          state: mortar_carry
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.25,-0.25,0.25,0.25"
+          density: 20
+          mask:
+            - ItemMask
+          restitution: 0.3
+          friction: 0.2
+        mortar:
+          shape: !type:PhysShapeAabb
+            bounds: "-0.49,-0.49,0.49,0.49"
+          density: 20
+          layer:
+            - Impassable
+          mask:
+            - Impassable
+          hard: false
+    - type: CollisionWake
+      enabled: false
+    - type: Anchorable
+      flags:
+        - Unanchorable
+    - type: Item
+      size: Huge
+    - type: Mortar
+      fireDelay: 10
+    - type: Damageable
+      damageContainer: Inorganic
+    - type: UserInterface
+      interfaces:
+        enum.MortarUiKey.Key:
+          type: MortarBui
+    - type: ActivatableUI
+      key: enum.MortarUiKey.Key
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.MortarVisualLayers.State:
+          mortar:
+            Item: { state: mortar_carry }
+            Deployed: { state: mortar_deploy }
+    - type: MeleeSound
+      soundGroups:
+        Brute:
+          path: "/Audio/Effects/metal_break1.ogg"
+
+- type: entity
+  parent: BaseItem
+  id: FHMortarM402ShellHE
+  name: M402 high explosive mortar shell
+  description: A mortar shell packed with high explosive. Drop into a mortar tube to activate.
+  components:
+    - type: Item
+      size: Huge
+    - type: Sprite
+      sprite: _FinalHorizon/Objects/Weapons/Mortars/shells.rsi
+      state: he
+    - type: MortarShell
+    - type: Explosive
+      explosionType: FHDefault
+      maxIntensity: 10
+      intensitySlope: 3
+      totalIntensity: 120
+      canCreateVacuum: false
+      deleteAfterExplosion: true

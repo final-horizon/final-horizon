@@ -1,0 +1,29 @@
+﻿{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "taken from cf escal",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "cas"
+    },
+    {
+      "name": "flare"
+    },
+    {
+      "name": "frag"
+    },
+    {
+      "name": "he"
+    },
+    {
+      "name": "incen"
+    },
+    {
+      "name": "smoke"
+    }
+  ]
+}
