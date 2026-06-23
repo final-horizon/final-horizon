@@ -282,6 +282,7 @@ public abstract partial class SharedScopeSystem : EntitySystem
 
         var zoomLevel = GetCurrentZoomLevel(scope);
 
+        direction = _transform.GetWorldRotation(user).GetCardinalDir(); // FH change
         scope.Comp.User = user;
         scope.Comp.ScopingDirection = direction;
 

@@ -19,15 +19,15 @@
     soundEmpty:
       path: /Audio/_FinalHorizon/Weapons/Guns/Empty/gen_empty.ogg
   - type: SpeedModifiedOnWield
-    walkModifier: 0.73
-    sprintModifier: 0.73
+    walkModifier: 0.80
+    sprintModifier: 0.80
   - type: PullDoAfter
     pullTime: 0.6
   - type: Scope
     requireWielding: true
     zoomLevels:
-    - zoom: 1.4
-      offset: 13
+    - zoom: 1.7
+      offset: 6
       allowMovement: true
       doAfter: 0.1
   - type: FarGunshot
@@ -47,15 +47,15 @@
   - type: Gun
     angleIncrease: 1
   - type: SpeedModifiedOnWield
-    walkModifier: 0.6
-    sprintModifier: 0.6
+    walkModifier: 0.65
+    sprintModifier: 0.65
   - type: PullDoAfter
     pullTime: 1
   - type: Scope
     requireWielding: true
     zoomLevels:
-    - zoom: 1.6
-      offset: 13
+    - zoom: 2
+      offset: 6
       allowMovement: true
       doAfter: 0.2
   - type: FarGunshot
@@ -74,13 +74,13 @@
     angleIncrease: 5
     fireRate: 1.5
   - type: SpeedModifiedOnWield
-    walkModifier: 0.75
-    sprintModifier: 0.75
+    walkModifier: 0.60
+    sprintModifier: 0.60
   - type: Scope
     requireWielding: true
     zoomLevels:
-    - zoom: 2.2
-      offset: 13
+    - zoom: 3
+      offset: 6
       allowMovement: false
       doAfter: 1
 
@@ -89,14 +89,14 @@
   id: FHWeaponLauncherBase
   components:
   - type: HeldSpeedModifier
-    walkModifier: 0.6
-    sprintModifier: 0.6
+    walkModifier: 0.80
+    sprintModifier: 0.80
   - type: PullDoAfter
     pullTime: 2
   - type: Scope
     zoomLevels:
-    - zoom: 1.4
-      offset: 13
+    - zoom: 2
+      offset: 6
       allowMovement: false
       doAfter: 0.4
   - type: FarGunshot
