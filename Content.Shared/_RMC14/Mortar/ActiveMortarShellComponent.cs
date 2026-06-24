@@ -21,7 +21,7 @@ public sealed partial class ActiveMortarShellComponent : Component
     public float WarnRange = 15;
 
     [DataField, AutoNetworkedField]
-    public SoundSpecifier? WarnSound = new SoundPathSpecifier("/Audio/Civ/Weapons/Explosives/Cannons/new_artillery_incoming02.ogg");
+    public SoundSpecifier? WarnSound = new SoundPathSpecifier("/Audio/_FinalHorizon/Weapons/Mortar/mortar_falling.ogg");
 
     [DataField, AutoNetworkedField]
     public TimeSpan ImpactWarnAt;

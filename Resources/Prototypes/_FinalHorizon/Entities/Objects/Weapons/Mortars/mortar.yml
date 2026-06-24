@@ -1,11 +1,11 @@
 - type: entity
   parent: BaseItem
-  id: FHMortarM402
-  name: M402 portable mortar
+  id: FHMortarBasic
+  name: portable mortar
   description: A support weapon capable of droping bombs on heads from a distance.
   components:
     - type: Sprite
-      sprite: _FinalHorizon/Objects/Weapons/Mortars/m402.rsi
+      sprite: _FinalHorizon/Objects/Weapons/Mortars/mortar.rsi
       layers:
         - map: ["mortar"]
           state: mortar_carry
@@ -59,8 +59,8 @@
 
 - type: entity
   parent: BaseItem
-  id: FHMortarM402ShellHE
-  name: M402 high explosive mortar shell
+  id: FHMortarShellHE
+  name: high explosive mortar shell
   description: A mortar shell packed with high explosive. Drop into a mortar tube to activate.
   components:
     - type: Item
@@ -71,8 +71,11 @@
     - type: MortarShell
     - type: Explosive
       explosionType: FHDefault
-      maxIntensity: 10
-      intensitySlope: 3
-      totalIntensity: 120
-      canCreateVacuum: false
+      maxIntensity: 13
+      intensitySlope: 4
+      totalIntensity: 150
+      maxTileBreak: 6
       deleteAfterExplosion: true
+    - type: ExplosionResistance
+      damageCoefficient: 0
+      worn: false

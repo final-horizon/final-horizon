@@ -24,13 +24,11 @@ namespace Content.Shared._RMC14.Mortar;
 
 public abstract class SharedMortarSystem : EntitySystem
 {
-    [Dependency] private readonly ISharedAdminLogManager _adminLogs = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly FixtureSystem _fixture = default!;
-    [Dependency] private readonly MetaDataSystem _metaData = default!;
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
@@ -38,7 +36,6 @@ public abstract class SharedMortarSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly SharedUserInterfaceSystem _ui = default!;
     [Dependency] private readonly SharedExplosionSystem _explosion = default!;
 
     private EntityQuery<TransformComponent> _transformQuery;
@@ -315,7 +312,7 @@ public abstract class SharedMortarSystem : EntitySystem
 
         var user = args.Actor;
         var ev = new DialMortarDoAfterEvent(args.Target);
-        var doAfter = new DoAfterArgs(EntityManager, user, mortar.Comp.TargetDelay, ev, mortar)
+        var doAfter = new DoAfterArgs(EntityManager, user, mortar.Comp.DialDelay, ev, mortar)
         {
             BreakOnMove = true,
         };

@@ -16,5 +16,5 @@ public sealed partial class MortarShellComponent : Component
     public TimeSpan ImpactWarningDelay = TimeSpan.FromSeconds(1.3);
 
     [DataField, AutoNetworkedField]
-    public TimeSpan ImpactDelay = TimeSpan.FromSeconds(1.3);
+    public TimeSpan ImpactDelay = TimeSpan.FromSeconds(2.8);
 }
