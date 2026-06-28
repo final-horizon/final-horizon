@@ -7,8 +7,8 @@
   - type: WieldableDoAfter
     timer: 0.4
   - type: GunWieldBonus
-    minAngle: -47
-    maxAngle: -38
+    minAngle: -48
+    maxAngle: -44
     angleIncrease: 0
     angleDecay: 0
   - type: Gun
@@ -42,8 +42,8 @@
   - type: WieldableDoAfter
     timer: 1.2
   - type: GunWieldBonus
-    minAngle: -45
-    maxAngle: -43
+    minAngle: -46
+    maxAngle: -46
   - type: Gun
     angleIncrease: 1
   - type: SpeedModifiedOnWield
@@ -92,7 +92,7 @@
     walkModifier: 0.80
     sprintModifier: 0.80
   - type: PullDoAfter
-    pullTime: 2
+    pullTime: 1
   - type: Scope
     zoomLevels:
     - zoom: 2
