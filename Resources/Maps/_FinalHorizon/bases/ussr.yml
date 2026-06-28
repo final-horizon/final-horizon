@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 06/21/2026 20:02:31
-  entityCount: 6064
+  time: 06/28/2026 17:35:22
+  entityCount: 6179
 maps:
 - 1
 grids:
@@ -960,6 +960,23 @@ entities:
     components:
     - type: Transform
       pos: 11.583607,5.493005
+      parent: 1
+- proto: CrateGenericSteel
+  entities:
+  - uid: 6126
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6127
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6128
+    components:
+    - type: Transform
+      pos: 4.5,8.5
       parent: 1
 - proto: CurtainsRedOpen
   entities:
@@ -3111,6 +3128,58 @@ entities:
     - type: Transform
       pos: 8.558597,8.684595
       parent: 1
+- proto: FHClothingPouchUSSRUtilityFilled
+  entities:
+  - uid: 6116
+    components:
+    - type: Transform
+      pos: 10.5,-0.5
+      parent: 1
+  - uid: 6117
+    components:
+    - type: Transform
+      pos: 10.5,-0.5
+      parent: 1
+  - uid: 6118
+    components:
+    - type: Transform
+      pos: 10.5,-0.5
+      parent: 1
+  - uid: 6119
+    components:
+    - type: Transform
+      pos: 10.5,-0.5
+      parent: 1
+  - uid: 6120
+    components:
+    - type: Transform
+      pos: 10.5,-0.5
+      parent: 1
+  - uid: 6121
+    components:
+    - type: Transform
+      pos: 10.5,-0.5
+      parent: 1
+  - uid: 6122
+    components:
+    - type: Transform
+      pos: 10.5,-0.5
+      parent: 1
+  - uid: 6123
+    components:
+    - type: Transform
+      pos: 10.5,-0.5
+      parent: 1
+  - uid: 6124
+    components:
+    - type: Transform
+      pos: 10.5,-0.5
+      parent: 1
+  - uid: 6125
+    components:
+    - type: Transform
+      pos: 10.5,-0.5
+      parent: 1
 - proto: FHDoorBulkhead
   entities:
   - uid: 681
@@ -3447,6 +3516,160 @@ entities:
       containers:
         cluster-payload: !type:Container
           ents: []
+- proto: FHGrenadeSatchelPact
+  entities:
+  - uid: 6065
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6066
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6067
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6068
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6069
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6070
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6071
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6072
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6073
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6074
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+- proto: FHGrenadeSmokeRDG2
+  entities:
+  - uid: 6075
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6076
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6077
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6078
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6079
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6080
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6081
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6082
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6083
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6084
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6085
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6086
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6087
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6088
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6089
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6090
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6091
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6092
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6093
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
+  - uid: 6094
+    components:
+    - type: Transform
+      pos: 6.5,-0.5
+      parent: 1
 - proto: FHMagazineRifleAK74Bakelite
   entities:
   - uid: 829
@@ -3708,6 +3931,250 @@ entities:
     components:
     - type: Transform
       pos: 6.503422,1.564897
+      parent: 1
+- proto: FHMortarBasic
+  entities:
+  - uid: 6129
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6130
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6131
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+- proto: FHMortarShellHE
+  entities:
+  - uid: 6132
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+  - uid: 6133
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+  - uid: 6134
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+  - uid: 6135
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+  - uid: 6136
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+  - uid: 6137
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+  - uid: 6138
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+  - uid: 6139
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+  - uid: 6140
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+  - uid: 6141
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+  - uid: 6142
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+  - uid: 6143
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+  - uid: 6144
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+  - uid: 6145
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+  - uid: 6146
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
+  - uid: 6147
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6148
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6149
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6150
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6151
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6152
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6153
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6154
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6155
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6156
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6157
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6158
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6159
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6160
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6161
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6162
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6163
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6164
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6165
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6166
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6167
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6168
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6169
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6170
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6171
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6172
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6173
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6174
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6175
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6176
+    components:
+    - type: Transform
+      pos: 4.5,5.5
       parent: 1
 - proto: FHRandomFloraSpawnerTemperate
   entities:
@@ -29895,6 +30362,23 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 12.5,0.5
       parent: 1
+- proto: HandheldGPSBasic
+  entities:
+  - uid: 6177
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 6178
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+  - uid: 6179
+    components:
+    - type: Transform
+      pos: 4.5,8.5
+      parent: 1
 - proto: IFAKUSSRFilled
   entities:
   - uid: 768
@@ -30515,6 +30999,113 @@ entities:
     components:
     - type: Transform
       pos: 5.5,-11.5
+      parent: 1
+  - uid: 6115
+    components:
+    - type: Transform
+      pos: 10.5,-0.5
+      parent: 1
+- proto: Shovel
+  entities:
+  - uid: 6095
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6096
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6097
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6098
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6099
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6100
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6101
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6102
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6103
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6104
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6105
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6106
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6107
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6108
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6109
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6110
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6111
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6112
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6113
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
+      parent: 1
+  - uid: 6114
+    components:
+    - type: Transform
+      pos: 11.5,-0.5
       parent: 1
 - proto: SpawnPointUSSRAutoRifleMan
   entities:
