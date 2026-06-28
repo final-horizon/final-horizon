@@ -1,0 +1,49 @@
+- type: entity
+  parent: TimerGrenadeBase
+  id: FHGrenadeSmokeM18
+  name: M18 smoke grenade
+  description: A smoke grenade used by the US.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Grenades/m18.rsi
+  - type: SmokeOnTrigger
+    keysIn:
+    - timer
+    duration: 30
+    spreadAmount: 20
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - timer
+    sound: /Audio/Items/smoke_grenade_smoke.ogg
+    positional: true
+  - type: DeleteOnTrigger
+    keysIn:
+    - timer
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: /Audio/Items/smoke_grenade_prime.ogg
+
+- type: entity
+  parent: TimerGrenadeBase
+  id: FHGrenadeSmokeRDG2
+  name: RDG2 smoke grenade
+  description: A smoke grenade used by the Soviets.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Grenades/rdg2.rsi
+  - type: SmokeOnTrigger
+    keysIn:
+    - timer
+    duration: 30
+    spreadAmount: 20
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - timer
+    sound: /Audio/Items/smoke_grenade_smoke.ogg
+    positional: true
+  - type: DeleteOnTrigger
+    keysIn:
+    - timer
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: /Audio/Items/smoke_grenade_prime.ogg

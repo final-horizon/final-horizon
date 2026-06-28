@@ -1,0 +1,51 @@
+- type: entity
+  name: Satchel
+  suffix: nato
+  description: the standard satchel used for destroying fortifications.
+  parent: TimerGrenadeBase
+  id: FHGrenadeSatchelNato
+  components:
+  - type: Item
+    size: Large
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Grenades/satchel_nato.rsi
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: /Audio/Effects/chopstickbreak.ogg
+  - type: ExplodeOnTrigger
+    keysIn:
+    - timer
+  - type: Explosive
+    explosionType: FHDefault
+    maxIntensity: 100
+    intensitySlope: 30
+    totalIntensity: 1000
+    maxTileBreak: 10
+  - type: TimerTrigger
+    delay: 30
+
+- type: entity
+  name: Satchel
+  suffix: pact
+  description: the standard satchel used for destroying fortifications.
+  parent: TimerGrenadeBase
+  id: FHGrenadeSatchelPact
+  components:
+  - type: Item
+    size: Large
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Grenades/satchel_wp.rsi
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: /Audio/Effects/chopstickbreak.ogg
+  - type: ExplodeOnTrigger
+    keysIn:
+    - timer
+  - type: Explosive
+    explosionType: FHDefault
+    maxIntensity: 100
+    intensitySlope: 30
+    totalIntensity: 1000
+    maxTileBreak: 10
+  - type: TimerTrigger
+    delay: 30

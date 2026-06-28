@@ -11,6 +11,9 @@
   - type: Construction
     graph: SandbagItem
     node: empty
+  - type: Tag
+    tags:
+    - FHUtilityItem
 
 - type: entity
   parent: MaterialBase
@@ -28,3 +31,4 @@
   - type: Tag
     tags:
     - SandbagItemFull
+    - FHUtilityItem

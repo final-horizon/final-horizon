@@ -126,7 +126,7 @@
 - type: entity
   parent: FHClothingPouchUSSRGrenade
   id: FHClothingPouchUSSRGrenadeFilled
-  suffix: filled, rdg5 f1
+  suffix: filled
   components:
   - type: EntityTableContainerFill
     containers:
@@ -134,10 +134,10 @@
         children:
         - id: FHGrenadeRDG5
         - id: FHGrenadeRDG5
-        - id: FHGrenadeRDG5
         - id: FHGrenadeF1
         - id: FHGrenadeF1
-        - id: FHGrenadeF1
+        - id: FHGrenadeSmokeRDG2
+        - id: FHGrenadeSmokeRDG2
 
 - type: entity
   parent: FHClothingPouchBase
@@ -149,21 +149,6 @@
     sprite: _FinalHorizon/Clothing/Pouch/ussr_sapper.rsi
   - type: Clothing
     sprite: _FinalHorizon/Clothing/Pouch/ussr_sapper.rsi
-  - type: Storage
-    maxItemSize: Normal
-    grid:
-    - 0,0,2,1 # make this restricted to tools and materials
-
-- type: entity
-  parent: FHClothingPouchBase
-  id: FHClothingPouchUSSRUtility
-  name: Soviet Army utility pouch
-  description: A pouch for carrying various things.
-  components:
-  - type: Sprite
-    sprite: _FinalHorizon/Clothing/Pouch/ussr_utility.rsi
-  - type: Clothing
-    sprite: _FinalHorizon/Clothing/Pouch/ussr_utility.rsi
   - type: Storage
     maxItemSize: Normal
     grid:
@@ -201,3 +186,49 @@
     maxItemSize: Normal
     grid:
     - 0,0,3,1 # whitelist this to hold deployable ammo cans
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchUSSRUtility
+  name: Soviet Army utility pouch
+  description: A pouch for carrying various things.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_utility.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/ussr_utility.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,2
+    whitelist:
+      tags:
+      - FHUtilityItem
+
+- type: entity
+  parent: FHClothingPouchUSSRUtility
+  id: FHClothingPouchUSSRUtilityFilled
+  suffix: filled, sandbag
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty

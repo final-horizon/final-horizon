@@ -46,3 +46,6 @@
 # Misc
 - type: Tag
   id: SandbagItemFull
+
+- type: Tag
+  id: FHUtilityItem
