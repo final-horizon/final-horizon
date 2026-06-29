@@ -2,7 +2,7 @@
   name: M21
   parent: FHWeaponBaseSniper
   id: FHWeaponSnipersM21
-  description: A rooty tooty point and shooty. # fix this
+  description: The US military standard issue marksman rifle. The M21 is a accurized semi-auto M14, it was developed and adopted in 1969 to replace the M14 marksman rifle.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/Snipers/m21.rsi

@@ -1,7 +1,8 @@
 - type: entity
   parent: BaseItem
   id: FHMagazineRifleM16
-  name: M16 Magazine (30)
+  name: STANAG 30-Round magazine
+  description: A aluminum magazine made for the NATO STANdardization AGreement 4179, made to fit across various NATO rifles.
   components:
   - type: Tag
     tags:

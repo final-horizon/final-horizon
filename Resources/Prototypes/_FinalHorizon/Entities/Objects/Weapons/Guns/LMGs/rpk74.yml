@@ -2,7 +2,7 @@
   name: RPK-74
   parent: FHWeaponBase
   id: FHWeaponLMGRPK74
-  description: A rooty tooty point and shooty. # fix this
+  description: The Soviet military standard issue squad automatic weapon. The RPK-74 is derived from the AK-74 featuring a longer barrel, thicker receiver and different stock. It was developed and adopted in 1974 to replace the older RPK.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/LMGs/rpk74.rsi

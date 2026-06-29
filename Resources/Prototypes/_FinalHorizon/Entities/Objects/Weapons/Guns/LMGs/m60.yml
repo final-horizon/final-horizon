@@ -2,7 +2,7 @@
   name: M60
   parent: FHWeaponBaseLMG
   id: FHWeaponLMGM60
-  description: A rooty tooty point and shooty. # fix this
+  description: The US military standard issue machine gun. Developed between 1952-1957 being adopted in 1957 to replace the Browning M1919A6, commonly nicknamed as the pig due to its weight.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/LMGs/m60.rsi
