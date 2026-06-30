@@ -145,6 +145,7 @@
   color: "#ffaa00"
   metabolisms:
     Bloodstream:
+      metabolismRate: 0.2
       effects:
       - !type:EvenHealthChange
         conditions:
@@ -249,6 +250,7 @@
   color: "#215263"
   metabolisms:
     Bloodstream:
+      metabolismRate: 0.2
       effects:
       - !type:EvenHealthChange
         conditions:
