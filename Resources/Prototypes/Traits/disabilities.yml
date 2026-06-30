@@ -1,16 +1,17 @@
 # If you add a new trait, make sure to add the corresponding component to the whitelist in \Resources\Prototypes\Entities\Mobs\Player\clone.yml so it gets copied to clones correctly!
 
-- type: trait
-  id: Blindness
-  name: trait-blindness-name
-  description: trait-blindness-desc
-  traitGear: WhiteCane
-  category: Disabilities
-  whitelist:
-    components:
-      - Blindable
-  components:
-    - type: PermanentBlindness
+#fh change remove trait
+#- type: trait
+#  id: Blindness
+#  name: trait-blindness-name
+#  description: trait-blindness-desc
+#  traitGear: WhiteCane
+#  category: Disabilities
+#  whitelist:
+#    components:
+#      - Blindable
+#  components:
+#    - type: PermanentBlindness
 
 - type: trait
   id: PoorVision
@@ -25,17 +26,18 @@
     - type: PermanentBlindness
       blindness: 4
 
-- type: trait
-  id: Narcolepsy
-  name: trait-narcolepsy-name
-  description: trait-narcolepsy-desc
-  category: Disabilities
-  components:
-    - type: Narcolepsy
-      maxTimeBetweenIncidents: 600
-      minTimeBetweenIncidents: 300
-      maxDurationOfIncident: 30
-      minDurationOfIncident: 10
+#fh change remove trait
+#- type: trait
+#  id: Narcolepsy
+#  name: trait-narcolepsy-name
+#  description: trait-narcolepsy-desc
+#  category: Disabilities
+#  components:
+#    - type: Narcolepsy
+#      maxTimeBetweenIncidents: 600
+#      minTimeBetweenIncidents: 300
+#      maxDurationOfIncident: 30
+#      minDurationOfIncident: 10
 
 - type: trait
   id: Unrevivable
@@ -46,24 +48,25 @@
     - type: Unrevivable
       cloneable: true
 
-- type: trait
-  id: Monochromacy
-  name: trait-monochromacy-name
-  description: trait-monochromacy-desc
-  category: Disabilities
-  components:
-  - type: BlackAndWhiteOverlay
+#fh change remove trait
+#- type: trait
+#  id: Monochromacy
+#  name: trait-monochromacy-name
+#  description: trait-monochromacy-desc
+#  category: Disabilities
+#  components:
+#  - type: BlackAndWhiteOverlay
 
-- type: trait
-  id: Muted
-  name: trait-muted-name
-  description: trait-muted-desc
-  category: Disabilities
-  blacklist:
-    components:
-      - BorgChassis
-  components:
-    - type: Muted
+#- type: trait
+#  id: Muted
+#  name: trait-muted-name
+#  description: trait-muted-desc
+#  category: Disabilities
+#  blacklist:
+#    components:
+#      - BorgChassis
+#  components:
+#    - type: Muted
 
 - type: trait
   id: Paracusia
@@ -98,11 +101,12 @@
     statusEffects:
     - TraitStatusEffectHemophilia
 
-- type: trait
-  id: ImpairedMobility
-  name: trait-impaired-mobility-name
-  description: trait-impaired-mobility-desc
-  traitGear: OffsetCane
-  category: Disabilities
-  components:
-    - type: ImpairedMobility
+#fh change remove trait
+#- type: trait
+#  id: ImpairedMobility
+#  name: trait-impaired-mobility-name
+#  description: trait-impaired-mobility-desc
+#  traitGear: OffsetCane
+#  category: Disabilities
+#  components:
+#    - type: ImpairedMobility

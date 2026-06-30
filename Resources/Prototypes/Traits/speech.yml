@@ -2,19 +2,20 @@
 
 # Free
 
-- type: trait
-  id: Accentless
-  name: trait-accentless-name
-  description: trait-accentless-desc
-  category: SpeechTraits
-  cost: 2
-  components:
-  - type: Accentless
-    removes:
-    - type: LizardAccent
-    - type: MothAccent
-    - type: ReplacementAccent
-      accent: scottish
+#fh change remove trait
+#- type: trait
+#  id: Accentless
+#  name: trait-accentless-name
+#  description: trait-accentless-desc
+#  category: SpeechTraits
+#  cost: 2
+#  components:
+#  - type: Accentless
+#    removes:
+#    - type: LizardAccent
+#    - type: MothAccent
+#    - type: ReplacementAccent
+#      accent: scottish
 
 # 1 Cost
 
@@ -54,15 +55,16 @@
   components:
   - type: SpanishAccent
 
-- type: trait
-  id: Liar
-  name: trait-liar-name
-  description: trait-liar-desc
-  category: SpeechTraits
-  cost: 1
-  components:
-  - type: ReplacementAccent
-    accent: liar
+#fh change remove trait
+#- type: trait
+#  id: Liar
+#  name: trait-liar-name
+#  description: trait-liar-desc
+#  category: SpeechTraits
+#  cost: 1
+#  components:
+#  - type: ReplacementAccent
+#    accent: liar
 
 - type: trait
   id: ScottishAccent

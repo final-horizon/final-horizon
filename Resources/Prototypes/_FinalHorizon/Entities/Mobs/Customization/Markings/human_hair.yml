@@ -1,0 +1,63 @@
+- type: marking
+  id: FH14HumanHairCIA3
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: _FinalHorizon/Mob/Human_Customization/human_hair.rsi
+      state: hair_cia3
+
+- type: marking
+  id: FH14HumanHairCIA5
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: _FinalHorizon/Mob/Human_Customization/human_hair.rsi
+      state: hair_cia5
+
+- type: marking
+  id: FH14HumanHairIRS
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: _FinalHorizon/Mob/Human_Customization/human_hair.rsi
+      state: hair_irs
+
+- type: marking
+  id: FH14HumanHairLowBun
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: _FinalHorizon/Mob/Human_Customization/human_hair.rsi
+      state: hair_low_bun
+
+- type: marking
+  id: FH14HumanHairLowBunAlt
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: _FinalHorizon/Mob/Human_Customization/human_hair.rsi
+      state: hair_low_bun_alt
+
+- type: marking
+  id: FH14HumanHairLowBunClassic
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: _FinalHorizon/Mob/Human_Customization/human_hair.rsi
+      state: hair_militarybun
+
+- type: marking
+  id: FH14HumanHairLowPonyTail
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: _FinalHorizon/Mob/Human_Customization/human_hair.rsi
+      state: hair_low_ponytail
+
+- type: marking
+  id: FH14HumanHairLowPonyTailAlt
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: _FinalHorizon/Mob/Human_Customization/human_hair.rsi
+      state: hair_low_ponytail_alt

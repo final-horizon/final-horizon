@@ -1,0 +1,10 @@
+- type: entity
+  parent: FHClothingOuterBase
+  id: FHClothingOuterJacketUSMCParka
+  name: M-1965 'fishtail' parka
+  description: A well worn and old issue parka developed for the United States Marine Corps.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/OuterClothing/Jackets/usmcparka.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/OuterClothing/Jackets/usmcparka.rsi

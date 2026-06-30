@@ -269,7 +269,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitUSMCWoodland
     shoes: ClothingShoesBootsJack
-    outerClothing: FHClothingOuterArmorFlak
+    outerClothing: FHClothingOuterArmorPASGT
     back: FHClothingBackRadioANPRC77
     belt: FHClothingBeltUSMCHarness
     pouchleft: FHClothingPouchUSMCGrenadeFilled
@@ -326,12 +326,13 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitUSMCWoodland
     shoes: ClothingShoesBootsJack
+    outerClothing: FHClothingOuterJacketUSMCParka
     back: FHClothingBackpackUSMCButtPack
     belt: FHClothingBeltUSMCHarness
     pouchleft: FHClothingPouchUSMCAmmoFilledSniper
     pouchright: FHClothingPouchUSMCAmmoFilledSniper
     suitstorage: FHWeaponSnipersM21
-    head: FHClothingHeadHelmetM1
+    head: FHClothingHeadHelmetM1Woodland
     pocket1: IFAKUSMCFilled
 
 - type: startingGear
