@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Escalation at https://github.com/WW2-SS13/Escalation/blob/7bc816a2ca840764ff45fd3fc69ac231dc34d2f7/icons/obj/clothing/uniforms.dmi, https://github.com/WW2-SS13/Escalation/blob/30573b34c4c9008ea1944faf3deb82bc19fe7b2e/icons/mob/uniform.dmi. Modified by Orion/Troy.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "equipped-OUTERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "icon"
+    }
+  ]
+}

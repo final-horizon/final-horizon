@@ -8,9 +8,6 @@
     sprite: _FinalHorizon/Clothing/Head/Helmets/ssh68_green.rsi
   - type: Clothing
     sprite: _FinalHorizon/Clothing/Head/Helmets/ssh68_green.rsi
-  - type: HideLayerClothing
-    layers:
-      Hair: HEAD
 
 - type: entity
   parent: FHClothingHeadHelmetBaseFoldable
@@ -22,6 +19,3 @@
     sprite: _FinalHorizon/Clothing/Head/Helmets/ssh68_medic.rsi
   - type: Clothing
     sprite: _FinalHorizon/Clothing/Head/Helmets/ssh68_medic.rsi
-  - type: HideLayerClothing
-    layers:
-      Hair: HEAD

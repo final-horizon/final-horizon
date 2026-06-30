@@ -2,12 +2,25 @@
   parent: FHClothingOuterArmorBase
   id: FHClothingOuterArmorFlak
   name: flak vest
-  description: A standard issue armored vest for several nato militarys. Not very effective against rifle rounds.
+  description: A standard issue armored vest for several NATO militaries. Not very effective against rifle rounds.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/OuterClothing/Vests/flak.rsi
   - type: Clothing
     sprite: _FinalHorizon/Clothing/OuterClothing/Vests/flak.rsi
+
+- type: entity
+  parent: FHClothingOuterArmorBase
+  id: FHClothingOuterArmorPASGT
+  name: pasgt vest
+  description: The Personnel Armor System for Ground Troops vest is a newer piece of kit received in small numbers by USMC forces fighting throughout Europe, its a slight upgrade to the traditional flak vest. Not very effective against rifle rounds.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/OuterClothing/Vests/pasgt.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/OuterClothing/Vests/pasgt.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.70
 
 - type: entity
   parent: FHClothingOuterArmorBase
