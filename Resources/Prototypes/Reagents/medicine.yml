@@ -147,17 +147,20 @@
     Bloodstream:
       effects:
       - !type:EvenHealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: Bicaridine
+          max: 30.5
         damage:
-          Brute: -1.5
+          Brute: -1
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
           reagent: Bicaridine
-          min: 15
+          min: 30.5
         damage:
           types:
-            Asphyxiation: 0.5
-            Poison: 1.5
+            Heat: 1
       - !type:Vomit
         conditions:
         - !type:ReagentCondition
@@ -168,8 +171,25 @@
         conditions:
         - !type:ReagentCondition
           reagent: Bicaridine
-          min: 15
-      - !type:Drunk
+          min: 30.5
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentCondition
+          reagent: Bicaridine
+          max: 30.5
+        type: Local
+        visualType: Medium
+        messages: ["medicine-effect-brute1", "medicine-effect-brute2", "medicine-effect-brute3"]
+        probability: 0.2
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentCondition
+          reagent: Bicaridine
+          min: 30.5
+        type: Local
+        visualType: MediumCaution
+        messages: ["reagent-effect-overdose1", "reagent-effect-overdose2", "reagent-effect-overdose3"]
+        probability: 0.3
 
 - type: reagent
   id: Cryoxadone
@@ -230,27 +250,44 @@
   metabolisms:
     Bloodstream:
       effects:
-      - !type:HealthChange
+      - !type:EvenHealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: Dermaline
+          max: 15.5
         damage:
-          types:
-            Heat: -1.5
-            Shock: -1.5
-            Cold: -1.5
+          Burn: -2
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
           reagent: Dermaline
-          min: 10
+          min: 15.5
         damage:
           types:
-            Asphyxiation: 1
-            Cold: 2
-            Blunt: 0.5
+            Blunt: 2
       - !type:Jitter
         conditions:
         - !type:ReagentCondition
           reagent: Dermaline
-          min: 10
+          min: 15.5
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentCondition
+          reagent: Dermaline
+          max: 15.5
+        type: Local
+        visualType: Medium
+        messages: ["medicine-effect-burn1", "medicine-effect-burn2"]
+        probability: 0.2
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentCondition
+          reagent: Dermaline
+          min: 15.5
+        type: Local
+        visualType: MediumCaution
+        messages: ["reagent-effect-overdose1", "reagent-effect-overdose2", "reagent-effect-overdose3"]
+        probability: 0.3
 
 - type: reagent
   id: Dexalin
