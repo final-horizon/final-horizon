@@ -22,7 +22,7 @@
   isSubfloor: true
   heatCapacity: 10000
   indestructible: true
-  mobSpeed: 0.7
+  mobSpeed: 0.9
   variants: 4
   placementVariants:
   - 1.0
@@ -59,7 +59,7 @@
   baseTurf: FHDirt
   deconstructTools: [ Digging ]
   itemDrop: MaterialDirt
-  mobSpeed: 0.7
+  mobSpeed: 0.75
   isSubfloor: true
   heatCapacity: 10000
   variants: 4
@@ -78,7 +78,7 @@
   isSubfloor: true
   heatCapacity: 10000
   baseTurf: FHDirt
-  mobSpeed: 0.7
+  mobSpeed: 0.8
   variants: 4
   placementVariants:
   - 1.0

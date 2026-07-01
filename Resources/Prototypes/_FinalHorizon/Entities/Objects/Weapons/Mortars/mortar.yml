@@ -73,7 +73,7 @@
       explosionType: FHDefault
       maxIntensity: 13
       intensitySlope: 4
-      totalIntensity: 150
+      totalIntensity: 200
       maxTileBreak: 6
       deleteAfterExplosion: true
     - type: ExplosionResistance
