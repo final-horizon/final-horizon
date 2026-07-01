@@ -1,9 +1,9 @@
 {
     "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "taken from escal cf",
+    "license": "",
+    "copyright": "Made by WillyBillyGilly for Final Horizon 84 do not reuse or edit without permission",
     "size": {
-        "x": 32,
+        "x": 64,
         "y": 32
     },
     "states": [
