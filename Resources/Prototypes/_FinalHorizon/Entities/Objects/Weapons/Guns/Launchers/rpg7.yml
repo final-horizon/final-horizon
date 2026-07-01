@@ -2,7 +2,7 @@
   name: RPG-7
   parent: FHWeaponLauncherBase
   id: FHWeaponLauncherRPG7
-  description: The standard heavy anti-tank weapon of the soviet army
+  description: The Soviet military standard issue rocket launcher. Designed between 1954-1958 adopted in 1961 to replace the old RPG-2 rocket launcher.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/Launchers/rpg7.rsi

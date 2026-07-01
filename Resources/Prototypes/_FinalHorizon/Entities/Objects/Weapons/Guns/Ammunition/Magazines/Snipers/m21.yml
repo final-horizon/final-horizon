@@ -1,7 +1,8 @@
 - type: entity
   parent: BaseItem
   id: FHMagazineSniperM21
-  name: M21 Magazine (20)
+  name: M21 20-Round magazine
+  description: A steel magazine made for the M21 marksman rifle.
   components:
   - type: Tag
     tags:

@@ -2,7 +2,7 @@
   name: M16A1
   parent: FHWeaponBase
   id: FHWeaponRifleM16A1
-  description: A rooty tooty point and shooty. # fix this
+  description: The US military standard issue rifle. In 1967 the M16A1 was derived from the M16 to fix jamming, corrosion and a lack of chrome barrel lining, officialy becoming the standard issue in 1969.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/m16a1.rsi
@@ -77,7 +77,7 @@
   name: M16A2
   parent: FHWeaponRifleM16A1
   id: FHWeaponRifleM16A2
-  description: A rooty tooty point and shooty. # fix this
+  description: The US military standard issue rifle. The M16A2 was derived from the M16A1 in 1982 and adopted by the USMC in 1983. The M16A2 features improved ergonomics, a burst instead of full-auto and a new barrel with a 1 in 7 twist to fire the new heavier M855 cartridge.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/m16a2.rsi

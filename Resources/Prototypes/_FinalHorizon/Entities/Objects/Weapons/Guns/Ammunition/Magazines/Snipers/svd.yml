@@ -1,7 +1,8 @@
 - type: entity
   parent: BaseItem
   id: FHMagazineSniperSVD
-  name: SVD Magazine (10)
+  name: SVD 10-Round magazine
+  description: A steel magazine made for the SVD marksman rifle.
   components:
   - type: Tag
     tags:

@@ -1,7 +1,8 @@
 - type: entity
   parent: BaseItem
   id: FHMagazineLMGM60
-  name: M60 Box (100)
+  name: M60 100-Round box magazine
+  description: A steel box magazine made for the M60 machinegun.
   components:
   - type: Tag
     tags:

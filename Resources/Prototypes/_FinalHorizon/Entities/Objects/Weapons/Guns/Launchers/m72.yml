@@ -1,8 +1,8 @@
 - type: entity
-  name: M-72 LAW
+  name: M72 LAW
   parent: FHWeaponLauncherBase
   id: FHWeaponLauncherM72
-  description: The standard light disposable anti-tank weapon of the USMC, must be deployed to use
+  description: The US military standard issue disposable rocket launcher. Designed in 1959 and adopted in 1963. It was made to replace the M20A1 bazooka.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/Launchers/m72.rsi

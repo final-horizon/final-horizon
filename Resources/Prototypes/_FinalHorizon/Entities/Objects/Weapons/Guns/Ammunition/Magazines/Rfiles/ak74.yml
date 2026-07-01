@@ -1,7 +1,8 @@
 - type: entity
   parent: BaseItem
   id: FHMagazineRifleAK74Black
-  name: AK-74 Black Magazine (30)
+  name: 6L23 30-Round magazine
+  description: A polymer magazine made for the AK-74 rifle. Made out of a higher strenght poylmer than the 6L20 magazine.
   components:
   - type: Tag
     tags:
@@ -39,7 +40,8 @@
 - type: entity
   parent: FHMagazineRifleAK74Black
   id: FHMagazineRifleAK74Bakelite
-  name: AK-74 Bakelite Magazine (30)
+  name: 6L20 30-Round magazine
+  description: A polymer magazine made for the AK-74 rifle. Commonly mistaken to be made out of Bakelite, it is actually made out of a fiberglass polymer called AG-4S.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Magazine/Rifles/ak74bake.rsi
@@ -52,7 +54,8 @@
 - type: entity
   parent: FHMagazineRifleAK74Black
   id: FHMagazineRifleAK74Bakelite45
-  name: AK-74 Bakelite Magazine (45)
+  name: 6L18 45-Round magazine
+  description: A large polymer magazine made for the RPK-74 rifle. Commonly mistaken to be made out of Bakelite, it is actually made out of a fiberglass polymer called AG-4S.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Magazine/Rifles/ak74bake45.rsi

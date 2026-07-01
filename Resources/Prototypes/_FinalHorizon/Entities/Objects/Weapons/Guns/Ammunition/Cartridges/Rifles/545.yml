@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseCartridge
   id: FHCartridge545
-  name: 5.45 cartridge
+  name: 5.45x39mm cartridge
   components:
   - type: Tag
     tags:
