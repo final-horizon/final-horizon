@@ -393,7 +393,7 @@
         volume: 1.0
         variation: 0.125
 
-# Pills
+#region Pills
 - type: entity
   name: pill
   suffix: Dexalin 20u

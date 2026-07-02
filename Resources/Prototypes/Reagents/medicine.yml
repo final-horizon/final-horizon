@@ -307,21 +307,32 @@
   color: "#0041a8"
   metabolisms:
     Bloodstream:
+      metabolismRate: 0.2
       effects:
-      - !type:HealthChange
+      - !type:EvenHealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: Dexalin
+          max: 30.5
         damage:
-          types:
-            Asphyxiation: -1
-            Bloodloss: -0.5
+          Airloss: -1.5
       - !type:HealthChange
         conditions:
           - !type:ReagentCondition
             reagent: Dexalin
-            min: 20
+            min: 30.5
         damage:
           types:
-            Asphyxiation: 3
-            Cold: 1
+            Poison: 1
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentCondition
+          reagent: Dexalin
+          max: 30.5
+        type: Local
+        visualType: Medium
+        messages: ["medicine-effect-oxyloss1", "medicine-effect-oxyloss2"]
+        probability: 0.2
 
 - type: reagent
   id: DexalinPlus
