@@ -103,8 +103,8 @@
         - id: RegenerativeMesh
         - id: Bloodpack
           amount: 2
-        - id: BF14SyretteMeralyneCapped # FH
-        - id: BF14SyretteDermalineCapped # FH
+        - id: BlisterPackMeralyne # FH
+        - id: BlisterPackDermaline # FH
 
 - type: entity
   id: MedkitCombatFilled
