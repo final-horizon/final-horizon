@@ -209,10 +209,16 @@
 - type: entity
   parent: [ OrganBaseHeart, OrganHumanInternal, OrganHumanMetabolizer ]
   id: OrganHumanHeart
+  components:
+  - type: Metabolizer
+    maxReagents: 30 # FH
 
 - type: entity
   parent: [ OrganBaseStomach, OrganHumanInternal, OrganHumanMetabolizer ]
   id: OrganHumanStomach
+  components:
+  - type: Metabolizer
+    maxReagents: 30 # FH
 
 - type: entity
   parent: [ OrganBaseLiver, OrganHumanInternal, OrganHumanMetabolizer ]
