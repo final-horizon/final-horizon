@@ -9,15 +9,6 @@
     sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
     layers:
     - state: base
-  - type: EmitSoundOnPickup
-    sound:
-      path: /Audio/_Goobstation/Items/handling/ammobox_pickup.ogg
-  - type: EmitSoundOnDrop
-    sound:
-      path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
-  - type: EmitSoundOnLand
-    sound:
-      path: /Audio/_Goobstation/Items/handling/ammobox_drop.ogg
   - type: Storage
     maxItemSize: Small
     grid:

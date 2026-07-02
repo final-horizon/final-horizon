@@ -6,3 +6,6 @@
 
 - type: Tag
   id: Syrette
+
+- type: Tag
+  id: GasTank
