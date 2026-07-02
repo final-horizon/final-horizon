@@ -44,6 +44,7 @@
         - id: MedicationBoxPillsBicaridine # BF14
         - id: BlisterPackIron # BF14
         - id: SyringeSaline # BF14
+        - id: BF14SyretteInaprovalineCapped # FH
 
 - type: entity
   id: MedkitToxinFilled
@@ -103,6 +104,7 @@
         - id: RegenerativeMesh
         - id: Bloodpack
           amount: 2
+        - id: SyringeInaprovaline # FH
         - id: BlisterPackMeralyne # FH
         - id: BlisterPackDermaline # FH
 
