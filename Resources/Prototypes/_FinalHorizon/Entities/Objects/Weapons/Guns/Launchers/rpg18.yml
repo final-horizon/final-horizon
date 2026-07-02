@@ -2,7 +2,7 @@
   name: RPG-18
   parent: FHWeaponLauncherBase
   id: FHWeaponLauncherRPG18
-  description: The standard light disposable anti-tank weapon of the soviet army, must be deployed to use
+  description: The Soviet military standard issue disposable rocket launcher. Designed and adopted in 1972 to give anti-tank capabilities to standard riflemen.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/Launchers/rpg18.rsi

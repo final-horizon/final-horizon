@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: FHBoxRifle545
-  name: Ammo Box 5.45
-  description: Holds 30 rounds of 5.45 rounds.
+  name: 30-Piece ammo pack (5.45x39mm)
+  description: Holds 30 5.45x39mm cartridges.
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true

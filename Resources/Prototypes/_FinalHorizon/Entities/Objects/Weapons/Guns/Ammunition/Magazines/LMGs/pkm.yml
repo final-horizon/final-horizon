@@ -1,7 +1,8 @@
 - type: entity
   parent: BaseItem
   id: FHMagazineLMGPKM
-  name: PKM Box (100)
+  name: 6Zh1M 100-Round box magazine
+  description: A steel box magazine made for the PKM machine gun.
   components:
   - type: Tag
     tags:

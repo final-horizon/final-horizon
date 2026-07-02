@@ -1,8 +1,8 @@
 - type: entity
-  name: SMAW
+  name: MK-153
   parent: FHWeaponLauncherBase
   id: FHWeaponLauncherSMAW
-  description: The Mk 153 Shoulder-Launcher Multipurpose Assault Weapon. A multi role rocket launcher used by the USMC. Yes I know launching the spent rocket is wrong and silly. # fix that
+  description: The US military standard issue rocket launcher. Designed in 1980 and adopted in 1984 by the USMC. The Mk-153 Shoulder-Launcher Multipurpose Assault Weapon commonly referred as the SMAW, is a multi-role rocket launcher used by the USMC.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/Launchers/smaw.rsi

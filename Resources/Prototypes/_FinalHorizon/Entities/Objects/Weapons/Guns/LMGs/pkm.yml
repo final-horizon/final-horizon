@@ -2,7 +2,7 @@
   name: PKM
   parent: FHWeaponBaseLMG
   id: FHWeaponLMGPKM
-  description: A rooty tooty point and shooty. # fix this
+  description: The Soviet military standard issue machine gun. Developed and adopted in 1969 it is a modernized version of the older and heavier PK machine gun.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/LMGs/pkm.rsi
@@ -65,7 +65,7 @@
             - Cartridge762x54
   - type: MagazineVisuals
     magState: mag
-    steps: 1
+    steps: 3
     zeroVisible: true
   - type: Appearance
     appearanceDataInit:

@@ -2,7 +2,7 @@
   name: SVD
   parent: FHWeaponBaseSniper
   id: FHWeaponSnipersSVD
-  description: A rooty tooty point and shooty. # fix this
+  description: The Soviet military standard issue marksman rifle. Developed between 1958-1963 it was officialy adopted in 1963, it entered mass production in 1964, it was made to replace the M91/30 Mosin-Nagant and SVT-40.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/Snipers/svd.rsi

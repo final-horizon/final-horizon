@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: FHCartridgeRocketRPG7
-  name: PG-7VL
-  description: A standard single-stage HEAT rocket used in the RPG-7 by the soviet army
+  name: PG-7VL rocket
+  description: A 93mm High-Explosive Anti Tank (HEAT) rocket for the RPG-7 rocket launcher. introduced in 1977 to replace the older 85mm PG-7V rocket
   components:
   - type: Tag
     tags:
@@ -29,8 +29,8 @@
 - type: entity
   parent: BaseItem
   id: FHCartridgeRocketSMAW
-  name: SMAW HEDM rocket
-  description: A High-Explosive Dual Mode rocket used in the SMAW.
+  name: Mk-118 rocket
+  description: A High-Explosive Dual Mode (HEDM) rocket for the SMAW rocket launcher. The dual mode fuse allows the rocket to ither explode on impact or explode shortly after impact allowing it to penetrate through soft cover.
   components:
   - type: Tag
     tags:

@@ -2,7 +2,7 @@
   name: AK-74
   parent: FHWeaponBase
   id: FHWeaponRifleAK74
-  description: A rooty tooty point and shooty. # fix this
+  description: The Soviet military standard issue rifle. Developed in the 1970 due to the adoption of the 5.45x39mm cartridge. It was lated adopted in 1974.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/ak74.rsi
