@@ -300,6 +300,7 @@
     tags:
     - Gauze
   - type: Sprite
+    sprite: _FinalHorizon/Objects/Specific/Medical/medical.rsi
     state: gauze
   - type: Item
     heldPrefix: gauze

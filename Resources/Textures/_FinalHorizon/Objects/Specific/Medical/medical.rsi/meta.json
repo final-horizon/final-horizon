@@ -1,0 +1,26 @@
+{
+	"version": 1,
+	"license": "CC-BY-SA-3.0",
+    "copyright": "Taken from the public escal repository",
+	"size": {
+		"x": 32,
+		"y": 32
+	},
+	"states": [
+		{
+			"name": "gauze"
+		},
+        {
+            "name": "nato_woundseal"
+        },
+        {
+            "name": "nato_woundseal0"
+        },
+        {
+            "name": "wp_woundseal"
+        },
+        {
+            "name": "wp_woundseal0"
+        }
+	]
+}
