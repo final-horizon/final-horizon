@@ -2,7 +2,7 @@
   parent: BaseItem
   id: FHMortarBasic
   name: portable mortar
-  description: A support weapon capable of droping bombs on heads from a distance.
+  description: A support weapon capable of droping bombs on heads from a distance. The target is relative to the mortars position and the dial is relative to the target position. The minimum range is 10 meters and the maximum range is 500 meters.
   components:
     - type: Sprite
       sprite: _FinalHorizon/Objects/Weapons/Mortars/mortar.rsi
@@ -71,11 +71,19 @@
     - type: MortarShell
     - type: Explosive
       explosionType: FHDefault
-      maxIntensity: 13
-      intensitySlope: 4
-      totalIntensity: 200
-      maxTileBreak: 6
+      maxIntensity: 40
+      intensitySlope: 5
+      totalIntensity: 170
+      maxTileBreak: 3
       deleteAfterExplosion: true
     - type: ExplosionResistance
       damageCoefficient: 0
       worn: false
+    - type: ExplodeOnTrigger # add a chance for this to not go off and for it to become UXO in the future?
+      keysIn:
+      - mortar
+    - type: ProjectileGrenade
+      fillPrototype: FHBulletFragment
+      capacity: 15
+      randomAngle: true
+      triggerKey: mortar

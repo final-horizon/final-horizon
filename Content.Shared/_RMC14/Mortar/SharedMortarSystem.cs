@@ -19,6 +19,7 @@ using Robust.Shared.Physics.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+using Content.Shared.Trigger.Systems;
 
 namespace Content.Shared._RMC14.Mortar;
 
@@ -37,6 +38,7 @@ public abstract class SharedMortarSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly SharedExplosionSystem _explosion = default!;
+    [Dependency] private readonly TriggerSystem _trigger = default!;
 
     private EntityQuery<TransformComponent> _transformQuery;
 
@@ -430,7 +432,7 @@ public abstract class SharedMortarSystem : EntitySystem
                 var ev = new MortarShellLandEvent(active.Coordinates);
                 RaiseLocalEvent(uid, ref ev);
 
-                _explosion.TriggerExplosive(uid);
+                _trigger.Trigger(uid, null, "mortar", false);
             }
         }
     }

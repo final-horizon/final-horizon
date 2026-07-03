@@ -50,7 +50,7 @@ public sealed class MortarSystem : SharedMortarSystem
         var mortarCoordinates = _transform.GetMapCoordinates(mortar);
         coordinates = new MapCoordinates(Vector2.Zero, mortarCoordinates.MapId);
 
-        coordinates = coordinates.Offset(target);
+        coordinates = coordinates.Offset(target + mortarCoordinates.Position);
         travelTime = shell.Comp.TravelDelay;
 
         if ((mortarCoordinates.Position - coordinates.Position).Length() < mortar.Comp.MinimumRange)

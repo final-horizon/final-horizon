@@ -37,7 +37,7 @@ public sealed partial class MortarComponent : Component
     public TimeSpan FireDelay = TimeSpan.FromSeconds(4); // original was 9
 
     [DataField, AutoNetworkedField]
-    public int TilesPerOffset = 20;
+    public int TilesPerOffset = 25;
 
     [DataField, AutoNetworkedField]
     public int MaxTarget = 1000;
@@ -46,10 +46,10 @@ public sealed partial class MortarComponent : Component
     public int MaxDial = 10;
 
     [DataField, AutoNetworkedField]
-    public int MinimumRange = 25;
+    public int MinimumRange = 10;
 
     [DataField, AutoNetworkedField]
-    public int MaximumRange = 75;
+    public int MaximumRange = 500;
 
     [DataField, AutoNetworkedField]
     public string FixtureId = "mortar";
@@ -85,5 +85,5 @@ public sealed partial class MortarComponent : Component
     public EntProtoId Drop = "FHMortarM402";
 
     [DataField, AutoNetworkedField]
-    public int[] FireRandomOffset = new[] { -2, 0, 0, 2 }; // used to be -1 0 0 1
+    public int[] FireRandomOffset = new[] { -1, 0, 0, 1 };
 }
