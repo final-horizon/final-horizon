@@ -65,7 +65,7 @@
             - Cartridge762x54
   - type: MagazineVisuals
     magState: mag
-    steps: 3
+    steps: 1
     zeroVisible: true
   - type: Appearance
     appearanceDataInit:

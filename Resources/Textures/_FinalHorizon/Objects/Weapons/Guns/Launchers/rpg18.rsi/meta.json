@@ -1,41 +1,41 @@
 {
     "version": 1,
-    "license": "",
-    "copyright": "Made by WillyBillyGilly for Final Horizon 84 do not reuse or edit without permission",
+    "license": "CC-BY-SA-3.0",
+    "copyright": "taken from cf escal",
     "size": {
-        "x": 64,
+        "x": 32,
         "y": 32
     },
     "states": [
-        {
-            "name": "folded"
-        },
-        {
-            "name": "base"
-        },
-        {
-            "name": "inhand-left",
-            "directions": 4
-        },
-        {
-            "name": "inhand-right",
-            "directions": 4
-        },
-        {
-            "name": "folded-inhand-left",
-            "directions": 4
-        },
-        {
-            "name": "folded-inhand-right",
-            "directions": 4
-        },
-        {
-            "name": "equipped-BACKPACK",
-            "directions": 4
-        },
-        {
-            "name": "equipped-SUITSTORAGE",
-            "directions": 4
-        }
+	{
+		"name": "base"
+	},
+	{
+		"name": "folded"
+	},
+	{
+		"name": "inhand-left",
+		"directions": 4
+	},
+	{
+		"name": "inhand-right",
+		"directions": 4
+	},
+	{
+		"name": "folded-inhand-left",
+		"directions": 4
+	},
+	{
+		"name": "folded-inhand-right",
+		"directions": 4
+	},
+    {
+      "name": "equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "equipped-SUITSTORAGE",
+      "directions": 4
+    }
     ]
 }
