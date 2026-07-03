@@ -8,9 +8,37 @@
     sprite: Objects/Specific/Medical/firstaidkits.rsi
     state: firstaid
   - type: Storage
-    maxItemSize: Small
+    maxItemSize: Normal
     grid:
-    - 0,0,3,1
+    - 0,0,3,2
+    whitelist: # BF14
+      tags:
+        - Bottle
+        - Spray
+        - Brutepack
+        - Bloodpack
+        - Gauze
+        - Ointment
+        - CigPack
+        - PillCanister
+        - Radio
+        - DiscreteHealthAnalyzer
+        - SurgeryTool
+        - Dropper
+        - GlassBeaker # BF14
+        - Tourniquet # BF14
+        - Packet # BF14
+        - GasTank # BF14
+        - Syrette # BF14
+        - MedicationBox # BF14
+        - BlisterPack # BF14
+      components:
+        - Hypospray
+        - Injector
+        - Pill
+        - HandLabeler
+        - GasTank # FH
+        - BreathMask # BF14
   - type: Item
     size: Large
     sprite: Objects/Specific/Medical/firstaidkits.rsi

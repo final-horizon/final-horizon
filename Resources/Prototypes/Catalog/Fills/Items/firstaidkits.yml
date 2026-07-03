@@ -11,7 +11,9 @@
         - id: Brutepack
         - id: Ointment
         - id: Gauze
-        - id: PillCanisterTricordrazine
+        - id: MedicationBoxPillsTricordrazine # BF14
+        - id: MedicationBoxSyrettesInaprovaline # FH
+        - id: BlisterPackIron # BF14
       # see https://github.com/tgstation/blob/master/code/game/objects/items/storage/firstaid.dm for example contents
 
 - type: entity
@@ -25,8 +27,7 @@
         children:
         - id: Ointment
           amount: 2
-        - id: PillCanisterKelotane
-        - id: PillCanisterDermaline
+        - id: MedicationBoxPillsKelotane # BF14
 
 - type: entity
   id: MedkitBruteFilled
@@ -38,9 +39,12 @@
       storagebase: !type:AllSelector
         children:
         - id: Brutepack
+          amount: 2
         - id: Gauze
-        - id: PillCanisterIron
-        - id: PillCanisterCopper
+        - id: MedicationBoxPillsBicaridine # BF14
+        - id: BlisterPackIron # BF14
+        - id: SyringeSaline # BF14
+        - id: BF14SyretteInaprovalineCapped # FH
 
 - type: entity
   id: MedkitToxinFilled
@@ -51,11 +55,10 @@
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MedicationBoxPillsDylovene # BF14
+        - id: MedicationBoxSyrettesHypervene # BF14
         - id: SyringeIpecac
-        - id: SyringeEthylredoxrazine
-        - id: AntiPoisonMedipen
-        - id: PillCanisterDylovene
-        - id: PillCanisterCharcoal
+        - id: BlisterPackEthylredoxrazine # BF14
 
 - type: entity
   id: MedkitOxygenFilled
@@ -68,9 +71,9 @@
         children:
         - id: ClothingMaskBreathMedical
         - id: EmergencyOxygenTankFilled
-        - id: EmergencyMedipen
-        - id: SyringeInaprovaline
-        - id: PillCanisterDexalin
+        - id: MedicationBoxPillsDexalin # BF14
+        - id: MedicationBoxSyrettesInaprovaline # FH
+        - id: SyringeSaline # BF14
 
 - type: entity
   id: MedkitRadiationFilled
@@ -81,10 +84,12 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: SyringePhalanximine
-        - id: RadAutoInjector
-        - id: PillCanisterPotassiumIodide
-        - id: PillCanisterHyronalin
+        - id: MedicationBoxPillsHyronalin # BF14
+        - id: MedicationBoxSyrettesPhalanximine # BF14
+        - id: MedicationBoxSyrettesArithrazine # BF14
+#BF14        - id: RadAutoInjector
+        - id: BlisterPackPotassiumIodide # BF14
+        - id: BlisterPackBicaridine # BF14
 
 - type: entity
   id: MedkitAdvancedFilled
@@ -99,6 +104,9 @@
         - id: RegenerativeMesh
         - id: Bloodpack
           amount: 2
+        - id: SyringeInaprovaline # FH
+        - id: BlisterPackMeralyne # FH
+        - id: BlisterPackDermaline # FH
 
 - type: entity
   id: MedkitCombatFilled
@@ -113,8 +121,9 @@
         - id: RegenerativeMesh
         - id: SyringeEphedrine
         - id: SyringeSaline
-        - id: BruteAutoInjector
-        - id: BurnAutoInjector
+        - id: BF14SyretteMeralyneCapped # FH
+        - id: BF14SyretteDermalineCapped # FH
+        - id: BlisterPackTricordrazine # BF14
 
 - type: entity
   id: StimkitFilled

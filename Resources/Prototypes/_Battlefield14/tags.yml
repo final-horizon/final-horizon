@@ -1,0 +1,11 @@
+- type: Tag
+  id: BlisterPack
+
+- type: Tag
+  id: MedicationBox
+
+- type: Tag
+  id: Syrette
+
+- type: Tag
+  id: GasTank

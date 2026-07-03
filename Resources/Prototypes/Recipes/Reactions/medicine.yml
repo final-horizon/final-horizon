@@ -408,42 +408,42 @@
   products:
     Saline: 5
 
-- type: reaction
-  id: Lacerinol
-  impact: Medium
-  minTemp: 335
-  reactants:
-    Bicaridine: # Bicaridine is a conflicting brute medication and if mixed incorrectly will make Razorium. This is intended.
-      amount: 1
-    Benzene:
-      amount: 1
-  products:
-    Lacerinol: 2
-
-- type: reaction
-  id: Puncturase
-  impact: Medium
-  minTemp: 325
-  reactants:
-    Bicaridine: # Bicaridine is a conflicting brute medication and if mixed incorrectly will make Razorium. This is intended.
-      amount: 1
-    Hydroxide:
-      amount: 1
-  products:
-    Puncturase: 2
-
-- type: reaction
-  id: Bruizine
-  impact: Medium
-  reactants:
-    Bicaridine: # Bicaridine is a conflicting brute medication and if mixed incorrectly will make Razorium. This is intended.
-      amount: 1
-    Lithium:
-      amount: 0.9
-    Sugar:
-      amount: 1
-  products:
-    Bruizine: 2
+#- type: reaction
+#  id: Lacerinol
+#  impact: Medium
+#  minTemp: 335
+#  reactants:
+#    Bicaridine: # Bicaridine is a conflicting brute medication and if mixed incorrectly will make Razorium. This is intended.
+#      amount: 1
+#    Benzene:
+#      amount: 1
+#  products:
+#    Lacerinol: 2
+#
+#- type: reaction
+#  id: Puncturase
+#  impact: Medium
+#  minTemp: 325
+#  reactants:
+#    Bicaridine: # Bicaridine is a conflicting brute medication and if mixed incorrectly will make Razorium. This is intended.
+#      amount: 1
+#    Hydroxide:
+#      amount: 1
+#  products:
+#    Puncturase: 2
+#
+#- type: reaction
+#  id: Bruizine
+#  impact: Medium
+#  reactants:
+#    Bicaridine: # Bicaridine is a conflicting brute medication and if mixed incorrectly will make Razorium. This is intended.
+#      amount: 1
+#    Lithium:
+#      amount: 0.9
+#    Sugar:
+#      amount: 1
+#  products:
+#    Bruizine: 2
 
 - type: reaction
   id: BicarLacerinol # mixing any two brute medications will make Razorium
@@ -529,33 +529,33 @@
   products:
     Diphenhydramine: 3
 
-- type: reaction
-  id: Pyrazine
-  impact: Medium
-  minTemp: 540
-  reactants:
-    Leporazine:
-      amount: 1
-    Dermaline:
-      amount: 1
-    Carbon:
-      amount: 1
-  products:
-    Pyrazine: 3
-
-- type: reaction
-  id: Insuzine
-  impact: Medium
-  minTemp: 433
-  reactants:
-    Leporazine:
-      amount: 1
-    Kelotane:
-      amount: 1
-    Silicon:
-      amount: 1
-  products:
-    Insuzine: 3
+#- type: reaction
+#  id: Pyrazine
+#  impact: Medium
+#  minTemp: 540
+#  reactants:
+#    Leporazine:
+#      amount: 1
+#    Dermaline:
+#      amount: 1
+#    Carbon:
+#      amount: 1
+#  products:
+#    Pyrazine: 3
+#
+#- type: reaction
+#  id: Insuzine
+#  impact: Medium
+#  minTemp: 433
+#  reactants:
+#    Leporazine:
+#      amount: 1
+#    Kelotane:
+#      amount: 1
+#    Silicon:
+#      amount: 1
+#  products:
+#    Insuzine: 3
 
 - type: reaction
   id: Opporozidone
