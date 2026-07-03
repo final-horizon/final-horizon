@@ -1,0 +1,76 @@
+#region Generic
+- type: entity
+  parent: BaseItem
+  id: FHGauzePacket
+  name: gauze packet
+  description: A sealed packet of gauze designed to stop bleeding fast. Rip it open, jam it in, hope for the best.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Specific/Medical/medical.rsi
+    state: gauzepack
+  - type: SpawnItemsOnUse
+    items:
+    - id: FHGauzePacketTrash
+    - id: Gauze
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+      params:
+        variation: 0.125
+  - type: Tag
+    tags:
+    - Brutepack
+    - Gauze
+
+- type: entity
+  parent: BaseItem
+  id: FHGauzePacketTrash
+  name: used gauze packet
+  description: A sealed packet of gauze designed to stop bleeding fast. Rip it open, jam it in, hope for the best. This one is trash, it's already been used!
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Specific/Medical/medical.rsi
+    state: gauzepack0
+
+#region NATO
+- type: entity
+  parent: FHGauzePacket
+  id: FHGauzePacketNATO
+  suffix: NATO
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Specific/Medical/medical.rsi
+    state: nato_woundseal
+  - type: SpawnItemsOnUse
+    items:
+    - id: FHGauzePacketTrashNATO
+    - id: Gauze
+
+- type: entity
+  parent: FHGauzePacketTrash
+  id: FHGauzePacketTrashNATO
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Specific/Medical/medical.rsi
+    state: nato_woundseal0
+
+#region PACT
+- type: entity
+  parent: FHGauzePacketNATO
+  id: FHGauzePacketPACT
+  suffix: NATO
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Specific/Medical/medical.rsi
+    state: wp_woundseal
+  - type: SpawnItemsOnUse
+    items:
+    - id: FHGauzePacketTrashPACT
+    - id: Gauze
+
+- type: entity
+  parent: FHGauzePacketTrashNATO
+  id: FHGauzePacketTrashPACT
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Specific/Medical/medical.rsi
+    state: wp_woundseal0

@@ -385,7 +385,7 @@
     solutions:
     - SolutionStomach
   - type: Metabolizer
-    maxReagents: 3
+    maxReagents: 30 # FH
     stages: [ Digestion ]
   - type: Sprite
     layers:
