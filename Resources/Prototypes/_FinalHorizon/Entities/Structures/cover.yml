@@ -18,7 +18,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 800
+        damage: 1500
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -44,7 +44,7 @@
     tags:
     - ForceFixRotations
   - type: Cover
-    hitChance: 0.75
+    hitChance: 0.80
   - type: SpeedModifierContacts
     walkSpeedModifier: 0.4
     sprintSpeedModifier: 0.4
@@ -74,7 +74,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 1000
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -159,7 +159,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 1200
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -179,7 +179,7 @@
     delay: 1
   - type: Clickable
   - type: Cover
-    hitChance: 0.85
+    hitChance: 0.90
   - type: Construction
     graph: SandbagCover
     node: built

@@ -23,6 +23,9 @@
     maxTileBreak: 10
   - type: TimerTrigger
     delay: 30
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
 
 - type: entity
   name: Satchel
@@ -49,3 +52,6 @@
     maxTileBreak: 10
   - type: TimerTrigger
     delay: 30
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
