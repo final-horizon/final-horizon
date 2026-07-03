@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 06/28/2026 17:35:47
-  entityCount: 9513
+  time: 07/03/2026 16:17:51
+  entityCount: 9492
 maps:
 - 1
 grids:
@@ -766,30 +766,6 @@ entities:
     - type: Transform
       pos: 1.5,7.5
       parent: 1
-- proto: BoxLightbulb
-  entities:
-  - uid: 1082
-    components:
-    - type: Transform
-      pos: -35.5,-20.5
-      parent: 1
-  - uid: 1083
-    components:
-    - type: Transform
-      pos: -35.5,-20.5
-      parent: 1
-- proto: BoxMousetrap
-  entities:
-  - uid: 1086
-    components:
-    - type: Transform
-      pos: -36.5,-20.5
-      parent: 1
-  - uid: 1087
-    components:
-    - type: Transform
-      pos: -36.5,-20.5
-      parent: 1
 - proto: Bucket
   entities:
   - uid: 1084
@@ -1084,73 +1060,6 @@ entities:
     - type: Transform
       pos: 8.271139,-0.68944883
       parent: 1
-- proto: CrateFoodCooking
-  entities:
-  - uid: 887
-    components:
-    - type: Transform
-      pos: -53.5,-8.5
-      parent: 1
-  - uid: 888
-    components:
-    - type: Transform
-      pos: -50.5,-5.5
-      parent: 1
-- proto: CrateFoodDinnerware
-  entities:
-  - uid: 889
-    components:
-    - type: Transform
-      pos: -50.5,-6.5
-      parent: 1
-  - uid: 890
-    components:
-    - type: Transform
-      pos: -50.5,-7.5
-      parent: 1
-- proto: CrateFoodGetMore
-  entities:
-  - uid: 882
-    components:
-    - type: Transform
-      pos: -53.5,-13.5
-      parent: 1
-- proto: CrateFoodHappyHonkBigBite
-  entities:
-  - uid: 891
-    components:
-    - type: Transform
-      pos: -50.5,-8.5
-      parent: 1
-- proto: CrateFoodMRE
-  entities:
-  - uid: 883
-    components:
-    - type: Transform
-      pos: -53.5,-12.5
-      parent: 1
-  - uid: 884
-    components:
-    - type: Transform
-      pos: -53.5,-11.5
-      parent: 1
-  - uid: 892
-    components:
-    - type: Transform
-      pos: -50.5,-9.5
-      parent: 1
-- proto: CrateFreezer
-  entities:
-  - uid: 885
-    components:
-    - type: Transform
-      pos: -53.5,-10.5
-      parent: 1
-  - uid: 886
-    components:
-    - type: Transform
-      pos: -53.5,-9.5
-      parent: 1
 - proto: CrateGenericSteel
   entities:
   - uid: 2027
@@ -1167,38 +1076,6 @@ entities:
     components:
     - type: Transform
       pos: 0.5,-2.5
-      parent: 1
-- proto: CrateTrashCart
-  entities:
-  - uid: 930
-    components:
-    - type: Transform
-      pos: -48.5,-1.5
-      parent: 1
-  - uid: 931
-    components:
-    - type: Transform
-      pos: -47.5,-1.5
-      parent: 1
-  - uid: 1129
-    components:
-    - type: Transform
-      pos: -37.5,-23.5
-      parent: 1
-  - uid: 1130
-    components:
-    - type: Transform
-      pos: -38.5,-22.5
-      parent: 1
-  - uid: 1134
-    components:
-    - type: Transform
-      pos: -38.5,-23.5
-      parent: 1
-  - uid: 1135
-    components:
-    - type: Transform
-      pos: -37.5,-22.5
       parent: 1
 - proto: CurtainsGreen
   entities:
@@ -4791,226 +4668,406 @@ entities:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 2026
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9416
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9417
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9418
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9419
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9420
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9421
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9422
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9423
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9424
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9425
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9426
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9427
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9428
     components:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9429
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9430
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9431
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9432
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9433
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9434
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9435
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9436
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9437
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9438
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9439
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9440
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9441
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9442
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9443
     components:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9444
     components:
     - type: Transform
       pos: 0.5,-3.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9445
     components:
     - type: Transform
       pos: 0.5,-3.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9446
     components:
     - type: Transform
       pos: 0.5,-3.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9447
     components:
     - type: Transform
       pos: 0.5,-3.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9448
     components:
     - type: Transform
       pos: 0.5,-3.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9449
     components:
     - type: Transform
       pos: 0.5,-3.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9450
     components:
     - type: Transform
       pos: 0.5,-3.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9451
     components:
     - type: Transform
       pos: 0.5,-3.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9452
     components:
     - type: Transform
       pos: 0.5,-3.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9453
     components:
     - type: Transform
       pos: 0.5,-3.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9454
     components:
     - type: Transform
       pos: 0.5,-3.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9455
     components:
     - type: Transform
       pos: 0.5,-3.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9456
     components:
     - type: Transform
       pos: 0.5,-3.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9457
     components:
     - type: Transform
       pos: 0.5,-3.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
   - uid: 9458
     components:
     - type: Transform
       pos: 0.5,-3.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        cluster-payload: !type:Container
+          ents: []
 - proto: FHRandomFloraSpawnerTemperate
   entities:
   - uid: 16
@@ -46557,23 +46614,6 @@ entities:
     - type: Transform
       pos: 5.5,-1.5
       parent: 1
-- proto: HandheldGPSBasic
-  entities:
-  - uid: 9511
-    components:
-    - type: Transform
-      pos: 0.5,-3.5
-      parent: 1
-  - uid: 9512
-    components:
-    - type: Transform
-      pos: 0.5,-2.5
-      parent: 1
-  - uid: 9513
-    components:
-    - type: Transform
-      pos: 0.5,-1.5
-      parent: 1
 - proto: IFAKUSMCFilled
   entities:
   - uid: 1386
@@ -47080,23 +47120,6 @@ entities:
     - type: Transform
       pos: 8.575006,1.3383856
       parent: 1
-- proto: LockerFreezerBase
-  entities:
-  - uid: 873
-    components:
-    - type: Transform
-      pos: -52.5,-1.5
-      parent: 1
-  - uid: 876
-    components:
-    - type: Transform
-      pos: -53.5,-6.5
-      parent: 1
-  - uid: 877
-    components:
-    - type: Transform
-      pos: -53.5,-7.5
-      parent: 1
 - proto: MedicalBed
   entities:
   - uid: 939
@@ -47185,6 +47208,54 @@ entities:
     components:
     - type: Transform
       pos: -9.794453,13.818216
+      parent: 1
+- proto: MedkitAdvancedFilled
+  entities:
+  - uid: 885
+    components:
+    - type: Transform
+      pos: -8.480784,13.834724
+      parent: 1
+  - uid: 886
+    components:
+    - type: Transform
+      pos: -8.487729,13.508336
+      parent: 1
+- proto: MedkitBruteFilled
+  entities:
+  - uid: 873
+    components:
+    - type: Transform
+      pos: -6.247737,13.945566
+      parent: 1
+  - uid: 877
+    components:
+    - type: Transform
+      pos: -6.2407928,13.619177
+      parent: 1
+- proto: MedkitBurnFilled
+  entities:
+  - uid: 876
+    components:
+    - type: Transform
+      pos: -6.8449593,13.910844
+      parent: 1
+  - uid: 882
+    components:
+    - type: Transform
+      pos: -6.831071,13.4386215
+      parent: 1
+- proto: MedkitFilled
+  entities:
+  - uid: 883
+    components:
+    - type: Transform
+      pos: -8.116608,13.785844
+      parent: 1
+  - uid: 884
+    components:
+    - type: Transform
+      pos: -8.074942,13.424732
       parent: 1
 - proto: MopItem
   entities:
@@ -47337,11 +47408,6 @@ entities:
     - type: Transform
       pos: 8.5,-7.5
       parent: 1
-  - uid: 1088
-    components:
-    - type: Transform
-      pos: -36.5,-20.5
-      parent: 1
   - uid: 1128
     components:
     - type: Transform
@@ -47411,11 +47477,6 @@ entities:
     components:
     - type: Transform
       pos: -35.5,-22.5
-      parent: 1
-  - uid: 1152
-    components:
-    - type: Transform
-      pos: -35.5,-20.5
       parent: 1
   - uid: 1154
     components:
