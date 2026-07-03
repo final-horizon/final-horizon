@@ -37,7 +37,6 @@ public abstract class SharedMortarSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly SharedExplosionSystem _explosion = default!;
     [Dependency] private readonly TriggerSystem _trigger = default!;
 
     private EntityQuery<TransformComponent> _transformQuery;
