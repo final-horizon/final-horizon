@@ -3,7 +3,9 @@ using Content.Shared.Examine;
 using Content.Shared.Hands;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Item;
+using Content.Shared.Mobs;
 using Content.Shared.Popups;
+using Robust.Shared.CPUJob.JobQueues;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 
@@ -132,11 +134,12 @@ namespace Content.Shared.Ghost
     [Serializable, NetSerializable]
     public struct GhostWarp
     {
-        public GhostWarp(NetEntity entity, string displayName, bool isWarpPoint)
+        public GhostWarp(NetEntity entity, string displayName, bool isWarpPoint, string job) // FH
         {
             Entity = entity;
             DisplayName = displayName;
             IsWarpPoint = isWarpPoint;
+            Job = job; // FH
         }
 
         /// <summary>
@@ -154,6 +157,8 @@ namespace Content.Shared.Ghost
         /// Whether this warp represents a warp point or a player
         /// </summary>
         public bool IsWarpPoint { get;  }
+
+        public string Job { get; } // FH
     }
 
     /// <summary>

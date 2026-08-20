@@ -11,7 +11,7 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls
     [GenerateTypedNameReferences]
     public sealed partial class GhostTargetWindow : DefaultWindow
     {
-        private List<(string, NetEntity)> _warps = new();
+        private List<(string, string, NetEntity)> _warps = new(); // FH
         private string _searchText = string.Empty;
 
         public event Action<NetEntity>? WarpClicked;
@@ -29,16 +29,16 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls
         {
             // Server COULD send these sorted but how about we just use the client to do it instead
             _warps = warps
-                .OrderBy(w => w.IsWarpPoint)
-                .ThenBy(w => w.DisplayName, Comparer<string>.Create(
-                    (x, y) => string.Compare(x, y, StringComparison.Ordinal)))
+                .OrderBy(w => w.IsWarpPoint) // FH start
+                .ThenBy(w => w.Job, StringComparer.Ordinal)
+                .ThenBy(w => w.DisplayName, StringComparer.Ordinal) // FH end
                 .Select(w =>
                 {
                     var name = w.IsWarpPoint
                         ? Loc.GetString("ghost-target-window-current-button", ("name", w.DisplayName))
                         : w.DisplayName;
 
-                    return (name, w.Entity);
+                    return (name, w.Job, w.Entity); // FH
                 })
                 .ToList();
         }
@@ -51,14 +51,15 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls
 
         private void AddButtons()
         {
-            foreach (var (name, warpTarget) in _warps)
+            foreach (var (name, job, warpTarget) in _warps) // FH
             {
                 var currentButtonRef = new Button
                 {
-                    Text = name,
-                    TextAlign = Label.AlignMode.Right,
+                    Text = job + "  |  " + name, // FH
+                    TextAlign = Label.AlignMode.Left, // FH
                     HorizontalAlignment = HAlignment.Center,
                     VerticalAlignment = VAlignment.Center,
+                    HorizontalExpand = true, // FH
                     SizeFlagsStretchRatio = 1,
                     MinSize = new Vector2(340, 20),
                     ClipText = true,
