@@ -5,6 +5,7 @@ using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
 using Content.Server.Mind;
 using Content.Server.Roles.Jobs;
+using Content.Server.Station.Systems;
 using Content.Shared.Actions;
 using Content.Shared.CCVar;
 using Content.Shared.Damage;
@@ -26,6 +27,9 @@ using Content.Shared.Movement.Events;
 using Content.Shared.Movement.Systems;
 using Content.Shared.NameModifier.EntitySystems;
 using Content.Shared.Popups;
+using Content.Shared.Roles;
+using Content.Shared.Roles.Jobs;
+using Content.Shared.Station;
 using Content.Shared.Storage.Components;
 using Content.Shared.Tag;
 using Content.Shared.Warps;
@@ -37,6 +41,7 @@ using Robust.Shared.Physics.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Robust.Shared.Utility;
 
 namespace Content.Server.Ghost
 {
@@ -67,6 +72,9 @@ namespace Content.Server.Ghost
         [Dependency] private readonly TagSystem _tag = default!;
         [Dependency] private readonly NameModifierSystem _nameMod = default!;
         [Dependency] private readonly GhostSpriteStateSystem _ghostState = default!;
+        [Dependency] private readonly StationJobsSystem _jobSystem = default!; // FH
+        [Dependency] private readonly SharedJobSystem _sharedJobSystem = default!; // FH
+        [Dependency] private readonly SharedStationSystem _stationSystem = default!; // FH
 
         private EntityQuery<GhostComponent> _ghostQuery;
         private EntityQuery<PhysicsComponent> _physicsQuery;
@@ -474,6 +482,23 @@ namespace Content.Server.Ghost
             {
                 _ghostState.SetGhostSprite((ghost, state), mind);
             }
+
+            // FH start - colors ghost with jobs department color
+            var stations = _stationSystem.GetStations();
+            if (mind.Comp.UserId != null)
+            {
+                List<ProtoId<JobPrototype>> jobsCombined = new();
+                foreach (var station in stations)
+                {
+                    if (_jobSystem.TryGetPlayerJobs(station, mind.Comp.UserId.Value, out var jobs))
+                        jobsCombined.AddRange(jobs);
+                }
+
+                if (jobsCombined.TryGetValue(jobsCombined.Count - 1, out var job) &&
+                    _sharedJobSystem.TryGetDepartment(job, out var department))
+                    ghostComponent.Color = department.Color;
+            }
+            // FH end
 
             // Try setting the ghost entity name to either the character name or the player name.
             // If all else fails, it'll default to the default entity prototype name, "observer".

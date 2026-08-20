@@ -79,19 +79,19 @@
   - type: Examiner
     skipChecks: true
   - type: Ghost
-  - type: GhostSpriteState
-    damageMap:
-      Blunt: 3
-      Slash: 3
-      Piercing: 3
-      Heat: 1
-      Cold: 1
-      Shock: 1
-      Radiation: 1
-      Cellular: 1
-      Poison: 1
-      Asphyxiation: 1
-    prefix: "ghost_"
+  #- type: GhostSpriteState # FH start
+  #  damageMap:
+  #    Blunt: 3
+  #    Slash: 3
+  #    Piercing: 3
+  #    Heat: 1
+  #    Cold: 1
+  #    Shock: 1
+  #    Radiation: 1
+  #    Cellular: 1
+  #    Poison: 1
+  #    Asphyxiation: 1
+  #  prefix: "ghost_" # FH end
   - type: GhostHearing
   - type: ShowElectrocutionHUD
   - type: IntrinsicRadioReceiver
