@@ -31,8 +31,8 @@
       allowMovement: true
       doAfter: 0.1
   - type: FarGunshot
-    range: 260
-    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak_dist.ogg
+    range: 120
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak74.ogg
 
 - type: entity
   parent: FHWeaponBase
@@ -59,8 +59,8 @@
       allowMovement: true
       doAfter: 0.2
   - type: FarGunshot
-    range: 300
-    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/mg_dist.ogg
+    range: 150
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/m60.ogg
 
 - type: entity
   parent: FHWeaponBase
@@ -100,5 +100,5 @@
       allowMovement: false
       doAfter: 0.4
   - type: FarGunshot
-    range: 190
-    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/rpg_dist.ogg
+    range: 150
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/rpg.ogg

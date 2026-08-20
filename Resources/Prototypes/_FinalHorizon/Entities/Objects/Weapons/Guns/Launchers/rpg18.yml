@@ -48,5 +48,3 @@
         unfoldedLayer:
           True: {visible: false}
           False: {visible: true}
-  - type: FarGunshot
-    range: 200

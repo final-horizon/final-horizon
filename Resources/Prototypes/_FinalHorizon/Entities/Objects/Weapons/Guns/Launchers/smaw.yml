@@ -44,5 +44,3 @@
     steps: 2
     zeroVisible: false
   - type: Appearance
-  - type: FarGunshot
-    range: 240
