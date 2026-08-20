@@ -378,13 +378,14 @@ public sealed partial class GunSystem : SharedGunSystem
         }
 
         Lights.SetEnabled(gunUid, true, light);
-        Lights.SetRadius(gunUid, 2f, light);
-        Lights.SetColor(gunUid, Color.FromHex("#cc8e2b"), light);
-        Lights.SetEnergy(gunUid, 5f, light);
+        Lights.SetRadius(gunUid, 6f, light); // FH start - make the muzzle flash feel punchier
+        Lights.SetColor(gunUid, Color.FromHex("#fcd694"), light);
+        Lights.SetEnergy(gunUid, 50f, light);
+        Lights.SetFalloff(gunUid, 90f, light);
 
         var animTwo = new Animation()
         {
-            Length = TimeSpan.FromSeconds(lifetime),
+            Length = TimeSpan.FromSeconds(0.07),
             AnimationTracks =
             {
                 new AnimationTrackComponentProperty
@@ -394,8 +395,9 @@ public sealed partial class GunSystem : SharedGunSystem
                     InterpolationMode = AnimationInterpolationMode.Linear,
                     KeyFrames =
                     {
-                        new AnimationTrackProperty.KeyFrame(5f, 0),
-                        new AnimationTrackProperty.KeyFrame(0f, lifetime)
+                        new AnimationTrackProperty.KeyFrame(50f, 0),
+                        new AnimationTrackProperty.KeyFrame(40f, 0.03f),
+                        new AnimationTrackProperty.KeyFrame(0f, 0.07f)
                     }
                 },
                 new AnimationTrackComponentProperty
@@ -406,8 +408,8 @@ public sealed partial class GunSystem : SharedGunSystem
                     KeyFrames =
                     {
                         new AnimationTrackProperty.KeyFrame(true, 0),
-                        new AnimationTrackProperty.KeyFrame(false, lifetime)
-                    }
+                        new AnimationTrackProperty.KeyFrame(false, 0.07f)
+                    } // FH end
                 }
             }
         };
