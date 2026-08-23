@@ -1,0 +1,70 @@
+- type: entity
+  parent: BaseItem
+  id: FHMagazineRifleMPIKM
+  name: 6L9 30-Round Magazine
+  description: A stamped steel magazine made for AKM pattern rifles. The steel has a ribbed pattern on the sides to reinforce it against external and internal stresses.
+  components:
+  - type: Tag
+    tags:
+      - Magazine762x39
+      - MagazineLightRifle
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    soundInsert:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Misc/rifle_load.ogg
+      params:
+        variation: 0.1
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge762x39
+    capacity: 30
+    fillDelay: 0.30
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Magazine/Rifles/ak74black.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: FHMagazineRifleMPIKM
+  id: FHMagazineRifleMPIKM40
+  name: 6P2 Sb.11 40-Round Magazine
+  description: A large polymer magazine made for the RPK rifle. The steel has a ribbed pattern on the sides to reinforce it against external and internal stresses.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Magazine/Rifles/ak74bake45.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: BallisticAmmoProvider
+    capacity: 40
+
+- type: entity
+  parent: FHMagazineRifleMPIKM
+  id: FHMagazineRifleMPIKMFull
+  suffix: Full
+  components:
+  - type: BallisticAmmoProvider
+    proto: FHCartridge762x39
+
+- type: entity
+  parent: FHMagazineRifleMPIKM40
+  id: FHMagazineRifleMPIKM40Full
+  suffix: Full
+  components:
+  - type: BallisticAmmoProvider
+    proto: FHCartridge762x39

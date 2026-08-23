@@ -17,6 +17,9 @@
 - type: Tag
   id: MagazineBox762x54 # wp
 
+- type: Tag
+  id: Magazine762x39 # wp
+
 # Cartridge
 - type: Tag
   id: Cartridge556
@@ -29,6 +32,9 @@
 
 - type: Tag
   id: Cartridge762x54 # wp
+
+- type: Tag
+  id: Cartridge762x39 # wp
 
 - type: Tag
   id: CartridgeRPG7
