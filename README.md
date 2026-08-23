@@ -2,7 +2,7 @@ Final Horizon is a milsim pvp shooter game built on Space Station 14. Please mes
 
 ## License
 
-The whole project and all code within _FinalHorizon folders or marked with //FH or //FinalHorizon are licensed under [AGPLv3](https://github.com/final-horizon/final-horizon/blob/master/LICENSE-AGPLv3.TXT)
+The whole project and all code within _FinalHorizon folders or marked with //FH or //FinalHorizon are licensed under [AGPLv3](https://github.com/final-horizon/final-horizon/blob/master/LICENSE-AGPLv3.txt)
 
 Any code or assets within _Stalker folders or marked with stalker are sub licensed under all rights reserved to stalker 14 and is used here with permission from LordVladimer under the condition of proper credit and no monetization.
 
