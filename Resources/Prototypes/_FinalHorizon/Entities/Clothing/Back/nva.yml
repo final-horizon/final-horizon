@@ -1,0 +1,57 @@
+- type: entity
+  parent: FHClothingBackpackBase
+  id: FHClothingBackpackNVAKit
+  name: Nationale Volksarmee Backpack
+  description: The standard backpack in the Nationale Volksarmee.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Back/nva_bag.rsi
+  - type: Storage
+    grid:
+    - 0,0,3,3
+    maxItemSize: Large
+
+- type: entity
+  parent: FHClothingBackpackNVAKit
+  id: FHClothingBackpackNVAKitMachineGunnerFilled
+  suffix: filled, machinegunner
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHMagazineLMGPKMFull
+        - id: FHMagazineLMGPKMFull
+        - id: FHMagazineLMGPKMFull
+        - id: FHMagazineLMGPKMFull
+
+- type: entity
+  parent: FHClothingBackpackBase
+  id: FHClothingBackpackNVARPG
+  name: Nationale Volksarmee RPG Bag
+  description: A backpack that holds 3 RPG rockets. You're pretty sure this is just a Soviet rocket bag.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Back/soviet_rpg.rsi
+  - type: Storage
+    grid:
+    - 0,0,0,2
+    - 2,0,2,2
+    - 4,0,4,2
+    maxItemSize: Huge
+    whitelist:
+      tags:
+      - CartridgeRocket
+
+- type: entity
+  parent: FHClothingBackpackNVARPG
+  id: FHClothingBackpackNVARPGFilled
+  suffix: filled, rpg7
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHCartridgeRocketRPG7
+        - id: FHCartridgeRocketRPG7
+        - id: FHCartridgeRocketRPG7

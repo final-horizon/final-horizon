@@ -1,0 +1,10 @@
+- type: entity
+  parent: [UnsensoredClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpsuitNVAStricht
+  name: NVA uniform
+  description: A standard issue uniform of the NVA.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Uniforms/nva_stricht.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Uniforms/nva_stricht.rsi

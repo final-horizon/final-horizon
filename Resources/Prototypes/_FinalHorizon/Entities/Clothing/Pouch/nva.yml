@@ -1,0 +1,157 @@
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchNVAAmmo
+  name: Nationale Volksarmee Ammo Pouch
+  description: A pouch that can carry 4 mags.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/nva_ammo.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/nva_ammo.rsi
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,3,1
+    whitelist:
+      tags:
+      - MagazineLightRifle
+
+- type: entity
+  parent: FHClothingPouchNVAAmmo
+  id: FHClothingPouchNVAAmmoFilled
+  suffix: filled, mpi-km 30rnd
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHMagazineRifleMPIKMFull
+        - id: FHMagazineRifleMPIKMFull
+        - id: FHMagazineRifleMPIKMFull
+        - id: FHMagazineRifleMPIKMFull
+
+- type: entity
+  parent: FHClothingPouchUSSRAmmo
+  id: FHClothingPouchNVAAmmoFilled40
+  suffix: filled, mpi-km 40rnd
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHMagazineRifleMPIKM40Full
+        - id: FHMagazineRifleMPIKM40Full
+        - id: FHMagazineRifleMPIKM40Full
+        - id: FHMagazineRifleMPIKM40Full
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchNVALMG
+  name: Nationale Volksarmee LMG Ammo Pouch
+  description: A pouch for holding lmg boxes.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/nva_lmg.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/nva_lmg.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,1
+    whitelist:
+      tags:
+      - MagazineLightRifleBox
+
+- type: entity
+  parent: FHClothingPouchNVALMG
+  id: FHClothingPouchNVALMGFilled
+  suffix: filled, pkm
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHMagazineLMGPKMFull
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchNVAGrenade
+  name: Nationale Volksarmee Grenade Pouch
+  description: A pouch for carrying grenades.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/nva_grenade.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/nva_grenade.rsi
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,5,1
+    whitelist:
+      tags:
+      - HandGrenade
+
+- type: entity
+  parent: FHClothingPouchNVAGrenade
+  id: FHClothingPouchNVAGrenadeFilled
+  suffix: filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHGrenadeRDG5
+        - id: FHGrenadeRDG5
+        - id: FHGrenadeF1
+        - id: FHGrenadeF1
+        - id: FHGrenadeSmokeRDG2
+        - id: FHGrenadeSmokeRDG2
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchNVASapper
+  name: Nationale Volksarmee Sapper Pouch
+  description: A pouch for carrying tools and materials.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/nva_sapper.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/nva_sapper.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,2,1 # make this restricted to tools and materials
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchNVAVOG
+  name: Nationale Volksarmee Vog Pouch
+  description: A pouch for carrying vog underbarrel grenades.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/nva_vog.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/nva_vog.rsi
+  - type: Storage
+    maxItemSize: Tiny
+    grid:
+    - 0,0,4,1
+    whitelist:
+      tags:
+      - Grenade
+
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchNVASG
+  name: Nationale Volksarmee Squad Gunner Pouch
+  description: A pouch for carrying ammo boxes.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/nva_sg.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/nva_sg.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,1 # whitelist this to hold deployable ammo cans

@@ -1,0 +1,33 @@
+- type: entity
+  parent: FHClothingHeadHelmetBaseFoldable
+  id: FHClothingHeadHelmetM56
+  name: Gray M56 Helmet
+  description: Standard issue helmet for the Nationale Volksarmee.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Helmets/m56_gray.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Helmets/m56_gray.rsi
+
+- type: entity
+  parent: FHClothingHeadHelmetBaseFoldable
+  id: FHClothingHeadHelmetM56Medic
+  name: Medic M56 Helmet
+  description: Standard issue helmet for the Nationale Volksarmee.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Helmets/m56_medic.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Helmets/m56_medic.rsi
+
+
+- type: entity
+  parent: FHClothingHeadHelmetBaseFoldable
+  id: FHClothingHeadHelmetM56Covered
+  name: Covered M56 Helmet
+  description: Standard issue helmet for the Nationale Volksarmee.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Helmets/m56_covered.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Helmets/m56_covered.rsi
