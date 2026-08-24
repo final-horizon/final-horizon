@@ -25,7 +25,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Magazine/Rifles/ak74black.rsi
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Magazine/Rifles/mpi.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -44,7 +44,7 @@
   description: A large polymer magazine made for the RPK rifle. The steel has a ribbed pattern on the sides to reinforce it against external and internal stresses.
   components:
   - type: Sprite
-    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Magazine/Rifles/lgmk.rsi
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Magazine/Rifles/lmgk.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
