@@ -1,0 +1,10 @@
+- type: entity
+  parent: [UnsensoredClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpsuitBDWGray
+  name: Gray BDW Uniform
+  description: A standard issue uniform of the BDW.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Uniforms/bdw_gray.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Uniforms/bdw_gray.rsi

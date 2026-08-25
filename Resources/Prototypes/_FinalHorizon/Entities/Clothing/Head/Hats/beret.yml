@@ -13,6 +13,19 @@
 
 - type: entity
   parent: ClothingHeadBase
+  id: FHClothingHeadHatBeretBDW
+  name: BDW Beret
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Hats/bdw_beret.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Hats/bdw_beret.rsi
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+
+- type: entity
+  parent: ClothingHeadBase
   id: FHClothingHeadHatBeretSA
   name: soviet army beret
   components:

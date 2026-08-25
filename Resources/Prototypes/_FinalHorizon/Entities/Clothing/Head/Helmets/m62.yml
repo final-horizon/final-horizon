@@ -1,0 +1,21 @@
+- type: entity
+  parent: FHClothingHeadHelmetBaseFoldable
+  id: FHClothingHeadHelmetM62
+  name: Gray M62 Helmet
+  description: Standard issue helmet for the Bundeswehr.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Helmets/m62_gray.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Helmets/m62_gray.rsi
+
+- type: entity
+  parent: FHClothingHeadHelmetM62
+  id: FHClothingHeadHelmetM62Medic
+  name: Medic M62 Helmet
+  description: Standard issue helmet for the Bundeswehr.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Helmets/m62_medic.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Helmets/m62_medic.rsi

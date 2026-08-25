@@ -1,0 +1,138 @@
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchBDWAmmo
+  name: USMC ammo pouch
+  description: A pouch that can carry two mags.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/bdw_ammo.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/bdw_ammo.rsi
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,1,1
+    whitelist:
+      tags:
+      - MagazineLightRifle
+
+- type: entity
+  parent: FHClothingPouchBDWAmmo
+  id: FHClothingPouchBDWAmmoFilled
+  suffix: filled, g3a3
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHMagazineRifleG3A3Full
+        - id: FHMagazineRifleG3A3Full
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchBDWAmmoLMG
+  name: BDW Ammo Pouch LMG
+  description: A pouch for carrying LMG boxes.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/bdw_lmg.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/bdw_lmg.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,1
+    whitelist:
+      tags:
+      - MagazineLightRifleBox
+
+- type: entity
+  parent: FHClothingPouchBDWAmmoLMG
+  id: FHClothingPouchBDWAmmoLMGFilled
+  suffix: filled, mg3
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHMagazineLMGMG3Full
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchBDWGrenade
+  name: BDW grenade pouch
+  description: A pouch for carrying grenades.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/bdw_grenade.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/bdw_grenade.rsi
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,5,1
+    whitelist:
+      tags:
+      - HandGrenade
+
+- type: entity
+  parent: FHClothingPouchBDWGrenade
+  id: FHClothingPouchBDWGrenadeFilled
+  suffix: filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHGrenadeM67
+        - id: FHGrenadeM67
+        - id: FHGrenadeM67
+        - id: FHGrenadeM67
+        - id: FHGrenadeSmokeM18
+        - id: FHGrenadeSmokeM18
+
+- type: entity
+  parent: FHClothingPouchBase
+  id: FHClothingPouchBDWSapper
+  name: BDW Sapper Pouch
+  description: A pouch for carrying sapper supply.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/bdw_sapper.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/bdw_sapper.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,2
+    whitelist:
+      tags:
+      - FHUtilityItem
+
+- type: entity
+  parent: FHClothingPouchBDWSapper
+  id: FHClothingPouchBDWSapperFilled
+  suffix: filled, sandbag
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
+        - id: MaterialSandbagEmpty
