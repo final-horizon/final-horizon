@@ -1,0 +1,46 @@
+- type: entity
+  parent: BaseItem
+  id: FHMagazineLMGMG3
+  name: MG3 100-Round box magazine
+  description: A steel box magazine made for the MG3 machinegun.
+  components:
+  - type: Tag
+    tags:
+      - MagazineBox762x51
+      - MagazineLightRifleBox
+  - type: Item
+    size: Normal
+  - type: BallisticAmmoProvider
+    soundInsert:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Misc/rifle_load.ogg
+      params:
+        variation: 0.1
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge762x51
+    capacity: 100
+    fillDelay: 0.30
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Magazine/LMGs/mg3.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: FHMagazineLMGMG3
+  id: FHMagazineLMGMG3Full
+  suffix: Full
+  components:
+  - type: BallisticAmmoProvider
+    proto: FHCartridge762x51

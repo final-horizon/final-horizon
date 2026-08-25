@@ -1,0 +1,46 @@
+- type: entity
+  parent: BaseItem
+  id: FHMagazineRifleG3A3
+  name: G3A3 20-Round Magazine
+  Description: A steel magazine made for the G3A3 battle rifle.
+  components:
+  - type: Tag
+    tags:
+      - Magazine762x51
+      - MagazineLightRifle
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    soundInsert:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Misc/rifle_load.ogg
+      params:
+        variation: 0.1
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge762x51
+    capacity: 20
+    fillDelay: 0.30
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Magazine/Snipers/m21.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: FHMagazineRifleG3A3
+  id: FHMagazineRifleG3A3Full
+  suffix: Full
+  components:
+  - type: BallisticAmmoProvider
+    proto: FHCartridge762x51
