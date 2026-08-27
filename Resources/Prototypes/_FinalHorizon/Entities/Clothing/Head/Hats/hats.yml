@@ -17,6 +17,60 @@
 
 - type: entity
   parent: ClothingHeadBase
+  id: FHClothingHeadHatGarrisonNVA
+  name: Nationale Volksarmee Garrison Cap
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Hats/nva_garrison.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Hats/nva_garrison.rsi
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: unfold-verb-clothing-jacket
+    foldVerbText: fold-verb-clothing-jacket
+  - type: FoldableClothing
+    foldedEquippedPrefix: folded
+
+- type: entity
+  parent: ClothingHeadBase
+  id: FHClothingHeadHatPCNVA
+  name: NVA Patrol Cap
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Hats/nva_pc.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Hats/nva_pc.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: FHClothingHeadHatPCBDW
+  name: BDW Patrol Cap
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Hats/bdw_pc.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Hats/bdw_pc.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: FHClothingHeadHatGarrisonBDW
+  name: Bundeswehr Garrison Cap
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Hats/bdw_garrison.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Hats/bdw_garrison.rsi
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: unfold-verb-clothing-jacket
+    foldVerbText: fold-verb-clothing-jacket
+  - type: FoldableClothing
+    foldedEquippedPrefix: folded
+
+- type: entity
+  parent: ClothingHeadBase
   id: FHClothingHeadHatBoonieUSMC
   name: USMC boonie hat
   components:

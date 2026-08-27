@@ -57,6 +57,27 @@
   - type: Item
     state: usmc
 
+# BDW
+- type: entity
+  parent: IFAKBase
+  id: IFAKBDW
+  name: BDW IFAK
+  components:
+  - type: Sprite
+    state: bdw
+  - type: Item
+    state: bdw
+
+- type: entity
+  parent: IFAKBaseFilled
+  id: IFAKBDWFilled
+  name: BDW IFAK
+  components:
+  - type: Sprite
+    state: bdw
+  - type: Item
+    state: bdw
+
 # Soviet
 - type: entity
   parent: IFAKBase

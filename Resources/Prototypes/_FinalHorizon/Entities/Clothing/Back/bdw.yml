@@ -1,0 +1,35 @@
+- type: entity
+  parent: FHClothingBackpackBase
+  id: FHClothingBackpackBDWButtPack
+  name: BDW Butt Pack
+  description: The standard butt pack of the Bundeswehr.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Back/bdw_butt.rsi
+  - type: Storage
+    grid:
+    - 0,0,2,2
+    maxItemSize: Normal
+
+- type: entity
+  parent: FHClothingBackpackBDWButtPack
+  id: FHClothingBackpackBDWButtPackMedic
+  name: BDW Medic Bag
+  description: The standard issue medic bag used by the BDW.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Back/bdw_medic.rsi
+
+- type: entity
+  parent: FHClothingBackpackAliceMedium
+  id: FHClothingBackpackAliceMediumFilledMachineGunnerBDW
+  suffix: filled, machinegunner
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHMagazineLMGMG3Full
+        - id: FHMagazineLMGMG3Full
+        - id: FHMagazineLMGMG3Full
+        - id: FHMagazineLMGMG3Full

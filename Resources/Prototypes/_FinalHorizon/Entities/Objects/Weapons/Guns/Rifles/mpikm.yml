@@ -1,0 +1,71 @@
+- type: entity
+  name: MPi-KM
+  parent: FHWeaponBase
+  id: FHWeaponRifleMPIKM
+  description: The standard issue rifle of the Nationale Volksarmee. Produced in East German factories as a licensed variant of the Soviet AKM rifle. Uses polymer furniture, rather than wood. 
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/mpikm.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Huge
+    shape:
+    - 0,0,3,2
+  - type: Clothing
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/mpikm.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 7
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Gunshots/ak74.ogg
+      params:
+        variation: 0.1
+        volume: -2
+    soundEmpty:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Empty/gen_empty.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+    canActivateInhand: false
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        insertSound: /Audio/_FinalHorizon/Weapons/Guns/MagIn/ak74_magin.ogg
+        ejectSound: /Audio/_FinalHorizon/Weapons/Guns/MagOut/ak74_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine762x39
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge545
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+    appearanceDataInit:
+     enum.AmmoVisuals.MagLoaded: false
+  - type: FarGunshot
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak74.ogg
