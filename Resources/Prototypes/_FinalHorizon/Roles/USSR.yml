@@ -23,6 +23,9 @@
             - MobMaskRedFor
             layer:
             - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Soviet Army"
 
 - type: job
   id: USSRTeamLeader
@@ -49,6 +52,9 @@
             - MobMaskRedFor
             layer:
             - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Soviet Army"
 
 - type: job
   id: USSRMachineGunner
@@ -75,6 +81,9 @@
             - MobMaskRedFor
             layer:
             - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Soviet Army"
 
 - type: job
   id: USSRMedic
@@ -101,6 +110,9 @@
             - MobMaskRedFor
             layer:
             - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Soviet Army"
 
 - type: job
   id: USSRRifleMan
@@ -127,6 +139,9 @@
             - MobMaskRedFor
             layer:
             - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Soviet Army"
 
 - type: job
   id: USSRSniper
@@ -153,6 +168,9 @@
             - MobMaskRedFor
             layer:
             - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Soviet Army"
 
 - type: job
   id: USSRRTO
@@ -179,6 +197,9 @@
             - MobMaskRedFor
             layer:
             - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Soviet Army"
 
 - type: job
   id: USSRAutoRifleMan
@@ -205,6 +226,9 @@
             - MobMaskRedFor
             layer:
             - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Soviet Army"
 
 - type: playTimeTracker
   id: USSRPlatoonLeader

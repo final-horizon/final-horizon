@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 07/03/2026 16:17:51
-  entityCount: 9492
+  time: 08/30/2026 15:56:17
+  entityCount: 9474
 maps:
 - 1
 grids:
@@ -896,50 +896,6 @@ entities:
     components:
     - type: Transform
       pos: 8.89445,1.3661635
-      parent: 1
-- proto: ClothingHandsGlovesColorBlack
-  entities:
-  - uid: 9408
-    components:
-    - type: Transform
-      pos: 5.4942565,-5.1343813
-      parent: 1
-  - uid: 9409
-    components:
-    - type: Transform
-      pos: 5.4817567,-5.2531314
-      parent: 1
-  - uid: 9410
-    components:
-    - type: Transform
-      pos: 5.4880066,-5.328131
-      parent: 1
-  - uid: 9411
-    components:
-    - type: Transform
-      pos: 5.4880066,-5.4906316
-      parent: 1
-- proto: ClothingHandsGlovesFingerless
-  entities:
-  - uid: 9412
-    components:
-    - type: Transform
-      pos: 5.819257,-4.2531314
-      parent: 1
-  - uid: 9413
-    components:
-    - type: Transform
-      pos: 5.7755065,-4.3531313
-      parent: 1
-  - uid: 9414
-    components:
-    - type: Transform
-      pos: 5.7755065,-4.4093814
-      parent: 1
-  - uid: 9415
-    components:
-    - type: Transform
-      pos: 5.7817564,-4.5281315
       parent: 1
 - proto: ClothingUniformJumpsuitUSMCWoodland
   entities:
@@ -3067,74 +3023,6 @@ entities:
     - type: Transform
       pos: 5.5810037,-4.425496
       parent: 1
-- proto: FHClothingGasMaskM17
-  entities:
-  - uid: 1485
-    components:
-    - type: Transform
-      pos: 5.680861,-6.501058
-      parent: 1
-  - uid: 1486
-    components:
-    - type: Transform
-      pos: 5.680861,-6.53578
-      parent: 1
-  - uid: 1487
-    components:
-    - type: Transform
-      pos: 5.687806,-6.549669
-      parent: 1
-- proto: FHClothingGasMaskM40
-  entities:
-  - uid: 1482
-    components:
-    - type: Transform
-      pos: 5.0975285,-6.6468906
-      parent: 1
-  - uid: 1483
-    components:
-    - type: Transform
-      pos: 5.090584,-6.5774465
-      parent: 1
-  - uid: 1484
-    components:
-    - type: Transform
-      pos: 5.180861,-6.5080023
-      parent: 1
-- proto: FHClothingHeadHatHeadbandGreen
-  entities:
-  - uid: 1479
-    components:
-    - type: Transform
-      pos: 5.812806,-5.9455023
-      parent: 1
-  - uid: 1480
-    components:
-    - type: Transform
-      pos: 5.7086387,-6.028835
-      parent: 1
-  - uid: 1481
-    components:
-    - type: Transform
-      pos: 5.6461387,-6.049669
-      parent: 1
-- proto: FHClothingHeadHatHeadbandRed
-  entities:
-  - uid: 1476
-    components:
-    - type: Transform
-      pos: 5.805861,-5.78578
-      parent: 1
-  - uid: 1477
-    components:
-    - type: Transform
-      pos: 5.778084,-5.799669
-      parent: 1
-  - uid: 1478
-    components:
-    - type: Transform
-      pos: 5.729472,-5.84828
-      parent: 1
 - proto: FHClothingHeadHatPCUSMC
   entities:
   - uid: 1514
@@ -3489,48 +3377,6 @@ entities:
     components:
     - type: Transform
       pos: 6.3961387,1.5078979
-      parent: 1
-- proto: FHClothingMaskBalaclavaGreen
-  entities:
-  - uid: 1468
-    components:
-    - type: Transform
-      pos: 5.1322503,-5.730224
-      parent: 1
-  - uid: 1469
-    components:
-    - type: Transform
-      pos: 5.250306,-5.716335
-      parent: 1
-  - uid: 1470
-    components:
-    - type: Transform
-      pos: 5.111417,-5.855224
-      parent: 1
-  - uid: 1471
-    components:
-    - type: Transform
-      pos: 5.229472,-5.744113
-      parent: 1
-  - uid: 1472
-    components:
-    - type: Transform
-      pos: 5.312806,-5.8343906
-      parent: 1
-  - uid: 1473
-    components:
-    - type: Transform
-      pos: 5.2572503,-5.84828
-      parent: 1
-  - uid: 1474
-    components:
-    - type: Transform
-      pos: 5.291972,-5.751057
-      parent: 1
-  - uid: 1475
-    components:
-    - type: Transform
-      pos: 5.173917,-5.84828
       parent: 1
 - proto: FHClothingOuterArmorFlak
   entities:
@@ -4331,6 +4177,58 @@ entities:
     components:
     - type: Transform
       pos: 8.5,-6.5
+      parent: 1
+- proto: FHKnifeM7
+  entities:
+  - uid: 887
+    components:
+    - type: Transform
+      pos: 5.6308675,-6.2528944
+      parent: 1
+  - uid: 888
+    components:
+    - type: Transform
+      pos: 5.6651134,-6.28714
+      parent: 1
+  - uid: 889
+    components:
+    - type: Transform
+      pos: 5.7042513,-6.321386
+      parent: 1
+  - uid: 890
+    components:
+    - type: Transform
+      pos: 5.5672684,-6.2920322
+      parent: 1
+  - uid: 891
+    components:
+    - type: Transform
+      pos: 5.229704,-6.228433
+      parent: 1
+  - uid: 892
+    components:
+    - type: Transform
+      pos: 5.3177643,-6.228433
+      parent: 1
+  - uid: 930
+    components:
+    - type: Transform
+      pos: 5.459639,-6.2528944
+      parent: 1
+  - uid: 931
+    components:
+    - type: Transform
+      pos: 5.5134535,-6.248002
+      parent: 1
+  - uid: 1082
+    components:
+    - type: Transform
+      pos: 5.4743156,-6.282248
+      parent: 1
+  - uid: 1083
+    components:
+    - type: Transform
+      pos: 5.3275485,-6.248002
       parent: 1
 - proto: FHMagazineRifleM16Full
   entities:
