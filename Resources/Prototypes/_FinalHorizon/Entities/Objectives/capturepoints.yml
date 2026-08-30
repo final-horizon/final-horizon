@@ -1,0 +1,45 @@
+- type: entity
+  id: FHCapturePointBase
+  parent: BaseStructure
+  name: capture point
+  abstract: true
+  components:
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: Structures/Machines/bomb.rsi
+    state: base-bomb
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb {}
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: CapturePoint
+
+- type: entity
+  id: FHCapturePointAlpha
+  name: capture point alpha
+  parent: FHCapturePointBase
+  components:
+  - type: CapturePoint
+    pointName: "Alpha"
+
+- type: entity
+  id: FHCapturePointBravo
+  name: capture point bravo
+  parent: FHCapturePointBase
+  components:
+  - type: CapturePoint
+    pointName: "Bravo"
+
+- type: entity
+  id: FHCapturePointCharlie
+  name: capture point charlie
+  parent: FHCapturePointBase
+  components:
+  - type: CapturePoint
+    pointName: "Charlie"

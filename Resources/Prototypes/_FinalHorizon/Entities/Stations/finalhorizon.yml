@@ -9,3 +9,4 @@
     - type: StationSpawning
     - type: GraceWallManager
       delay: 420
+    - type: ConquestManager

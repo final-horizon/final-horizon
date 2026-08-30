@@ -23,6 +23,9 @@
             - MobMaskBluFor
             layer:
             - MobLayer
+      - type: GameFactionMember
+        faction: Nato
+        factionName: "United States Marine Corp"
 
 - type: job
   id: USMCTeamLeader
@@ -49,6 +52,9 @@
             - MobMaskBluFor
             layer:
             - MobLayer
+      - type: GameFactionMember
+        faction: Nato
+        factionName: "United States Marine Corp"
 
 - type: job
   id: USMCMachineGunner
@@ -75,6 +81,9 @@
             - MobMaskBluFor
             layer:
             - MobLayer
+      - type: GameFactionMember
+        faction: Nato
+        factionName: "United States Marine Corp"
 
 - type: job
   id: USMCMedic
@@ -101,6 +110,9 @@
             - MobMaskBluFor
             layer:
             - MobLayer
+      - type: GameFactionMember
+        faction: Nato
+        factionName: "United States Marine Corp"
 
 - type: job
   id: USMCSniper
@@ -127,6 +139,9 @@
             - MobMaskBluFor
             layer:
             - MobLayer
+      - type: GameFactionMember
+        faction: Nato
+        factionName: "United States Marine Corp"
 
 - type: job
   id: USMCRTO
@@ -153,6 +168,9 @@
             - MobMaskBluFor
             layer:
             - MobLayer
+      - type: GameFactionMember
+        faction: Nato
+        factionName: "United States Marine Corp"
 
 - type: job
   id: USMCRifleMan
@@ -179,6 +197,9 @@
             - MobMaskBluFor
             layer:
             - MobLayer
+      - type: GameFactionMember
+        faction: Nato
+        factionName: "United States Marine Corp"
 
 - type: playTimeTracker
   id: USMCPlatoonLeader
