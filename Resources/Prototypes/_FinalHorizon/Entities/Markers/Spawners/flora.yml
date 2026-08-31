@@ -8,6 +8,8 @@
   - type: Sprite
     sprite: Markers/atmos.rsi
     state: base
+  - type: PlacementReplacement
+    key: mapping-spawner
   - type: EntityTableSpawner
     table: !type:GroupSelector
       children:
@@ -37,6 +39,8 @@
   - type: Sprite
     sprite: Markers/atmos.rsi
     state: base-hot
+  - type: PlacementReplacement
+    key: mapping-spawner
   - type: EntityTableSpawner
     table: !type:GroupSelector
       children:
@@ -108,6 +112,8 @@
     layers:
     - state: green
     - state: decal
+  - type: PlacementReplacement
+    key: mapping-spawner
   - type: RandomDecalSpawner
     radius: 0.8
     zIndex: 5
