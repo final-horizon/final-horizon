@@ -10,7 +10,7 @@
     state: base
   - type: PlacementReplacement
     key: mapping-spawner
-  - type: EntityTableSpawner
+  - type: MappingSpawner
     table: !type:GroupSelector
       children:
       - !type:GroupSelector
@@ -41,7 +41,7 @@
     state: base-hot
   - type: PlacementReplacement
     key: mapping-spawner
-  - type: EntityTableSpawner
+  - type: MappingSpawner
     table: !type:GroupSelector
       children:
       - !type:GroupSelector
