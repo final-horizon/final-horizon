@@ -15,7 +15,7 @@ RELEASE_DIR = "release"
 # CONFIGURATION PARAMETERS
 # Forks should change these to publish to their own infrastructure.
 #
-ROBUST_CDN_URL = "http://cdn.dallaszzz.org:8080"
+ROBUST_CDN_URL = "http://cdn.dallaszzz.org:8080/"
 FORK_ID = "finalhorizon"
 
 def main():
