@@ -1,0 +1,68 @@
+- type: entity
+  parent: MobHuman
+  id: FHMobZombieBase
+  name: zombie
+  desc: Its a zombie.
+  components:
+  - type: PendingZombie
+    damage:
+      types:
+        Poison: 200
+    gracePeriod: 0
+    maxInitialInfectedGrace: 0
+    minInitialInfectedGrace: 0
+  - type: ZombifyOnDeath
+
+- type: entity
+  parent: FHMobZombieBase
+  id: FHMobZombieUSMC
+  suffix: USMC
+  components:
+    - type: Loadout
+      prototypes:
+        - USMCUniformPlatoonLeader
+        - USMCUniformTeamLeader
+        - USMCUniformMachineGunner
+        - USMCUniformMedic
+        - USMCUniformSniper
+        - USMCUniformRTO
+        - USMCUniformRifleMan
+
+- type: entity
+  parent: FHMobZombieBase
+  id: FHMobZombieUSSR
+  suffix: USSR
+  components:
+    - type: Loadout
+      prototypes:
+        - USSRUniformPlatoonLeader
+        - USSRUniformTeamLeader
+        - USSRUniformMachineGunner
+        - USSRUniformMedic
+        - USSRUniformSniper
+        - USSRUniformAutoRifleMan
+        - USSRUniformRTO
+        - USSRUniformRifleMan
+
+- type: entity
+  parent: FHMobZombieBase
+  id: FHMobZombieMixed
+  suffix: Mixed
+  components:
+    - type: Loadout
+      prototypes:
+        - USMCUniformPlatoonLeader
+        - USMCUniformTeamLeader
+        - USMCUniformMachineGunner
+        - USMCUniformMedic
+        - USMCUniformSniper
+        - USMCUniformRTO
+        - USMCUniformRifleMan
+        - USSRUniformPlatoonLeader
+        - USSRUniformTeamLeader
+        - USSRUniformMachineGunner
+        - USSRUniformMedic
+        - USSRUniformSniper
+        - USSRUniformAutoRifleMan
+        - USSRUniformRTO
+        - USSRUniformRifleMan
