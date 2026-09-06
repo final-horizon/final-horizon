@@ -45,3 +45,5 @@
         - TableMask
         layer:
         - TableLayer
+  - type: PlacementReplacement # FH
+    key: water-tiles # FH

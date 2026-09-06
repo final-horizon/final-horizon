@@ -64,3 +64,5 @@
   - type: TileEntityEffect
     effects:
     - !type:Extinguish
+  - type: PlacementReplacement # FH
+    key: water-tiles # FH
