@@ -1,9 +1,12 @@
 using System.Numerics;
+using Content.Client.Hands.Systems;
 using Content.Client.Movement.Components;
 using Content.Client.Viewport;
+using Content.Shared._FinalHorizon.Aim;
 using Content.Shared.Camera;
 using Robust.Client.Graphics;
 using Robust.Client.Input;
+using Robust.Client.Timing;
 using Robust.Shared.Map;
 
 namespace Content.Client.Movement.Systems;
@@ -12,6 +15,7 @@ public sealed partial class EyeCursorOffsetSystem : EntitySystem
 {
     [Dependency] private readonly IEyeManager _eyeManager = default!;
     [Dependency] private readonly IInputManager _inputManager = default!;
+    [Dependency] private readonly HandsSystem _hands = default!; // FH
 
     // This value is here to make sure the user doesn't have to move their mouse
     // all the way out to the edge of the screen to get the full offset.
@@ -56,6 +60,15 @@ public sealed partial class EyeCursorOffsetSystem : EntitySystem
         if (component == null)
             component = EnsureComp<EyeCursorOffsetComponent>(uid);
 
+        // FH start
+        var maxOffset = component.MaxOffset;
+        if (component.UseItem && _hands.TryGetActiveItem(uid, out var item) && TryComp<EyeCursorOffsetComponent>(item, out var itemComp))
+            maxOffset = itemComp.MaxOffset;
+
+        if (TryComp<AimComponent>(uid, out var aim) && !aim.Aiming)
+            maxOffset = 0;
+        // FH end
+
         // Doesn't move the offset if the mouse has left the game window!
         if (_inputManager.MouseScreenPosition.Window != WindowId.Invalid)
         {
@@ -64,11 +77,12 @@ public sealed partial class EyeCursorOffsetSystem : EntitySystem
             var mouseActualRelativePos = Vector2.Transform(mouseNormalizedPos, System.Numerics.Quaternion.CreateFromAxisAngle(-System.Numerics.Vector3.UnitZ, (float)(eyeRotation.Opposite().Theta))); // I don't know, it just works.
 
             // Caps the offset into a circle around the player.
-            mouseActualRelativePos *= component.MaxOffset;
-            if (mouseActualRelativePos.Length() > component.MaxOffset)
+            mouseActualRelativePos *= maxOffset; // FH start
+            if (mouseActualRelativePos.Length() > maxOffset)
             {
-                mouseActualRelativePos = mouseActualRelativePos.Normalized() * component.MaxOffset;
+                mouseActualRelativePos = mouseActualRelativePos.Normalized() * maxOffset;
             }
+            // FH end
 
             component.TargetPosition = mouseActualRelativePos;
 
@@ -76,9 +90,14 @@ public sealed partial class EyeCursorOffsetSystem : EntitySystem
             if (component.CurrentPosition != component.TargetPosition)
             {
                 Vector2 vectorOffset = component.TargetPosition - component.CurrentPosition;
-                if (vectorOffset.Length() > component.OffsetSpeed)
+
+                // FH start
+                var length = vectorOffset.Length();
+                var tweakedSpeed = (float)Math.Pow(length, component.OffsetSpeedDistanceFactor) * component.OffsetSpeed + component.OffsetSpeedFlat;
+
+                if (length > tweakedSpeed)
                 {
-                    vectorOffset = vectorOffset.Normalized() * component.OffsetSpeed; // TODO: Probably needs to properly account for time delta or something.
+                    vectorOffset = vectorOffset.Normalized() * tweakedSpeed; // FH end
                 }
                 component.CurrentPosition += vectorOffset;
             }

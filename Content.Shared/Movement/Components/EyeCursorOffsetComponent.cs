@@ -29,4 +29,18 @@ public abstract partial class SharedEyeCursorOffsetComponent : Component
     /// </summary>
     [DataField]
     public float PvsIncrease = 0.3f;
+
+    // FH start
+    [DataField]
+    public bool UseItem = false;
+
+    [DataField]
+    public bool OffsetEnabled = true;
+
+    [DataField]
+    public float OffsetSpeedDistanceFactor = 1f;
+
+    [DataField]
+    public float OffsetSpeedFlat = 1f;
+    // FH end
 }

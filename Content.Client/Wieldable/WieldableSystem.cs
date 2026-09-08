@@ -12,7 +12,7 @@ namespace Content.Client.Wieldable;
 
 public sealed class WieldableSystem : SharedWieldableSystem
 {
-    [Dependency] private readonly EyeCursorOffsetSystem _eyeOffset = default!;
+    //[Dependency] private readonly EyeCursorOffsetSystem _eyeOffset = default!; // FH
     [Dependency] private readonly IClientGameTiming _gameTiming = default!;
 
     public override void Initialize()
@@ -20,22 +20,21 @@ public sealed class WieldableSystem : SharedWieldableSystem
         base.Initialize();
 
         SubscribeLocalEvent<CursorOffsetRequiresWieldComponent, ItemUnwieldedEvent>(OnEyeOffsetUnwielded);
-        SubscribeLocalEvent<CursorOffsetRequiresWieldComponent, HeldRelayedEvent<GetEyeOffsetRelayedEvent>>(OnGetEyeOffset);
+        SubscribeLocalEvent<CursorOffsetRequiresWieldComponent, ItemWieldedEvent>(OnGetEyeOffset); // FH
     }
 
     public void OnEyeOffsetUnwielded(Entity<CursorOffsetRequiresWieldComponent> entity, ref ItemUnwieldedEvent args)
     {
-        if (!TryComp(entity.Owner, out EyeCursorOffsetComponent? cursorOffsetComp))
+        if (!TryComp(args.User, out EyeCursorOffsetComponent? comp)) // FH
             return;
 
         if (_gameTiming.IsFirstTimePredicted)
         {
-            cursorOffsetComp.CurrentPosition = Vector2.Zero;
-            cursorOffsetComp.TargetPosition = Vector2.Zero;
+            comp.UseItem = false; // FH
         }
     }
 
-    public void OnGetEyeOffset(Entity<CursorOffsetRequiresWieldComponent> entity, ref HeldRelayedEvent<GetEyeOffsetRelayedEvent> args)
+    public void OnGetEyeOffset(Entity<CursorOffsetRequiresWieldComponent> entity, ref ItemWieldedEvent args) // FH start
     {
         if (!TryComp(entity.Owner, out WieldableComponent? wieldableComp))
             return;
@@ -43,10 +42,12 @@ public sealed class WieldableSystem : SharedWieldableSystem
         if (!wieldableComp.Wielded)
             return;
 
-        var offset = _eyeOffset.OffsetAfterMouse(entity.Owner, null);
-        if (offset == null)
+        if (!TryComp(args.User, out EyeCursorOffsetComponent? comp))
             return;
 
-        args.Args.Offset += offset.Value;
+        if (_gameTiming.IsFirstTimePredicted)
+        {
+            comp.UseItem = true;
+        } // FH end
     }
 }
