@@ -1,0 +1,380 @@
+- type: job
+  id: BDWPlatoonLeader
+  name: job-name-BDW-platoonleader
+  description: job-description-BDW-platoonleader
+  playTimeTracker: BDWPlatoonLeader
+  startingGear: BDWUniformPlatoonLeader
+  icon: "BDWPlatoonLeader"
+  whitelisted: true
+  joinNotifiyCrew: false
+  displayWeight: 10
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskBluFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Nato
+        factionName: "Bundeswehr"
+
+- type: job
+  id: BDWTeamLeader
+  name: job-name-BDW-teamleader
+  description: job-description-BDW-teamleader
+  playTimeTracker: BDWTeamLeader
+  startingGear: BDWUniformTeamLeader
+  icon: "BDWTeamLeader"
+  whitelisted: true
+  joinNotifiyCrew: false
+  displayWeight: 9
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskBluFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Nato
+        factionName: "Bundeswehr"
+
+- type: job
+  id: BDWMachineGunner
+  name: job-name-BDW-machinegunner
+  description: job-description-BDW-machinegunner
+  playTimeTracker: BDWMachineGunner
+  startingGear: BDWUniformMachineGunner
+  icon: "BDWMachineGunner"
+  whitelisted: false
+  joinNotifiyCrew: false
+  displayWeight: 6
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskBluFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Nato
+        factionName: "Bundeswehr"
+
+- type: job
+  id: BDWMedic
+  name: job-name-BDW-medic
+  description: job-description-BDW-medic
+  playTimeTracker: BDWMedic
+  startingGear: BDWUniformMedic
+  icon: "BDWMedic"
+  whitelisted: false
+  joinNotifiyCrew: false
+  displayWeight: 7
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskBluFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Nato
+        factionName: "Bundeswehr"
+
+- type: job
+  id: BDWSniper
+  name: job-name-BDW-sniper
+  description: job-description-BDW-sniper
+  playTimeTracker: BDWSniper
+  startingGear: BDWUniformSniper
+  icon: "BDWSniper"
+  whitelisted: false
+  joinNotifiyCrew: false
+  displayWeight: 5
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskBluFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Nato
+        factionName: "Bundeswehr"
+
+- type: job
+  id: BDWRTO
+  name: job-name-BDW-rto
+  description: job-description-BDW-rto
+  playTimeTracker: BDWRTO
+  startingGear: BDWUniformRTO
+  icon: "BDWRTO"
+  whitelisted: false
+  joinNotifiyCrew: false
+  displayWeight: 8
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskBluFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Nato
+        factionName: "Bundeswehr"
+
+- type: job
+  id: BDWRifleMan
+  name: job-name-BDW-rifleman
+  description: job-description-BDW-rifleman
+  playTimeTracker: BDWRifleMan
+  startingGear: BDWUniformRifleMan
+  icon: "BDWRifleMan"
+  whitelisted: false
+  joinNotifiyCrew: false
+  displayWeight: 4
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskBluFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Nato
+        factionName: "Bundeswehr"
+
+- type: playTimeTracker
+  id: BDWPlatoonLeader
+
+- type: playTimeTracker
+  id: BDWTeamLeader
+
+- type: playTimeTracker
+  id: BDWMachineGunner
+
+- type: playTimeTracker
+  id: BDWMedic
+
+- type: playTimeTracker
+  id: BDWSniper
+
+- type: playTimeTracker
+  id: BDWRTO
+
+- type: playTimeTracker
+  id: BDWRifleMan
+
+- type: jobIcon
+  parent: JobIcon
+  id: BDWPlatoonLeader
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: nato_platoonleader
+  jobName: job-name-BDW-platoonleader
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: BDWTeamLeader
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: nato_teamleader
+  jobName: job-name-BDW-teamleader
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: BDWMachineGunner
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: nato_machinegunner
+  jobName: job-name-BDW-machinegunner
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: BDWMedic
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: nato_medic
+  jobName: job-name-BDW-medic
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: BDWRTO
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: nato_rto
+  jobName: job-name-BDW-rto
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: BDWSniper
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: nato_sniper
+  jobName: job-name-BDW-sniper
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: BDWRifleMan
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: nato_rifleman
+  jobName: job-name-BDW-rifleman
+  isCrewJob: false
+
+- type: startingGear
+  id: BDWUniformPlatoonLeader
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBDWGray
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackRadioANPRC77
+    belt: FHClothingBeltBDWHarness
+    pouchleft: FHClothingPouchBDWGrenadeFilled
+    pouchright: FHClothingPouchBDWAmmoFilled
+    suitstorage: FHWeaponRifleG3A3
+    head: FHClothingHeadHatBeretBDW
+    eyes: ClothingEyesGlassesCheapSunglasses
+    pocket1: IFAKBDWFilled
+
+- type: startingGear
+  id: BDWUniformTeamLeader
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBDWGray
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackRadioANPRC77
+    belt: FHClothingBeltBDWHarness
+    pouchleft: FHClothingPouchBDWGrenadeFilled
+    pouchright: FHClothingPouchBDWAmmoFilled
+    suitstorage: FHWeaponRifleG3A3
+    head: FHClothingHeadHatBeretBDW
+    pocket1: IFAKBDWFilled
+
+- type: startingGear
+  id: BDWUniformMachineGunner
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBDWGray
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackAliceMediumFilledMachineGunnerBDW
+    belt: FHClothingBeltBDWHarness
+    pouchleft: FHClothingPouchBDWAmmoLMGFilled
+    pouchright: FHClothingPouchBDWAmmoLMGFilled
+    suitstorage: FHWeaponLMGMG3
+    head: FHClothingHeadHelmetM62
+    pocket1: IFAKBDWFilled
+
+- type: startingGear
+  id: BDWUniformMedic
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBDWGray
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackBDWButtPackMedic
+    belt: FHClothingBeltBDWHarness
+    pouchleft: FHClothingPouchBDWAmmoFilled
+    pouchright: FHClothingPouchBDWAmmoFilled
+    suitstorage: FHWeaponRifleG3A3
+    head: FHClothingHeadHelmetM62Medic
+    pocket1: IFAKBDWFilled
+    mask: ClothingMaskSterile
+    gloves: ClothingHandsGlovesLatex
+
+- type: startingGear
+  id: BDWUniformSniper
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBDWGray
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackBDWButtPack
+    belt: FHClothingBeltBDWHarness
+    pouchleft: FHClothingPouchBDWAmmoFilled
+    pouchright: FHClothingPouchBDWAmmoFilled
+    suitstorage: FHWeaponRifleG3A3
+    head: FHClothingHeadHelmetM62
+    pocket1: IFAKBDWFilled
+
+- type: startingGear
+  id: BDWUniformRTO
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBDWGray
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackRadioANPRC77
+    belt: FHClothingBeltBDWHarness
+    pouchleft: FHClothingPouchBDWAmmoFilled
+    pouchright: FHClothingPouchBDWAmmoFilled
+    suitstorage: FHWeaponRifleG3A3
+    head: FHClothingHeadHelmetM62
+    pocket1: IFAKBDWFilled
+
+- type: startingGear
+  id: BDWUniformRifleMan
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBDWGray
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackBDWButtPack
+    belt: FHClothingBeltBDWHarness
+    pouchleft: FHClothingPouchBDWAmmoFilled
+    pouchright: FHClothingPouchBDWAmmoFilled
+    suitstorage: FHWeaponRifleG3A3
+    head: FHClothingHeadHelmetM62
+    pocket1: IFAKBDWFilled

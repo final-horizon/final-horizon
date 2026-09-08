@@ -26,3 +26,17 @@
   - USSRAutoRifleMan
   - USSRRTO
   - USSRRifleMan
+
+- type: department
+  id: BDW
+  name: department-BDW
+  description: department-BDW-description
+  color: "#4168DB"
+  roles:
+  - BDWPlatoonLeader
+  - BDWTeamLeader
+  - BDWMachineGunner
+  - BDWMedic
+  - BDWSniper
+  - BDWRTO
+  - BDWRifleMan
