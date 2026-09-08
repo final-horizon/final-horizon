@@ -40,3 +40,18 @@
   - BDWSniper
   - BDWRTO
   - BDWRifleMan
+
+- type: department
+  id: NVA
+  name: department-NVA
+  description: department-NVA-description
+  color: "#4168DB"
+  roles:
+  - NVAPlatoonLeader
+  - NVATeamLeader
+  - NVAMachineGunner
+  - NVAMedic
+  - NVASniper
+  - NVAAutoRifleMan
+  - NVARTO
+  - NVARifleMan

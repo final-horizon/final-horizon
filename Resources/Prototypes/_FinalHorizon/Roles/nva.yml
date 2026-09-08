@@ -1,0 +1,434 @@
+- type: job
+  id: NVAPlatoonLeader
+  name: job-name-NVA-platoonleader
+  description: job-description-NVA-platoonleader
+  playTimeTracker: NVAPlatoonLeader
+  startingGear: NVAUniformPlatoonLeader
+  icon: "NVAPlatoonLeader"
+  whitelisted: true
+  joinNotifiyCrew: false
+  displayWeight: 10
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Nationale Volksarmee"
+
+- type: job
+  id: NVATeamLeader
+  name: job-name-NVA-teamleader
+  description: job-description-NVA-teamleader
+  playTimeTracker: NVATeamLeader
+  startingGear: NVAUniformTeamLeader
+  icon: "NVATeamLeader"
+  whitelisted: true
+  joinNotifiyCrew: false
+  displayWeight: 9
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Nationale Volksarmee"
+
+- type: job
+  id: NVAMachineGunner
+  name: job-name-NVA-machinegunner
+  description: job-description-NVA-machinegunner
+  playTimeTracker: NVAMachineGunner
+  startingGear: NVAUniformMachineGunner
+  icon: "NVAMachineGunner"
+  whitelisted: false
+  joinNotifiyCrew: false
+  displayWeight: 6
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Nationale Volksarmee"
+
+- type: job
+  id: NVAMedic
+  name: job-name-NVA-medic
+  description: job-description-NVA-medic
+  playTimeTracker: NVAMedic
+  startingGear: NVAUniformMedic
+  icon: "NVAMedic"
+  whitelisted: false
+  joinNotifiyCrew: false
+  displayWeight: 7
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Nationale Volksarmee"
+
+- type: job
+  id: NVARifleMan
+  name: job-name-NVA-rifleman
+  description: job-description-NVA-rifleman
+  playTimeTracker: NVARifleMan
+  startingGear: NVAUniformRifleMan
+  icon: "NVARifleMan"
+  whitelisted: false
+  joinNotifiyCrew: false
+  displayWeight: 3
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Nationale Volksarmee"
+
+- type: job
+  id: NVASniper
+  name: job-name-NVA-sniper
+  description: job-description-NVA-sniper
+  playTimeTracker: NVASniper
+  startingGear: NVAUniformSniper
+  icon: "NVASniper"
+  whitelisted: false
+  joinNotifiyCrew: false
+  displayWeight: 4
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Nationale Volksarmee"
+
+- type: job
+  id: NVARTO
+  name: job-name-NVA-rto
+  description: job-description-NVA-rto
+  playTimeTracker: NVARTO
+  startingGear: NVAUniformRTO
+  icon: "NVARTO"
+  whitelisted: false
+  joinNotifiyCrew: false
+  displayWeight: 8
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Nationale Volksarmee"
+
+- type: job
+  id: NVAAutoRifleMan
+  name: job-name-NVA-autorifleman
+  description: job-description-NVA-autorifleman
+  playTimeTracker: NVAAutoRifleMan
+  startingGear: NVAUniformAutoRifleMan
+  icon: "NVAAutoRifleMan"
+  whitelisted: false
+  joinNotifiyCrew: false
+  displayWeight: 5
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Nationale Volksarmee"
+
+- type: playTimeTracker
+  id: NVAPlatoonLeader
+
+- type: playTimeTracker
+  id: NVATeamLeader
+
+- type: playTimeTracker
+  id: NVAMachineGunner
+
+- type: playTimeTracker
+  id: NVAMedic
+
+- type: playTimeTracker
+  id: NVASniper
+
+- type: playTimeTracker
+  id: NVAAutoRifleMan
+
+- type: playTimeTracker
+  id: NVARTO
+
+- type: playTimeTracker
+  id: NVARifleMan
+
+- type: jobIcon
+  parent: JobIcon
+  id: NVAPlatoonLeader
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: pact_platoonleader
+  jobName: job-name-NVA-platoonleader
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: NVATeamLeader
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: pact_teamleader
+  jobName: job-name-NVA-teamleader
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: NVAMachineGunner
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: pact_machinegunner
+  jobName: job-name-NVA-machinegunner
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: NVAMedic
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: pact_medic
+  jobName: job-name-NVA-medic
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: NVARTO
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: pact_rto
+  jobName: job-name-NVA-rto
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: NVAAutoRifleMan
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: pact_autorifle
+  jobName: job-name-NVA-autorifleman
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: NVASniper
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: pact_sniper
+  jobName: job-name-NVA-sniper
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: NVARifleMan
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: pact_rifleman
+  jobName: job-name-NVA-rifleman
+  isCrewJob: false
+
+- type: startingGear
+  id: NVAUniformPlatoonLeader
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNVAStricht
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackRadioR105D
+    belt: FHClothingBeltNVAHarness
+    pouchleft: FHClothingPouchNVAGrenadeFilled
+    pouchright: FHClothingPouchNVAAmmoFilled
+    suitstorage: FHWeaponRifleMPIKM
+    head: FHClothingHeadHelmetM56
+    eyes: ClothingEyesGlassesCheapSunglasses
+    pocket1: IFAKUSSRFilled
+
+- type: startingGear
+  id: NVAUniformTeamLeader
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNVAStricht
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackRadioR105D
+    belt: FHClothingBeltNVAHarness
+    pouchleft: FHClothingPouchNVAGrenadeFilled
+    pouchright: FHClothingPouchNVAAmmoFilled
+    suitstorage: FHWeaponRifleMPIKM
+    head: FHClothingHeadHelmetM56
+    pocket1: IFAKUSSRFilled
+
+- type: startingGear
+  id: NVAUniformMachineGunner
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNVAStricht
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackNVAKitMachineGunnerFilled
+    belt: FHClothingBeltNVAHarness
+    pouchleft: FHClothingPouchNVALMGFilled
+    pouchright: FHClothingPouchNVALMGFilled
+    suitstorage: FHWeaponLMGPKM
+    head: FHClothingHeadHelmetM56Covered
+    pocket1: IFAKUSSRFilled
+
+- type: startingGear
+  id: NVAUniformMedic
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNVAStricht
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackNVAKit
+    belt: FHClothingBeltNVAHarness
+    pouchleft: FHClothingPouchNVAAmmoFilled
+    pouchright: FHClothingPouchNVAAmmoFilled
+    suitstorage: FHWeaponRifleMPIKM
+    head: FHClothingHeadHelmetM56Medic
+    pocket1: IFAKUSSRFilled
+    mask: ClothingMaskSterile
+    gloves: ClothingHandsGlovesLatex
+
+- type: startingGear
+  id: NVAUniformSniper
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNVAStricht
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackNVAKit
+    belt: FHClothingBeltNVAHarness
+    pouchleft: FHClothingPouchNVAAmmoFilled
+    pouchright: FHClothingPouchNVAAmmoFilled
+    suitstorage: FHWeaponRifleMPIKM
+    head: FHClothingHeadHelmetM56
+    pocket1: IFAKUSSRFilled
+
+- type: startingGear
+  id: NVAUniformAutoRifleMan
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNVAStricht
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackNVAKit
+    belt: FHClothingBeltNVAHarness
+    pouchleft: FHClothingPouchNVAAmmoFilled40
+    pouchright: FHClothingPouchNVAAmmoFilled40
+    suitstorage: FHWeaponLMGLMGK
+    head: FHClothingHeadHelmetM56Covered
+    pocket1: IFAKUSSRFilled
+
+- type: startingGear
+  id: NVAUniformRTO
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNVAStricht
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackRadioR105D
+    belt: FHClothingBeltNVAHarness
+    pouchleft: FHClothingPouchNVAAmmoFilled
+    pouchright: FHClothingPouchNVAAmmoFilled
+    suitstorage: FHWeaponRifleMPIKM
+    head: FHClothingHeadHelmetM56
+    pocket1: IFAKUSSRFilled
+
+- type: startingGear
+  id: NVAUniformRifleMan
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNVAStricht
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackNVAKit
+    belt: FHClothingBeltNVAHarness
+    pouchleft: FHClothingPouchNVAAmmoFilled
+    pouchright: FHClothingPouchNVAAmmoFilled
+    suitstorage: FHWeaponRifleMPIKM
+    head: FHClothingHeadHelmetM56
+    pocket1: IFAKUSSRFilled
