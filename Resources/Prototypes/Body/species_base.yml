@@ -151,6 +151,10 @@
     deathPenalty: 0.01 # However they really ought to be living and intact, otherwise they're worth 100x less.
   - type: RandomPrice
     maxRandomPrice: 20000
+  - type: ESViewcone # FH
+  - type: ESViewconeOccludable # FH
+  - type: Aim
+  - type: EyeCursorOffset
   - type: Tag
     tags:
     - CanPilot

@@ -231,20 +231,28 @@ namespace Content.Client.Gameplay
             {
                 var mousePosWorld = vp.PixelToMap(kArgs.PointerLocation.Position);
 
-                if (vp is ScalingViewport svp)
+                // FH start - god awful hack to prevent poisoning the mouse coords with map 0 which is probably caused by the split viewport thing
+                if ((int)mousePosWorld.MapId == 0)
                 {
-                    entityToClick = GetClickedEntity(mousePosWorld, svp.Eye);
+                    coordinates = EntityCoordinates.Invalid;
                 }
                 else
-                {
-                    entityToClick = GetClickedEntity(mousePosWorld);
-                }
-                var transformSystem = _entitySystemManager.GetEntitySystem<SharedTransformSystem>();
-                var mapSystem = _entitySystemManager.GetEntitySystem<MapSystem>();
+                { // FH end
+                    if (vp is ScalingViewport svp)
+                    {
+                        entityToClick = GetClickedEntity(mousePosWorld, svp.Eye);
+                    }
+                    else
+                    {
+                        entityToClick = GetClickedEntity(mousePosWorld);
+                    }
+                    var transformSystem = _entitySystemManager.GetEntitySystem<SharedTransformSystem>();
+                    var mapSystem = _entitySystemManager.GetEntitySystem<MapSystem>();
 
-                coordinates = _mapManager.TryFindGridAt(mousePosWorld, out var uid, out _) ?
-                    mapSystem.MapToGrid(uid, mousePosWorld) :
-                    transformSystem.ToCoordinates(mousePosWorld);
+                    coordinates = _mapManager.TryFindGridAt(mousePosWorld, out var uid, out _) ?
+                        mapSystem.MapToGrid(uid, mousePosWorld) :
+                        transformSystem.ToCoordinates(mousePosWorld);
+                }
             }
             else
             {

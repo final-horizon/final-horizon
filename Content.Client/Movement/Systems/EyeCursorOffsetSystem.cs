@@ -95,6 +95,9 @@ public sealed partial class EyeCursorOffsetSystem : EntitySystem
                 var length = vectorOffset.Length();
                 var tweakedSpeed = (float)Math.Pow(length, component.OffsetSpeedDistanceFactor) * component.OffsetSpeed + component.OffsetSpeedFlat;
 
+                if (!float.IsFinite(tweakedSpeed))
+                    return null;
+
                 if (length > tweakedSpeed)
                 {
                     vectorOffset = vectorOffset.Normalized() * tweakedSpeed; // FH end
