@@ -43,13 +43,21 @@ public sealed partial class ESViewconeComponent : Component
     public float BaseConeAngle = 250f;
 
     [DataField, AutoNetworkedField]
-    public float ConeFeather = 10f;
+    public float ConeFeather = 2f;
 
     [DataField, AutoNetworkedField]
-    public float ConeIgnoreRadius = 0.5f;
+    public float ConeIgnoreRadius = 1f;
 
     [DataField, AutoNetworkedField]
-    public float ConeIgnoreFeather = 0.08f;
+    public float ConeIgnoreFeather = 0.04f;
+
+    // FH start
+    [DataField, AutoNetworkedField]
+    public float ConeOffsetTightness = 20f;
+
+    [DataField, AutoNetworkedField]
+    public float ConeAngleFloor = 12f;
+    // FH end
 
     // Clientside, used for lerping view angle
     // and keeping it consistent across all overlays

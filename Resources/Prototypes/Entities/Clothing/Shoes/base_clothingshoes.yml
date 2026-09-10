@@ -23,6 +23,9 @@
     - Recyclable
     - WhitelistChameleon
   - type: ProtectedFromStepTriggers
+  - type: ClothingSpeedModifier # FH start
+    walkModifier: 1.2
+    sprintModifier: 1.2 # FH end
 
 - type: entity
   abstract: true

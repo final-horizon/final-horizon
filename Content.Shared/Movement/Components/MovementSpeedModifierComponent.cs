@@ -25,8 +25,8 @@ namespace Content.Shared.Movement.Components
         public const float DefaultMinimumFrictionSpeed = 0.005f;
 
         // movement
-        public const float DefaultBaseWalkSpeed = 3f; // FH
-        public const float DefaultBaseSprintSpeed = 4f; // FH
+        public const float DefaultBaseWalkSpeed = 2.0f; // FH
+        public const float DefaultBaseSprintSpeed = 2.7f; // FH
 
         #endregion
 

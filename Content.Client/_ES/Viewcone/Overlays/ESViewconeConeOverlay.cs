@@ -75,7 +75,7 @@ public sealed partial class ESViewconeConeOverlay : Overlay
 
         var worldHandle = args.WorldHandle;
         var viewport = args.WorldBounds;
-        var eyeOffset = new Vector2(_eyeEntity.Value.Comp1.Offset.Y, -_eyeEntity.Value.Comp1.Offset.X);
+        var eyeOffset = new Vector2(_eyeEntity.Value.Comp1.Offset.X, _eyeEntity.Value.Comp1.Offset.Y); // FH
 
         _viewconeShader.SetParameter("SCREEN_TEXTURE", ScreenTexture);
         _viewconeShader.SetParameter("Zoom", _eyeEntity.Value.Comp1.Zoom.X);

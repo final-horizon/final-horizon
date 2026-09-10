@@ -654,5 +654,5 @@ binds:
   # FH start
 - function: ToggleAim
   type: State
-  key: V
+  key: Space
   # FH end

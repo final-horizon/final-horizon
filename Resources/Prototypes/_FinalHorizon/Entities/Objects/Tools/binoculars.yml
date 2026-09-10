@@ -16,12 +16,13 @@
     - Neck
   - type: PullDoAfter
     pullTime: 0.2
-  - type: Scope
-    useInHand: true
-    zoomLevels:
-    - zoom: 3
-      offset: 6
-      doAfter: 0.4
+  - type: Wieldable
+  - type: WieldableDoAfter
+    timer: 0.2
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 20
+    pvsIncrease: 1.2
 
 - type: entity
   name: binoculars
@@ -41,9 +42,10 @@
     - Neck
   - type: PullDoAfter
     pullTime: 0.2
-  - type: Scope
-    useInHand: true
-    zoomLevels:
-    - zoom: 3
-      offset: 6
-      doAfter: 0.4
+  - type: Wieldable
+  - type: WieldableDoAfter
+    timer: 0.2
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 20
+    pvsIncrease: 1.2

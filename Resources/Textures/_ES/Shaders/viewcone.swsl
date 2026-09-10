@@ -26,11 +26,11 @@ void fragment(){
     highp float mask = 1.0;
 
     // IgnoreRadius pass
-    highp float radial = zCircleGradient(pixelSize, FRAGCOORD.xy, 1.0, (ConeIgnoreFeather) / 1.0, (ConeIgnoreRadius / pow(ConeIgnoreFeather, 0.85)) / Zoom, 1.0);
+    highp float radial = zCircleGradient(pixelSize, FRAGCOORD.xy + Offset * (pixelSize * 0.065), 1.0, (ConeIgnoreFeather) / 1.0, (ConeIgnoreRadius / pow(ConeIgnoreFeather, 0.85)) / Zoom, 1.0);
     mask -= radial;
 
     // Setup for cone pass - this makes a gradient based around the angle to the center of the screen
-    highp vec2 delta = FRAGCOORD.xy - (pixelSize * 0.5) + Offset * 200;
+    highp vec2 delta = FRAGCOORD.xy - (pixelSize * 0.5) + Offset * (pixelSize * 0.065);
     highp float deltaAngle = atan(delta.x, delta.y);
     deltaAngle += ViewAngle;
     deltaAngle = mod(deltaAngle, radians(360.0));

@@ -15,13 +15,13 @@ public abstract partial class SharedEyeCursorOffsetComponent : Component
     /// Measured in tiles.
     /// </summary>
     [DataField]
-    public float MaxOffset = 3f;
+    public float MaxOffset = 8f; // FH
 
     /// <summary>
     /// The speed which the camera adjusts to new positions. 0.5f seems like a good value, but can be changed if you want very slow/instant adjustments.
     /// </summary>
     [DataField]
-    public float OffsetSpeed = 0.5f;
+    public float OffsetSpeed = 0.01f; // FH
 
     /// <summary>
     /// The amount the PVS should increase to account for the max offset.
@@ -35,12 +35,9 @@ public abstract partial class SharedEyeCursorOffsetComponent : Component
     public bool UseItem = false;
 
     [DataField]
-    public bool OffsetEnabled = true;
+    public float OffsetSpeedDistanceFactor = 1.3f;
 
     [DataField]
-    public float OffsetSpeedDistanceFactor = 1f;
-
-    [DataField]
-    public float OffsetSpeedFlat = 1f;
+    public float OffsetSpeedFlat = 0.008f;
     // FH end
 }

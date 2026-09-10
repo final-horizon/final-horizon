@@ -19,20 +19,17 @@
     soundEmpty:
       path: /Audio/_FinalHorizon/Weapons/Guns/Empty/gen_empty.ogg
   - type: SpeedModifiedOnWield
-    walkModifier: 0.80
-    sprintModifier: 0.80
+    walkModifier: 0.95
+    sprintModifier: 0.95
   - type: PullDoAfter
     pullTime: 0.6
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - zoom: 1.7
-      offset: 6
-      allowMovement: true
-      doAfter: 0.1
   - type: FarGunshot
     range: 120
     sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak74.ogg
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 16
+    pvsIncrease: 0.7
 
 - type: entity
   parent: FHWeaponBase
@@ -47,20 +44,16 @@
   - type: Gun
     angleIncrease: 1
   - type: SpeedModifiedOnWield
-    walkModifier: 0.65
-    sprintModifier: 0.65
+    walkModifier: 0.80
+    sprintModifier: 0.80
   - type: PullDoAfter
     pullTime: 1
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - zoom: 2
-      offset: 6
-      allowMovement: true
-      doAfter: 0.2
   - type: FarGunshot
     range: 150
     sound: /Audio/_FinalHorizon/Weapons/Guns/Far/m60.ogg
+  - type: EyeCursorOffset
+    maxOffset: 16
+    pvsIncrease: 0.7
 
 - type: entity
   parent: FHWeaponBase
@@ -74,31 +67,21 @@
     angleIncrease: 5
     fireRate: 1.5
   - type: SpeedModifiedOnWield
-    walkModifier: 0.60
-    sprintModifier: 0.60
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - zoom: 3
-      offset: 6
-      allowMovement: false
-      doAfter: 1
+    walkModifier: 0.80
+    sprintModifier: 0.80
+  - type: EyeCursorOffset
+    maxOffset: 23
+    pvsIncrease: 1.3
 
 - type: entity
   parent: BaseItem
   id: FHWeaponLauncherBase
   components:
   - type: HeldSpeedModifier
-    walkModifier: 0.80
-    sprintModifier: 0.80
+    walkModifier: 0.90
+    sprintModifier: 0.90
   - type: PullDoAfter
     pullTime: 1
-  - type: Scope
-    zoomLevels:
-    - zoom: 2
-      offset: 6
-      allowMovement: false
-      doAfter: 0.4
   - type: FarGunshot
     range: 150
     sound: /Audio/_FinalHorizon/Weapons/Guns/Far/rpg.ogg

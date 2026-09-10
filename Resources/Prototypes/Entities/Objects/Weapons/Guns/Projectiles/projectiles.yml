@@ -16,6 +16,7 @@
     tags:
       - HideContextMenu
   - type: AnimationPlayer
+  - type: ESViewconeOccludable # FH
 
 - type: entity
   parent: MuzzleFlashEffect
@@ -59,7 +60,7 @@
     noRot: false
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
-    - state: bullet # FH
+    - state: slug # FH
       #shader: unshaded # FH
   - type: Physics
     bodyType: Dynamic
@@ -93,6 +94,7 @@
       path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
   - type: TimedDespawn
     lifetime: 10
+  - type: ESViewconeOccludable # FH
 
 - type: entity
   id: BaseBulletTrigger # Trigger-on-collide bullets

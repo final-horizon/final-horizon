@@ -162,6 +162,11 @@ namespace Content.Client.Options.UI.Tabs
             AddToggleCvarCheckBox("ui-options-hold-to-attack-melee", CCVars.ControlHoldToAttackMelee);
             AddToggleCvarCheckBox("ui-options-hold-to-attack-ranged", CCVars.ControlHoldToAttackRanged);
 
+            // FH start
+            AddHeader("ui-options-header-finalhorizon");
+            AddButton(ContentKeyFunctions.ToggleAim);
+            // FH end
+
             AddHeader("ui-options-header-movement");
             AddButton(EngineKeyFunctions.MoveUp);
             AddButton(EngineKeyFunctions.MoveLeft);
