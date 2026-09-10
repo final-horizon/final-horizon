@@ -4,7 +4,7 @@
   description: job-description-BDW-platoonleader
   playTimeTracker: BDWPlatoonLeader
   startingGear: BDWUniformPlatoonLeader
-  icon: "BDWPlatoonLeader"
+  icon: "Nato"
   whitelisted: true
   joinNotifiyCrew: false
   displayWeight: 10
@@ -33,7 +33,7 @@
   description: job-description-BDW-teamleader
   playTimeTracker: BDWTeamLeader
   startingGear: BDWUniformTeamLeader
-  icon: "BDWTeamLeader"
+  icon: "Nato"
   whitelisted: true
   joinNotifiyCrew: false
   displayWeight: 9
@@ -62,7 +62,7 @@
   description: job-description-BDW-machinegunner
   playTimeTracker: BDWMachineGunner
   startingGear: BDWUniformMachineGunner
-  icon: "BDWMachineGunner"
+  icon: "Nato"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 6
@@ -91,7 +91,7 @@
   description: job-description-BDW-medic
   playTimeTracker: BDWMedic
   startingGear: BDWUniformMedic
-  icon: "BDWMedic"
+  icon: "Nato"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 7
@@ -120,7 +120,7 @@
   description: job-description-BDW-sniper
   playTimeTracker: BDWSniper
   startingGear: BDWUniformSniper
-  icon: "BDWSniper"
+  icon: "Nato"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 5
@@ -149,7 +149,7 @@
   description: job-description-BDW-rto
   playTimeTracker: BDWRTO
   startingGear: BDWUniformRTO
-  icon: "BDWRTO"
+  icon: "Nato"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 8
@@ -178,7 +178,7 @@
   description: job-description-BDW-rifleman
   playTimeTracker: BDWRifleMan
   startingGear: BDWUniformRifleMan
-  icon: "BDWRifleMan"
+  icon: "Nato"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 4
@@ -221,69 +221,6 @@
 
 - type: playTimeTracker
   id: BDWRifleMan
-
-- type: jobIcon
-  parent: JobIcon
-  id: BDWPlatoonLeader
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: nato_platoonleader
-  jobName: job-name-BDW-platoonleader
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: BDWTeamLeader
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: nato_teamleader
-  jobName: job-name-BDW-teamleader
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: BDWMachineGunner
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: nato_machinegunner
-  jobName: job-name-BDW-machinegunner
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: BDWMedic
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: nato_medic
-  jobName: job-name-BDW-medic
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: BDWRTO
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: nato_rto
-  jobName: job-name-BDW-rto
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: BDWSniper
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: nato_sniper
-  jobName: job-name-BDW-sniper
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: BDWRifleMan
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: nato_rifleman
-  jobName: job-name-BDW-rifleman
-  isCrewJob: false
 
 - type: startingGear
   id: BDWUniformPlatoonLeader

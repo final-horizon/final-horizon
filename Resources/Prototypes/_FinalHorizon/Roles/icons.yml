@@ -1,0 +1,17 @@
+- type: jobIcon
+  parent: JobIcon
+  id: Nato
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: nato
+  jobName: job-name-USMC-rifleman
+  isCrewJob: false
+
+- type: jobIcon
+  parent: JobIcon
+  id: Pact
+  icon:
+    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
+    state: pact
+  jobName: job-name-USMC-rifleman
+  isCrewJob: false

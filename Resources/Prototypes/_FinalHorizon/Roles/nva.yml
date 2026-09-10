@@ -4,7 +4,7 @@
   description: job-description-NVA-platoonleader
   playTimeTracker: NVAPlatoonLeader
   startingGear: NVAUniformPlatoonLeader
-  icon: "NVAPlatoonLeader"
+  icon: "Pact"
   whitelisted: true
   joinNotifiyCrew: false
   displayWeight: 10
@@ -33,7 +33,7 @@
   description: job-description-NVA-teamleader
   playTimeTracker: NVATeamLeader
   startingGear: NVAUniformTeamLeader
-  icon: "NVATeamLeader"
+  icon: "Pact"
   whitelisted: true
   joinNotifiyCrew: false
   displayWeight: 9
@@ -62,7 +62,7 @@
   description: job-description-NVA-machinegunner
   playTimeTracker: NVAMachineGunner
   startingGear: NVAUniformMachineGunner
-  icon: "NVAMachineGunner"
+  icon: "Pact"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 6
@@ -91,7 +91,7 @@
   description: job-description-NVA-medic
   playTimeTracker: NVAMedic
   startingGear: NVAUniformMedic
-  icon: "NVAMedic"
+  icon: "Pact"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 7
@@ -120,7 +120,7 @@
   description: job-description-NVA-rifleman
   playTimeTracker: NVARifleMan
   startingGear: NVAUniformRifleMan
-  icon: "NVARifleMan"
+  icon: "Pact"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 3
@@ -149,7 +149,7 @@
   description: job-description-NVA-sniper
   playTimeTracker: NVASniper
   startingGear: NVAUniformSniper
-  icon: "NVASniper"
+  icon: "Pact"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 4
@@ -178,7 +178,7 @@
   description: job-description-NVA-rto
   playTimeTracker: NVARTO
   startingGear: NVAUniformRTO
-  icon: "NVARTO"
+  icon: "Pact"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 8
@@ -207,7 +207,7 @@
   description: job-description-NVA-autorifleman
   playTimeTracker: NVAAutoRifleMan
   startingGear: NVAUniformAutoRifleMan
-  icon: "NVAAutoRifleMan"
+  icon: "Pact"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 5
@@ -253,78 +253,6 @@
 
 - type: playTimeTracker
   id: NVARifleMan
-
-- type: jobIcon
-  parent: JobIcon
-  id: NVAPlatoonLeader
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: pact_platoonleader
-  jobName: job-name-NVA-platoonleader
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: NVATeamLeader
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: pact_teamleader
-  jobName: job-name-NVA-teamleader
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: NVAMachineGunner
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: pact_machinegunner
-  jobName: job-name-NVA-machinegunner
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: NVAMedic
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: pact_medic
-  jobName: job-name-NVA-medic
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: NVARTO
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: pact_rto
-  jobName: job-name-NVA-rto
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: NVAAutoRifleMan
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: pact_autorifle
-  jobName: job-name-NVA-autorifleman
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: NVASniper
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: pact_sniper
-  jobName: job-name-NVA-sniper
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: NVARifleMan
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: pact_rifleman
-  jobName: job-name-NVA-rifleman
-  isCrewJob: false
 
 - type: startingGear
   id: NVAUniformPlatoonLeader

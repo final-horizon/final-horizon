@@ -4,7 +4,7 @@
   description: job-description-USMC-platoonleader
   playTimeTracker: USMCPlatoonLeader
   startingGear: USMCUniformPlatoonLeader
-  icon: "USMCPlatoonLeader"
+  icon: "Nato"
   whitelisted: true
   joinNotifiyCrew: false
   displayWeight: 10
@@ -27,13 +27,30 @@
         faction: Nato
         factionName: "United States Marine Corp"
 
+- type: playTimeTracker
+  id: USMCPlatoonLeader
+
+- type: startingGear
+  id: USMCUniformPlatoonLeader
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
+    shoes: ClothingShoesBootsJack
+    outerClothing: FHClothingOuterArmorPASGT
+    back: FHClothingBackRadioANPRC77
+    belt: FHClothingBeltUSMCHarness
+    pouchleft: FHClothingPouchUSMCGrenadeFilled
+    pouchright: FHClothingPouchUSMCAmmoDoubleFilled
+    suitstorage: FHWeaponRifleM16A1
+    head: FHClothingHeadHatBeretUSMC
+    pocket1: IFAKUSMCFilled
+
 - type: job
   id: USMCTeamLeader
   name: job-name-USMC-teamleader
   description: job-description-USMC-teamleader
   playTimeTracker: USMCTeamLeader
   startingGear: USMCUniformTeamLeader
-  icon: "USMCTeamLeader"
+  icon: "Nato"
   whitelisted: true
   joinNotifiyCrew: false
   displayWeight: 9
@@ -56,13 +73,30 @@
         faction: Nato
         factionName: "United States Marine Corp"
 
+- type: playTimeTracker
+  id: USMCTeamLeader
+
+- type: startingGear
+  id: USMCUniformTeamLeader
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
+    shoes: ClothingShoesBootsJack
+    outerClothing: FHClothingOuterArmorFlak
+    back: FHClothingBackRadioANPRC77
+    belt: FHClothingBeltUSMCHarness
+    pouchleft: FHClothingPouchUSMCGrenadeFilled
+    pouchright: FHClothingPouchUSMCAmmoDoubleFilled
+    suitstorage: FHWeaponRifleM16A1
+    head: FHClothingHeadHelmetM1Woodland
+    pocket1: IFAKUSMCFilled
+
 - type: job
   id: USMCMachineGunner
   name: job-name-USMC-machinegunner
   description: job-description-USMC-machinegunner
   playTimeTracker: USMCMachineGunner
   startingGear: USMCUniformMachineGunner
-  icon: "USMCMachineGunner"
+  icon: "Nato"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 6
@@ -85,13 +119,29 @@
         faction: Nato
         factionName: "United States Marine Corp"
 
+- type: playTimeTracker
+  id: USMCMachineGunner
+
+- type: startingGear
+  id: USMCUniformMachineGunner
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackAliceMediumFilledMachineGunner
+    belt: FHClothingBeltUSMCHarness
+    pouchleft: FHClothingPouchUSMCAmmoLMGFilled
+    pouchright: FHClothingPouchUSMCAmmoLMGFilled
+    suitstorage: FHWeaponLMGM60
+    head: FHClothingHeadHelmetM1Net
+    pocket1: IFAKUSMCFilled
+
 - type: job
   id: USMCMedic
   name: job-name-USMC-medic
   description: job-description-USMC-medic
   playTimeTracker: USMCMedic
   startingGear: USMCUniformMedic
-  icon: "USMCMedic"
+  icon: "Nato"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 7
@@ -114,13 +164,31 @@
         faction: Nato
         factionName: "United States Marine Corp"
 
+- type: playTimeTracker
+  id: USMCMedic
+
+- type: startingGear
+  id: USMCUniformMedic
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackUSMCButtPackMedic
+    belt: FHClothingBeltUSMCHarness
+    pouchleft: FHClothingPouchUSMCAmmoFilled
+    pouchright: FHClothingPouchUSMCAmmoFilled
+    suitstorage: FHWeaponRifleM16A2
+    head: FHClothingHeadHelmetM1Medic
+    pocket1: IFAKUSMCFilled
+    mask: ClothingMaskSterile
+    gloves: ClothingHandsGlovesLatex
+
 - type: job
   id: USMCSniper
   name: job-name-USMC-sniper
   description: job-description-USMC-sniper
   playTimeTracker: USMCSniper
   startingGear: USMCUniformSniper
-  icon: "USMCSniper"
+  icon: "Nato"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 5
@@ -143,13 +211,30 @@
         faction: Nato
         factionName: "United States Marine Corp"
 
+- type: playTimeTracker
+  id: USMCSniper
+
+- type: startingGear
+  id: USMCUniformSniper
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
+    shoes: ClothingShoesBootsJack
+    outerClothing: FHClothingOuterJacketUSMCParka
+    back: FHClothingBackpackUSMCButtPack
+    belt: FHClothingBeltUSMCHarness
+    pouchleft: FHClothingPouchUSMCAmmoFilledSniper
+    pouchright: FHClothingPouchUSMCAmmoFilledSniper
+    suitstorage: FHWeaponSnipersM21
+    head: FHClothingHeadHelmetM1Woodland
+    pocket1: IFAKUSMCFilled
+
 - type: job
   id: USMCRTO
   name: job-name-USMC-rto
   description: job-description-USMC-rto
   playTimeTracker: USMCRTO
   startingGear: USMCUniformRTO
-  icon: "USMCRTO"
+  icon: "Nato"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 8
@@ -172,13 +257,29 @@
         faction: Nato
         factionName: "United States Marine Corp"
 
+- type: playTimeTracker
+  id: USMCRTO
+
+- type: startingGear
+  id: USMCUniformRTO
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackRadioANPRC77
+    belt: FHClothingBeltUSMCHarness
+    pouchleft: FHClothingPouchUSMCAmmoFilled
+    pouchright: FHClothingPouchUSMCAmmoFilled
+    suitstorage: FHWeaponRifleM16A2
+    head: FHClothingHeadHelmetM1
+    pocket1: IFAKUSMCFilled
+
 - type: job
   id: USMCRifleMan
   name: job-name-USMC-rifleman
   description: job-description-USMC-rifleman
   playTimeTracker: USMCRifleMan
   startingGear: USMCUniformRifleMan
-  icon: "USMCRifleMan"
+  icon: "Nato"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 4
@@ -202,172 +303,7 @@
         factionName: "United States Marine Corp"
 
 - type: playTimeTracker
-  id: USMCPlatoonLeader
-
-- type: playTimeTracker
-  id: USMCTeamLeader
-
-- type: playTimeTracker
-  id: USMCMachineGunner
-
-- type: playTimeTracker
-  id: USMCMedic
-
-- type: playTimeTracker
-  id: USMCSniper
-
-- type: playTimeTracker
-  id: USMCRTO
-
-- type: playTimeTracker
   id: USMCRifleMan
-
-- type: jobIcon
-  parent: JobIcon
-  id: USMCPlatoonLeader
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: nato_platoonleader
-  jobName: job-name-USMC-platoonleader
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: USMCTeamLeader
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: nato_teamleader
-  jobName: job-name-USMC-teamleader
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: USMCMachineGunner
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: nato_machinegunner
-  jobName: job-name-USMC-machinegunner
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: USMCMedic
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: nato_medic
-  jobName: job-name-USMC-medic
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: USMCRTO
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: nato_rto
-  jobName: job-name-USMC-rto
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: USMCSniper
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: nato_sniper
-  jobName: job-name-USMC-sniper
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: USMCRifleMan
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: nato_rifleman
-  jobName: job-name-USMC-rifleman
-  isCrewJob: false
-
-- type: startingGear
-  id: USMCUniformPlatoonLeader
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
-    shoes: ClothingShoesBootsJack
-    outerClothing: FHClothingOuterArmorPASGT
-    back: FHClothingBackRadioANPRC77
-    belt: FHClothingBeltUSMCHarness
-    pouchleft: FHClothingPouchUSMCGrenadeFilled
-    pouchright: FHClothingPouchUSMCAmmoDoubleFilled
-    suitstorage: FHWeaponRifleM16A1
-    head: FHClothingHeadHatBeretUSMC
-    eyes: ClothingEyesGlassesCheapSunglasses
-    pocket1: IFAKUSMCFilled
-
-- type: startingGear
-  id: USMCUniformTeamLeader
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
-    shoes: ClothingShoesBootsJack
-    outerClothing: FHClothingOuterArmorFlak
-    back: FHClothingBackRadioANPRC77
-    belt: FHClothingBeltUSMCHarness
-    pouchleft: FHClothingPouchUSMCGrenadeFilled
-    pouchright: FHClothingPouchUSMCAmmoDoubleFilled
-    suitstorage: FHWeaponRifleM16A1
-    head: FHClothingHeadHelmetM1Woodland
-    pocket1: IFAKUSMCFilled
-
-- type: startingGear
-  id: USMCUniformMachineGunner
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
-    shoes: ClothingShoesBootsJack
-    back: FHClothingBackpackAliceMediumFilledMachineGunner
-    belt: FHClothingBeltUSMCHarness
-    pouchleft: FHClothingPouchUSMCAmmoLMGFilled
-    pouchright: FHClothingPouchUSMCAmmoLMGFilled
-    suitstorage: FHWeaponLMGM60
-    head: FHClothingHeadHelmetM1Net
-    pocket1: IFAKUSMCFilled
-
-- type: startingGear
-  id: USMCUniformMedic
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
-    shoes: ClothingShoesBootsJack
-    back: FHClothingBackpackUSMCButtPackMedic
-    belt: FHClothingBeltUSMCHarness
-    pouchleft: FHClothingPouchUSMCAmmoFilled
-    pouchright: FHClothingPouchUSMCAmmoFilled
-    suitstorage: FHWeaponRifleM16A2
-    head: FHClothingHeadHelmetM1Medic
-    pocket1: IFAKUSMCFilled
-    mask: ClothingMaskSterile
-    gloves: ClothingHandsGlovesLatex
-
-- type: startingGear
-  id: USMCUniformSniper
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
-    shoes: ClothingShoesBootsJack
-    outerClothing: FHClothingOuterJacketUSMCParka
-    back: FHClothingBackpackUSMCButtPack
-    belt: FHClothingBeltUSMCHarness
-    pouchleft: FHClothingPouchUSMCAmmoFilledSniper
-    pouchright: FHClothingPouchUSMCAmmoFilledSniper
-    suitstorage: FHWeaponSnipersM21
-    head: FHClothingHeadHelmetM1Woodland
-    pocket1: IFAKUSMCFilled
-
-- type: startingGear
-  id: USMCUniformRTO
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
-    shoes: ClothingShoesBootsJack
-    back: FHClothingBackRadioANPRC77
-    belt: FHClothingBeltUSMCHarness
-    pouchleft: FHClothingPouchUSMCAmmoFilled
-    pouchright: FHClothingPouchUSMCAmmoFilled
-    suitstorage: FHWeaponRifleM16A2
-    head: FHClothingHeadHelmetM1
-    pocket1: IFAKUSMCFilled
 
 - type: startingGear
   id: USMCUniformRifleMan

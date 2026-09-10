@@ -4,7 +4,7 @@
   description: job-description-USSR-platoonleader
   playTimeTracker: USSRPlatoonLeader
   startingGear: USSRUniformPlatoonLeader
-  icon: "USSRPlatoonLeader"
+  icon: "Pact"
   whitelisted: true
   joinNotifiyCrew: false
   displayWeight: 10
@@ -33,7 +33,7 @@
   description: job-description-USSR-teamleader
   playTimeTracker: USSRTeamLeader
   startingGear: USSRUniformTeamLeader
-  icon: "USSRTeamLeader"
+  icon: "Pact"
   whitelisted: true
   joinNotifiyCrew: false
   displayWeight: 9
@@ -62,7 +62,7 @@
   description: job-description-USSR-machinegunner
   playTimeTracker: USSRMachineGunner
   startingGear: USSRUniformMachineGunner
-  icon: "USSRMachineGunner"
+  icon: "Pact"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 6
@@ -91,7 +91,7 @@
   description: job-description-USSR-medic
   playTimeTracker: USSRMedic
   startingGear: USSRUniformMedic
-  icon: "USSRMedic"
+  icon: "Pact"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 7
@@ -120,7 +120,7 @@
   description: job-description-USSR-rifleman
   playTimeTracker: USSRRifleMan
   startingGear: USSRUniformRifleMan
-  icon: "USSRRifleMan"
+  icon: "Pact"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 3
@@ -149,7 +149,7 @@
   description: job-description-USSR-sniper
   playTimeTracker: USSRSniper
   startingGear: USSRUniformSniper
-  icon: "USSRSniper"
+  icon: "Pact"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 4
@@ -178,7 +178,7 @@
   description: job-description-USSR-rto
   playTimeTracker: USSRRTO
   startingGear: USSRUniformRTO
-  icon: "USSRRTO"
+  icon: "Pact"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 8
@@ -207,7 +207,7 @@
   description: job-description-USSR-autorifleman
   playTimeTracker: USSRAutoRifleMan
   startingGear: USSRUniformAutoRifleMan
-  icon: "USSRAutoRifleMan"
+  icon: "Pact"
   whitelisted: false
   joinNotifiyCrew: false
   displayWeight: 5
@@ -253,78 +253,6 @@
 
 - type: playTimeTracker
   id: USSRRifleMan
-
-- type: jobIcon
-  parent: JobIcon
-  id: USSRPlatoonLeader
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: pact_platoonleader
-  jobName: job-name-USSR-platoonleader
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: USSRTeamLeader
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: pact_teamleader
-  jobName: job-name-USSR-teamleader
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: USSRMachineGunner
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: pact_machinegunner
-  jobName: job-name-USSR-machinegunner
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: USSRMedic
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: pact_medic
-  jobName: job-name-USSR-medic
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: USSRRTO
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: pact_rto
-  jobName: job-name-USSR-rto
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: USSRAutoRifleMan
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: pact_autorifle
-  jobName: job-name-USSR-autorifleman
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: USSRSniper
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: pact_sniper
-  jobName: job-name-USSR-sniper
-  isCrewJob: false
-
-- type: jobIcon
-  parent: JobIcon
-  id: USSRRifleMan
-  icon:
-    sprite: _FinalHorizon/Interface/Misc/job_icons.rsi
-    state: pact_rifleman
-  jobName: job-name-USSR-rifleman
-  isCrewJob: false
 
 - type: startingGear
   id: USSRUniformPlatoonLeader
