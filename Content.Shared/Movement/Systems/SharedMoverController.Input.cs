@@ -539,7 +539,7 @@ namespace Content.Shared.Movement.Systems
                 if (message.State != BoundKeyState.Up)
                     return false;
 
-                _controller.RotateCamera(session.AttachedEntity.Value, _angle);
+                //_controller.RotateCamera(session.AttachedEntity.Value, _angle); // FH
                 return false;
             }
         }
