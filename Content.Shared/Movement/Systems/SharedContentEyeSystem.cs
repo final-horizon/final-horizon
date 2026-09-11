@@ -23,7 +23,7 @@ public abstract class SharedContentEyeSystem : EntitySystem
     public const AdminFlags EyeFlag = AdminFlags.Debug;
 
     public const float ZoomMod = 1.5f;
-    public static readonly Vector2 DefaultZoom = new Vector2(2f, 2f); // FH
+    public static readonly Vector2 DefaultZoom = new Vector2(1.25f, 1.25f); // FH
     public static readonly Vector2 MinZoom = DefaultZoom * (float)Math.Pow(ZoomMod, -3);
 
     [Dependency] private readonly SharedEyeSystem _eye = default!;
