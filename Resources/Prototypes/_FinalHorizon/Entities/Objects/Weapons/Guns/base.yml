@@ -77,6 +77,9 @@
   parent: BaseItem
   id: FHWeaponLauncherBase
   components:
+  - type: Wieldable
+  - type: WieldableDoAfter
+    timer: 0.7
   - type: HeldSpeedModifier
     walkModifier: 0.90
     sprintModifier: 0.90
@@ -85,3 +88,4 @@
   - type: FarGunshot
     range: 150
     sound: /Audio/_FinalHorizon/Weapons/Guns/Far/rpg.ogg
+  - type: GunRequiresWield

@@ -27,7 +27,6 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/_FinalHorizon/Weapons/Guns/Gunshots/rpg_fire.ogg
-  - type: MultiHandedItem
   - type: BallisticAmmoProvider
     whitelist:
       tags:

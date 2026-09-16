@@ -38,7 +38,6 @@
     foldTime: 7
     foldSound:
       path: /Audio/_FinalHorizon/Weapons/Guns/Deploy/law_deploy.ogg
-  - type: MultiHandedItem
   - type: GenericVisualizer
     visuals:
       enum.FoldedGunVisuals.State:

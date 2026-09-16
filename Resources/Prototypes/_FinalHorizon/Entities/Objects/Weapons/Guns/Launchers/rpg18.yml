@@ -38,7 +38,6 @@
     foldTime: 6
     foldSound:
       path: /Audio/_FinalHorizon/Weapons/Guns/Deploy/rpgoneuse_deploying.ogg
-  - type: MultiHandedItem
   - type: GenericVisualizer
     visuals:
       enum.FoldedGunVisuals.State:
