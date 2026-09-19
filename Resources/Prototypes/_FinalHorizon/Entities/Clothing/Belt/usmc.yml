@@ -1,7 +1,7 @@
 - type: entity
   parent: FHClothingBeltBase
   id: FHClothingBeltUSMCHarness
-  name: USMC harness
+  name: USMC Harness
   description: A belt harness to carry your pouches.
   components:
   - type: Sprite

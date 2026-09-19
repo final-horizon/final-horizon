@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingMaskBase
   id: FHClothingGasMaskM40
-  name: M40 gasmask
-  description: A mask used to protect your face and lungs
+  name: M40 Gas Mask
+  description: A mask used to protect your face and lungs from chemical irritants.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Mask/m40.rsi
@@ -12,8 +12,8 @@
 - type: entity
   parent: ClothingMaskBase
   id: FHClothingGasMaskM17
-  name: M17 gasmask
-  description: A mask used to protect your face and lungs
+  name: M17 Gas Mask
+  description: A mask used to protect your face and lungs from chemical irritants.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Mask/m17.rsi
@@ -23,8 +23,8 @@
 - type: entity
   parent: ClothingMaskBase
   id: FHClothingGasMaskPMG
-  name: PMG gasmask
-  description: A mask used to protect your face and lungs
+  name: PMG Gas Mask
+  description: A mask used to protect your face and lungs from chemical irritants.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Mask/PMG.rsi

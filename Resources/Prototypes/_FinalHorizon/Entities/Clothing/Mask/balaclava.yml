@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingMaskBase
   id: FHClothingMaskBalaclavaBlack
-  name: black balaclava
-  description: A mask used to keep warm and hide your face
+  name: Black Balaclava
+  description: A mask used to keep warm and hide your face.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Mask/balaclava_black.rsi
@@ -12,8 +12,8 @@
 - type: entity
   parent: FHClothingMaskBalaclavaBlack
   id: FHClothingMaskBalaclavaGreen
-  name: green balaclava
-  description: A mask used to keep warm and hide your face
+  name: Green Balaclava
+  description: A mask used to keep warm and hide your face.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Mask/balaclava_green.rsi

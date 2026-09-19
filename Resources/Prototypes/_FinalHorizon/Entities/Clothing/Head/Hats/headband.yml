@@ -1,7 +1,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: FHClothingHeadHatHeadbandRed
-  name: red headband
+  name: Red Headband
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Head/Hats/headband_red.rsi
@@ -11,7 +11,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: FHClothingHeadHatHeadbandGreen
-  name: green headband
+  name: Green Headband
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Head/Hats/headband_green.rsi

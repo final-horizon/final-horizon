@@ -1,7 +1,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: FHClothingHeadHatGarrisonSA
-  name: soviet army garrison hat
+  name: Soviet Army Garrison Cap
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Head/Hats/sa_garrison.rsi
@@ -31,6 +31,26 @@
     foldVerbText: fold-verb-clothing-jacket
   - type: FoldableClothing
     foldedEquippedPrefix: folded
+
+- type: entity
+  parent: ClothingHeadBase
+  id: FHClothingHeadHatSAUsh
+  name: Soviet Army Ushanka
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Hats/sa_ush.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Hats/sa_ush.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: FHClothingHeadHatPCSA
+  name: Soviet Army Patrol Cap
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Hats/sa_pc.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Hats/sa_pc.rsi
 
 - type: entity
   parent: ClothingHeadBase
@@ -72,7 +92,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: FHClothingHeadHatBoonieUSMC
-  name: USMC boonie hat
+  name: USMC Boonie Hat
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Head/Hats/usmc_boonie.rsi
@@ -85,7 +105,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: FHClothingHeadHatPCUSMC
-  name: USMC patrol cap
+  name: USMC Patrol Cap
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Head/Hats/usmc_pc.rsi

@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: FHClothingHandsGlovesMittens
+  name: Combat Mittens
+  description: A generic pair of thick mittens with a separated finger so you can use a firearm. 
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Hands/mittens.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Hands/mittens.rsi

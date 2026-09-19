@@ -1,7 +1,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSMCAmmo
-  name: USMC ammo pouch
+  name: USMC Ammo Pouch
   description: A pouch that can carry three mags.
   components:
   - type: Sprite
@@ -45,7 +45,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSMCAmmoDouble
-  name: USMC double ammo pouch
+  name: USMC Double Ammo Pouch
   description: Two pouches that can hold three mags each.
   components:
   - type: Sprite
@@ -80,7 +80,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSMCAmmo40
-  name: USMC ammo pouch 40mm
+  name: USMC Ammo Pouch, 40mm
   description: A pouch for holding 40mm grenades.
   components:
   - type: Sprite
@@ -98,7 +98,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSMCAmmoLMG
-  name: USMC ammo pouch LMG
+  name: USMC Ammo Pouch, LMG
   description: A pouch for carrying LMG boxes.
   components:
   - type: Sprite
@@ -127,7 +127,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSMCAmmoSG
-  name: USMC ammo pouch SG
+  name: USMC Ammo Pouch, SG
   description: A pouch for carrying ammo boxes.
   components:
   - type: Sprite
@@ -142,8 +142,8 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSMCGrenade
-  name: USMC grenade pouch
-  description: A pouch for carrying grenadess.
+  name: USMC Grenade Pouch
+  description: A pouch for carrying grenades.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Pouch/usmc_grenade.rsi
@@ -176,7 +176,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSMCSapper
-  name: USMC sapper pouch
+  name: USMC Sapper Pouch
   description: A pouch for carrying sapper supply.
   components:
   - type: Sprite

@@ -1,7 +1,7 @@
 - type: entity
   parent: FHClothingBeltBase
   id: FHClothingBeltUSSRHarness
-  name: USSR harness
+  name: Soviet Army Harness
   description: A belt harness to carry your pouches.
   components:
   - type: Sprite

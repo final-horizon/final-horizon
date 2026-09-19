@@ -1,8 +1,8 @@
 - type: entity
   parent: FHClothingHeadHelmetBaseFoldable
   id: FHClothingHeadHelmetM1
-  name: green M1 helmet
-  description: Standard issue helmet for the US military.
+  name: OD Green M1 Helmet
+  description: Standard issue American steel pot. Drab green.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Head/Helmets/m1_green.rsi
@@ -12,8 +12,8 @@
 - type: entity
   parent: FHClothingHeadHelmetM1
   id: FHClothingHeadHelmetM1Medic
-  name: medic M1 helmet
-  description: Standard issue helmet for the US military.
+  name: Medic's M1 helmet
+  description: Standard issue American steel pot. Drab green, with a cross.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Head/Helmets/m1_medic.rsi
@@ -23,8 +23,8 @@
 - type: entity
   parent: FHClothingHeadHelmetM1
   id: FHClothingHeadHelmetM1Woodland
-  name: woodland M1 helmet
-  description: Standard issue helmet for the US military.
+  name: Woodland M1 Helmet
+  description: Standard issue American steel pot. Has an M81 cover on it.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Head/Helmets/m1_woodland.rsi
@@ -34,8 +34,8 @@
 - type: entity
   parent: FHClothingHeadHelmetM1
   id: FHClothingHeadHelmetM1Net
-  name: netted M1 helmet
-  description: Standard issue helmet for the US military.
+  name: Netted M1 Helmet
+  description: Standard issue American steel pot. Drab green, with some netting for scrim or something.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Head/Helmets/m1_net.rsi

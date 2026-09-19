@@ -1,7 +1,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRAmmo
-  name: Soviet Army ammo pouch
+  name: Soviet Army Ammo Pouch
   description: A pouch that can carry 4 mags.
   components:
   - type: Sprite
@@ -47,7 +47,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRLMG
-  name: Soviet Army lmg ammo pouch
+  name: Soviet Army LMG Ammo Pouch
   description: A pouch for holding lmg boxes.
   components:
   - type: Sprite
@@ -76,8 +76,8 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRSVD
-  name: Soviet Army svd ammo pouch
-  description: A pouch for carrying svd mags.
+  name: Soviet Army SVD Ammo Pouch
+  description: A pouch for carrying SVD mags.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Pouch/ussr_svd.rsi
@@ -108,7 +108,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRGrenade
-  name: Soviet Army grenade pouch
+  name: Soviet Army Grenade Pouch
   description: A pouch for carrying discarded mags.
   components:
   - type: Sprite
@@ -142,7 +142,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRSapper
-  name: Soviet Army sapper pouch
+  name: Soviet Army Sapper Pouch
   description: A pouch for carrying tools and materials.
   components:
   - type: Sprite
@@ -157,8 +157,8 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRVOG
-  name: Soviet Army vog pouch
-  description: A pouch for carrying vog underbarrel grenades.
+  name: Soviet Army VOG Pouch
+  description: A pouch for carrying VOG underbarrel grenades.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Pouch/ussr_vog.rsi
@@ -175,7 +175,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRSG
-  name: Soviet Army squad gunner pouch
+  name: Soviet Army Squad Gunner Pouch
   description: A pouch for carrying ammo boxes.
   components:
   - type: Sprite
@@ -190,7 +190,7 @@
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRUtility
-  name: Soviet Army utility pouch
+  name: Soviet Army Utility Pouch
   description: A pouch for carrying various things.
   components:
   - type: Sprite
