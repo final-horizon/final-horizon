@@ -1,0 +1,101 @@
+- type: entity
+  parent: FHCrateWood
+  id: FHCrateFilledSandbagNato
+  name: sandbag crate
+  suffix: nato
+  description: A crate full of sandbags and shovels.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: MaterialSandbagEmpty
+          amount: 25
+        - id: FHShovelNato
+          amount: 2
+
+- type: entity
+  parent: FHCrateWood
+  id: FHCrateFilledSandbagPact
+  name: sandbag crate
+  suffix: pact
+  description: A crate full of sandbags and shovels.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: MaterialSandbagEmpty
+          amount: 25
+        - id: FHShovelPact
+          amount: 2
+
+- type: entity
+  parent: FHCrateGeneric
+  id: FHCrateFilledMortar
+  name: mortar crate
+  description: A crate with a single mortar and shells.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FHMortarShellHE
+          amount: 10
+        - id: FHMortarBasic
+          amount: 1
+        - id: Wrench
+          amount: 1
+
+# ammo
+- type: entity
+  parent: FHCrateAmmo
+  id: FHCrateFilledAmmoM16
+  name: m16 ammo crate
+  description: A crate filled with ammo.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FHMagazineRifleM16Full
+          amount: 10
+
+- type: entity
+  parent: FHCrateAmmo
+  id: FHCrateFilledAmmoM60
+  name: m60 ammo crate
+  description: A crate filled with ammo.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FHMagazineLMGM60Full
+          amount: 5
+
+- type: entity
+  parent: FHCrateAmmo
+  id: FHCrateFilledAmmoAK74
+  name: ak74 ammo crate
+  description: A crate filled with ammo.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FHMagazineRifleAK74BakeliteFull
+          amount: 10
+
+- type: entity
+  parent: FHCrateAmmo
+  id: FHCrateFilledAmmoPKM
+  name: pkm ammo crate
+  description: A crate filled with ammo.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FHMagazineLMGPKMFull
+          amount: 5

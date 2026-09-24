@@ -1,0 +1,94 @@
+- type: entity
+  parent: BaseItem
+  id: FHShovelNato
+  suffix: NATO
+  name: Shovel
+  description: A large tool for digging and moving dirt.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Tools/spade_nato.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: 45
+    damage:
+      types:
+        Blunt: 20
+    soundHit:
+      collection: MetalThud
+  - type: Item
+    size: Large
+    sprite: _FinalHorizon/Objects/Tools/spade_nato.rsi
+  - type: Shovel
+  - type: Tool
+    qualities:
+      - Digging
+    useSound:
+      path: /Audio/Items/shovel_dig.ogg
+  - type: ToolTileCompatible
+    delay: 2
+  - type: Tag
+    tags:
+    - FHUtilityItem
+
+- type: entity
+  parent: BaseItem
+  id: FHShovelPact
+  suffix: PACT
+  name: Shovel
+  description: A large tool for digging and moving dirt.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Tools/spade_pact.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: 45
+    damage:
+      types:
+        Blunt: 20
+    soundHit:
+      collection: MetalThud
+  - type: Item
+    size: Large
+    sprite: _FinalHorizon/Objects/Tools/spade_pact.rsi
+  - type: Shovel
+  - type: Tool
+    qualities:
+      - Digging
+    useSound:
+      path: /Audio/Items/shovel_dig.ogg
+  - type: ToolTileCompatible
+    delay: 2
+  - type: Tag
+    tags:
+    - FHUtilityItem
+
+- type: entity
+  parent: BaseItem
+  id: FHShovelETool
+  name: Entrenching Tool
+  description: A foldable tool for digging and moving dirt. A little slower then a normal shovel
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Tools/etool.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: 45
+    damage:
+      types:
+        Blunt: 14
+    soundHit:
+      collection: MetalThud
+  - type: Item
+    size: Small
+    sprite: _FinalHorizon/Objects/Tools/etool.rsi
+  - type: Shovel
+  - type: Tool
+    qualities:
+      - Digging
+    useSound:
+      path: /Audio/Items/shovel_dig.ogg
+  - type: ToolTileCompatible
+    delay: 4
+  - type: Tag
+    tags:
+    - FHUtilityItem

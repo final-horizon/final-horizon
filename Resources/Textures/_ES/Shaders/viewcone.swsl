@@ -16,7 +16,6 @@ uniform highp float ViewAngle;
 const highp float grainMult = 0.35;
 const highp float grainBase = 0.6;
 
-const highp float grayscaleFactor = 0.82;
 
 void fragment(){
     highp vec2 pixelSize = vec2(1.0/SCREEN_PIXEL_SIZE.x, 1.0/SCREEN_PIXEL_SIZE.y);
@@ -44,11 +43,10 @@ void fragment(){
 
     mask = 1.0 - clamp(mask, 0.0, 1.0);
 
-    // So grim.. so dark
-    highp float grain = zRandom(FRAGCOORD.xy * SCREEN_PIXEL_SIZE + vec2(fract(TIME))).x;
-
     // Lil bit of grayscale for good measure, too
-    highp float grayscale = zGrayscale(color.rgb) * (grain * grainMult + grainBase);
+    highp float grayscale = zGrayscale(color.rgb);
 
-    COLOR = vec4(mix(color.rgb, vec3(grayscale), mask * grayscaleFactor), color.a);
+    highp vec3 maskColor = vec3(grayscale * 0.8, grayscale * 0.8, grayscale * 0.75);
+
+    COLOR = vec4(mix(color.rgb, maskColor, mask), color.a);
 }

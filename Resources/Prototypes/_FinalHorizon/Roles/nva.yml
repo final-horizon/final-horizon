@@ -6,6 +6,7 @@
   startingGear: NVAUniformPlatoonLeader
   icon: "Pact"
   whitelisted: true
+  jobRank: PactOfficer
   joinNotifiyCrew: false
   displayWeight: 10
   special:
@@ -35,6 +36,7 @@
   startingGear: NVAUniformTeamLeader
   icon: "Pact"
   whitelisted: true
+  jobRank: PactNco
   joinNotifiyCrew: false
   displayWeight: 9
   special:
@@ -63,7 +65,8 @@
   playTimeTracker: NVAMachineGunner
   startingGear: NVAUniformMachineGunner
   icon: "Pact"
-  whitelisted: false
+  whitelisted: true
+  jobRank: PactEnlisted
   joinNotifiyCrew: false
   displayWeight: 6
   special:
@@ -92,7 +95,8 @@
   playTimeTracker: NVAMedic
   startingGear: NVAUniformMedic
   icon: "Pact"
-  whitelisted: false
+  whitelisted: true
+  jobRank: PactEnlisted
   joinNotifiyCrew: false
   displayWeight: 7
   special:
@@ -150,7 +154,8 @@
   playTimeTracker: NVASniper
   startingGear: NVAUniformSniper
   icon: "Pact"
-  whitelisted: false
+  whitelisted: true
+  jobRank: PactEnlisted
   joinNotifiyCrew: false
   displayWeight: 4
   special:
@@ -179,7 +184,8 @@
   playTimeTracker: NVARTO
   startingGear: NVAUniformRTO
   icon: "Pact"
-  whitelisted: false
+  whitelisted: true
+  jobRank: PactEnlisted
   joinNotifiyCrew: false
   displayWeight: 8
   special:
@@ -208,7 +214,8 @@
   playTimeTracker: NVAAutoRifleMan
   startingGear: NVAUniformAutoRifleMan
   icon: "Pact"
-  whitelisted: false
+  whitelisted: true
+  jobRank: PactEnlisted
   joinNotifiyCrew: false
   displayWeight: 5
   special:

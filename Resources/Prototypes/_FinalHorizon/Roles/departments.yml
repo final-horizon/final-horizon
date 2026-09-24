@@ -11,6 +11,7 @@
   - USMCSniper
   - USMCRTO
   - USMCRifleMan
+  - USMCReservist
 
 - type: department
   id: USSR
@@ -26,6 +27,7 @@
   - USSRAutoRifleMan
   - USSRRTO
   - USSRRifleMan
+  - USSRReservist
 
 - type: department
   id: BDW

@@ -26,7 +26,7 @@ namespace Content.Shared.Movement.Components
 
         // movement
         public const float DefaultBaseWalkSpeed = 2.0f; // FH
-        public const float DefaultBaseSprintSpeed = 2.7f; // FH
+        public const float DefaultBaseSprintSpeed = 2.4f; // FH
 
         #endregion
 

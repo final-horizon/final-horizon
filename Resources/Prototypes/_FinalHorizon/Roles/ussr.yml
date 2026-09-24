@@ -6,6 +6,7 @@
   startingGear: USSRUniformPlatoonLeader
   icon: "Pact"
   whitelisted: true
+  jobRank: PactOfficer
   joinNotifiyCrew: false
   displayWeight: 10
   special:
@@ -35,6 +36,7 @@
   startingGear: USSRUniformTeamLeader
   icon: "Pact"
   whitelisted: true
+  jobRank: PactNco
   joinNotifiyCrew: false
   displayWeight: 9
   special:
@@ -63,7 +65,8 @@
   playTimeTracker: USSRMachineGunner
   startingGear: USSRUniformMachineGunner
   icon: "Pact"
-  whitelisted: false
+  whitelisted: true
+  jobRank: PactEnlisted
   joinNotifiyCrew: false
   displayWeight: 6
   special:
@@ -92,7 +95,8 @@
   playTimeTracker: USSRMedic
   startingGear: USSRUniformMedic
   icon: "Pact"
-  whitelisted: false
+  whitelisted: true
+  jobRank: PactEnlisted
   joinNotifiyCrew: false
   displayWeight: 7
   special:
@@ -121,7 +125,8 @@
   playTimeTracker: USSRRifleMan
   startingGear: USSRUniformRifleMan
   icon: "Pact"
-  whitelisted: false
+  whitelisted: true
+  jobRank: PactEnlisted
   joinNotifiyCrew: false
   displayWeight: 3
   special:
@@ -150,7 +155,8 @@
   playTimeTracker: USSRSniper
   startingGear: USSRUniformSniper
   icon: "Pact"
-  whitelisted: false
+  whitelisted: true
+  jobRank: PactEnlisted
   joinNotifiyCrew: false
   displayWeight: 4
   special:
@@ -179,7 +185,8 @@
   playTimeTracker: USSRRTO
   startingGear: USSRUniformRTO
   icon: "Pact"
-  whitelisted: false
+  whitelisted: true
+  jobRank: PactEnlisted
   joinNotifiyCrew: false
   displayWeight: 8
   special:
@@ -208,9 +215,39 @@
   playTimeTracker: USSRAutoRifleMan
   startingGear: USSRUniformAutoRifleMan
   icon: "Pact"
-  whitelisted: false
+  whitelisted: true
+  jobRank: PactEnlisted
   joinNotifiyCrew: false
   displayWeight: 5
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Soviet Army"
+
+- type: job
+  id: USSRReservist
+  name: job-name-USSR-reservist
+  description: job-description-USSR-reservist
+  playTimeTracker: USSRReservist
+  startingGear: USSRUniformReservist
+  icon: "Pact"
+  whitelisted: false
+  joinNotifiyCrew: false
+  displayWeight: 2
   special:
   - !type:AddComponentSpecial
     components:
@@ -253,6 +290,9 @@
 
 - type: playTimeTracker
   id: USSRRifleMan
+
+- type: playTimeTracker
+  id: USSRReservist
 
 - type: startingGear
   id: USSRUniformPlatoonLeader
@@ -352,6 +392,19 @@
 
 - type: startingGear
   id: USSRUniformRifleMan
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSSRYellow
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackUSSRKit
+    belt: FHClothingBeltUSSRHarness
+    pouchleft: FHClothingPouchUSSRAmmoFilled
+    pouchright: FHClothingPouchUSSRAmmoFilled
+    suitstorage: FHWeaponRifleAK74
+    head: FHClothingHeadHelmetSSH68
+    pocket1: IFAKUSSRFilled
+
+- type: startingGear
+  id: USSRUniformReservist
   equipment:
     jumpsuit: ClothingUniformJumpsuitUSSRYellow
     shoes: ClothingShoesBootsJack

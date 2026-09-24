@@ -68,13 +68,11 @@
   - type: Appearance
     appearanceDataInit:
      enum.AmmoVisuals.MagLoaded: false
+  - type: FarGunshot
+    range: 260
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak_dist.ogg
   - type: GunWieldBonus
     minAngle: -45
     maxAngle: -43
-  - type: SpeedModifiedOnWield
-    walkModifier: 0.6
-    sprintModifier: 0.6
   - type: WieldableDoAfter
     timer: 0.6
-  - type: FarGunshot
-    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak74.ogg

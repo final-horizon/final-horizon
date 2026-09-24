@@ -31,7 +31,7 @@
       path: /Audio/_FinalHorizon/Weapons/Guns/Gunshots/m60.ogg
       params:
         variation: 0.1
-        volume: -2
+        volume: -1
     soundEmpty:
       path: /Audio/_FinalHorizon/Weapons/Guns/Empty/gen_empty.ogg
   - type: ChamberMagazineAmmoProvider
@@ -70,5 +70,3 @@
   - type: Appearance
     appearanceDataInit:
      enum.AmmoVisuals.MagLoaded: false
-  - type: FarGunshot
-    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/m60.ogg

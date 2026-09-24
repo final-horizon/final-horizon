@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 09/01/2026 13:58:02
-  entityCount: 1803
+  time: 09/20/2026 14:38:49
+  entityCount: 1843
 maps:
 - 1
 grids:
@@ -100,7 +100,7 @@ entities:
           version: 7
         0,-1:
           ind: 0,-1
-          tiles: CQAAAAACAAkAAAAAAwAJAAAAAAEACQAAAAABAAkAAAAAAwAJAAAAAAIACQAAAAABAAkAAAAAAQAJAAAAAAMACQAAAAAAAAkAAAAAAQAJAAAAAAMACQAAAAABAAkAAAAAAQAJAAAAAAAACQAAAAADAAkAAAAAAwAJAAAAAAAACQAAAAADAAkAAAAAAQAJAAAAAAAACQAAAAABAAkAAAAAAQAJAAAAAAMACQAAAAADAAkAAAAAAwAJAAAAAAEACQAAAAACAAkAAAAAAgAJAAAAAAAACQAAAAADAAkAAAAAAAAJAAAAAAMACQAAAAACAAkAAAAAAwAJAAAAAAIACQAAAAABAAkAAAAAAQAJAAAAAAMACQAAAAAAAAkAAAAAAwAJAAAAAAAACQAAAAABAAkAAAAAAAAJAAAAAAIACQAAAAADAAkAAAAAAAAJAAAAAAEABgAAAAADAAYAAAAAAAAGAAAAAAMABgAAAAABAAYAAAAAAQAGAAAAAAAABgAAAAACAAkAAAAAAwAJAAAAAAIACQAAAAADAAkAAAAAAQAJAAAAAAMACQAAAAACAAkAAAAAAQAJAAAAAAMACQAAAAABAAYAAAAAAwAGAAAAAAIABgAAAAAAAAYAAAAAAAAGAAAAAAEADwAAAAADAAYAAAAAAAAJAAAAAAIACQAAAAADAAkAAAAAAQAJAAAAAAEACQAAAAACAAkAAAAAAgAJAAAAAAMACQAAAAABAAkAAAAAAwAGAAAAAAEABgAAAAAAAAYAAAAAAAAGAAAAAAEABgAAAAAAAAYAAAAAAwAGAAAAAAAACQAAAAABAAkAAAAAAgAJAAAAAAIACQAAAAADAAkAAAAAAwAJAAAAAAMACQAAAAACAAkAAAAAAwAJAAAAAAIABgAAAAABAAYAAAAAAwAGAAAAAAAADwAAAAACAAYAAAAAAAAGAAAAAAEABgAAAAACAAkAAAAAAgAJAAAAAAAACQAAAAABAAkAAAAAAgAJAAAAAAMACQAAAAACAAkAAAAAAQAJAAAAAAAACQAAAAAAAAYAAAAAAAAGAAAAAAMABgAAAAAAAAYAAAAAAAAGAAAAAAEABgAAAAABAAYAAAAAAAAJAAAAAAEACQAAAAACAAkAAAAAAQAJAAAAAAIACQAAAAACAAkAAAAAAgAJAAAAAAMACQAAAAABAAkAAAAAAgAGAAAAAAIABgAAAAAAAA8AAAAABQAGAAAAAAIABgAAAAAAAAYAAAAAAwAGAAAAAAMACQAAAAADAAkAAAAAAgAJAAAAAAEACQAAAAACAAkAAAAAAgAJAAAAAAIACQAAAAAAAAkAAAAAAQAJAAAAAAEABgAAAAADAAYAAAAAAAAGAAAAAAEABgAAAAAAAAYAAAAAAwAGAAAAAAMABgAAAAABAAkAAAAAAgAJAAAAAAEACQAAAAADAAkAAAAAAAAJAAAAAAMACQAAAAAAAAkAAAAAAAAJAAAAAAAACQAAAAABAAYAAAAAAAAGAAAAAAMABgAAAAAAAAYAAAAAAQAGAAAAAAIADwAAAAAAAAYAAAAAAQAJAAAAAAAACQAAAAAAAAkAAAAAAwAJAAAAAAMACQAAAAADAAkAAAAAAwAJAAAAAAMACQAAAAADAAkAAAAAAwAGAAAAAAIABgAAAAADAAYAAAAAAAAGAAAAAAMABgAAAAAAAAYAAAAAAAAGAAAAAAAACQAAAAADAAkAAAAAAQAJAAAAAAEACQAAAAABAAkAAAAAAQAJAAAAAAIACQAAAAABAAkAAAAAAAAJAAAAAAMABgAAAAAAAAYAAAAAAQAGAAAAAAAABgAAAAABAAYAAAAAAAAGAAAAAAAABgAAAAAAAAkAAAAAAwAJAAAAAAMACQAAAAACAAkAAAAAAgAJAAAAAAEACQAAAAADAAkAAAAAAAAJAAAAAAEACQAAAAADAAkAAAAAAQAJAAAAAAMACQAAAAACAAkAAAAAAAAJAAAAAAIACQAAAAACAAkAAAAAAAAJAAAAAAEACQAAAAABAAkAAAAAAgAJAAAAAAEACQAAAAAAAAkAAAAAAAAJAAAAAAEACQAAAAAAAAkAAAAAAQAIAAAAAAEACAAAAAAAAAgAAAAAAwAIAAAAAAEACQAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAACQAAAAABAAkAAAAAAQAJAAAAAAIACAAAAAADAAgAAAAAAQAIAAAAAAIACAAAAAACAAkAAAAAAAAMAAAAAAAADgAAAAABAA4AAAAAAwAOAAAAAAMADgAAAAACAA4AAAAAAAAOAAAAAAAADAAAAAAAAAkAAAAAAAAJAAAAAAAACQAAAAABAA==
+          tiles: CQAAAAACAAkAAAAAAwAJAAAAAAEACQAAAAABAAkAAAAAAwAJAAAAAAIACQAAAAABAAkAAAAAAQAJAAAAAAMACQAAAAAAAAkAAAAAAQAJAAAAAAMACQAAAAABAAkAAAAAAQAJAAAAAAAACQAAAAADAAkAAAAAAwAJAAAAAAAACQAAAAADAAkAAAAAAQAJAAAAAAAACQAAAAABAAkAAAAAAQAJAAAAAAMACQAAAAADAAkAAAAAAwAJAAAAAAEACQAAAAACAAkAAAAAAgAJAAAAAAAACQAAAAADAAkAAAAAAAAJAAAAAAMACQAAAAACAAkAAAAAAwAJAAAAAAIACQAAAAABAAkAAAAAAQAJAAAAAAMACQAAAAAAAAkAAAAAAwAJAAAAAAAACQAAAAABAAkAAAAAAAAJAAAAAAIACQAAAAADAAkAAAAAAAAJAAAAAAEABgAAAAADAAYAAAAAAAAGAAAAAAMABgAAAAABAAYAAAAAAQAGAAAAAAAABgAAAAACAAkAAAAAAwAJAAAAAAIACQAAAAADAAkAAAAAAQAJAAAAAAMACQAAAAACAAkAAAAAAQAJAAAAAAMACQAAAAABAAYAAAAAAwAGAAAAAAIABgAAAAAAAAYAAAAAAAAGAAAAAAEADwAAAAADAAYAAAAAAAAJAAAAAAIACQAAAAADAAkAAAAAAQAJAAAAAAEACQAAAAACAAkAAAAAAgAJAAAAAAMACQAAAAABAAkAAAAAAwAGAAAAAAEABgAAAAAAAAYAAAAAAAAGAAAAAAEABgAAAAAAAAYAAAAAAwAGAAAAAAAACQAAAAABAAkAAAAAAgAJAAAAAAIACQAAAAADAAkAAAAAAwAJAAAAAAMACQAAAAACAAkAAAAAAwAJAAAAAAIABgAAAAABAAYAAAAAAwAGAAAAAAAADwAAAAACAAYAAAAAAAAGAAAAAAEABgAAAAACAAkAAAAAAgAJAAAAAAAACQAAAAABAAkAAAAAAgAJAAAAAAMACQAAAAACAAkAAAAAAQAJAAAAAAAACQAAAAAAAAYAAAAAAAAGAAAAAAMABgAAAAAAAAYAAAAAAAAGAAAAAAEABgAAAAABAAYAAAAAAAAJAAAAAAEACQAAAAACAAkAAAAAAQAJAAAAAAIACQAAAAACAAkAAAAAAgAJAAAAAAMACQAAAAABAAkAAAAAAgAGAAAAAAIABgAAAAAAAA8AAAAABQAGAAAAAAIABgAAAAAAAAYAAAAAAwAGAAAAAAMACQAAAAADAAkAAAAAAgAJAAAAAAEACQAAAAACAAkAAAAAAgAJAAAAAAIACQAAAAAAAAkAAAAAAQAJAAAAAAEABgAAAAADAAYAAAAAAAAGAAAAAAEABgAAAAAAAAYAAAAAAwAGAAAAAAMABgAAAAABAAkAAAAAAgAJAAAAAAEACQAAAAADAAkAAAAAAAAJAAAAAAMACQAAAAAAAAkAAAAAAAAJAAAAAAAACQAAAAABAAYAAAAAAAAGAAAAAAMABgAAAAAAAAYAAAAAAQAGAAAAAAIADwAAAAAAAAYAAAAAAQAJAAAAAAAACQAAAAAAAAkAAAAAAwAJAAAAAAMACQAAAAADAAkAAAAAAwAJAAAAAAMACQAAAAADAAkAAAAAAwAGAAAAAAIABgAAAAADAAYAAAAAAAAGAAAAAAMABgAAAAAAAAYAAAAAAAAGAAAAAAAACQAAAAADAAkAAAAAAQAJAAAAAAEACQAAAAABAAkAAAAAAQAJAAAAAAIACQAAAAABAAkAAAAAAAAJAAAAAAMABgAAAAAAAAYAAAAAAQAGAAAAAAAABgAAAAABAAYAAAAAAAAGAAAAAAAABgAAAAAAAAkAAAAAAwAJAAAAAAMACQAAAAACAAkAAAAAAgAJAAAAAAEACQAAAAADAAkAAAAAAAAJAAAAAAEACQAAAAADAAkAAAAAAQAJAAAAAAMACQAAAAACAAkAAAAAAAAJAAAAAAIACQAAAAACAAkAAAAAAAAJAAAAAAEACQAAAAABAAkAAAAAAgAJAAAAAAEACQAAAAAAAAkAAAAAAAAJAAAAAAEACQAAAAAAAAkAAAAAAQAIAAAAAAEACAAAAAAAAAgAAAAAAwAIAAAAAAEACAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAACQAAAAABAAkAAAAAAQAJAAAAAAIACAAAAAADAAgAAAAAAQAIAAAAAAIACAAAAAACAAgAAAAAAAAMAAAAAAAADgAAAAABAA4AAAAAAwAOAAAAAAMADgAAAAACAA4AAAAAAAAOAAAAAAAADAAAAAAAAAkAAAAAAAAJAAAAAAAACQAAAAABAA==
           version: 7
         -3,-2:
           ind: -3,-2
@@ -108,7 +108,7 @@ entities:
           version: 7
         0,0:
           ind: 0,0
-          tiles: CAAAAAACAAgAAAAAAQAIAAAAAAAACAAAAAADAAkAAAAAAQAMAAAAAAAADgAAAAACAA4AAAAAAAAOAAAAAAIADgAAAAACAA4AAAAAAQAOAAAAAAIADAAAAAAAAAkAAAAAAwAJAAAAAAAACQAAAAAAAAgAAAAAAQAIAAAAAAEACAAAAAAAAAgAAAAAAgAJAAAAAAEADAAAAAAAAA4AAAAAAgAOAAAAAAIADgAAAAABAA4AAAAAAgAOAAAAAAEADgAAAAADAAwAAAAAAAAJAAAAAAAACQAAAAAAAAkAAAAAAgAIAAAAAAMACAAAAAABAAgAAAAAAgAIAAAAAAIACQAAAAADAAwAAAAAAAAOAAAAAAAADgAAAAACAA4AAAAAAgAOAAAAAAEADgAAAAAAAA4AAAAAAQAMAAAAAAAACQAAAAADAAkAAAAAAwAJAAAAAAAACAAAAAABAAgAAAAAAwAIAAAAAAMACAAAAAACAAkAAAAAAwAMAAAAAAAADgAAAAACAA4AAAAAAAAOAAAAAAMADgAAAAACAA4AAAAAAAAOAAAAAAEADAAAAAAAAAkAAAAAAwAJAAAAAAAACQAAAAABAAgAAAAAAQAIAAAAAAIACAAAAAADAAgAAAAAAgAJAAAAAAMADAAAAAAAAA4AAAAAAwAOAAAAAAAADgAAAAABAA4AAAAAAwAOAAAAAAEADgAAAAABAAwAAAAAAAAJAAAAAAEACQAAAAABAAkAAAAAAwAIAAAAAAEACAAAAAAAAAgAAAAAAQAIAAAAAAMACAAAAAACAAwAAAAAAAAOAAAAAAAADgAAAAACAA4AAAAAAQAOAAAAAAMADgAAAAADAA4AAAAAAQAMAAAAAAAACQAAAAADAAkAAAAAAgAJAAAAAAMACAAAAAABAAgAAAAAAQAIAAAAAAMACAAAAAAAAAgAAAAAAAAMAAAAAAAADgAAAAABAA4AAAAAAgAOAAAAAAAADgAAAAAAAA4AAAAAAQAOAAAAAAIADAAAAAAAAAkAAAAAAwAJAAAAAAMACQAAAAAAAAsAAAAAAwALAAAAAAMACwAAAAABAAgAAAAAAgAIAAAAAAEADgAAAAAAAA4AAAAAAQAOAAAAAAIADgAAAAACAA4AAAAAAgAOAAAAAAIADgAAAAADAAwAAAAAAAAJAAAAAAIACQAAAAAAAAkAAAAAAgALAAAAAAMACwAAAAAAAAsAAAAAAAAIAAAAAAIACAAAAAADAAwAAAAAAAAOAAAAAAAADgAAAAACAA4AAAAAAwAOAAAAAAMADgAAAAABAA4AAAAAAQAMAAAAAAAACQAAAAAAAAkAAAAAAwAJAAAAAAMACwAAAAADAAsAAAAAAgALAAAAAAEACQAAAAACAAkAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAkAAAAAAwAJAAAAAAIACQAAAAADAAsAAAAAAAALAAAAAAEACQAAAAABAAkAAAAAAQAJAAAAAAIACQAAAAABAAkAAAAAAQAJAAAAAAAACQAAAAAAAAkAAAAAAwAJAAAAAAIACQAAAAABAAkAAAAAAAAJAAAAAAIACQAAAAACAAkAAAAAAAALAAAAAAAACwAAAAAAAAkAAAAAAgAJAAAAAAEACQAAAAAAAAkAAAAAAwAJAAAAAAMACQAAAAACAAkAAAAAAgAJAAAAAAAACQAAAAAAAAkAAAAAAgAJAAAAAAAACQAAAAACAAkAAAAAAgAJAAAAAAMACwAAAAADAAsAAAAAAgAJAAAAAAMACQAAAAAAAAkAAAAAAAAJAAAAAAEACQAAAAADAAkAAAAAAgAJAAAAAAEACQAAAAAAAAkAAAAAAwAJAAAAAAAACQAAAAADAAkAAAAAAAAJAAAAAAAACQAAAAAAAAsAAAAAAAALAAAAAAIACQAAAAABAAkAAAAAAgAJAAAAAAMACQAAAAADAAkAAAAAAgAJAAAAAAAACQAAAAABAAkAAAAAAwAJAAAAAAMACQAAAAABAAkAAAAAAwAJAAAAAAAACQAAAAACAAkAAAAAAAAJAAAAAAAACQAAAAABAAkAAAAAAgAJAAAAAAEACQAAAAACAAkAAAAAAQAJAAAAAAAACQAAAAAAAAkAAAAAAwAJAAAAAAIACQAAAAABAAkAAAAAAgAJAAAAAAAACQAAAAAAAAkAAAAAAAAJAAAAAAMACQAAAAAAAAkAAAAAAQAJAAAAAAIACQAAAAAAAAkAAAAAAQAJAAAAAAAACQAAAAABAAkAAAAAAAAJAAAAAAMACQAAAAABAAkAAAAAAQAJAAAAAAMACQAAAAAAAAkAAAAAAgAJAAAAAAIACQAAAAABAA==
+          tiles: CAAAAAACAAgAAAAAAQAIAAAAAAAACAAAAAADAAgAAAAAAAAMAAAAAAAADgAAAAACAA4AAAAAAAAOAAAAAAIADgAAAAACAA4AAAAAAQAOAAAAAAIADAAAAAAAAAkAAAAAAwAJAAAAAAAACQAAAAAAAAgAAAAAAQAIAAAAAAEACAAAAAAAAAgAAAAAAgAIAAAAAAAADAAAAAAAAA4AAAAAAgAOAAAAAAIADgAAAAABAA4AAAAAAgAOAAAAAAEADgAAAAADAAwAAAAAAAAJAAAAAAAACQAAAAAAAAkAAAAAAgAIAAAAAAMACAAAAAABAAgAAAAAAgAIAAAAAAIACAAAAAAAAAwAAAAAAAAOAAAAAAAADgAAAAACAA4AAAAAAgAOAAAAAAEADgAAAAAAAA4AAAAAAQAMAAAAAAAACQAAAAADAAkAAAAAAwAJAAAAAAAACAAAAAABAAgAAAAAAwAIAAAAAAMACAAAAAACAAgAAAAAAAAMAAAAAAAADgAAAAACAA4AAAAAAAAOAAAAAAMADgAAAAACAA4AAAAAAAAOAAAAAAEADAAAAAAAAAkAAAAAAwAJAAAAAAAACQAAAAABAAgAAAAAAQAIAAAAAAIACAAAAAADAAgAAAAAAgAIAAAAAAAADAAAAAAAAA4AAAAAAwAOAAAAAAAADgAAAAABAA4AAAAAAwAOAAAAAAEADgAAAAABAAwAAAAAAAAJAAAAAAEACQAAAAABAAkAAAAAAwAIAAAAAAEACAAAAAAAAAgAAAAAAQAIAAAAAAMACAAAAAACAAwAAAAAAAAOAAAAAAAADgAAAAACAA4AAAAAAQAOAAAAAAMADgAAAAADAA4AAAAAAQAMAAAAAAAACQAAAAADAAkAAAAAAgAJAAAAAAMACAAAAAABAAgAAAAAAQAIAAAAAAMACAAAAAAAAAgAAAAAAAAMAAAAAAAADgAAAAABAA4AAAAAAgAOAAAAAAAADgAAAAAAAA4AAAAAAQAOAAAAAAIADAAAAAAAAAkAAAAAAwAJAAAAAAMACQAAAAAAAAsAAAAAAwALAAAAAAMACwAAAAABAAgAAAAAAgAIAAAAAAEADgAAAAAAAA4AAAAAAQAOAAAAAAIADgAAAAACAA4AAAAAAgAOAAAAAAIADgAAAAADAAwAAAAAAAAJAAAAAAIACQAAAAAAAAkAAAAAAgALAAAAAAMACwAAAAAAAAsAAAAAAAAIAAAAAAIACAAAAAADAAwAAAAAAAAOAAAAAAAADgAAAAACAA4AAAAAAwAOAAAAAAMADgAAAAABAA4AAAAAAQAMAAAAAAAACQAAAAAAAAkAAAAAAwAJAAAAAAMACwAAAAADAAsAAAAAAgALAAAAAAEACQAAAAACAAkAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAkAAAAAAwAJAAAAAAIACQAAAAADAAsAAAAAAAALAAAAAAEACQAAAAABAAkAAAAAAQAJAAAAAAIACQAAAAABAAkAAAAAAQAJAAAAAAAACQAAAAAAAAkAAAAAAwAJAAAAAAIACQAAAAABAAkAAAAAAAAJAAAAAAIACQAAAAACAAkAAAAAAAALAAAAAAAACwAAAAAAAAkAAAAAAgAJAAAAAAEACQAAAAAAAAkAAAAAAwAJAAAAAAMACQAAAAACAAkAAAAAAgAJAAAAAAAACQAAAAAAAAkAAAAAAgAJAAAAAAAACQAAAAACAAkAAAAAAgAJAAAAAAMACwAAAAADAAsAAAAAAgAJAAAAAAMACQAAAAAAAAkAAAAAAAAJAAAAAAEACQAAAAADAAkAAAAAAgAJAAAAAAEACQAAAAAAAAkAAAAAAwAJAAAAAAAACQAAAAADAAkAAAAAAAAJAAAAAAAACQAAAAAAAAsAAAAAAAALAAAAAAIACQAAAAABAAkAAAAAAgAJAAAAAAMACQAAAAADAAkAAAAAAgAJAAAAAAAACQAAAAABAAkAAAAAAwAJAAAAAAMACQAAAAABAAkAAAAAAwAJAAAAAAAACQAAAAACAAkAAAAAAAAJAAAAAAAACQAAAAABAAkAAAAAAgAJAAAAAAEACQAAAAACAAkAAAAAAQAJAAAAAAAACQAAAAAAAAkAAAAAAwAJAAAAAAIACQAAAAABAAkAAAAAAgAJAAAAAAAACQAAAAAAAAkAAAAAAAAJAAAAAAMACQAAAAAAAAkAAAAAAQAJAAAAAAIACQAAAAAAAAkAAAAAAQAJAAAAAAAACQAAAAABAAkAAAAAAAAJAAAAAAMACQAAAAABAAkAAAAAAQAJAAAAAAMACQAAAAAAAAkAAAAAAgAJAAAAAAIACQAAAAABAA==
           version: 7
         -3,-3:
           ind: -3,-3
@@ -428,7 +428,6 @@ entities:
             126: -5.7092595,-14.954771
             147: -4.0157337,-13.986805
             153: 7.762038,-9.045597
-            166: 3.9218388,1.2833147
             177: 8.018851,13.11797
             189: 4.995218,14.003625
             197: -18.804005,14.191364
@@ -1890,6 +1889,43 @@ entities:
     - type: Transform
       pos: 8.23223,-0.55715203
       parent: 1
+- proto: ClothingHeadHatTacticalMaidHeadband
+  entities:
+  - uid: 430
+    components:
+    - type: Transform
+      pos: 8.466459,5.793733
+      parent: 1
+  - uid: 431
+    components:
+    - type: Transform
+      pos: 8.816459,5.802067
+      parent: 1
+  - uid: 432
+    components:
+    - type: Transform
+      pos: 8.928959,5.7979
+      parent: 1
+  - uid: 433
+    components:
+    - type: Transform
+      pos: 8.595626,5.7895665
+      parent: 1
+  - uid: 434
+    components:
+    - type: Transform
+      pos: 8.528959,5.7812333
+      parent: 1
+  - uid: 435
+    components:
+    - type: Transform
+      pos: 8.633125,5.7770667
+      parent: 1
+  - uid: 436
+    components:
+    - type: Transform
+      pos: 8.699792,5.768733
+      parent: 1
 - proto: ClothingUniformJumpsuitUSSRYellow
   entities:
   - uid: 720
@@ -2063,23 +2099,6 @@ entities:
     components:
     - type: Transform
       pos: 11.583607,5.493005
-      parent: 1
-- proto: CrateGenericSteel
-  entities:
-  - uid: 6126
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-  - uid: 6127
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-  - uid: 6128
-    components:
-    - type: Transform
-      pos: 4.5,8.5
       parent: 1
 - proto: CurtainsRedOpen
   entities:
@@ -3848,6 +3867,48 @@ entities:
     - type: Transform
       pos: 7.6453776,8.51065
       parent: 1
+- proto: FHClothingHandsGlovesMittens
+  entities:
+  - uid: 331
+    components:
+    - type: Transform
+      pos: 12.060221,4.596615
+      parent: 1
+  - uid: 332
+    components:
+    - type: Transform
+      pos: 11.860221,4.6007814
+      parent: 1
+  - uid: 342
+    components:
+    - type: Transform
+      pos: 11.901888,4.729948
+      parent: 1
+  - uid: 343
+    components:
+    - type: Transform
+      pos: 11.8643875,4.604948
+      parent: 1
+  - uid: 344
+    components:
+    - type: Transform
+      pos: 11.856054,4.4757814
+      parent: 1
+  - uid: 345
+    components:
+    - type: Transform
+      pos: 11.856054,4.3424478
+      parent: 1
+  - uid: 346
+    components:
+    - type: Transform
+      pos: 11.851888,4.2966146
+      parent: 1
+  - uid: 397
+    components:
+    - type: Transform
+      pos: 11.951887,4.3341146
+      parent: 1
 - proto: FHClothingHeadHatGarrisonSA
   entities:
   - uid: 960
@@ -3905,55 +3966,288 @@ entities:
     - type: Transform
       pos: 11.74216,5.166998
       parent: 1
+- proto: FHClothingHeadHatHeadbandRed
+  entities:
+  - uid: 356
+    components:
+    - type: Transform
+      pos: 9.673421,5.7684937
+      parent: 1
+  - uid: 357
+    components:
+    - type: Transform
+      pos: 9.556754,5.7393265
+      parent: 1
+  - uid: 358
+    components:
+    - type: Transform
+      pos: 9.252588,5.764327
+      parent: 1
+  - uid: 359
+    components:
+    - type: Transform
+      pos: 9.165088,5.764327
+      parent: 1
+  - uid: 360
+    components:
+    - type: Transform
+      pos: 9.5109215,5.76016
+      parent: 1
+  - uid: 361
+    components:
+    - type: Transform
+      pos: 9.519255,5.76016
+      parent: 1
+- proto: FHClothingHeadHatSAUsh
+  entities:
+  - uid: 336
+    components:
+    - type: Transform
+      pos: 11.210921,3.6893265
+      parent: 1
+  - uid: 337
+    components:
+    - type: Transform
+      pos: 11.3025875,3.8059933
+      parent: 1
+  - uid: 338
+    components:
+    - type: Transform
+      pos: 11.285921,3.7643266
+      parent: 1
+  - uid: 339
+    components:
+    - type: Transform
+      pos: 11.181755,3.7351599
+      parent: 1
+  - uid: 340
+    components:
+    - type: Transform
+      pos: 11.315088,3.74766
+      parent: 1
+  - uid: 341
+    components:
+    - type: Transform
+      pos: 11.248422,3.7268267
+      parent: 1
 - proto: FHClothingHeadHelmetSSH68
   entities:
-  - uid: 798
+  - uid: 408
     components:
     - type: Transform
-      pos: 6.5861936,6.469981
+      pos: 6.2642355,5.998451
       parent: 1
-  - uid: 799
+  - uid: 412
     components:
     - type: Transform
-      pos: 6.260044,6.4977694
+      pos: 6.4434023,6.010951
       parent: 1
-  - uid: 800
+  - uid: 413
     components:
     - type: Transform
-      pos: 6.477477,6.579864
+      pos: 6.597569,6.010951
       parent: 1
-  - uid: 801
+  - uid: 414
     components:
     - type: Transform
-      pos: 6.482913,6.3455663
+      pos: 6.547569,5.998451
       parent: 1
-  - uid: 802
+  - uid: 415
     components:
     - type: Transform
-      pos: 6.510092,6.410796
+      pos: 6.1475687,6.002618
       parent: 1
-  - uid: 803
+  - uid: 416
     components:
     - type: Transform
-      pos: 6.700346,6.394489
+      pos: 6.393402,6.0192842
       parent: 1
-  - uid: 804
+  - uid: 417
     components:
     - type: Transform
-      pos: 6.5046563,6.427104
+      pos: 6.635069,6.0067844
       parent: 1
-  - uid: 805
+  - uid: 418
     components:
     - type: Transform
-      pos: 6.6351156,6.4705906
+      pos: 6.668402,6.0067844
       parent: 1
-  - uid: 806
+  - uid: 419
     components:
     - type: Transform
-      pos: 6.482913,6.4651546
+      pos: 6.364236,6.085951
+      parent: 1
+  - uid: 421
+    components:
+    - type: Transform
+      pos: 6.489236,6.0776176
+      parent: 1
+  - uid: 422
+    components:
+    - type: Transform
+      pos: 6.3392353,6.073451
+      parent: 1
+  - uid: 423
+    components:
+    - type: Transform
+      pos: 6.5017357,6.085951
+      parent: 1
+- proto: FHClothingHeadHelmetSSH68Netting
+  entities:
+  - uid: 320
+    components:
+    - type: Transform
+      pos: 6.172569,6.502618
+      parent: 1
+  - uid: 321
+    components:
+    - type: Transform
+      pos: 6.489236,6.5067844
+      parent: 1
+  - uid: 322
+    components:
+    - type: Transform
+      pos: 6.7892356,6.498451
+      parent: 1
+  - uid: 323
+    components:
+    - type: Transform
+      pos: 6.3142357,6.510951
+      parent: 1
+  - uid: 324
+    components:
+    - type: Transform
+      pos: 6.455902,6.5317845
+      parent: 1
+  - uid: 325
+    components:
+    - type: Transform
+      pos: 6.176736,6.523451
+      parent: 1
+  - uid: 326
+    components:
+    - type: Transform
+      pos: 6.7559023,6.5567846
+      parent: 1
+  - uid: 327
+    components:
+    - type: Transform
+      pos: 6.2517357,6.502618
+      parent: 1
+  - uid: 328
+    components:
+    - type: Transform
+      pos: 6.4934025,6.535951
+      parent: 1
+  - uid: 420
+    components:
+    - type: Transform
+      pos: 6.6934023,6.4526176
+      parent: 1
+  - uid: 424
+    components:
+    - type: Transform
+      pos: 6.730902,6.402618
+      parent: 1
+  - uid: 425
+    components:
+    - type: Transform
+      pos: 6.1475687,6.5067844
+      parent: 1
+  - uid: 426
+    components:
+    - type: Transform
+      pos: 6.4600687,6.4942846
+      parent: 1
+  - uid: 427
+    components:
+    - type: Transform
+      pos: 6.5559025,6.435951
+      parent: 1
+  - uid: 428
+    components:
+    - type: Transform
+      pos: 6.3892355,6.435951
+      parent: 1
+  - uid: 429
+    components:
+    - type: Transform
+      pos: 6.5017357,6.435951
+      parent: 1
+- proto: FHClothingMaskBalaclavaBlack
+  entities:
+  - uid: 398
+    components:
+    - type: Transform
+      pos: 11.222721,4.8507814
+      parent: 1
+  - uid: 399
+    components:
+    - type: Transform
+      pos: 11.235221,4.742448
+      parent: 1
+  - uid: 400
+    components:
+    - type: Transform
+      pos: 11.243554,4.5841146
+      parent: 1
+  - uid: 401
+    components:
+    - type: Transform
+      pos: 11.235221,4.438281
+      parent: 1
+  - uid: 402
+    components:
+    - type: Transform
+      pos: 11.235221,4.3341146
+      parent: 1
+  - uid: 403
+    components:
+    - type: Transform
+      pos: 11.235221,4.313281
+      parent: 1
+  - uid: 404
+    components:
+    - type: Transform
+      pos: 11.235221,4.3466144
+      parent: 1
+  - uid: 405
+    components:
+    - type: Transform
+      pos: 11.210221,4.6466146
+      parent: 1
+  - uid: 406
+    components:
+    - type: Transform
+      pos: 11.197721,4.7466145
+      parent: 1
+  - uid: 407
+    components:
+    - type: Transform
+      pos: 11.197721,4.7591147
       parent: 1
 - proto: FHClothingOuterArmor6b2
   entities:
+  - uid: 370
+    components:
+    - type: Transform
+      pos: 6.18489,5.381341
+      parent: 1
+  - uid: 371
+    components:
+    - type: Transform
+      pos: 6.330723,5.381341
+      parent: 1
+  - uid: 372
+    components:
+    - type: Transform
+      pos: 6.5515566,5.3771744
+      parent: 1
+  - uid: 373
+    components:
+    - type: Transform
+      pos: 6.843223,5.356341
+      parent: 1
   - uid: 807
     components:
     - type: Transform
@@ -3973,6 +4267,112 @@ entities:
     components:
     - type: Transform
       pos: 6.613373,5.3997335
+      parent: 1
+- proto: FHClothingOuterJacketSACoat
+  entities:
+  - uid: 319
+    components:
+    - type: Transform
+      pos: 11.8442545,3.7976599
+      parent: 1
+  - uid: 330
+    components:
+    - type: Transform
+      pos: 11.706755,3.7309933
+      parent: 1
+  - uid: 333
+    components:
+    - type: Transform
+      pos: 11.8859215,3.7268267
+      parent: 1
+  - uid: 334
+    components:
+    - type: Transform
+      pos: 11.881755,3.6684933
+      parent: 1
+  - uid: 335
+    components:
+    - type: Transform
+      pos: 12.060922,3.74766
+      parent: 1
+  - uid: 347
+    components:
+    - type: Transform
+      pos: 11.848421,3.58516
+      parent: 1
+- proto: FHClothingOuterStorage6b2Lifchik
+  entities:
+  - uid: 318
+    components:
+    - type: Transform
+      pos: 11.634682,7.911874
+      parent: 1
+  - uid: 329
+    components:
+    - type: Transform
+      pos: 11.8971815,7.895207
+      parent: 1
+  - uid: 348
+    components:
+    - type: Transform
+      pos: 11.401348,7.911874
+      parent: 1
+  - uid: 362
+    components:
+    - type: Transform
+      pos: 11.301348,7.9368734
+      parent: 1
+  - uid: 374
+    components:
+    - type: Transform
+      pos: 11.826348,7.9660406
+      parent: 1
+  - uid: 375
+    components:
+    - type: Transform
+      pos: 11.5846815,7.9368734
+      parent: 1
+  - uid: 376
+    components:
+    - type: Transform
+      pos: 11.447182,7.9368734
+      parent: 1
+- proto: FHClothingOuterStorageLifchik
+  entities:
+  - uid: 349
+    components:
+    - type: Transform
+      pos: 11.893015,7.4368734
+      parent: 1
+  - uid: 350
+    components:
+    - type: Transform
+      pos: 11.759682,7.445207
+      parent: 1
+  - uid: 351
+    components:
+    - type: Transform
+      pos: 11.547181,7.445207
+      parent: 1
+  - uid: 352
+    components:
+    - type: Transform
+      pos: 11.393015,7.445207
+      parent: 1
+  - uid: 353
+    components:
+    - type: Transform
+      pos: 11.305515,7.445207
+      parent: 1
+  - uid: 354
+    components:
+    - type: Transform
+      pos: 11.609681,7.4785404
+      parent: 1
+  - uid: 355
+    components:
+    - type: Transform
+      pos: 11.776348,7.4618735
       parent: 1
 - proto: FHClothingPouchUSSRAmmo
   entities:
@@ -4144,6 +4544,96 @@ entities:
     components:
     - type: Transform
       pos: 10.5,-0.5
+      parent: 1
+- proto: FHCrateFilledAmmoAK74
+  entities:
+  - uid: 364
+    components:
+    - type: Transform
+      pos: 4.5,3.5
+      parent: 1
+  - uid: 365
+    components:
+    - type: Transform
+      pos: 4.5,2.5
+      parent: 1
+- proto: FHCrateFilledAmmoPKM
+  entities:
+  - uid: 366
+    components:
+    - type: Transform
+      pos: 4.5,1.5
+      parent: 1
+- proto: FHCrateFilledMortar
+  entities:
+  - uid: 317
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 363
+    components:
+    - type: Transform
+      pos: 4.5,6.5
+      parent: 1
+- proto: FHCrateFilledSandbagPact
+  entities:
+  - uid: 367
+    components:
+    - type: Transform
+      pos: 4.5,-1.5
+      parent: 1
+  - uid: 368
+    components:
+    - type: Transform
+      pos: 4.5,-0.5
+      parent: 1
+- proto: FHCrateWood
+  entities:
+  - uid: 391
+    components:
+    - type: Transform
+      pos: -12.5,9.5
+      parent: 1
+  - uid: 392
+    components:
+    - type: Transform
+      pos: -12.5,12.5
+      parent: 1
+  - uid: 393
+    components:
+    - type: Transform
+      pos: -10.5,12.5
+      parent: 1
+  - uid: 394
+    components:
+    - type: Transform
+      pos: -10.5,9.5
+      parent: 1
+  - uid: 395
+    components:
+    - type: Transform
+      pos: -8.5,12.5
+      parent: 1
+  - uid: 396
+    components:
+    - type: Transform
+      pos: -6.5,12.5
+      parent: 1
+  - uid: 409
+    components:
+    - type: Transform
+      pos: -6.5,9.5
+      parent: 1
+  - uid: 410
+    components:
+    - type: Transform
+      pos: -4.5,9.5
+      parent: 1
+  - uid: 411
+    components:
+    - type: Transform
+      pos: -4.5,12.5
       parent: 1
 - proto: FHDoorBulkhead
   entities:
@@ -4949,430 +5439,53 @@ entities:
     - type: Transform
       pos: 6.503422,1.564897
       parent: 1
-- proto: FHMortarBasic
+- proto: FHShovelETool
   entities:
-  - uid: 6129
+  - uid: 377
     components:
     - type: Transform
-      pos: 4.5,5.5
+      pos: 11.293945,-0.3800037
       parent: 1
-  - uid: 6130
+  - uid: 378
     components:
     - type: Transform
-      pos: 4.5,6.5
+      pos: 11.198112,-0.42167044
       parent: 1
-  - uid: 6131
+  - uid: 379
     components:
     - type: Transform
-      pos: 4.5,8.5
+      pos: 11.231445,-0.40083706
       parent: 1
-- proto: FHMortarShellHE
-  entities:
-  - uid: 6132
+  - uid: 380
     components:
     - type: Transform
-      pos: 4.5,8.5
+      pos: 11.218945,-0.5008371
       parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6133
+  - uid: 381
     components:
     - type: Transform
-      pos: 4.5,8.5
+      pos: 11.223112,-0.49667037
       parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6134
+  - uid: 382
     components:
     - type: Transform
-      pos: 4.5,8.5
+      pos: 11.218945,-0.51750374
       parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6135
+  - uid: 383
     components:
     - type: Transform
-      pos: 4.5,8.5
+      pos: 11.231445,-0.4758371
       parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6136
+  - uid: 384
     components:
     - type: Transform
-      pos: 4.5,8.5
+      pos: 11.210611,-0.45500374
       parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6137
+  - uid: 385
     components:
     - type: Transform
-      pos: 4.5,8.5
+      pos: 11.256445,-0.4383371
       parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6138
-    components:
-    - type: Transform
-      pos: 4.5,8.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6139
-    components:
-    - type: Transform
-      pos: 4.5,8.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6140
-    components:
-    - type: Transform
-      pos: 4.5,8.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6141
-    components:
-    - type: Transform
-      pos: 4.5,8.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6142
-    components:
-    - type: Transform
-      pos: 4.5,8.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6143
-    components:
-    - type: Transform
-      pos: 4.5,8.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6144
-    components:
-    - type: Transform
-      pos: 4.5,8.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6145
-    components:
-    - type: Transform
-      pos: 4.5,8.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6146
-    components:
-    - type: Transform
-      pos: 4.5,8.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6147
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6148
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6149
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6150
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6151
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6152
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6153
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6154
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6155
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6156
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6157
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6158
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6159
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6160
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6161
-    components:
-    - type: Transform
-      pos: 4.5,6.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6162
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6163
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6164
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6165
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6166
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6167
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6168
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6169
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6170
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6171
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6172
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6173
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6174
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6175
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
-  - uid: 6176
-    components:
-    - type: Transform
-      pos: 4.5,5.5
-      parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
 - proto: FHTeleporterOpforAlpha
   entities:
   - uid: 5994
@@ -9150,6 +9263,33 @@ entities:
     - type: Transform
       pos: 6.7317257,4.5350127
       parent: 1
+- proto: FHWhistle
+  entities:
+  - uid: 386
+    components:
+    - type: Transform
+      pos: 11.756445,-0.16333699
+      parent: 1
+  - uid: 387
+    components:
+    - type: Transform
+      pos: 11.777278,-0.3216704
+      parent: 1
+  - uid: 388
+    components:
+    - type: Transform
+      pos: 11.773111,-0.48833704
+      parent: 1
+  - uid: 389
+    components:
+    - type: Transform
+      pos: 11.777278,-0.58417046
+      parent: 1
+  - uid: 390
+    components:
+    - type: Transform
+      pos: 11.773111,-0.61750376
+      parent: 1
 - proto: FHWindow
   entities:
   - uid: 5
@@ -10311,6 +10451,11 @@ entities:
       parent: 1
 - proto: Rack
   entities:
+  - uid: 369
+    components:
+    - type: Transform
+      pos: 11.5,7.5
+      parent: 1
   - uid: 682
     components:
     - type: Transform
@@ -10448,108 +10593,6 @@ entities:
     components:
     - type: Transform
       pos: 10.5,-0.5
-      parent: 1
-- proto: Shovel
-  entities:
-  - uid: 6095
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6096
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6097
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6098
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6099
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6100
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6101
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6102
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6103
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6104
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6105
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6106
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6107
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6108
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6109
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6110
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6111
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6112
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6113
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
-      parent: 1
-  - uid: 6114
-    components:
-    - type: Transform
-      pos: 11.5,-0.5
       parent: 1
 - proto: SpawnPointUSSRAutoRifleMan
   entities:

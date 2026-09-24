@@ -1,0 +1,17 @@
+- type: entity
+  parent: BaseItem
+  id: FHWhistle
+  name: whistle
+  description: A whistle.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Tools/whistle.rsi
+    state: icon
+  - type: Item
+    sprite: _FinalHorizon/Objects/Tools/whistle.rsi
+    size: Tiny
+  - type: UseDelay
+    delay: 3
+  - type: EmitSoundOnUse
+    sound:
+      collection: BaseWhistle

@@ -1,8 +1,8 @@
 - type: entity
   parent: [UnsensoredClothingUniformBase, ClothingUniformFoldableBase]
   id: ClothingUniformJumpsuitUSSRYellow
-  name: USSR uniform
-  description: A standard issue uniform of the USSR.
+  name: Soviet Army Uniform
+  description: The standard issue uniform of the Soviet Army.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Uniforms/ussr_yellow.rsi
@@ -12,8 +12,8 @@
 - type: entity
   parent: UnsensoredClothingUniformBase
   id: ClothingUniformJumpsuitUSSRYellowHalf
-  name: USSR half uniform
-  description: A standard issue uniform of the USSR. Just the pants.
+  name: Soviet Army Half Uniform
+  description: The standard issue uniform of the Soviet Army. Just the pants.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Uniforms/ussr_yellow_half.rsi

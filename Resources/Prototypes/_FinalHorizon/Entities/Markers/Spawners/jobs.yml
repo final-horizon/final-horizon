@@ -153,6 +153,28 @@
   - type: Sprite
     state: green
 
+- type: entity
+  id: SpawnPointUSMCReservist
+  parent: SpawnPointJobBase
+  name: USMC reservist
+  components:
+  - type: SpawnPoint
+    job_id: USMCReservist
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSMCReservistLate
+  parent: SpawnPointJobBase
+  name: USMC reservist
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USMCReservist
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
 # Soviet Army
 - type: entity
   id: SpawnPointUSSRPlatoonLeader
@@ -326,6 +348,28 @@
   components:
   - type: SpawnPoint
     job_id: USSRRTO
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSSRReservist
+  parent: SpawnPointJobBase
+  name: USSR reservist
+  components:
+  - type: SpawnPoint
+    job_id: USSRReservist
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSSRReservistLate
+  parent: SpawnPointJobBase
+  name: USSR reservist
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USSRReservist
     spawn_type: LateJoinJob
   - type: Sprite
     state: green

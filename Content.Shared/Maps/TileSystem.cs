@@ -249,7 +249,7 @@ public sealed class TileSystem : EntitySystem
     }
 
 
-    public bool DeconstructTile(TileRef tileRef, bool spawnItem = true)
+    public bool DeconstructTile(TileRef tileRef, bool spawnItem = true, bool randomRotation = true) // FH
     {
         if (tileRef.Tile.IsEmpty)
             return false;
@@ -308,7 +308,8 @@ public sealed class TileSystem : EntitySystem
         {
             //Actually spawn the relevant tile item at the right position and give it some random offset.
             var tileItem = Spawn(tileDef.ItemDropPrototypeName, coordinates);
-            Transform(tileItem).LocalRotation = _robustRandom.NextDouble() * Math.Tau;
+            if (randomRotation) // FH
+                Transform(tileItem).LocalRotation = _robustRandom.NextDouble() * Math.Tau; // FH
         }
 
         //Destroy any decals on the tile

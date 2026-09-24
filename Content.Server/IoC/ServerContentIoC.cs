@@ -1,3 +1,4 @@
+using Content.Server._FinalHorizon.Players;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
@@ -82,5 +83,8 @@ internal static class ServerContentIoC
         deps.Register<DiscordChatLink>();
         deps.Register<ServerFeedbackManager>();
         deps.Register<ISharedFeedbackManager, ServerFeedbackManager>();
+
+        // FH
+        deps.Register<JobRankManager>();
     }
 }

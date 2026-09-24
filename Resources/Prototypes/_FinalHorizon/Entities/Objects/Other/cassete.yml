@@ -9,7 +9,8 @@
   description: Either the only thing keeping you sane or the sole source of insanity.
   components:
   - type: Boombox
-    volume: 1
+    volume: -1
+    maxDistance: 10
   - type: ContainerContainer
     containers:
       cassette_slot: !type:ContainerSlot {}
@@ -32,7 +33,8 @@
   description: Either the only thing keeping you sane or the sole source of insanity.
   components:
   - type: Boombox
-    volume: -4
+    volume: -1
+    maxDistance: 10
   - type: ContainerContainer
     containers:
       cassette_slot: !type:ContainerSlot {}
@@ -46,6 +48,30 @@
   - type: Sprite
     sprite: /Textures/_FinalHorizon/Objects/Misc/cassetes.rsi
     state: pact
+
+- type: entity
+  parent: BaseItem
+  id: FHBoomBoxAdmin
+  name: admin boombox
+  suffix: admin
+  description: Either the only thing keeping you sane or the sole source of insanity. This one has more range then usual.
+  components:
+  - type: Boombox
+    volume: -1
+    maxDistance: 20
+  - type: ContainerContainer
+    containers:
+      cassette_slot: !type:ContainerSlot {}
+  - type: ItemSlots
+    slots:
+      cassette_slot:
+        name: Cassete
+        whitelist:
+          tags:
+            - Cassete
+  - type: Sprite
+    sprite: /Textures/_FinalHorizon/Objects/Misc/cassetes.rsi
+    state: nato
 
 - type: entity
   parent: BaseItem
@@ -191,3 +217,25 @@
     sound: /Audio/_FinalHorizon/Cassete/outoftouch.ogg
   - type: Sprite
     state: 4
+
+- type: entity
+  parent: FHCasseteBase
+  id: FHCasseteSnakeEater
+  suffix: snake eater
+  description: Snake Eater
+  components:
+  - type: Cassete
+    sound: /Audio/_FinalHorizon/Cassete/snakeeater.ogg
+  - type: Sprite
+    state: 16
+
+- type: entity
+  parent: FHCasseteBase
+  id: FHCasseteTheFreeGermanYouth
+  suffix: the free german youth
+  description: The Free German Youth
+  components:
+  - type: Cassete
+    sound: /Audio/_FinalHorizon/Cassete/thefreegermanyouth.ogg
+  - type: Sprite
+    state: 17

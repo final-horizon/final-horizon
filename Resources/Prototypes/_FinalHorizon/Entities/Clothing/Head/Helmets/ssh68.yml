@@ -1,21 +1,32 @@
 - type: entity
   parent: FHClothingHeadHelmetBaseFoldable
   id: FHClothingHeadHelmetSSH68
-  name: green ssh68 helmet
-  description: Standard issue helmet for the soviet army.
+  name: SSh-68 Helmet
+  description: Basic Soviet steel bowl to protect your head.
   components:
   - type: Sprite
-    sprite: _FinalHorizon/Clothing/Head/Helmets/ssh68_green.rsi
+    sprite: _FinalHorizon/Clothing/Head/Helmets/ssh68.rsi
   - type: Clothing
-    sprite: _FinalHorizon/Clothing/Head/Helmets/ssh68_green.rsi
+    sprite: _FinalHorizon/Clothing/Head/Helmets/ssh68.rsi
 
 - type: entity
   parent: FHClothingHeadHelmetBaseFoldable
   id: FHClothingHeadHelmetSSH68Medic
-  name: medic ssh68 helmet
-  description: Standard issue helmet for the soviet army.
+  name: SSh-68 Medic's Helmet
+  description: Basic Soviet steel bowl to protect your head. Has a medical insignia painted on it.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Head/Helmets/ssh68_medic.rsi
   - type: Clothing
     sprite: _FinalHorizon/Clothing/Head/Helmets/ssh68_medic.rsi
+
+- type: entity
+  parent: FHClothingHeadHelmetBaseFoldable
+  id: FHClothingHeadHelmetSSH68Netting
+  name: SSh-68 Netted Helmet
+  description: Basic Soviet steel bowl to protect your head. Has a net on it for scrim or something.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Head/Helmets/ssh68_webbing.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Head/Helmets/ssh68_webbing.rsi

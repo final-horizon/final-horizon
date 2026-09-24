@@ -68,4 +68,4 @@
     appearanceDataInit:
      enum.AmmoVisuals.MagLoaded: false
   - type: FarGunshot
-    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak74.ogg
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak_dist.ogg

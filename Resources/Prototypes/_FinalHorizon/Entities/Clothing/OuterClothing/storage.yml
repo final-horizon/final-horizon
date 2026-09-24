@@ -1,0 +1,24 @@
+- type: entity
+  parent: [ FHClothingOuterBase, FHClothingOuterStorageBase ]
+  id: FHClothingOuterStorageLifchik
+  name: Lifchik Rig
+  description: A modern addition to the Soviet Army's arsenal. Allows easy access to AK-74 magazines.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/OuterClothing/Vests/lifchik.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/OuterClothing/Vests/lifchik.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+
+- type: entity
+  parent: [ FHClothingOuterBase, FHClothingOuterStorageBase ]
+  id: FHClothingOuterStorageBandoler
+  name: Bandoler
+  description: A standard bandoler in use by the US military. Holds rifle magazines across your chest for easy access.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/OuterClothing/Vests/bandoler.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/OuterClothing/Vests/bandoler.rsi

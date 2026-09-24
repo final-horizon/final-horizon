@@ -309,6 +309,14 @@ namespace Content.Server.Database
 
         #endregion
 
+        #region FH
+        Task<FHJobRank?> GetJobRank(Guid player, CancellationToken cancel = default);
+
+        Task<List<FHJobRank>> GetAllJobRanks();
+
+        Task SetJobRank(Guid player, string? rank);
+        #endregion
+
         #region DB Notifications
 
         void SubscribeToNotifications(Action<DatabaseNotification> handler);
@@ -977,6 +985,26 @@ namespace Content.Server.Database
             DbWriteOpsMetric.Inc();
             return RunDbCommand(() => _db.CleanIPIntelCache(range));
         }
+
+        // FH start
+        public Task<FHJobRank?> GetJobRank(Guid player, CancellationToken cancel)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetJobRank(player, cancel));
+        }
+
+        public Task<List<FHJobRank>> GetAllJobRanks()
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetAllJobRanks());
+        }
+
+        public Task SetJobRank(Guid player, string? rank)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.SetJobRank(player, rank));
+        }
+        // FH end
 
         public void SubscribeToNotifications(Action<DatabaseNotification> handler)
         {

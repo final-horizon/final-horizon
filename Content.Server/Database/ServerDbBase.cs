@@ -1619,6 +1619,50 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
 
         #endregion
 
+        #region FH
+        public async Task<FHJobRank?> GetJobRank(Guid player, CancellationToken cancel)
+        {
+            await using var db = await GetDb(cancel);
+
+            var rank = await db.DbContext.FHJobRanks
+                .FirstOrDefaultAsync(r => r.PlayerId == player, cancellationToken: cancel);
+
+            return rank;
+        }
+
+        public async Task<List<FHJobRank>> GetAllJobRanks()
+        {
+            await using var db = await GetDb();
+
+            return await db.DbContext.FHJobRanks.ToListAsync();
+        }
+
+        public async Task SetJobRank(Guid player, string? rank)
+        {
+            await using var db = await GetDb();
+
+            var playerTable = await db.DbContext.FHJobRanks
+                .FirstOrDefaultAsync(r => r.PlayerId == player);
+
+            if (playerTable == null)
+            {
+                playerTable = new FHJobRank
+                {
+                    PlayerId = player,
+                    JobRank = rank
+                };
+
+                db.DbContext.FHJobRanks.Add(playerTable);
+            }
+            else
+            {
+                playerTable.JobRank = rank;
+            }
+
+            await db.DbContext.SaveChangesAsync();
+        }
+        #endregion
+
         public abstract Task SendNotification(DatabaseNotification notification);
 
         // SQLite returns DateTime as Kind=Unspecified, Npgsql actually knows for sure it's Kind=Utc.

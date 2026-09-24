@@ -1,0 +1,16 @@
+squad-indicator-team-white = [color=white]{ CAPITALIZE(SUBJECT($target)) } is part of squad white.[/color]
+squad-indicator-team-red = [color=red]{ CAPITALIZE(SUBJECT($target)) } is part of squad red.[/color]
+squad-indicator-team-blue = [color=blue]{ CAPITALIZE(SUBJECT($target)) } is part of squad blue.[/color]
+squad-indicator-team-yellow = [color=yellow]{ CAPITALIZE(SUBJECT($target)) } is part of squad yellow.[/color]
+squad-indicator-team-green = [color=green]{ CAPITALIZE(SUBJECT($target)) } is part of squad green.[/color]
+squad-indicator-team-orange = [color=orange]{ CAPITALIZE(SUBJECT($target)) } is part of squad orange.[/color]
+squad-indicator-team-purple = [color=purple]{ CAPITALIZE(SUBJECT($target)) } is part of squad purple.[/color]
+
+squad-indicator-verb = Change squad
+squad-indicator-verb-white = [color=white] Join white[/color]
+squad-indicator-verb-red = [color=red] Join red[/color]
+squad-indicator-verb-blue = [color=blue] Join blue[/color]
+squad-indicator-verb-yellow = [color=yellow] Join yellow[/color]
+squad-indicator-verb-green = [color=green] Join green[/color]
+squad-indicator-verb-orange = [color=orange] Join orange[/color]
+squad-indicator-verb-purple = [color=purple] Join purple[/color]

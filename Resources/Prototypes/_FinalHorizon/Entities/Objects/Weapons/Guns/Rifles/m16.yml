@@ -70,7 +70,7 @@
     appearanceDataInit:
      enum.AmmoVisuals.MagLoaded: false
   - type: FarGunshot
-    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/m16.ogg
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/m16_dist.ogg
 
 - type: entity
   name: M16A2

@@ -1,3 +1,4 @@
+using Content.Shared._FinalHorizon.Players;
 using Content.Shared.Access;
 using Content.Shared.Guidebook;
 using Content.Shared.Players.PlayTimeTracking;
@@ -150,6 +151,12 @@ namespace Content.Shared.Roles
         /// </summary>
         [DataField]
         public List<ProtoId<GuideEntryPrototype>>? Guides;
+
+        // FH start
+        // A job rank which can be used to whitelist for this job
+        [DataField]
+        public ProtoId<JobRankPrototype>? JobRank { get; private set; } = null;
+        // FH end
     }
 
     /// <summary>

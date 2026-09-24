@@ -4,3 +4,4 @@
   name: dirt
   icon: { sprite: /Textures/_FinalHorizon/Objects/Materials/dirt.rsi, state: dirt }
   spawn: MaterialDirt
+  maxCount: 5

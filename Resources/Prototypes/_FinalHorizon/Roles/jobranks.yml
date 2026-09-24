@@ -1,0 +1,37 @@
+- type: jobRank
+  id: Everything
+  parentRanks:
+  - NatoOfficer
+  - NatoNco
+  - NatoEnlisted
+  - PactOfficer
+  - PactNco
+  - PactEnlisted
+
+- type: jobRank
+  id: NatoOfficer
+  parentRanks:
+  - NatoNco
+  - NatoEnlisted
+
+- type: jobRank
+  id: NatoNco
+  parentRanks:
+  - NatoEnlisted
+
+- type: jobRank
+  id: NatoEnlisted
+
+- type: jobRank
+  id: PactOfficer
+  parentRanks:
+  - PactNco
+  - PactEnlisted
+
+- type: jobRank
+  id: PactNco
+  parentRanks:
+  - PactEnlisted
+
+- type: jobRank
+  id: PactEnlisted

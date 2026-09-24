@@ -7,7 +7,7 @@
         - to: full
           steps:
             - material: Dirt
-              amount: 3
+              amount: 1
               doAfter: 1
     - node: full
       entity: MaterialSandbagFull
@@ -22,7 +22,7 @@
           steps:
             - tag: SandbagItemFull
               amount: 1
-              doAfter: 2
+              doAfter: 1
     - node: incomplete
       entity: FHSandbagCoverIncomplete
       edges:
@@ -30,6 +30,6 @@
           steps:
             - tag: SandbagItemFull
               amount: 1
-              doAfter: 2
+              doAfter: 1
     - node: built
       entity: FHSandbagCover

@@ -1,4 +1,4 @@
-using System.Threading.Tasks;
+using Content.Server._FinalHorizon.Players;
 using Content.Server.Acz;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
@@ -81,6 +81,7 @@ namespace Content.Server.Entry
         [Dependency] private readonly ServerInfoManager _serverInfo = default!;
         [Dependency] private readonly ServerUpdateManager _updateManager = default!;
         [Dependency] private readonly ServerFeedbackManager _feedbackManager = null!;
+        [Dependency] private readonly JobRankManager _rankManager = null!; // FH
 
         public override void PreInit()
         {
@@ -137,6 +138,7 @@ namespace Content.Server.Entry
             _watchlistWebhookManager.Initialize();
             _job.Initialize();
             _rateLimit.Initialize();
+            _rankManager.Initialize(); // FH
         }
 
         public override void PostInit()

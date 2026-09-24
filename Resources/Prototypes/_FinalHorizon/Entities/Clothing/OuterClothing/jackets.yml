@@ -8,3 +8,14 @@
     sprite: _FinalHorizon/Clothing/OuterClothing/Jackets/usmcparka.rsi
   - type: Clothing
     sprite: _FinalHorizon/Clothing/OuterClothing/Jackets/usmcparka.rsi
+
+- type: entity
+  parent: FHClothingOuterBase
+  id: FHClothingOuterJacketSACoat
+  name: Soviet Army Wool Greatcoat
+  description: A dark gray wool greatcoat, designed for the Soviet Army and used for nearly 60 years. 
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/OuterClothing/Jackets/sa_coat.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/OuterClothing/Jackets/sa_coat.rsi

@@ -16,3 +16,39 @@
   components:
   - type: ExplosionResistance
     damageCoefficient: 0.80
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.85
+
+- type: entity
+  id: FHClothingOuterStorageBase
+  abstract: true
+  components:
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,3,1
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+
+- type: entity
+  id: FHClothingOuterArmorStorageBase
+  parent: [ FHClothingOuterArmorBase, FHClothingOuterStorageBase ]
+  abstract: true
+  components:
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90

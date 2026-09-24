@@ -6,6 +6,7 @@
   startingGear: USMCUniformPlatoonLeader
   icon: "Nato"
   whitelisted: true
+  jobRank: NatoOfficer
   joinNotifiyCrew: false
   displayWeight: 10
   special:
@@ -52,6 +53,7 @@
   startingGear: USMCUniformTeamLeader
   icon: "Nato"
   whitelisted: true
+  jobRank: NatoNco
   joinNotifiyCrew: false
   displayWeight: 9
   special:
@@ -97,7 +99,8 @@
   playTimeTracker: USMCMachineGunner
   startingGear: USMCUniformMachineGunner
   icon: "Nato"
-  whitelisted: false
+  whitelisted: true
+  jobRank: NatoEnlisted
   joinNotifiyCrew: false
   displayWeight: 6
   special:
@@ -142,7 +145,8 @@
   playTimeTracker: USMCMedic
   startingGear: USMCUniformMedic
   icon: "Nato"
-  whitelisted: false
+  whitelisted: true
+  jobRank: NatoEnlisted
   joinNotifiyCrew: false
   displayWeight: 7
   special:
@@ -189,7 +193,8 @@
   playTimeTracker: USMCSniper
   startingGear: USMCUniformSniper
   icon: "Nato"
-  whitelisted: false
+  whitelisted: true
+  jobRank: NatoEnlisted
   joinNotifiyCrew: false
   displayWeight: 5
   special:
@@ -235,7 +240,8 @@
   playTimeTracker: USMCRTO
   startingGear: USMCUniformRTO
   icon: "Nato"
-  whitelisted: false
+  whitelisted: true
+  jobRank: NatoEnlisted
   joinNotifiyCrew: false
   displayWeight: 8
   special:
@@ -280,7 +286,8 @@
   playTimeTracker: USMCRifleMan
   startingGear: USMCUniformRifleMan
   icon: "Nato"
-  whitelisted: false
+  whitelisted: true
+  jobRank: NatoEnlisted
   joinNotifiyCrew: false
   displayWeight: 4
   special:
@@ -307,6 +314,51 @@
 
 - type: startingGear
   id: USMCUniformRifleMan
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSMCWoodland
+    shoes: ClothingShoesBootsJack
+    back: FHClothingBackpackUSMCButtPack
+    belt: FHClothingBeltUSMCHarness
+    pouchleft: FHClothingPouchUSMCAmmoFilled
+    pouchright: FHClothingPouchUSMCAmmoFilled
+    suitstorage: FHWeaponRifleM16A2
+    head: FHClothingHeadHelmetM1
+    pocket1: IFAKUSMCFilled
+
+- type: job
+  id: USMCReservist
+  name: job-name-USMC-reservist
+  description: job-description-USMC-reservist
+  playTimeTracker: USMCReservist
+  startingGear: USMCUniformReservist
+  icon: "Nato"
+  whitelisted: false
+  joinNotifiyCrew: false
+  displayWeight: 3
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskBluFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Nato
+        factionName: "United States Marine Corp"
+
+- type: playTimeTracker
+  id: USMCReservist
+
+- type: startingGear
+  id: USMCUniformReservist
   equipment:
     jumpsuit: ClothingUniformJumpsuitUSMCWoodland
     shoes: ClothingShoesBootsJack

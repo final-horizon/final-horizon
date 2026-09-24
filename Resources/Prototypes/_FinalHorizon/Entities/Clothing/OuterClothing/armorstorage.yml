@@ -1,0 +1,35 @@
+- type: entity
+  parent: FHClothingOuterArmorStorageBase
+  id: FHClothingOuterArmor6b3
+  name: 6B3 Vest
+  description: An armored vest designed to replace the 6B2. Promises higher ballistic protection and integrated magazine pouches. Only delivers on one of those.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/OuterClothing/Vests/6b3.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/OuterClothing/Vests/6b3.rsi
+  - type: Storage
+    grid:
+    - 0,0,2,1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.80
+
+- type: entity
+  parent: FHClothingOuterArmorStorageBase
+  id: FHClothingOuterStorage6b2Lifchik
+  name: 6B2 Lifchik Vest
+  description: The standard issue protective vest of the Soviet Army. Not very effective against rifle rounds. Has a lifchik chestrig attached for easy access to ammo.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/OuterClothing/Vests/6b2_lifchik.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/OuterClothing/Vests/6b2_lifchik.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.85
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90

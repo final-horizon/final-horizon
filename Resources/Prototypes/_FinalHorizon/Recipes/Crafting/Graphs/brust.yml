@@ -7,7 +7,7 @@
         - to: built
           steps:
             - material: Dirt
-              amount: 15
-              doAfter: 5
+              amount: 5
+              doAfter: 10
     - node: built
       entity: FHBrustwehr

@@ -70,5 +70,3 @@
   - type: Appearance
     appearanceDataInit:
      enum.AmmoVisuals.MagLoaded: false
-  - type: FarGunshot
-    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/pkm.ogg

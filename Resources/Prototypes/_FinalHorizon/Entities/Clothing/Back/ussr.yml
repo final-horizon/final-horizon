@@ -1,8 +1,8 @@
 - type: entity
   parent: FHClothingBackpackBase
   id: FHClothingBackpackUSSRKit
-  name: soviet army kitpack
-  description: The standard kit backpack in the soviet army
+  name: Veschmeshok
+  description: The standard issue carrying bag for the Soviet Army.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Back/soviet_bag.rsi
@@ -28,8 +28,8 @@
 - type: entity
   parent: FHClothingBackpackBase
   id: FHClothingBackpackUSSRRPG
-  name: soviet army RPG bag
-  description: A backpack that holds 3 RPG rockets
+  name: Soviet Army RPG Bag
+  description: A backpack that holds 3 RPG rockets.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Back/soviet_rpg.rsi

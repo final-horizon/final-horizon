@@ -67,4 +67,4 @@
     appearanceDataInit:
      enum.AmmoVisuals.MagLoaded: false
   - type: FarGunshot
-    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/m14.ogg
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/toz194_dist.ogg

@@ -98,7 +98,7 @@ public abstract partial class SharedToolSystem
         if (withToolQualities.ContainsAny(tileDef.DeconstructTools))
         {
             // don't do this on the client or else the tile entity spawn mispredicts and looks horrible
-            return _net.IsClient || _tiles.DeconstructTile(tileRef);
+            return _net.IsClient || _tiles.DeconstructTile(tileRef, true, false); // FH
         }
         return false;
     }

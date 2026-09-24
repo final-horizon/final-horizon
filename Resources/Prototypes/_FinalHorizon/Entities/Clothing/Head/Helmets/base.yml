@@ -7,8 +7,13 @@
     layers:
       HeadTop : HEAD
       HeadSide : HEAD
-  - type: ExplosionResistance
-    damageCoefficient: 0.90 # rework this later
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.95
+  - type: ClothingSpeedModifier
+    walkModifier: 0.98
+    sprintModifier: 0.98
 
 - type: entity
   parent: FHClothingHeadHelmetBase

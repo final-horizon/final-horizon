@@ -5,6 +5,7 @@ job-name-USMC-medic = Corpsman
 job-name-USMC-rifleman = Rifleman
 job-name-USMC-sniper = Marksman
 job-name-USMC-rto = Field Radio Operator
+job-name-USMC-reservist = Reservist
 
 job-name-USSR-platoonleader = Komandir Vzvoda
 job-name-USSR-teamleader = Komandir Otdeleniya
@@ -14,6 +15,7 @@ job-name-USSR-rifleman = Strelok
 job-name-USSR-sniper = Snaiper
 job-name-USSR-autorifleman = Pulemetchik
 job-name-USSR-rto = Radiotelefonist
+job-name-USSR-reservist = Rezervist
 
 job-name-BDW-platoonleader = Zugführer
 job-name-BDW-teamleader = Gruppenführer

@@ -88,5 +88,10 @@ namespace Content.Shared.Verbs
 
         public static readonly VerbCategory Adjust =
             new("verb-categories-adjust", "/Textures/Interface/VerbIcons/screwdriver.png");
+
+        // FH start
+        public static readonly VerbCategory JoinSquads =
+            new("squad-indicator-verb", null);
+        // FH end
     }
 }

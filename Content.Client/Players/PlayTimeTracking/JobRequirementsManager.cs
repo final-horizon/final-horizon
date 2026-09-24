@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using Content.Shared._FinalHorizon.Players;
 using Content.Shared.CCVar;
 using Content.Shared.Players;
 using Content.Shared.Players.JobWhitelist;
@@ -28,6 +29,7 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
     private readonly List<ProtoId<JobPrototype>> _jobBans = new();
     private readonly List<ProtoId<AntagPrototype>> _antagBans = new();
     private readonly List<string> _jobWhitelists = new();
+    private string? _rank; // FH
 
     private ISawmill _sawmill = default!;
 
@@ -41,9 +43,15 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         _net.RegisterNetMessage<MsgRoleBans>(RxRoleBans);
         _net.RegisterNetMessage<MsgPlayTime>(RxPlayTime);
         _net.RegisterNetMessage<MsgJobWhitelist>(RxJobWhitelist);
+        _net.RegisterNetMessage<MsgJobRank>(RxJobRank); // FH
 
         _client.RunLevelChanged += ClientOnRunLevelChanged;
     }
+
+    private void RxJobRank(MsgJobRank msg) // FH start
+    {
+        _rank = msg.JobRank;
+    } // FH end
 
     private void ClientOnRunLevelChanged(object? sender, RunLevelChangedEventArgs e)
     {
@@ -209,15 +217,32 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         if (!_cfg.GetCVar(CCVars.GameRoleWhitelist))
             return true;
 
-        if (job.Whitelisted && !_jobWhitelists.Contains(job.ID))
+        // FH start
+        if (job.Whitelisted)
         {
+            if (_jobWhitelists.Contains(job.ID))
+            {
+                return true;
+            }
+
+            if (job.Whitelisted && job.JobRank != null && _rank != null && _prototypes.TryIndex<JobRankPrototype>(_rank, out var rankProto))
+            {
+                var ranks = new List<string>();
+                ranks.Add(_rank);
+                if (rankProto.ParentRanks != null)
+                    ranks.AddRange(rankProto.ParentRanks);
+                var neededRank = job.JobRank.ToString();
+                if (neededRank != null && ranks.Contains(neededRank))
+                {
+                    return true;
+                }
+            }
             reason = FormattedMessage.FromUnformatted(Loc.GetString("role-not-whitelisted"));
             return false;
         }
-
         return true;
     }
-
+    // FH end
     public bool CheckWhitelist(AntagPrototype antag, [NotNullWhen(false)] out FormattedMessage? reason)
     {
         reason = default;

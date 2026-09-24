@@ -153,8 +153,9 @@
     maxRandomPrice: 20000
   - type: ESViewcone # FH
   - type: ESViewconeOccludable # FH
-  - type: Aim
-  - type: EyeCursorOffset
+  - type: Aim # FH
+  - type: EyeCursorOffset # FH
+  - type: SquadIndicator # FH
   - type: Tag
     tags:
     - CanPilot

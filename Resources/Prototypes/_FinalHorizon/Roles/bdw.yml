@@ -6,6 +6,7 @@
   startingGear: BDWUniformPlatoonLeader
   icon: "Nato"
   whitelisted: true
+  jobRank: NatoOfficer
   joinNotifiyCrew: false
   displayWeight: 10
   special:
@@ -35,6 +36,7 @@
   startingGear: BDWUniformTeamLeader
   icon: "Nato"
   whitelisted: true
+  jobRank: NatoNco
   joinNotifiyCrew: false
   displayWeight: 9
   special:
@@ -63,7 +65,8 @@
   playTimeTracker: BDWMachineGunner
   startingGear: BDWUniformMachineGunner
   icon: "Nato"
-  whitelisted: false
+  whitelisted: true
+  jobRank: NatoEnlisted
   joinNotifiyCrew: false
   displayWeight: 6
   special:
@@ -92,7 +95,8 @@
   playTimeTracker: BDWMedic
   startingGear: BDWUniformMedic
   icon: "Nato"
-  whitelisted: false
+  whitelisted: true
+  jobRank: NatoEnlisted
   joinNotifiyCrew: false
   displayWeight: 7
   special:
@@ -121,7 +125,8 @@
   playTimeTracker: BDWSniper
   startingGear: BDWUniformSniper
   icon: "Nato"
-  whitelisted: false
+  whitelisted: true
+  jobRank: NatoEnlisted
   joinNotifiyCrew: false
   displayWeight: 5
   special:
@@ -150,7 +155,8 @@
   playTimeTracker: BDWRTO
   startingGear: BDWUniformRTO
   icon: "Nato"
-  whitelisted: false
+  whitelisted: true
+  jobRank: NatoEnlisted
   joinNotifiyCrew: false
   displayWeight: 8
   special:
