@@ -1,0 +1,109 @@
+- type: entity
+  id: FHGrassTall1
+  name: tall grass
+  suffix: 1
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  #- type: FloorOccluder # Disabled for now. I should make a dedicated system to mask the top of players sprites to show above the grass sprite similar to how flooroccluder does it
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Decoration/Flora/grass_tall.rsi
+    drawdepth: Overdoors
+    state: 1
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        layer:
+          - SlipLayer
+        mask:
+          - ItemMask
+        density: 1000
+        hard: false
+  - type: PlacementReplacement
+    key: walls
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Injurable
+    damageContainer: StructuralInorganic
+
+- type: entity
+  parent: FHGrassTall1
+  id: FHGrassTall2
+  suffix: 2
+  components:
+  - type: Sprite
+    state: 2
+
+- type: entity
+  parent: FHGrassTall1
+  id: FHGrassTall3
+  suffix: 3
+  components:
+  - type: Sprite
+    state: 3
+
+- type: entity
+  parent: FHGrassTall1
+  id: FHGrassTall4
+  suffix: 4
+  components:
+  - type: Sprite
+    state: 4
+
+- type: entity
+  parent: FHGrassTall1
+  id: FHGrassTall5
+  suffix: 5
+  components:
+  - type: Sprite
+    state: 5
+
+- type: entity
+  parent: FHGrassTall1
+  id: FHGrassTall6
+  suffix: 6
+  components:
+  - type: Sprite
+    state: 6
+
+- type: entity
+  parent: FHGrassTall1
+  id: FHGrassTall7
+  suffix: 7
+  components:
+  - type: Sprite
+    state: 7
+
+- type: entity
+  parent: FHGrassTall1
+  id: FHGrassTall8
+  suffix: 8
+  components:
+  - type: Sprite
+    state: 8
+
+- type: entity
+  parent: FHGrassTall1
+  id: FHGrassTall9
+  suffix: 9
+  components:
+  - type: Sprite
+    state: 9
