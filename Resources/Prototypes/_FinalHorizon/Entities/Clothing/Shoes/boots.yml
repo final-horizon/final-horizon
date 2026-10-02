@@ -1,12 +1,25 @@
 - type: entity
   parent: ClothingShoesMilitaryBase
   id: FHClothingShoesBootsSovietJack
-  name: Soviet Jackboots
-  description: Standard issue Soviet jackboots, constructed with thick faux leather. Designed for use in cold environments where marching is expected. Good thing you're not in Afghanistan, da?
+  name: Jackboots
+  description: Standard issue jackboots, constructed with thick faux leather. Designed for use in cold environments where marching is expected. Good thing you're not in Afghanistan, da?
   components:
   - type: Sprite
     sprite: _FinalHorizon/Clothing/Shoes/Boots/sa_boots.rsi
   - type: Clothing
     sprite: _FinalHorizon/Clothing/Shoes/Boots/sa_boots.rsi
+  #- type: ClothingSlowOnDamageModifier # FH
+  #  modifier: 0.5 # FH
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: FHClothingShoesBootsGermanJack
+  name: Short Jackboots
+  description: Standard issue jackboots, constructed with thick faux leather. These ones are cut shorter along the leg, to cut back on weight. 
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Shoes/Boots/nva_boots.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Shoes/Boots/nva_boots.rsi
   #- type: ClothingSlowOnDamageModifier # FH
   #  modifier: 0.5 # FH
