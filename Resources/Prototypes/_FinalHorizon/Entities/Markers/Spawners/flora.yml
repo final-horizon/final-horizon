@@ -21,6 +21,15 @@
     table: !type:GroupSelector
       children:
       - !type:GroupSelector
+        prob: 0.05
+        children:
+        - id: FHMineClaymoreActive
+        - id: FHTMineM16APMActive
+        - id: FHMineOZM72Active
+        - id: FHMinePFM-1Active
+        - id: FHMinePMN-1Active
+        - id: FHMineStick
+      - !type:GroupSelector
         prob: 0.03
         children:
         - id: FHTreeDeadTemperate1
@@ -131,6 +140,14 @@
     table: !type:GroupSelector
       children:
       - !type:GroupSelector
+        prob: 0.1
+        children:
+        - id: FHMineClaymoreActive
+        - id: FHTMineM16APMActive
+        - id: FHMineOZM72Active
+        - id: FHMinePFM-1Active
+        - id: FHMinePMN-1Active
+      - !type:GroupSelector
         prob: 0.02
         children:
         - id: FHDecalSpawnerRockTemperate
@@ -153,6 +170,7 @@
     zIndex: 5
     deleteSpawnerAfterSpawn: true
     decals:
+    - FHMineStick
     - Grassd1
     - Grassd2
     - Grassd3

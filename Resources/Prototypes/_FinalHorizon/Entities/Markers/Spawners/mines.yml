@@ -1,0 +1,46 @@
+
+- type: entity
+  id: FHRandomALLMineSpawner
+  suffix: Mixed Mines
+  parent: FHRandomFloraSpawnerBase
+  name: Mixed Mine Spawner
+  components:
+  - type: Sprite
+    state: 1
+  - type: MappingSpawner
+    table: !type:GroupSelector
+      children:
+        - id: FHMineClaymoreActive
+        - id: FHTMineM16APMActive
+        - id: FHMineOZM72Active
+        - id: FHMinePFM-1Active
+        - id: FHMinePMN-1Active
+
+- type: entity
+  id: FHRandomPACTMineSpawner
+  suffix: PACT Mines
+  parent: FHRandomFloraSpawnerBase
+  name: PACT Mine Spawner
+  components:
+  - type: Sprite
+    state: 1
+  - type: MappingSpawner
+    table: !type:GroupSelector
+      children:
+        - id: FHMineOZM72Active
+        - id: FHMinePFM-1Active
+        - id: FHMinePMN-1Active
+
+- type: entity
+  id: FHRandomNATOMineSpawner
+  suffix: NATO Mines
+  parent: FHRandomFloraSpawnerBase
+  name: NATO Mine Spawner
+  components:
+  - type: Sprite
+    state: 1
+  - type: MappingSpawner
+    table: !type:GroupSelector
+      children:
+        - id: FHMineClaymoreActive
+        - id: FHTMineM16APMActive

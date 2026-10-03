@@ -1,0 +1,45 @@
+- type: entity
+  id: BaseFHMine
+  abstract: true
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/_FinalHorizon/Effects/switch.ogg
+      params:
+        maxDistance: 1
+  - type: Physics
+    bodyType: Static
+    fixedRotation: true
+  - type: Fixtures
+    fixtures:
+      slips:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        layer:
+          - LowImpassable
+  - type: Appearance
+  - type: Damageable
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: LandMine
+    sound:
+        path: /Audio/_FinalHorizon/Effects/switch.ogg
+        params:
+            maxDistance: 10
+  - type: Armable
+  - type: StepTrigger
+    requiredTriggeredSpeed: 0
+    stepOn: True

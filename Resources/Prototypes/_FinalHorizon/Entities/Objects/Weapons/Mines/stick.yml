@@ -1,0 +1,18 @@
+- type: entity
+  parent: BaseFHMine
+  id: FHMineStick
+  name: Stick
+  description: Whats Brown and Sticky?
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Decals/flora.rsi
+    state: active
+  - type: ItemToggle
+    activated: true
+    onActivate: false
+  - type: Armable
+  - type: LandMine
+    sound:
+        collection: FHStickBreak
+        params:
+            maxDistance: 20
