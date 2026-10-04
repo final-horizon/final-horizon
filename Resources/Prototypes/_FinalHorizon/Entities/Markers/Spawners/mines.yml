@@ -11,10 +11,10 @@
     table: !type:GroupSelector
       children:
         - id: FHMineClaymoreActive
-        - id: FHTMineM16APMActive
+        - id: FHMineM16APMActive
         - id: FHMineOZM72Active
-        - id: FHMinePFM-1Active
-        - id: FHMinePMN-1Active
+        - id: FHMinePFM1Active
+        - id: FHMinePMN1Active
 
 - type: entity
   id: FHRandomPACTMineSpawner
@@ -28,8 +28,8 @@
     table: !type:GroupSelector
       children:
         - id: FHMineOZM72Active
-        - id: FHMinePFM-1Active
-        - id: FHMinePMN-1Active
+        - id: FHMinePFM1Active
+        - id: FHMinePMN1Active
 
 - type: entity
   id: FHRandomNATOMineSpawner
@@ -44,3 +44,24 @@
       children:
         - id: FHMineClaymoreActive
         - id: FHTMineM16APMActive
+
+
+- type: entity
+  id: FHThinALLMineSpawner
+  suffix: Mixed Mines
+  parent: FHRandomFloraSpawnerBase
+  name: Thin Mine Spawner
+  components:
+  - type: Sprite
+    state: 1
+  - type: MappingSpawner
+    table: !type:GroupSelector
+      children:
+      - !type:GroupSelector
+        prob: 0.005 # yeahhhhh this might be too low but its still just a luck based thing
+        children:
+        - id: FHMineClaymoreActive
+        - id: FHMineM16APMActive
+        - id: FHMineOZM72Active
+        - id: FHMinePFM1Active
+        - id: FHMinePMN1Active

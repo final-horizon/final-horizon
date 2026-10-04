@@ -12,14 +12,14 @@
     size: Small
     storedRotation: 90
   - type: SpawnAfterInteract
-    prototype: FHMinePFM-1Active
+    prototype: FHMinePFM1Active
     doAfter: 1
     removeOnInteract: true
   - type: Clickable
 
 - type: entity
   parent: BaseFHMine
-  id: FHMinePFM-1Active
+  id: FHMinePFM1Active
   name: ???
   description: Get closer to find out what this is
   components:
