@@ -1,5 +1,5 @@
 - type: entity
-  id: FHMinePFM-1
+  id: FHMinePFM1
   parent: BaseItem
   name: PFM-1
   description: gluglglug
@@ -42,4 +42,6 @@
     activated: true
     onActivate: false
   - type: Armable
-
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: FHMinePFM1
+    disassembleTime: 10

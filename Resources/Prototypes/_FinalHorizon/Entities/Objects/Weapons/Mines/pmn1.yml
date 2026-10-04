@@ -42,4 +42,6 @@
     activated: true
     onActivate: false
   - type: Armable
-
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: FHMinePMN1
+    disassembleTime: 10

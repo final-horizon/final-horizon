@@ -42,4 +42,4 @@
   - type: Armable
   - type: StepTrigger
     requiredTriggeredSpeed: 0
-    stepOn: True
+    stepOn: False
