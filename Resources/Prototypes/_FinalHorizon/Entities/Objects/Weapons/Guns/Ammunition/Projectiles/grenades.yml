@@ -17,13 +17,13 @@
     maxTileBreak: 3
   - type: ProjectileGrenade
     fillPrototype: FHBulletFragment
-    capacity: 6
+    capacity: 3a
     randomAngle: true
     triggerKey: trigger
   - type: Projectile
     damage:
       types:
-        Blunt: 20
+        Blunt: 40
 
 - type: entity
   id: FHBulletGrenadeVOG25
@@ -40,14 +40,14 @@
     explosionType: FHDefault
     maxIntensity: 8
     intensitySlope: 3
-    totalIntensity: 35
+    totalIntensity: 20
     maxTileBreak: 3
   - type: ProjectileGrenade
     fillPrototype: FHBulletFragment
-    capacity: 6
+    capacity: 3
     randomAngle: true
     triggerKey: trigger
   - type: Projectile
     damage:
       types:
-        Blunt: 20
+        Blunt: 40

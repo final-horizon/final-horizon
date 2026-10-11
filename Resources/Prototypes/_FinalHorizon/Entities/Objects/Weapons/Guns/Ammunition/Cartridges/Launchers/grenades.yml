@@ -7,10 +7,11 @@
   - type: Tag
     tags:
       - CartridgeM406
+      - Grenade
   - type: Item
-    size: Huge
+    size: Small
     shape:
-    - 0,0,0,2
+    - 0,0,0,1
   - type: CartridgeAmmo
     proto: FHBulletGrenadeM406
     deleteOnSpawn: true
@@ -30,10 +31,11 @@
   - type: Tag
     tags:
       - CartridgeVOG25
+      - Grenade
   - type: Item
-    size: Huge
+    size: Small
     shape:
-    - 0,0,0,2
+    - 0,0,0,1
   - type: CartridgeAmmo
     proto: FHBulletGrenadeVOG25
     deleteOnSpawn: true

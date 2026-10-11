@@ -2,7 +2,7 @@
   parent: BaseFHMine
   id: FHMineStick
   name: Stick
-  description: Whats Brown and Sticky?
+  description: 
   components:
   - type: Sprite
     sprite: _FinalHorizon/Decals/flora.rsi
@@ -11,8 +11,9 @@
     activated: true
     onActivate: false
   - type: Armable
-  - type: LandMine
+  - type: ExplodeOnTrigger
+  - type: EmitSoundOnTrigger
     sound:
-        collection: FHStickBreak
-        params:
-            maxDistance: 20
+      collection: FHStickBreak
+      params:
+        volume: 1

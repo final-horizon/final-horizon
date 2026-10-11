@@ -165,13 +165,30 @@
   - type: Clothing
     sprite: _FinalHorizon/Clothing/Pouch/ussr_vog.rsi
   - type: Storage
-    maxItemSize: Tiny
+    maxItemSize: Small
     grid:
     - 0,0,4,1
     whitelist:
       tags:
       - Grenade
 
+- type: entity
+  parent: FHClothingPouchUSSRVOG
+  id: FHClothingPouchUSSRVOGFilled
+  suffix: Filled
+  name: Soviet Army VOG Pouch
+  description: A pouch for carrying VOG underbarrel grenades.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+         - id: FHCartridgeGrenadeVOG25
+         - id: FHCartridgeGrenadeVOG25
+         - id: FHCartridgeGrenadeVOG25         
+         - id: FHCartridgeGrenadeVOG25
+         - id: FHCartridgeGrenadeVOG25
+         
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRSG
