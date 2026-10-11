@@ -76,3 +76,48 @@
       path: /Audio/_FinalHorizon/Weapons/Guns/Draw/ak74_draw.ogg
       params:
         volume: -2
+
+
+- type: entity
+  name: AK-74 + GP-25
+  parent: FHWeaponRifleAK74
+  id: FHWeaponRifleAK74GL
+  description: The Soviet military standard issue rifle. Developed in the 1970 due to the adoption of the 5.45x39mm cartridge. It was lated adopted in 1974. This one has a GP25 attached.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/ak74_gl.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/ak74_gl.rsi
+  - type: AlternateGun
+    switchSound:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Deploy/gp25_select.ogg
+  - type: ItemSlots
+    slots:
+      launcher:
+        name: Launcher
+        priority: 3
+        startingItem: FHWeaponUnderBarrelLauncherGP25
+        locked: true
+      launcher_mag:
+        name: LauncherMag
+        priority: 4
+        insertSound: /Audio/_FinalHorizon/Weapons/Guns/MagIn/gp25_insertgrenade.ogg
+        ejectSound: /Audio/_FinalHorizon/Weapons/Guns/MagOut/gp25_openbarrel.ogg
+        whitelist:
+          tags:
+            - CartridgeVOG25
+      gun_magazine:
+        name: Magazine
+        insertSound: /Audio/_FinalHorizon/Weapons/Guns/MagIn/ak74_magin.ogg
+        ejectSound: /Audio/_FinalHorizon/Weapons/Guns/MagOut/ak74_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine545
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge545

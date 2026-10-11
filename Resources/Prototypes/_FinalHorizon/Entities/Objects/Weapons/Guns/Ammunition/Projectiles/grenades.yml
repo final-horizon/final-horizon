@@ -1,0 +1,53 @@
+- type: entity
+  id: FHBulletGrenadeM406
+  name: grenade
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Cartridges/m406.rsi
+    layers:
+      - state: active
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: FHDefault
+    maxIntensity: 8
+    intensitySlope: 3
+    totalIntensity: 35
+    maxTileBreak: 3
+  - type: ProjectileGrenade
+    fillPrototype: FHBulletFragment
+    capacity: 6
+    randomAngle: true
+    triggerKey: trigger
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 20
+
+- type: entity
+  id: FHBulletGrenadeVOG25
+  name: grenade
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Cartridges/vog25.rsi
+    layers:
+      - state: active
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: FHDefault
+    maxIntensity: 8
+    intensitySlope: 3
+    totalIntensity: 35
+    maxTileBreak: 3
+  - type: ProjectileGrenade
+    fillPrototype: FHBulletFragment
+    capacity: 6
+    randomAngle: true
+    triggerKey: trigger
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 20

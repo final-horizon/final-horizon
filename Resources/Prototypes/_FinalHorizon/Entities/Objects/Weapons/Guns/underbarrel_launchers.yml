@@ -1,0 +1,23 @@
+- type: entity
+  id: FHWeaponUnderBarrelLauncherM203
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Gunshots/m203.ogg
+  - type: AlternateGunAmmoProvider
+
+- type: entity
+  id: FHWeaponUnderBarrelLauncherGP25
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Gunshots/vog25.ogg
+  - type: AlternateGunAmmoProvider
