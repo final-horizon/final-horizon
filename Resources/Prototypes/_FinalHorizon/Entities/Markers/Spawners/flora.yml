@@ -24,10 +24,10 @@
         prob: 0.05
         children:
         - id: FHMineClaymoreActive
-        - id: FHTMineM16APMActive
+        - id: FHMineM16APMActive
         - id: FHMineOZM72Active
-        - id: FHMinePFM-1Active
-        - id: FHMinePMN-1Active
+        - id: FHMinePFM1Active
+        - id: FHMinePMN1Active
         - id: FHMineStick
       - !type:GroupSelector
         prob: 0.03
@@ -140,13 +140,13 @@
     table: !type:GroupSelector
       children:
       - !type:GroupSelector
-        prob: 0.1
+        prob: 0.05 #lowered cause it was 1 in 10
         children:
         - id: FHMineClaymoreActive
-        - id: FHTMineM16APMActive
+        - id: FHMineM16APMActive
         - id: FHMineOZM72Active
-        - id: FHMinePFM-1Active
-        - id: FHMinePMN-1Active
+        - id: FHMinePFM1Active
+        - id: FHMinePMN1Active
       - !type:GroupSelector
         prob: 0.02
         children:
@@ -170,7 +170,7 @@
     zIndex: 5
     deleteSpawnerAfterSpawn: true
     decals:
-    - FHMineStick
+    # - FHMineStick #its a decal spawner not a entity spawner sorry dallas but map wont boot like this
     - Grassd1
     - Grassd2
     - Grassd3
