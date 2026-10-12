@@ -32,7 +32,7 @@
   - type: ChamberMagazineAmmoProvider
     soundBoltClosed:
       path: /Audio/_FinalHorizon/Weapons/Guns/Cock/glock_cock.ogg
-    soundBoltOpen:
+    soundBoltOpened:
       path: /Audio/_FinalHorizon/Weapons/Guns/Cock/glock_cock.ogg
     soundRack:
       path: /Audio/_FinalHorizon/Weapons/Guns/Cock/glock_cock.ogg

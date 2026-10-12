@@ -1,0 +1,44 @@
+# Topical medicines
+
+- type: stack
+  parent: BaseSmallStack
+  id: FHOintment
+  name: stack-FHointment
+  icon: { sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: FHointment }
+  spawn: FHOintment
+
+- type: stack
+  parent: BaseSmallStack
+  id: FHGauze
+  name: stack-FHgauze
+  icon: { sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: FHgauze }
+  spawn: FHGauze
+
+- type: stack
+  parent: BaseSmallStack
+  id: FHBrutepack
+  name: stack-FHbrutepack
+  icon: { sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: FHgauze }
+  spawn: FHBrutepack
+
+- type: stack
+  parent: BaseSmallStack
+  id: FHBloodpack
+  name: stack-FHbloodpack
+  icon: { sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: FHbloodpack }
+  spawn: FHBloodpack
+
+- type: stack
+  parent: BaseSmallStack
+  id: FHSuture
+  name: stack-medicated-suture
+  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: medicated-suture }
+  spawn: FHSuture
+
+- type: stack
+  parent: BaseSmallStack
+  id: FHMesh
+  name: stack-regenerative-FHmesh
+  icon: {sprite: "/Textures/Objects/Specific/Medical/medical.rsi", state: regenerative-FHmesh}
+  spawn: FHMesh
+
