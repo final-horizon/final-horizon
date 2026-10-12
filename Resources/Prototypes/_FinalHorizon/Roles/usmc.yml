@@ -43,7 +43,7 @@
     pouchright: FHClothingPouchUSMCAmmoDoubleFilled
     suitstorage: FHWeaponRifleM16A1
     head: FHClothingHeadHatBeretUSMC
-    pocket1: IFAKUSMCFilled
+    pocket1: FHIFAKUSMCFilled
 
 - type: job
   id: USMCTeamLeader
@@ -88,9 +88,9 @@
     belt: FHClothingBeltUSMCHarness
     pouchleft: FHClothingPouchUSMCGrenadeFilled
     pouchright: FHClothingPouchUSMCAmmoDoubleFilled
-    suitstorage: FHWeaponRifleM16A1
+    suitstorage: FHWeaponRifleM16A2GL
     head: FHClothingHeadHelmetM1Woodland
-    pocket1: IFAKUSMCFilled
+    pocket1: FHIFAKUSMCFilled
 
 - type: job
   id: USMCMachineGunner
@@ -136,7 +136,7 @@
     pouchright: FHClothingPouchUSMCAmmoLMGFilled
     suitstorage: FHWeaponLMGM60
     head: FHClothingHeadHelmetM1Net
-    pocket1: IFAKUSMCFilled
+    pocket1: FHIFAKUSMCFilled
 
 - type: job
   id: USMCMedic
@@ -182,7 +182,7 @@
     pouchright: FHClothingPouchUSMCAmmoFilled
     suitstorage: FHWeaponRifleM16A2
     head: FHClothingHeadHelmetM1Medic
-    pocket1: IFAKUSMCFilled
+    pocket1: FHIFAKUSMCFilled
     mask: ClothingMaskSterile
     gloves: ClothingHandsGlovesLatex
 
@@ -231,7 +231,7 @@
     pouchright: FHClothingPouchUSMCAmmoFilledSniper
     suitstorage: FHWeaponSnipersM21
     head: FHClothingHeadHatBoonieUSMC
-    pocket1: IFAKUSMCFilled
+    pocket1: FHIFAKUSMCFilled
 
 - type: job
   id: USMCRTO
@@ -277,7 +277,7 @@
     pouchright: FHClothingPouchUSMCAmmoFilled
     suitstorage: FHWeaponRifleM16A2
     head: FHClothingHeadHelmetM1
-    pocket1: IFAKUSMCFilled
+    pocket1: FHIFAKUSMCFilled
 
 - type: job
   id: USMCRifleMan
@@ -323,7 +323,7 @@
     pouchright: FHClothingPouchUSMCAmmoFilled
     suitstorage: FHWeaponRifleM16A2
     head: FHClothingHeadHelmetM1
-    pocket1: IFAKUSMCFilled
+    pocket1: FHIFAKUSMCFilled
 
 - type: job
   id: USMCReservist
@@ -368,4 +368,4 @@
     pouchright: FHClothingPouchUSMCAmmoFilled
     suitstorage: FHWeaponRifleM16A2
     head: FHClothingHeadHatPCUSMC
-    pocket1: IFAKUSMCFilled
+    pocket1: FHIFAKUSMCFilled

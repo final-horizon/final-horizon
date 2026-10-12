@@ -1,0 +1,68 @@
+- type: entity
+  name: Makarov PM
+  parent: FHWeaponBasePistol
+  id: FHWeaponPistolPM
+  description:
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Pistols/pm.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,3,2
+  - type: Clothing
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Pistols/pm.rsi
+  - type: Gun
+    fireRate: 10
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Gunshots/makarov.ogg
+      params:
+        variation: 0.1
+        volume: -4
+    soundEmpty:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Empty/gen_empty.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundBoltClosed:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Cock/pistol_cock.ogg
+      volume: 2
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+    canActivateInhand: false
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        insertSound: /Audio/_FinalHorizon/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/_FinalHorizon/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine9x18
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge9x18
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+    appearanceDataInit:
+     enum.AmmoVisuals.MagLoaded: false
+  - type: FarGunshot
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/glock_dist.ogg

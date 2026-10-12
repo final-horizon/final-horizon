@@ -99,3 +99,37 @@
         children:
         - id: FHMagazineLMGPKMFull
           amount: 5
+
+#mines
+
+- type: entity
+  parent: FHCrateAmmo
+  id: FHCrateFilledMinePact
+  name: PACT mine crate
+  description: A crate filled with anti-personel mines.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FHMinePFM1
+          amount: 10
+        - id: FHMineOZM72
+          amount: 10
+        - id: FHMinePMN1
+          amount: 10
+
+- type: entity
+  parent: FHCrateAmmo
+  id: FHCrateFilledMineNATO
+  name: NATO mine crate
+  description: A crate filled with anti-personel mines.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FHMineM16APM
+          amount: 15
+        - id: FHMineClaymore
+          amount: 15

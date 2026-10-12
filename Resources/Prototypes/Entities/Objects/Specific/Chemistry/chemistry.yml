@@ -605,6 +605,7 @@
   - type: Tag
     tags:
     - Pill
+    - FHMedical
 
 - type: entity
   abstract: true
@@ -641,4 +642,5 @@
     whitelist:
       tags:
       - Pill
+      - FHMedical
   - type: Dumpable

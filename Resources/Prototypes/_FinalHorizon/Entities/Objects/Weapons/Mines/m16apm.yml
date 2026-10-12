@@ -1,0 +1,47 @@
+- type: entity
+  id: FHMineM16APM
+  parent: BaseItem
+  name: M16 APM
+  description: gluglglug
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Mines/m16apm.rsi
+    state: icon
+  - type: Item
+    sprite: _FinalHorizon/Objects/Weapons/Mines/m16apm.rsi
+    size: Small
+    storedRotation: 90
+  - type: SpawnAfterInteract
+    prototype: FHMineM16APMActive
+    doAfter: 1
+    removeOnInteract: true
+  - type: Clickable
+
+- type: entity
+  parent: BaseFHMine
+  id: FHMineM16APMActive
+  name: ???
+  description: Get closer to find out what this is
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Mines/m16apm.rsi
+    state: active
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: FHDefault
+    maxIntensity: 10
+    intensitySlope: 4
+    totalIntensity: 60
+    maxTileBreak: 3
+  - type: ProjectileGrenade
+    fillPrototype: FHBulletFragment
+    capacity: 35
+    randomAngle: true
+    triggerKey: trigger
+  - type: ItemToggle
+    activated: true
+    onActivate: false
+  - type: Armable
+  - type: DisassembleOnAltVerb
+    prototypeToSpawn: FHMineM16APM
+    disassembleTime: 10

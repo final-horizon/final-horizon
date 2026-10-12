@@ -307,7 +307,7 @@
     suitstorage: FHWeaponRifleAK74
     head: FHClothingHeadHatBeretSA
     eyes: ClothingEyesGlassesCheapSunglasses
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled
 
 - type: startingGear
   id: USSRUniformTeamLeader
@@ -319,9 +319,9 @@
     belt: FHClothingBeltUSSRHarness
     pouchleft: FHClothingPouchUSSRGrenadeFilled
     pouchright: FHClothingPouchUSSRAmmoFilled
-    suitstorage: FHWeaponRifleAK74
+    suitstorage: FHWeaponRifleAK74GL
     head: FHClothingHeadHelmetSSH68
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled
 
 - type: startingGear
   id: USSRUniformMachineGunner
@@ -334,7 +334,7 @@
     pouchright: FHClothingPouchUSSRLMGFilled
     suitstorage: FHWeaponLMGPKM
     head: FHClothingHeadHelmetSSH68
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled
 
 - type: startingGear
   id: USSRUniformMedic
@@ -347,7 +347,7 @@
     pouchright: FHClothingPouchUSSRAmmoFilled
     suitstorage: FHWeaponRifleAK74
     head: FHClothingHeadHelmetSSH68Medic
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled
     mask: ClothingMaskSterile
     gloves: ClothingHandsGlovesLatex
 
@@ -362,7 +362,7 @@
     pouchright: FHClothingPouchUSSRSVDFilled
     suitstorage: FHWeaponSnipersSVD
     head: FHClothingHeadHelmetSSH68
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled
 
 - type: startingGear
   id: USSRUniformAutoRifleMan
@@ -375,7 +375,7 @@
     pouchright: FHClothingPouchUSSRAmmoFilled45
     suitstorage: FHWeaponLMGRPK74
     head: FHClothingHeadHelmetSSH68
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled
 
 - type: startingGear
   id: USSRUniformRTO
@@ -388,7 +388,7 @@
     pouchright: FHClothingPouchUSSRAmmoFilled
     suitstorage: FHWeaponRifleAK74
     head: FHClothingHeadHelmetSSH68
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled
 
 - type: startingGear
   id: USSRUniformRifleMan
@@ -401,7 +401,7 @@
     pouchright: FHClothingPouchUSSRAmmoFilled
     suitstorage: FHWeaponRifleAK74
     head: FHClothingHeadHelmetSSH68
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled
 
 - type: startingGear
   id: USSRUniformReservist
@@ -414,4 +414,4 @@
     pouchright: FHClothingPouchUSSRAmmoFilled
     suitstorage: FHWeaponRifleAK74
     head: FHClothingHeadHatPCSA
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled

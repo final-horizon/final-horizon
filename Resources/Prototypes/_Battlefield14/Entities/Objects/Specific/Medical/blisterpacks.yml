@@ -32,6 +32,7 @@
     tags:
       - PillCanister
       - BlisterPack
+      - FHMedical
   - type: Storage
     grid:
     - 0,0,1,2

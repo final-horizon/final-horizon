@@ -1,0 +1,69 @@
+- type: entity
+  name: M1911
+  parent: FHWeaponBasePistol
+  id: FHWeaponPistolM1911
+  description:
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Pistols/m1911.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,3,2
+  - type: Clothing
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Pistols/m1911.rsi
+  - type: Gun
+    fireRate: 10
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Gunshots/m1911.ogg
+      params:
+        variation: 0.1
+        volume: -2
+    soundEmpty:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Empty/gen_empty.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundBoltClosed:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Cock/glock_cock.ogg
+    soundBoltOpen:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Cock/glock_cock.ogg
+    soundRack:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Cock/glock_cock.ogg
+    canActivateInhand: false
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        insertSound: /Audio/_FinalHorizon/Weapons/Guns/MagIn/glock_magin.ogg
+        ejectSound: /Audio/_FinalHorizon/Weapons/Guns/MagOut/glock_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine45acp
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge45acp
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+    appearanceDataInit:
+     enum.AmmoVisuals.MagLoaded: false
+  - type: FarGunshot
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/glock_dist.ogg

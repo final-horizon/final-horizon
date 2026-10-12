@@ -1,0 +1,351 @@
+- type: entity
+  parent: BaseItem
+  id: FHBaseHealingItem
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medical.rsi
+  - type: Item
+    size: Small
+    sprite: Objects/Specific/Medical/medical.rsi
+    heldPrefix: ointment
+  # Inherited
+  - type: StaticPrice
+    price: 0
+  - type: Tag
+    tags:
+    - FHMedical
+
+- type: entity
+  name: ointment
+  description: Used to treat those nasty burns. Less effective on caustic burns.
+  parent: FHBaseHealingItem
+  id: FHOintment
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - Ointment
+    - FHMedical
+  - type: Sprite
+    state: ointment
+  - type: Item
+    heldPrefix: ointment
+    storedSprite:
+      state: ointment-storage
+      sprite: Objects/Specific/Medical/medical.rsi
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Heat: -10 # FH
+        Cold: -10 # FH
+        Shock: -10 # FH
+        Caustic: -10 # FH
+    healingBeginSound:
+      path: "/Audio/Items/Medical/ointment_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/ointment_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: FHOintment
+    count: 10
+  - type: StackPrice
+    price: 5
+
+- type: entity
+  id: FHOintment1
+  parent: FHOintment
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: FHOintment
+    count: 1
+
+- type: entity
+  name: regenerative mesh
+  description: Used to treat even the nastiest burns. Also effective against caustic burns.
+  parent: FHBaseHealingItem
+  id: FHMesh
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - Ointment
+  - type: Sprite
+    state: regenerative-mesh
+  - type: Item
+    heldPrefix: regenerative-mesh
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Heat: -20 # FH
+        Cold: -20 # FH
+        Shock: -20 # FH
+        Caustic: -20 # FH
+    healingBeginSound:
+      path: "/Audio/Items/Medical/ointment_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/ointment_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: FHMesh
+    count: 10
+  - type: StackPrice
+    price: 20
+
+- type: entity
+  id: FHMesh1
+  parent: FHMesh
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: FHMesh
+    count: 1
+
+- type: entity
+  name: bruise pack
+  description: A therapeutic gel pack and bandages designed to treat blunt-force trauma.
+  parent: FHBaseHealingItem
+  id: FHBrutepack
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - Brutepack
+    - FHMedical
+  - type: Sprite
+    state: brutepack
+  - type: Item
+    heldPrefix: brutepack
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Blunt: -10 # FH
+        Piercing: -10 # FH
+        Slash: -10 # FH
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: FHBrutepack
+    count: 10
+  - type: StackPrice
+    price: 5
+
+- type: entity
+  id: FHBrutepack1
+  parent: FHBrutepack
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: FHBrutepack
+    count: 1
+
+- type: entity
+  name: medicated suture
+  description: A suture soaked in medicine, treats blunt-force trauma effectively and closes wounds.
+  parent: FHBaseHealingItem
+  id: FHSuture
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - Brutepack
+    - FHMedical
+  - type: Sprite
+    state: medicated-suture
+  - type: Item
+    heldPrefix: medicated-suture
+    storedRotation: -90
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Blunt: -20 # FH
+        Piercing: -20 # FH
+        Slash: -20 # FH
+    bloodlossModifier: -10 # a suture should stop ongoing bleeding
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: FHSuture
+    count: 10
+  - type: StackPrice
+    price: 20
+
+- type: entity
+  id: FHSuture1
+  parent: FHSuture
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: FHSuture
+    count: 1
+
+- type: entity
+  name: blood pack
+  description: Contains a groundbreaking universal blood replacement created by Nanotrasen's advanced medical science.
+  parent: FHBaseHealingItem
+  id: FHBloodpack
+  suffix: Full
+  components:
+  - type: Item
+    heldPrefix: bloodpack
+  - type: Tag
+    tags:
+    - Bloodpack
+    - FHMedical
+  - type: Sprite
+    state: bloodpack
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Bloodloss: -0.5 #lowers bloodloss damage
+    modifyBloodLevel: 15 #restores about 5% blood per use on standard humanoids.
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: FHBloodpack
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  parent: FHBloodpack
+  id: FHBloodpack1
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: FHBloodpack
+    count: 1
+
+- type: entity
+  parent: FHBaseHealingItem
+  id: FHTourniquet
+  name: tourniquet
+  description: Stops bleeding! Hopefully.
+  components:
+    - type: Tag
+      tags:
+        - SecBeltEquip
+        - Tourniquet
+        - FHMedical
+    - type: Sprite
+      state: tourniquet
+    - type: Item
+      heldPrefix: tourniquet
+      size: Tiny
+    - type: Healing
+      damageContainers:
+        - Biological
+      damage:
+        types:
+          Blunt: -5 # Tourniquets HURT
+          Asphyxiation: 5 # Essentially Stopping all blood reaching a part of your body
+      bloodlossModifier: -10 # Tourniquets stop bleeding
+      delay: 0.5
+      healingBeginSound:
+        path: "/Audio/Items/Medical/brutepack_begin.ogg"
+        params:
+          volume: 1.0
+          variation: 0.125
+      healingEndSound:
+        path: "/Audio/Items/Medical/brutepack_end.ogg"
+        params:
+          volume: 1.0
+          variation: 0.125
+
+- type: entity
+  name: roll of gauze
+  description: Some sterile gauze to wrap around bloody stumps.
+  parent: FHBaseHealingItem
+  id: FHGauze
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - FHMedical
+    - Gauze
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Specific/Medical/medical.rsi
+    state: gauze
+  - type: Item
+    heldPrefix: gauze
+    storedRotation: -90
+  - type: Construction
+    graph: Gauze
+    node: gauze
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Slash: -5
+        Piercing: -20 # FH
+    bloodlossModifier: -10
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: FHGauze
+    count: 10
+  - type: StackPrice
+    price: 10
+
+- type: entity
+  id: FHGauze1
+  parent: FHGauze
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: FHGauze
+    count: 1

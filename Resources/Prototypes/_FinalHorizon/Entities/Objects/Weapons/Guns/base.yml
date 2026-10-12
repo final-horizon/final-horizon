@@ -33,6 +33,12 @@
     walkModifier: 0.90
     sprintModifier: 0.90
   - type: CursorOffsetRequiresWield
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Draw/generic_draw.ogg
+      params:
+        volume: -2
+
 
 - type: entity
   parent: FHWeaponBase
@@ -94,3 +100,25 @@
     range: 150
     sound: /Audio/_FinalHorizon/Weapons/Guns/Far/rpg_dist.ogg
   - type: GunRequiresWield
+
+- type: entity
+  parent: BaseItem
+  abstract: true
+  id: FHWeaponBasePistol
+  components:
+  - type: Gun
+    minAngle: 15
+    maxAngle: 25
+    angleIncrease: 2
+    angleDecay: 10
+    soundEmpty:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Empty/gen_empty.ogg
+  - type: PullDoAfter
+    pullTime: 0.3
+  - type: FarGunshot
+    range: 75
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/glock_dist.ogg
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - Pocket

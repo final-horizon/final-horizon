@@ -180,6 +180,13 @@
   - type: Clickable
   - type: Cover
     hitChance: 0.90
+    closeMissDistance: 2.5
   - type: Construction
     graph: SandbagCover
     node: built
+  - type: Appearance
+  - type: DamageVisuals
+    thresholds: [0, 400, 800, 1000]
+    trackAllDamage: true
+    damageOverlay:
+      sprite: _FinalHorizon/Structures/Cover/sandbag.rsi

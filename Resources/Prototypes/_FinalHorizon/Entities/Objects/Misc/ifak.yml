@@ -1,6 +1,6 @@
 - type: entity
-  parent: BaseStorageItem
-  id: IFAKBase
+  parent: FHClothingPouchBase
+  id: FHIFAKBase
   abstract: true
   description: An individual first aid kit
   components:
@@ -17,50 +17,44 @@
     maxItemSize: Small
     grid:
     - 0,0,2,1
+    whitelist:
+      tags:
+      - FHMedical
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
 
+
+# USMC
 - type: entity
-  parent: IFAKBase
-  id: IFAKBaseFilled
+  parent: FHIFAKBase
+  id: FHIFAKUSMC
+  name: USMC IFAK
+  components:
+  - type: Sprite
+    state: usmc
+  - type: Item
+    state: usmc
+
+- type: entity
+  parent: FHIFAKUSMC
+  id: FHIFAKUSMCFilled
+  name: USMC IFAK
   suffix: Filled
-  abstract: true
   components:
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: Brutepack
-        - id: Gauze
+        - id: FHGauzePacketNATO
         - id: BlisterPackTricordrazine
         - id: BlisterPackIron
-
-# USMC
-- type: entity
-  parent: IFAKBase
-  id: IFAKUSMC
-  name: USMC IFAK
-  components:
-  - type: Sprite
-    state: usmc
-  - type: Item
-    state: usmc
-
-- type: entity
-  parent: IFAKBaseFilled
-  id: IFAKUSMCFilled
-  name: USMC IFAK
-  components:
-  - type: Sprite
-    state: usmc
-  - type: Item
-    state: usmc
+        - id: FHBrutepack
 
 # BDW
 - type: entity
-  parent: IFAKBase
-  id: IFAKBDW
+  parent: FHIFAKBase
+  id: FHIFAKBDW
   name: BDW IFAK
   components:
   - type: Sprite
@@ -69,19 +63,24 @@
     state: bdw
 
 - type: entity
-  parent: IFAKBaseFilled
-  id: IFAKBDWFilled
+  parent: FHIFAKBDW
+  id: FHIFAKBDWFilled
   name: BDW IFAK
+  suffix: Filled
   components:
-  - type: Sprite
-    state: bdw
-  - type: Item
-    state: bdw
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHGauzePacketNATO
+        - id: BlisterPackTricordrazine
+        - id: BlisterPackIron
+        - id: FHBrutepack
 
 # Soviet
 - type: entity
-  parent: IFAKBase
-  id: IFAKUSSR
+  parent: FHIFAKBase
+  id: FHIFAKUSSR
   name: Soviet IFAK
   components:
   - type: Sprite
@@ -90,11 +89,16 @@
     state: soviet
 
 - type: entity
-  parent: IFAKBaseFilled
-  id: IFAKUSSRFilled
+  parent: FHIFAKUSSR
+  id: FHIFAKUSSRFilled
   name: Soviet IFAK
+  suffix: Filled
   components:
-  - type: Sprite
-    state: soviet
-  - type: Item
-    state: soviet
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHGauzePacketPACT
+        - id: BlisterPackTricordrazine
+        - id: BlisterPackIron
+        - id: FHBrutepack

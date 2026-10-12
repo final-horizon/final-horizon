@@ -273,7 +273,7 @@
     suitstorage: FHWeaponRifleMPIKM
     head: FHClothingHeadHelmetM56
     eyes: ClothingEyesGlassesCheapSunglasses
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled
 
 - type: startingGear
   id: NVAUniformTeamLeader
@@ -286,7 +286,7 @@
     pouchright: FHClothingPouchNVAAmmoFilled
     suitstorage: FHWeaponRifleMPIKM
     head: FHClothingHeadHelmetM56
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled
 
 - type: startingGear
   id: NVAUniformMachineGunner
@@ -299,7 +299,7 @@
     pouchright: FHClothingPouchNVALMGFilled
     suitstorage: FHWeaponLMGPKM
     head: FHClothingHeadHelmetM56Covered
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled
 
 - type: startingGear
   id: NVAUniformMedic
@@ -312,7 +312,7 @@
     pouchright: FHClothingPouchNVAAmmoFilled
     suitstorage: FHWeaponRifleMPIKM
     head: FHClothingHeadHelmetM56Medic
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled
     mask: ClothingMaskSterile
     gloves: ClothingHandsGlovesLatex
 
@@ -327,7 +327,7 @@
     pouchright: FHClothingPouchNVAAmmoFilled
     suitstorage: FHWeaponRifleMPIKM
     head: FHClothingHeadHelmetM56
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled
 
 - type: startingGear
   id: NVAUniformAutoRifleMan
@@ -340,7 +340,7 @@
     pouchright: FHClothingPouchNVAAmmoFilled40
     suitstorage: FHWeaponLMGLMGK
     head: FHClothingHeadHelmetM56Covered
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled
 
 - type: startingGear
   id: NVAUniformRTO
@@ -353,7 +353,7 @@
     pouchright: FHClothingPouchNVAAmmoFilled
     suitstorage: FHWeaponRifleMPIKM
     head: FHClothingHeadHelmetM56
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled
 
 - type: startingGear
   id: NVAUniformRifleMan
@@ -366,4 +366,4 @@
     pouchright: FHClothingPouchNVAAmmoFilled
     suitstorage: FHWeaponRifleMPIKM
     head: FHClothingHeadHelmetM56
-    pocket1: IFAKUSSRFilled
+    pocket1: FHIFAKUSSRFilled

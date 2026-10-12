@@ -21,6 +21,7 @@
   - type: Tag
     tags:
     - MedicationBox
+    - FHMedical
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:

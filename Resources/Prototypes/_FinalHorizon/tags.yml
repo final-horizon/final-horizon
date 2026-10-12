@@ -1,4 +1,11 @@
 # Mags
+
+- type: Tag
+  id: Magazine45acp
+
+- type: Tag
+  id: Magazine9x18
+
 - type: Tag
   id: Magazine556
 
@@ -21,6 +28,13 @@
   id: Magazine762x39 # wp
 
 # Cartridge
+
+- type: Tag
+  id: Cartridge45acp
+
+- type: Tag
+  id: Cartridge9x18
+
 - type: Tag
   id: Cartridge556
 
@@ -42,6 +56,12 @@
 - type: Tag
   id: CartridgeSMAW
 
+- type: Tag
+  id: CartridgeM406
+
+- type: Tag
+  id: CartridgeVOG25
+
 # Radios
 - type: Tag
   id: EncryptionNato
@@ -55,3 +75,6 @@
 
 - type: Tag
   id: FHUtilityItem
+
+- type: Tag
+  id: FHMedical #for any medical items that need to go into ifaks

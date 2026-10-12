@@ -240,7 +240,7 @@
     suitstorage: FHWeaponRifleG3A3
     head: FHClothingHeadHatBeretBDW
     eyes: ClothingEyesGlassesCheapSunglasses
-    pocket1: IFAKBDWFilled
+    pocket1: FHIFAKBDWFilled
 
 - type: startingGear
   id: BDWUniformTeamLeader
@@ -253,7 +253,7 @@
     pouchright: FHClothingPouchBDWAmmoFilled
     suitstorage: FHWeaponRifleG3A3
     head: FHClothingHeadHatBeretBDW
-    pocket1: IFAKBDWFilled
+    pocket1: FHIFAKBDWFilled
 
 - type: startingGear
   id: BDWUniformMachineGunner
@@ -266,7 +266,7 @@
     pouchright: FHClothingPouchBDWAmmoLMGFilled
     suitstorage: FHWeaponLMGMG3
     head: FHClothingHeadHelmetM62
-    pocket1: IFAKBDWFilled
+    pocket1: FHIFAKBDWFilled
 
 - type: startingGear
   id: BDWUniformMedic
@@ -279,7 +279,7 @@
     pouchright: FHClothingPouchBDWAmmoFilled
     suitstorage: FHWeaponRifleG3A3
     head: FHClothingHeadHelmetM62Medic
-    pocket1: IFAKBDWFilled
+    pocket1: FHIFAKBDWFilled
     mask: ClothingMaskSterile
     gloves: ClothingHandsGlovesLatex
 
@@ -294,7 +294,7 @@
     pouchright: FHClothingPouchBDWAmmoFilled
     suitstorage: FHWeaponRifleG3A3
     head: FHClothingHeadHelmetM62
-    pocket1: IFAKBDWFilled
+    pocket1: FHIFAKBDWFilled
 
 - type: startingGear
   id: BDWUniformRTO
@@ -307,7 +307,7 @@
     pouchright: FHClothingPouchBDWAmmoFilled
     suitstorage: FHWeaponRifleG3A3
     head: FHClothingHeadHelmetM62
-    pocket1: IFAKBDWFilled
+    pocket1: FHIFAKBDWFilled
 
 - type: startingGear
   id: BDWUniformRifleMan
@@ -320,4 +320,4 @@
     pouchright: FHClothingPouchBDWAmmoFilled
     suitstorage: FHWeaponRifleG3A3
     head: FHClothingHeadHelmetM62
-    pocket1: IFAKBDWFilled
+    pocket1: FHIFAKBDWFilled

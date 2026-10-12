@@ -88,12 +88,29 @@
   - type: Clothing
     sprite: _FinalHorizon/Clothing/Pouch/usmc_ammo_40.rsi
   - type: Storage
-    maxItemSize: Tiny
+    maxItemSize: Small
     grid:
     - 0,0,4,1
     whitelist:
       tags:
       - Grenade
+
+- type: entity
+  parent: FHClothingPouchUSMCAmmo40
+  id: FHClothingPouchUSMCAmmo40Filled
+  name: USMC Ammo Pouch, 40mm
+  suffix: Filled
+  description: A pouch for holding 40mm grenades.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+         - id: FHCartridgeGrenadeM406
+         - id: FHCartridgeGrenadeM406
+         - id: FHCartridgeGrenadeM406         
+         - id: FHCartridgeGrenadeM406
+         - id: FHCartridgeGrenadeM406
 
 - type: entity
   parent: FHClothingPouchBase

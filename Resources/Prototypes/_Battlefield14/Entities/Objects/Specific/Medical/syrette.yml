@@ -36,6 +36,7 @@
   - type: Tag
     tags:
     - Syrette
+    - FHMedical
   - type: TrashOnSolutionEmpty
     solution: hypospray
 
@@ -64,6 +65,7 @@
   - type: Tag
     tags:
     - Syrette
+    - FHMedical
 
 - type: entity
   parent: BaseItem
@@ -85,7 +87,8 @@
   - type: Tag
     tags:
     - Trash
-
+    - FHMedical
+    
 - type: entity
   parent: BF14SyretteCapBase
   id: BF14SyretteCapRed

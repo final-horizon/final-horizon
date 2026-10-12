@@ -18,8 +18,10 @@
         variation: 0.125
   - type: Tag
     tags:
-    - Brutepack
-    - Gauze
+    - FHBrutepack
+    - FHGauze
+    - FHMedical
+
 
 - type: entity
   parent: BaseItem
@@ -30,6 +32,9 @@
   - type: Sprite
     sprite: _FinalHorizon/Objects/Specific/Medical/medical.rsi
     state: gauzepack0
+  - type: Tag
+    tags:
+      - FHMedical
 
 #region NATO
 - type: entity
@@ -43,7 +48,7 @@
   - type: SpawnItemsOnUse
     items:
     - id: FHGauzePacketTrashNATO
-    - id: Gauze
+    - id: FHGauze
 
 - type: entity
   parent: FHGauzePacketTrash
@@ -57,7 +62,7 @@
 - type: entity
   parent: FHGauzePacketNATO
   id: FHGauzePacketPACT
-  suffix: NATO
+  suffix: PACT
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Specific/Medical/medical.rsi
@@ -65,7 +70,8 @@
   - type: SpawnItemsOnUse
     items:
     - id: FHGauzePacketTrashPACT
-    - id: Gauze
+    - id: FHGauze
+
 
 - type: entity
   parent: FHGauzePacketTrashNATO
@@ -74,3 +80,6 @@
   - type: Sprite
     sprite: _FinalHorizon/Objects/Specific/Medical/medical.rsi
     state: wp_woundseal0
+
+
+

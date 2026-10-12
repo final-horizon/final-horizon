@@ -93,3 +93,12 @@
   - /Audio/_FinalHorizon/Effects/Footsteps/wood6.ogg
   - /Audio/_FinalHorizon/Effects/Footsteps/wood7.ogg
   - /Audio/_FinalHorizon/Effects/Footsteps/wood8.ogg
+
+- type: soundCollection
+  id: FHStickBreak
+  files:
+  - /Audio/_FinalHorizon/Effects/foliage_forest_01.ogg
+  - /Audio/_FinalHorizon/Effects/foliage_forest_02.ogg
+  - /Audio/_FinalHorizon/Effects/foliage_forest_03.ogg
+  - /Audio/_FinalHorizon/Effects/foliage_forest_04.ogg
+  - /Audio/_FinalHorizon/Effects/foliage_forest_05.ogg

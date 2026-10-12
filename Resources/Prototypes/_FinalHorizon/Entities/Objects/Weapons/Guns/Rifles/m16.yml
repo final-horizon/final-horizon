@@ -21,7 +21,6 @@
     slots:
     - Back
     - suitStorage
-  - type: AmmoCounter
   - type: Gun
     fireRate: 8
     burstFireRate: 8
@@ -40,6 +39,9 @@
   - type: ChamberMagazineAmmoProvider
     soundRack:
       path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+    soundBoltClosed:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Cock/m16_chargeback.ogg
+      volume: 2
     canActivateInhand: false
   - type: ContainerContainer
     containers:
@@ -87,3 +89,47 @@
     availableModes:
       - Burst
       - SemiAuto
+
+- type: entity
+  name: M16A2 + M203
+  parent: FHWeaponRifleM16A2
+  id: FHWeaponRifleM16A2GL
+  description: The US military standard issue rifle. The M16A2 was derived from the M16A1 in 1982 and adopted by the USMC in 1983. The M16A2 features improved ergonomics, a burst instead of full-auto and a new barrel with a 1 in 7 twist to fire the new heavier M855 cartridge. This one has an M203 UGL attached.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/m16a2_gl.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/m16a2_gl.rsi
+  - type: AlternateGun
+    switchSound:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Deploy/m203_select.ogg
+  - type: ItemSlots
+    slots:
+      launcher:
+        name: Launcher
+        priority: 3
+        startingItem: FHWeaponUnderBarrelLauncherM203
+        locked: true
+      launcher_mag:
+        name: LauncherMag
+        priority: 4
+        insertSound: /Audio/_FinalHorizon/Weapons/Guns/MagIn/m203_insertgrenade.ogg
+        ejectSound: /Audio/_FinalHorizon/Weapons/Guns/MagOut/m203_openbarrel.ogg
+        whitelist:
+          tags:
+            - CartridgeM406
+      gun_magazine:
+        name: Magazine
+        insertSound: /Audio/_FinalHorizon/Weapons/Guns/MagIn/m16_magin.ogg
+        ejectSound: /Audio/_FinalHorizon/Weapons/Guns/MagOut/m16_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine556
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge556
