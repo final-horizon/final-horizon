@@ -21,7 +21,7 @@
   - type: AnimationPlayer
   - type: Tag
     tags:
-    - HandGrenade
+    - Grenade
   - type: Fixtures
     fixtures:
       fix1:

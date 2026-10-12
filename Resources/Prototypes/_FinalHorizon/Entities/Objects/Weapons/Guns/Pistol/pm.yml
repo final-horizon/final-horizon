@@ -18,6 +18,10 @@
   - type: Clothing
     sprite: _FinalHorizon/Objects/Weapons/Guns/Pistols/pm.rsi
   - type: Gun
+    minAngle: 1
+    maxAngle: 1
+    angleIncrease: 0 
+    angleDecay: 0
     fireRate: 10
     selectedMode: SemiAuto
     availableModes:
@@ -38,29 +42,15 @@
     canActivateInhand: false
   - type: ContainerContainer
     containers:
-      gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
   - type: ItemSlots
     slots:
-      gun_magazine:
-        name: Magazine
-        insertSound: /Audio/_FinalHorizon/Weapons/Guns/MagIn/pistol_magin.ogg
-        ejectSound: /Audio/_FinalHorizon/Weapons/Guns/MagOut/pistol_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - Magazine9x18
-        whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         priority: 1
         whitelist:
           tags:
             - Cartridge9x18
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
   - type: Appearance
     appearanceDataInit:
      enum.AmmoVisuals.MagLoaded: false

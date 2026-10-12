@@ -121,7 +121,7 @@
     - 0,0,5,1
     whitelist:
       tags:
-      - HandGrenade
+      - Grenade
 
 - type: entity
   parent: FHClothingPouchUSSRGrenade
@@ -185,10 +185,10 @@
         children:
          - id: FHCartridgeGrenadeVOG25
          - id: FHCartridgeGrenadeVOG25
-         - id: FHCartridgeGrenadeVOG25         
          - id: FHCartridgeGrenadeVOG25
          - id: FHCartridgeGrenadeVOG25
-         
+         - id: FHCartridgeGrenadeVOG25
+
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRSG
