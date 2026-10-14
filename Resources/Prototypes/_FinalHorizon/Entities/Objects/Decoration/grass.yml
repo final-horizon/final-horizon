@@ -13,7 +13,7 @@
   - type: Clickable
   - type: Sprite
     sprite: _FinalHorizon/Objects/Decoration/Flora/grass_tall.rsi
-    drawdepth: Mobs # i think it looks better like this but its up to you
+    drawdepth: Overdoors
     state: 1
   - type: Physics
     bodyType: Static
