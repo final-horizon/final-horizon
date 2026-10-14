@@ -152,7 +152,7 @@
   isSubfloor: true
   heatCapacity: 10000
   indestructible: true
-  mobSpeed: 0.90
+  mobSpeed: 0.75
   variants: 1
 
 # Sand
