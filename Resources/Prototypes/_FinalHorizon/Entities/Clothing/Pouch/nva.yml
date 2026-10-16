@@ -133,13 +133,29 @@
   - type: Clothing
     sprite: _FinalHorizon/Clothing/Pouch/nva_vog.rsi
   - type: Storage
-    maxItemSize: Tiny
+    maxItemSize: Small
     grid:
     - 0,0,4,1
     whitelist:
       tags:
       - Grenade
 
+- type: entity
+  parent: FHClothingPouchNVAVOG
+  id: FHClothingPouchNVAVOGFilled
+  suffix: Filled
+  name: Nationale Volksarmee VOG Pouch
+  description: A pouch for carrying VOG underbarrel grenades.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+         - id: FHCartridgeGrenadeVOG25
+         - id: FHCartridgeGrenadeVOG25
+         - id: FHCartridgeGrenadeVOG25         
+         - id: FHCartridgeGrenadeVOG25S
+         - id: FHCartridgeGrenadeVOG25S
 
 - type: entity
   parent: FHClothingPouchBase

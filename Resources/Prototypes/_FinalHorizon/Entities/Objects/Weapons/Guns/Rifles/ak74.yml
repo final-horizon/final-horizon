@@ -103,6 +103,7 @@
         whitelist:
           tags:
             - CartridgeVOG25
+            - CartridgeVOG25S
       gun_magazine:
         name: Magazine
         insertSound: /Audio/_FinalHorizon/Weapons/Guns/MagIn/ak74_magin.ogg

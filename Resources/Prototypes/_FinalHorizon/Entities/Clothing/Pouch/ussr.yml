@@ -186,9 +186,8 @@
          - id: FHCartridgeGrenadeVOG25
          - id: FHCartridgeGrenadeVOG25
          - id: FHCartridgeGrenadeVOG25
-         - id: FHCartridgeGrenadeVOG25
-         - id: FHCartridgeGrenadeVOG25
-
+         - id: FHCartridgeGrenadeVOG25S
+         - id: FHCartridgeGrenadeVOG25S
 - type: entity
   parent: FHClothingPouchBase
   id: FHClothingPouchUSSRSG

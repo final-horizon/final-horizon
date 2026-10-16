@@ -9,9 +9,11 @@
   - USMCMachineGunner
   - USMCMedic
   - USMCSniper
+  - USMCGrenadier
+  - USMCAntiTank
   - USMCRTO
   - USMCRifleMan
-  - USMCReservist
+  - USMCReservist 
 
 - type: department
   id: USSR
@@ -25,6 +27,7 @@
   - USSRMedic
   - USSRSniper
   - USSRAutoRifleMan
+  - USSRGrenadier
   - USSRRTO
   - USSRRifleMan
   - USSRReservist
@@ -40,6 +43,8 @@
   - BDWMachineGunner
   - BDWMedic
   - BDWSniper
+  - BDWGrenadier
+  - BDWAntiTank
   - BDWRTO
   - BDWRifleMan
 
@@ -55,5 +60,6 @@
   - NVAMedic
   - NVASniper
   - NVAAutoRifleMan
+  - NVAGrenadier
   - NVARTO
   - NVARifleMan

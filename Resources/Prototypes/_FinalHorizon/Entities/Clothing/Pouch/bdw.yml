@@ -1,7 +1,51 @@
 - type: entity
   parent: FHClothingPouchBase
+  id: FHClothingPouchBDWGLHolster
+  name: BDW HK69A1 Holster
+  description: A holster that can carry an HK69A1 safely.
+  components: 
+  - type: Sprite
+    sprite: _FinalHorizon/Clothing/Pouch/bdw_gl_holster.rsi
+    layers:
+    - state: icon
+    - sprite: _FinalHorizon/Clothing/Underlays/bdw.rsi
+      state: hk69a1
+      map: [ "hk69a1_fill" ]
+      visible: false
+  - type: Clothing
+    sprite: _FinalHorizon/Clothing/Pouch/bdw_gl_holster.rsi
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,0,1
+    whitelist:
+      tags:
+      - FHWeaponLauncherHK69A1
+  - type: ItemMapper
+    spriteLayers:
+    - hk69a1_fill
+    mapLayers:
+      hk69a1_fill:
+        whitelist:
+          tags:
+          - FHWeaponLauncherHK69A1
+  - type: Appearance
+
+- type: entity
+  parent: FHClothingPouchBDWGLHolster
+  id: FHClothingPouchBDWGLHolsterFilled
+  suffix: filled, HK69A1
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: FHWeaponLauncherHK69A1
+
+- type: entity
+  parent: FHClothingPouchBase
   id: FHClothingPouchBDWAmmo
-  name: USMC ammo pouch
+  name: BDW Ammo Pouch
   description: A pouch that can carry two mags.
   components:
   - type: Sprite

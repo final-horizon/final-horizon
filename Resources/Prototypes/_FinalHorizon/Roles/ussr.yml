@@ -239,6 +239,37 @@
         factionName: "Soviet Army"
 
 - type: job
+  id: USSRGrenadier
+  name: job-name-USSR-grenadier
+  description: job-description-USSR-grenadier
+  playTimeTracker: USSRGrenadier
+  startingGear: USSRGrenadier
+  icon: "Pact"
+  whitelisted: true
+  jobRank: PactEnlisted
+  joinNotifiyCrew: false
+  displayWeight: 5
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Soviet Army"
+
+
+- type: job
   id: USSRReservist
   name: job-name-USSR-reservist
   description: job-description-USSR-reservist
@@ -294,6 +325,9 @@
 - type: playTimeTracker
   id: USSRReservist
 
+- type: playTimeTracker
+  id: USSRGrenadier
+
 - type: startingGear
   id: USSRUniformPlatoonLeader
   equipment:
@@ -317,7 +351,7 @@
     outerClothing: FHClothingOuterArmor6b2
     back: FHClothingBackRadioR105D
     belt: FHClothingBeltUSSRHarness
-    pouchleft: FHClothingPouchUSSRGrenadeFilled
+    pouchleft: FHClothingPouchUSSRVOGFilled
     pouchright: FHClothingPouchUSSRAmmoFilled
     suitstorage: FHWeaponRifleAK74GL
     head: FHClothingHeadHelmetSSH68
@@ -414,4 +448,15 @@
     pouchright: FHClothingPouchUSSRAmmoFilled
     suitstorage: FHWeaponRifleAK74
     head: FHClothingHeadHatPCSA
+    pocket1: FHIFAKUSSRFilled
+
+- type: startingGear
+  id: USSRUniformGrenadier
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUSSRYellow
+    shoes: FHClothingShoesBootsSovietJack
+    back: FHClothingBackpackUSSRRPGFilled
+    belt: FHClothingBeltUSSRHarness
+    suitstorage: FHWeaponLauncherRPG7
+    head: FHClothingHeadHelmetSSH68
     pocket1: FHIFAKUSSRFilled
