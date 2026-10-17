@@ -35,9 +35,6 @@
     soundEmpty:
       path: /Audio/_FinalHorizon/Weapons/Guns/Empty/gen_empty.ogg
   - type: ChamberMagazineAmmoProvider
-    soundBoltClosed:
-      path: /Audio/_FinalHorizon/Weapons/Guns/Cock/ak74_cock.ogg
-      volume: 2
     soundRack:
       path: /Audio/_FinalHorizon/Weapons/Guns/Cock/ak74_cock.ogg
     canActivateInhand: false

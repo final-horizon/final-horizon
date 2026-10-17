@@ -1,0 +1,265 @@
+#nato
+
+- type: entity
+  id: FHVehicleHumvee
+  parent: BaseStructure
+  name: Humvee
+  description: use the door
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Vehicles/Humvee.rsi
+    state: state1
+    drawdepth: OverMobs
+  - type: Icon
+    sprite: _FinalHorizon/Objects/Vehicles/Humvee.rsi
+    state: state1
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Climbable
+    delay: 1.5
+  - type: Clickable
+  - type: Cover
+    hitChance: 0.40
+  - type: Fixtures
+    fixtures:
+      front:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.6,0.5,0.6,1.5"
+        density: 200
+        hard: true
+        layer:
+        - TableLayer
+        - BulletImpassable
+        mask:
+        - TableMask
+      rear:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.6,-1.5,0.6,-0.5"
+        density: 200
+        hard: true
+        layer:
+        - TableLayer
+        - BulletImpassable
+        mask:
+        - TableMask
+      middle:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.5,0.3,0.5"
+        density: 100
+        hard: true
+        layer:
+        - TableLayer
+        - BulletImpassable
+        mask:
+        - TableMask
+
+- type: entity
+  id: FHVehicleM113
+  parent: BaseStructure
+  name: M113
+  description: use the door
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Vehicles/M113.rsi
+    state: state1
+    drawdepth: OverMobs
+  - type: Icon
+    sprite: _FinalHorizon/Objects/Vehicles/M113.rsi
+    state: state1
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Climbable
+    delay: 1.5
+  - type: Clickable
+  - type: Cover
+  - type: Fixtures
+    fixtures:
+      rear_block:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.9,-1.7,0.9,1.5"
+        density: 200
+        hard: true
+        layer:
+        - TableLayer
+        - BulletImpassable
+        mask:
+        - TableMask
+      door_left:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.75,2,-1,1.5"
+        density: 50
+        hard: true
+        layer:
+        - TableLayer
+        - BulletImpassable
+        mask:
+        - TableMask
+      door_right:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "1,2,0.75,1.5"
+        density: 50
+        hard: true
+        layer:
+        - TableLayer
+        - BulletImpassable
+        mask:
+        - TableMask
+
+#pact
+
+
+- type: entity
+  id: FHVehicleTigr
+  parent: BaseStructure
+  name: Tigr
+  description: use the door
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Vehicles/Tigr.rsi
+    state: state1
+    drawdepth: OverMobs
+  - type: Icon
+    sprite: _FinalHorizon/Objects/Vehicles/Tigr.rsi
+    state: state1
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Climbable
+    delay: 1.5
+  - type: Clickable
+  - type: Cover
+  - type: Fixtures
+    fixtures:
+      front:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.6,0.5,0.6,1.5"
+        density: 200
+        hard: true
+        layer:
+        - TableLayer
+        - BulletImpassable
+        mask:
+        - TableMask
+      rear:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.6,-1.8,0.6,-0.5"
+        density: 200
+        hard: true
+        layer:
+        - TableLayer
+        - BulletImpassable
+        mask:
+        - TableMask
+      middle:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.3,-0.5,0.3,0.5"
+        density: 100
+        hard: true
+        layer:
+        - TableLayer
+        - BulletImpassable
+        mask:
+        - TableMask
+
+- type: entity
+  id: FHVehicleBTR80
+  parent: BaseStructure
+  name: BTR-80
+  description: use the door
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Vehicles/BTR-80.rsi
+    state: state1
+    drawdepth: OverMobs
+  - type: Icon
+    sprite: _FinalHorizon/Objects/Vehicles/BTR-80.rsi
+    state: state1
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Climbable
+    delay: 1.5
+  - type: Clickable
+  - type: Cover
+  - type: Fixtures
+    fixtures:
+      rear_block:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.9,-2.4,0.9,2"
+        density: 200
+        hard: true
+        layer:
+        - TableLayer
+        - BulletImpassable
+        mask:
+        - TableMask
+      door_left:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.75,2.5,-1,1.5"
+        density: 50
+        hard: true
+        layer:
+        - TableLayer
+        - BulletImpassable
+        mask:
+        - TableMask
+      door_right:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "1,2.5,0.75,1.5"
+        density: 50
+        hard: true
+        layer:
+        - TableLayer
+        - BulletImpassable
+        mask:
+        - TableMask

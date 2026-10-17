@@ -12,7 +12,7 @@
     maxInitialInfectedGrace: 0
     minInitialInfectedGrace: 0
   - type: ZombifyOnDeath
-
+  
 - type: entity
   parent: FHMobZombieBase
   id: FHMobZombieUSMC
