@@ -54,7 +54,7 @@
   components:
   - type: Tag
     tags:
-      - CartridgeVOG25S
+      - CartridgeVOG25
       - Grenade
   - type: Item
     size: Small
@@ -78,7 +78,7 @@
   components:
   - type: Tag
     tags:
-      - CartridgeM406S
+      - CartridgeM406
       - Grenade
   - type: Item
     size: Small

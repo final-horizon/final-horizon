@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 10/18/2026 15:44:31
-  entityCount: 3580
+  time: 10/21/2026 15:56:11
+  entityCount: 3583
 maps:
 - 1
 grids:
@@ -18263,15 +18263,79 @@ entities:
       parent: 1
 - proto: FHWeaponLauncherRPG18
   entities:
-  - uid: 1386
+  - uid: 427
     components:
     - type: Transform
-      pos: 11.286826,2.5531516
+      pos: 11.432562,2.6300142
       parent: 1
     - type: Item
       heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          ents: []
+  - uid: 428
+    components:
+    - type: Transform
+      pos: 11.151312,2.6456392
+      parent: 1
+    - type: Item
+      heldPrefix: folded
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          ents: []
+  - uid: 429
+    components:
+    - type: Transform
+      pos: 11.541937,3.0050142
+      parent: 1
+    - type: Item
+      heldPrefix: folded
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          ents: []
+  - uid: 1383
+    components:
+    - type: Transform
+      pos: 11.104437,2.9893892
+      parent: 1
+    - type: Item
+      heldPrefix: folded
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          ents: []
+  - uid: 1384
+    components:
+    - type: Transform
+      pos: 11.307562,2.9893892
+      parent: 1
+    - type: Item
+      heldPrefix: folded
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          ents: []
+  - uid: 1385
+    components:
+    - type: Transform
+      pos: 11.463812,3.2550142
+      parent: 1
+    - type: Item
+      heldPrefix: folded
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          ents: []
+  - uid: 1386
+    components:
+    - type: Transform
+      pos: 11.166937,3.2393892
+      parent: 1
+    - type: Item
+      heldPrefix: folded
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -18279,12 +18343,10 @@ entities:
   - uid: 1387
     components:
     - type: Transform
-      pos: 11.179124,2.975202
+      pos: 11.620062,2.6300142
       parent: 1
     - type: Item
       heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -18292,12 +18354,10 @@ entities:
   - uid: 1388
     components:
     - type: Transform
-      pos: 11.38329,3.037702
+      pos: 11.323187,3.3643892
       parent: 1
     - type: Item
       heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -18305,51 +18365,10 @@ entities:
   - uid: 1389
     components:
     - type: Transform
-      pos: 11.6207905,3.0543687
+      pos: 11.557562,3.3643892
       parent: 1
     - type: Item
       heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
-    - type: ContainerContainer
-      containers:
-        ballistic-ammo: !type:Container
-          ents: []
-  - uid: 1390
-    components:
-    - type: Transform
-      pos: 11.8291235,3.0543687
-      parent: 1
-    - type: Item
-      heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
-    - type: ContainerContainer
-      containers:
-        ballistic-ammo: !type:Container
-          ents: []
-  - uid: 1391
-    components:
-    - type: Transform
-      pos: 11.6624565,3.3418689
-      parent: 1
-    - type: Item
-      heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
-    - type: ContainerContainer
-      containers:
-        ballistic-ammo: !type:Container
-          ents: []
-  - uid: 1392
-    components:
-    - type: Transform
-      pos: 11.33329,3.3335354
-      parent: 1
-    - type: Item
-      heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container

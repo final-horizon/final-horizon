@@ -50,7 +50,6 @@
         whitelist:
           tags:
             - CartridgeM406
-            - CartridgeM406S
   - type: Appearance
     appearnaceDataInit:
       enum.AmmoVisuals.MagLoaded: false

@@ -25,6 +25,7 @@
   components:
   - type: Tag
     tags:
+    - FHOintment
     - Ointment
     - FHMedical
   - type: Sprite
@@ -78,6 +79,7 @@
   - type: Tag
     tags:
     - Ointment
+    - FHOintment
   - type: Sprite
     state: regenerative-mesh
   - type: Item
@@ -125,6 +127,7 @@
   components:
   - type: Tag
     tags:
+    - FHBrutepack
     - Brutepack
     - FHMedical
   - type: Sprite
@@ -173,6 +176,7 @@
   components:
   - type: Tag
     tags:
+    - FHBrutepack
     - Brutepack
     - FHMedical
   - type: Sprite
@@ -307,6 +311,7 @@
   - type: Tag
     tags:
     - FHMedical
+    - FHGauze
     - Gauze
   - type: Sprite
     sprite: _FinalHorizon/Objects/Specific/Medical/medical.rsi
