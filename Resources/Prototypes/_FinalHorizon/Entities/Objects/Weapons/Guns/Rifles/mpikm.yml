@@ -35,8 +35,11 @@
     soundEmpty:
       path: /Audio/_FinalHorizon/Weapons/Guns/Empty/gen_empty.ogg
   - type: ChamberMagazineAmmoProvider
+    soundBoltClosed:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Cock/ak74_cock.ogg
+      volume: 2
     soundRack:
-      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+      path: /Audio/_FinalHorizon/Weapons/Guns/Cock/ak74_cock.ogg
     canActivateInhand: false
   - type: ContainerContainer
     containers:
@@ -68,3 +71,48 @@
      enum.AmmoVisuals.MagLoaded: false
   - type: FarGunshot
     sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak74.ogg
+
+- type: entity
+  name: MPi-KM + GP-25
+  parent: FHWeaponRifleMPIKM
+  id: FHWeaponRifleMPIKMGL
+  description: The standard issue rifle of the Nationale Volksarmee. Produced in East German factories as a licensed variant of the Soviet AKM rifle. Uses polymer furniture, rather than wood. This one has a GP25 attached.
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/mpikm_gl.rsi
+  - type: Clothing
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/mpikm_gl.rsi
+  - type: AlternateGun
+    switchSound:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Deploy/gp25_select.ogg
+  - type: ItemSlots
+    slots:
+      launcher:
+        name: Launcher
+        priority: 3
+        startingItem: FHWeaponUnderBarrelLauncherGP25
+        locked: true
+      launcher_mag:
+        name: LauncherMag
+        priority: 4
+        insertSound: /Audio/_FinalHorizon/Weapons/Guns/MagIn/gp25_insertgrenade.ogg
+        ejectSound: /Audio/_FinalHorizon/Weapons/Guns/MagOut/gp25_openbarrel.ogg
+        whitelist:
+          tags:
+            - CartridgeVOG25
+            - CartridgeVOG25S
+      gun_magazine:
+        name: Magazine
+        insertSound: /Audio/_FinalHorizon/Weapons/Guns/MagIn/ak74_magin.ogg
+        ejectSound: /Audio/_FinalHorizon/Weapons/Guns/MagOut/ak74_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine762x39
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge762x39

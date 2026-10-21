@@ -1,3 +1,8 @@
+# Sidearms (This'll eventually be used for all holsters, but for now it's just for the HK69A1)
+
+- type: Tag
+  id: FHLauncherHK69A1
+
 # Mags
 
 - type: Tag

@@ -109,8 +109,8 @@
          - id: FHCartridgeGrenadeM406
          - id: FHCartridgeGrenadeM406
          - id: FHCartridgeGrenadeM406
-         - id: FHCartridgeGrenadeM406
-         - id: FHCartridgeGrenadeM406
+         - id: FHCartridgeGrenadeM406S
+         - id: FHCartridgeGrenadeM406S
 
 - type: entity
   parent: FHClothingPouchBase

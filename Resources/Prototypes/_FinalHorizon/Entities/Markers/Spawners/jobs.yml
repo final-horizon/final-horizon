@@ -154,6 +154,50 @@
     state: green
 
 - type: entity
+  id: SpawnPointUSMCAntiTank
+  parent: SpawnPointJobBase
+  name: USMC anti-tank
+  components:
+  - type: SpawnPoint
+    job_id: USMCAntiTank
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSMCAntiTankLate
+  parent: SpawnPointJobBase
+  name: USMC anti-tank
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USMCAntiTank
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSMCGrenadier
+  parent: SpawnPointJobBase
+  name: USMC grenadier
+  components:
+  - type: SpawnPoint
+    job_id: USMCGrenadier
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSMCGrenadierLate
+  parent: SpawnPointJobBase
+  name: USMC grenadier
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USMCGrenadier
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
   id: SpawnPointUSMCReservist
   parent: SpawnPointJobBase
   name: USMC reservist
@@ -348,6 +392,28 @@
   components:
   - type: SpawnPoint
     job_id: USSRRTO
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSSRGrenadier
+  parent: SpawnPointJobBase
+  name: Soviet Army grenadier
+  components:
+  - type: SpawnPoint
+    job_id: USSRGrenadier
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointUSSRGrenadierLate
+  parent: SpawnPointJobBase
+  name: Soviet Army grenadier
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: USSRGrenadier
     spawn_type: LateJoinJob
   - type: Sprite
     state: green

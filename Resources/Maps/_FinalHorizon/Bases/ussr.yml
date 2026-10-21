@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 10/11/2026 23:46:56
-  entityCount: 3549
+  time: 10/18/2026 15:44:31
+  entityCount: 3580
 maps:
 - 1
 grids:
@@ -3799,22 +3799,129 @@ entities:
     - type: Transform
       pos: 6.731702,0.59732115
       parent: 1
-- proto: FHCartridgeRocketRPG7
+- proto: FHCartridgeGrenadeVOG25
   entities:
-  - uid: 414
+  - uid: 3552
     components:
     - type: Transform
-      pos: 11.45829,1.6908705
+      pos: 6.0440025,3.048398
       parent: 1
-  - uid: 415
+  - uid: 3553
     components:
     - type: Transform
-      pos: 11.587457,1.7908705
+      pos: 6.119003,3.048398
       parent: 1
-  - uid: 416
+  - uid: 3554
     components:
     - type: Transform
-      pos: 11.32079,1.5825373
+      pos: 6.175253,2.9421482
+      parent: 1
+  - uid: 3555
+    components:
+    - type: Transform
+      pos: 6.131503,2.9421482
+      parent: 1
+  - uid: 3556
+    components:
+    - type: Transform
+      pos: 6.100253,2.9421482
+      parent: 1
+  - uid: 3557
+    components:
+    - type: Transform
+      pos: 6.087753,2.9421482
+      parent: 1
+  - uid: 3558
+    components:
+    - type: Transform
+      pos: 6.150253,2.9608982
+      parent: 1
+  - uid: 3559
+    components:
+    - type: Transform
+      pos: 6.131503,2.9608982
+      parent: 1
+  - uid: 3560
+    components:
+    - type: Transform
+      pos: 6.1252527,2.954648
+      parent: 1
+- proto: FHCartridgeGrenadeVOG25S
+  entities:
+  - uid: 3561
+    components:
+    - type: Transform
+      pos: 6.769003,3.1171482
+      parent: 1
+  - uid: 3562
+    components:
+    - type: Transform
+      pos: 6.744003,3.092148
+      parent: 1
+  - uid: 3563
+    components:
+    - type: Transform
+      pos: 6.9065027,3.092148
+      parent: 1
+  - uid: 3564
+    components:
+    - type: Transform
+      pos: 6.756503,3.0546482
+      parent: 1
+  - uid: 3565
+    components:
+    - type: Transform
+      pos: 6.756503,3.0546482
+      parent: 1
+  - uid: 3566
+    components:
+    - type: Transform
+      pos: 6.775253,3.0546482
+      parent: 1
+  - uid: 3567
+    components:
+    - type: Transform
+      pos: 6.744003,3.104648
+      parent: 1
+  - uid: 3568
+    components:
+    - type: Transform
+      pos: 6.694003,3.0546482
+      parent: 1
+  - uid: 3569
+    components:
+    - type: Transform
+      pos: 6.6690025,3.042148
+      parent: 1
+  - uid: 3570
+    components:
+    - type: Transform
+      pos: 6.7627525,3.060898
+      parent: 1
+  - uid: 3571
+    components:
+    - type: Transform
+      pos: 6.7627525,3.060898
+      parent: 1
+  - uid: 3572
+    components:
+    - type: Transform
+      pos: 6.712753,3.017148
+      parent: 1
+  - uid: 3573
+    components:
+    - type: Transform
+      pos: 6.7502527,3.0358982
+      parent: 1
+  - uid: 3574
+    components:
+    - type: Transform
+      pos: 6.806503,3.048398
+      parent: 1
+  - uid: 3575
+    components:
+    - type: Transform
+      pos: 6.787753,3.042148
       parent: 1
 - proto: FHCasseteMamaAnarkhiya
   entities:
@@ -3871,23 +3978,6 @@ entities:
     components:
     - type: Transform
       pos: 11.7158165,6.57559
-      parent: 1
-- proto: FHClothingBackpackUSSRRPGFilled
-  entities:
-  - uid: 427
-    components:
-    - type: Transform
-      pos: 11.78329,0.5825372
-      parent: 1
-  - uid: 428
-    components:
-    - type: Transform
-      pos: 11.199957,0.6450372
-      parent: 1
-  - uid: 429
-    components:
-    - type: Transform
-      pos: 11.541623,0.6200372
       parent: 1
 - proto: FHClothingBeltUSSRHarness
   entities:
@@ -4611,6 +4701,21 @@ entities:
       parent: 1
 - proto: FHClothingPouchUSSRVOGFilled
   entities:
+  - uid: 414
+    components:
+    - type: Transform
+      pos: 6.2453833,3.8555593
+      parent: 1
+  - uid: 415
+    components:
+    - type: Transform
+      pos: 6.101633,3.7993093
+      parent: 1
+  - uid: 416
+    components:
+    - type: Transform
+      pos: 6.139133,3.8243093
+      parent: 1
   - uid: 3538
     components:
     - type: Transform
@@ -6014,6 +6119,68 @@ entities:
     components:
     - type: Transform
       pos: 6.503422,1.564897
+      parent: 1
+- proto: FHMagazineRiflePistol9x18Magfull
+  entities:
+  - uid: 3579
+    components:
+    - type: Transform
+      pos: 10.087753,-0.6453519
+      parent: 1
+  - uid: 3580
+    components:
+    - type: Transform
+      pos: 10.087753,-0.6453519
+      parent: 1
+  - uid: 3581
+    components:
+    - type: Transform
+      pos: 10.037753,-0.6641021
+      parent: 1
+  - uid: 3582
+    components:
+    - type: Transform
+      pos: 10.037753,-0.6641021
+      parent: 1
+  - uid: 3583
+    components:
+    - type: Transform
+      pos: 9.994003,-0.68910193
+      parent: 1
+  - uid: 3584
+    components:
+    - type: Transform
+      pos: 9.994003,-0.68910193
+      parent: 1
+  - uid: 3585
+    components:
+    - type: Transform
+      pos: 9.819003,-0.68910193
+      parent: 1
+  - uid: 3586
+    components:
+    - type: Transform
+      pos: 9.819003,-0.68910193
+      parent: 1
+  - uid: 3587
+    components:
+    - type: Transform
+      pos: 10.025253,-0.701602
+      parent: 1
+  - uid: 3588
+    components:
+    - type: Transform
+      pos: 9.962753,-0.701602
+      parent: 1
+  - uid: 3589
+    components:
+    - type: Transform
+      pos: 9.894003,-0.701602
+      parent: 1
+  - uid: 3590
+    components:
+    - type: Transform
+      pos: 9.894003,-0.701602
       parent: 1
 - proto: FHShovelETool
   entities:
@@ -18096,45 +18263,6 @@ entities:
       parent: 1
 - proto: FHWeaponLauncherRPG18
   entities:
-  - uid: 1383
-    components:
-    - type: Transform
-      pos: 11.80323,2.6238174
-      parent: 1
-    - type: Item
-      heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
-    - type: ContainerContainer
-      containers:
-        ballistic-ammo: !type:Container
-          ents: []
-  - uid: 1384
-    components:
-    - type: Transform
-      pos: 11.612976,2.5966382
-      parent: 1
-    - type: Item
-      heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
-    - type: ContainerContainer
-      containers:
-        ballistic-ammo: !type:Container
-          ents: []
-  - uid: 1385
-    components:
-    - type: Transform
-      pos: 11.444465,2.5803306
-      parent: 1
-    - type: Item
-      heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
-    - type: ContainerContainer
-      containers:
-        ballistic-ammo: !type:Container
-          ents: []
   - uid: 1386
     components:
     - type: Transform
@@ -18226,22 +18354,22 @@ entities:
       containers:
         ballistic-ammo: !type:Container
           ents: []
-- proto: FHWeaponLauncherRPG7
+- proto: FHWeaponPistolPM
   entities:
-  - uid: 1393
+  - uid: 3576
     components:
     - type: Transform
-      pos: 11.64579,1.724204
+      pos: 10.075253,-0.35160208
       parent: 1
-  - uid: 1394
+  - uid: 3577
     components:
     - type: Transform
-      pos: 11.441624,1.7200372
+      pos: 10.100253,-0.47035193
       parent: 1
-  - uid: 1395
+  - uid: 3578
     components:
     - type: Transform
-      pos: 11.179124,1.7367039
+      pos: 10.100253,-0.576602
       parent: 1
 - proto: FHWeaponRifleAK74
   entities:
@@ -19049,11 +19177,6 @@ entities:
     - type: Transform
       pos: 11.5,-0.5
       parent: 1
-  - uid: 1635
-    components:
-    - type: Transform
-      pos: 11.5,1.5
-      parent: 1
   - uid: 1636
     components:
     - type: Transform
@@ -19190,6 +19313,20 @@ entities:
     components:
     - type: Transform
       pos: -11.5,9.5
+      parent: 1
+- proto: SpawnPointUSSRGrenadier
+  entities:
+  - uid: 3550
+    components:
+    - type: Transform
+      pos: -9.5,12.5
+      parent: 1
+- proto: SpawnPointUSSRGrenadierLate
+  entities:
+  - uid: 3551
+    components:
+    - type: Transform
+      pos: -9.5,12.5
       parent: 1
 - proto: SpawnPointUSSRMachineGunner
   entities:

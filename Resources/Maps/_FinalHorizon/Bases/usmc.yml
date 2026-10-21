@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 10/11/2026 23:46:49
-  entityCount: 5085
+  time: 10/18/2026 15:43:56
+  entityCount: 5116
 maps:
 - 1
 grids:
@@ -2605,13 +2605,6 @@ entities:
     - type: Transform
       pos: -5.5,9.5
       parent: 1
-- proto: BookJanitorTale
-  entities:
-  - uid: 5078
-    components:
-    - type: Transform
-      pos: -31.512424,5.3240857
-      parent: 1
 - proto: BoxFlare
   entities:
   - uid: 47
@@ -4719,6 +4712,110 @@ entities:
     - type: Transform
       pos: -46.61657,-3.3437924
       parent: 1
+- proto: FHCartridgeGrenadeM406
+  entities:
+  - uid: 5100
+    components:
+    - type: Transform
+      pos: 5.226033,-4.1373467
+      parent: 1
+  - uid: 5101
+    components:
+    - type: Transform
+      pos: 5.226033,-4.2498465
+      parent: 1
+  - uid: 5102
+    components:
+    - type: Transform
+      pos: 5.226033,-4.2810965
+      parent: 1
+  - uid: 5103
+    components:
+    - type: Transform
+      pos: 5.213533,-4.337347
+      parent: 1
+  - uid: 5104
+    components:
+    - type: Transform
+      pos: 5.182283,-4.3935966
+      parent: 1
+  - uid: 5105
+    components:
+    - type: Transform
+      pos: 5.144783,-4.412347
+      parent: 1
+  - uid: 5106
+    components:
+    - type: Transform
+      pos: 5.144783,-4.287347
+      parent: 1
+  - uid: 5107
+    components:
+    - type: Transform
+      pos: 5.144783,-4.1873465
+      parent: 1
+  - uid: 5108
+    components:
+    - type: Transform
+      pos: 5.138533,-4.2373466
+      parent: 1
+  - uid: 5109
+    components:
+    - type: Transform
+      pos: 5.138533,-4.2935967
+      parent: 1
+  - uid: 5110
+    components:
+    - type: Transform
+      pos: 5.176033,-4.1873465
+      parent: 1
+- proto: FHCartridgeGrenadeM406S
+  entities:
+  - uid: 5111
+    components:
+    - type: Transform
+      pos: 5.732283,-4.1560965
+      parent: 1
+  - uid: 5112
+    components:
+    - type: Transform
+      pos: 5.744783,-4.1873465
+      parent: 1
+  - uid: 5113
+    components:
+    - type: Transform
+      pos: 5.744783,-4.274847
+      parent: 1
+  - uid: 5114
+    components:
+    - type: Transform
+      pos: 5.744783,-4.337347
+      parent: 1
+  - uid: 5115
+    components:
+    - type: Transform
+      pos: 5.744783,-4.337347
+      parent: 1
+  - uid: 5116
+    components:
+    - type: Transform
+      pos: 5.763533,-4.3310966
+      parent: 1
+  - uid: 5117
+    components:
+    - type: Transform
+      pos: 5.832283,-4.2310967
+      parent: 1
+  - uid: 5118
+    components:
+    - type: Transform
+      pos: 5.832283,-4.2310967
+      parent: 1
+  - uid: 5119
+    components:
+    - type: Transform
+      pos: 5.813533,-4.274847
+      parent: 1
 - proto: FHCasseteBlueMonday
   entities:
   - uid: 424
@@ -4763,18 +4860,6 @@ entities:
     components:
     - type: Transform
       pos: 5.0813265,-5.254812
-      parent: 1
-- proto: FHClothingBackpackAliceLargeFilledSmaw
-  entities:
-  - uid: 431
-    components:
-    - type: Transform
-      pos: 8.878233,-5.3480315
-      parent: 1
-  - uid: 432
-    components:
-    - type: Transform
-      pos: 8.803232,-5.7230315
       parent: 1
 - proto: FHClothingBackpackAliceMedium
   entities:
@@ -5775,6 +5860,28 @@ entities:
     components:
     - type: Transform
       pos: 4.483898,-2.4713545
+      parent: 1
+- proto: FHClothingPouchUSMCAmmo40Filled
+  entities:
+  - uid: 431
+    components:
+    - type: Transform
+      pos: 5.4234524,-4.62876
+      parent: 1
+  - uid: 432
+    components:
+    - type: Transform
+      pos: 5.4234524,-4.65376
+      parent: 1
+  - uid: 2000
+    components:
+    - type: Transform
+      pos: 5.4234524,-4.5537596
+      parent: 1
+  - uid: 2014
+    components:
+    - type: Transform
+      pos: 5.4234524,-4.57251
       parent: 1
 - proto: FHClothingPouchUSMCAmmoDouble
   entities:
@@ -7263,17 +7370,48 @@ entities:
     - type: Transform
       pos: 2.3282325,-6.4917817
       parent: 1
-- proto: FHMineClaymoreActive
+- proto: FHMagazineRiflePistol45acpMagfull
   entities:
-  - uid: 5077
+  - uid: 5092
     components:
     - type: Transform
-      pos: -31.524654,5.20178
+      pos: 7.351033,-8.293596
       parent: 1
-    - type: ContainerContainer
-      containers:
-        cluster-payload: !type:Container
-          ents: []
+  - uid: 5093
+    components:
+    - type: Transform
+      pos: 7.288533,-8.306097
+      parent: 1
+  - uid: 5094
+    components:
+    - type: Transform
+      pos: 7.257283,-8.343596
+      parent: 1
+  - uid: 5095
+    components:
+    - type: Transform
+      pos: 7.201033,-8.387346
+      parent: 1
+  - uid: 5096
+    components:
+    - type: Transform
+      pos: 7.376033,-8.206097
+      parent: 1
+  - uid: 5097
+    components:
+    - type: Transform
+      pos: 7.344783,-8.274847
+      parent: 1
+  - uid: 5098
+    components:
+    - type: Transform
+      pos: 7.301033,-8.374846
+      parent: 1
+  - uid: 5099
+    components:
+    - type: Transform
+      pos: 7.282283,-8.418596
+      parent: 1
 - proto: FHShovelETool
   entities:
   - uid: 819
@@ -26379,17 +26517,6 @@ entities:
       containers:
         ballistic-ammo: !type:Container
           ents: []
-  - uid: 2000
-    components:
-    - type: Transform
-      pos: 8.689053,-4.510704
-      parent: 1
-    - type: Item
-      heldPrefix: folded
-    - type: ContainerContainer
-      containers:
-        ballistic-ammo: !type:Container
-          ents: []
   - uid: 2001
     components:
     - type: Transform
@@ -26553,28 +26680,6 @@ entities:
       containers:
         ballistic-ammo: !type:Container
           ents: []
-  - uid: 2014
-    components:
-    - type: Transform
-      pos: 8.876553,-4.5044537
-      parent: 1
-    - type: Item
-      heldPrefix: folded
-    - type: ContainerContainer
-      containers:
-        ballistic-ammo: !type:Container
-          ents: []
-  - uid: 2015
-    components:
-    - type: Transform
-      pos: 8.720303,-4.510704
-      parent: 1
-    - type: Item
-      heldPrefix: folded
-    - type: ContainerContainer
-      containers:
-        ballistic-ammo: !type:Container
-          ents: []
   - uid: 2016
     components:
     - type: Transform
@@ -26597,17 +26702,27 @@ entities:
       containers:
         ballistic-ammo: !type:Container
           ents: []
-- proto: FHWeaponLauncherSMAW
+- proto: FHWeaponPistolM1911
   entities:
-  - uid: 2018
+  - uid: 5088
     components:
     - type: Transform
-      pos: 8.015733,-5.5105314
+      pos: 7.988533,-8.474847
       parent: 1
-  - uid: 2019
+  - uid: 5089
     components:
     - type: Transform
-      pos: 8.103232,-5.7792816
+      pos: 7.969783,-8.549847
+      parent: 1
+  - uid: 5090
+    components:
+    - type: Transform
+      pos: 7.969783,-8.562346
+      parent: 1
+  - uid: 5091
+    components:
+    - type: Transform
+      pos: 7.969783,-8.637346
       parent: 1
 - proto: FHWeaponRifleM16A1
   entities:
@@ -27984,6 +28099,34 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -50.5,-4.5
+      parent: 1
+- proto: SpawnPointUSMCAntiTank
+  entities:
+  - uid: 5086
+    components:
+    - type: Transform
+      pos: -23.5,-12.5
+      parent: 1
+- proto: SpawnPointUSMCAntiTankLate
+  entities:
+  - uid: 5087
+    components:
+    - type: Transform
+      pos: -23.5,-12.5
+      parent: 1
+- proto: SpawnPointUSMCGrenadier
+  entities:
+  - uid: 5078
+    components:
+    - type: Transform
+      pos: -23.5,-12.5
+      parent: 1
+- proto: SpawnPointUSMCGrenadierLate
+  entities:
+  - uid: 5077
+    components:
+    - type: Transform
+      pos: -23.5,-12.5
       parent: 1
 - proto: SpawnPointUSMCMachineGunner
   entities:
