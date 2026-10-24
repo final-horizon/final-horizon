@@ -2,7 +2,7 @@
   parent: BaseItem
   id: FHCartridgeGrenadeM406
   name: M406 Grenade
-  description: placeholder
+  description: A 40mm impact sensitive high explosive frag grenade in use by NATO. Excels at destroying soft targets with both the blast and shrapnel. 
   components:
   - type: Tag
     tags:
@@ -26,7 +26,7 @@
   parent: BaseItem
   id: FHCartridgeGrenadeVOG25
   name: VOG25 Grenade
-  description: placeholder
+  description: A caseless 40mm impact sensitive high explosive frag grenade in use by the Warsaw Pact. Excels at destroying soft targets with both the blast and shrapnel. 
   components:
   - type: Tag
     tags:
@@ -41,6 +41,54 @@
     deleteOnSpawn: true
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Cartridges/vog25.rsi
+    state: icon
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
+
+- type: entity
+  parent: BaseItem
+  id: FHCartridgeGrenadeVOG25S
+  name: ARDG-40 Grenade
+  description: A caseless 40mm impact sensitive smoke dispensing grenade in use by the Warsaw Pact. 
+  components:
+  - type: Tag
+    tags:
+      - CartridgeVOG25S
+      - Grenade
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,1
+  - type: CartridgeAmmo
+    proto: FHBulletGrenadeVOG25S
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Cartridges/vog25s.rsi
+    state: icon
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
+
+- type: entity
+  parent: BaseItem
+  id: FHCartridgeGrenadeM406S
+  name: M680 Grenade
+  description: A 40mm impact sensitive smoke dispensing grenade in use by NATO. 
+  components:
+  - type: Tag
+    tags:
+      - CartridgeM406S
+      - Grenade
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,0,1
+  - type: CartridgeAmmo
+    proto: FHBulletGrenadeM406S
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Cartridges/m406s.rsi
     state: icon
   - type: ExplosionResistance
     damageCoefficient: 0

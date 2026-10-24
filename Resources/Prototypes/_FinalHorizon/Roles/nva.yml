@@ -237,6 +237,36 @@
         faction: Warpact
         factionName: "Nationale Volksarmee"
 
+- type: job
+  id: NVAGrenadier
+  name: job-name-NVA-grenadier
+  description: job-description-NVA-grenadier
+  playTimeTracker: NVAGrenadier
+  startingGear: NVAUniformGrenadier
+  icon: "Pact"
+  whitelisted: true
+  jobRank: PactEnlisted
+  joinNotifiyCrew: false
+  displayWeight: 5
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Nationale Volksarmee"
+
 - type: playTimeTracker
   id: NVAPlatoonLeader
 
@@ -261,6 +291,9 @@
 - type: playTimeTracker
   id: NVARifleMan
 
+- type: playTimeTracker
+  id: NVAGrenadier
+  
 - type: startingGear
   id: NVAUniformPlatoonLeader
   equipment:
@@ -365,5 +398,16 @@
     pouchleft: FHClothingPouchNVAAmmoFilled
     pouchright: FHClothingPouchNVAAmmoFilled
     suitstorage: FHWeaponRifleMPIKM
+    head: FHClothingHeadHelmetM56
+    pocket1: FHIFAKUSSRFilled
+
+- type: startingGear
+  id: NVAUniformGrenadier
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNVAStricht
+    shoes: FHClothingShoesBootsGermanJack
+    back: FHClothingBackpackNVARPGFilled
+    belt: FHClothingBeltNVAHarness
+    suitstorage: FHWeaponLauncherRPG7
     head: FHClothingHeadHelmetM56
     pocket1: FHIFAKUSSRFilled

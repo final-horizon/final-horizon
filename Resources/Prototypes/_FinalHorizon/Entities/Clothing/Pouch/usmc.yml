@@ -108,9 +108,9 @@
         children:
          - id: FHCartridgeGrenadeM406
          - id: FHCartridgeGrenadeM406
-         - id: FHCartridgeGrenadeM406         
          - id: FHCartridgeGrenadeM406
-         - id: FHCartridgeGrenadeM406
+         - id: FHCartridgeGrenadeM406S
+         - id: FHCartridgeGrenadeM406S
 
 - type: entity
   parent: FHClothingPouchBase
@@ -172,7 +172,7 @@
     - 0,0,5,1
     whitelist:
       tags:
-      - HandGrenade
+      - Grenade
 
 - type: entity
   parent: FHClothingPouchUSMCGrenade
