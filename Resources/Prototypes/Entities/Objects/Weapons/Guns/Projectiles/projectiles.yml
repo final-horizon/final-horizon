@@ -86,7 +86,7 @@
         - LowImpassable
         hard: False
   - type: Projectile
-    impactEffect: BulletImpactEffect
+    impactEffect: BulletImpactEffect #todo make this look good
     damage:
       types:
         Piercing: 14

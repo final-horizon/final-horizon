@@ -15,7 +15,7 @@
 - type: soundCollection
   id: MetalBulletImpact
   files:
-  - "/Audio/Weapons/Guns/Hits/ric1.ogg"
+  - "/Audio/Weapons/Guns/Hits/ric1.ogg" #replace with escal sounds
   - "/Audio/Weapons/Guns/Hits/ric2.ogg"
   - "/Audio/Weapons/Guns/Hits/ric3.ogg"
   - "/Audio/Weapons/Guns/Hits/ric4.ogg"

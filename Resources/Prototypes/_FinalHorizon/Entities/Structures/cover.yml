@@ -60,6 +60,7 @@
   name: concrete blocks
   description: A wall of concrete blocks.
   components:
+  - type: SparksOnDamage # _Starfall
   - type: Sprite
     sprite: _FinalHorizon/Structures/Cover/blocks.rsi
     state: base
