@@ -35,6 +35,7 @@
   - type: Tag
     tags:
       - FHMedical
+      - FHGauzePacketTrash
 
 #region NATO
 - type: entity

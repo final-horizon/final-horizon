@@ -1,7 +1,7 @@
 # Sidearms (This'll eventually be used for all holsters, but for now it's just for the HK69A1)
 
 - type: Tag
-  id: FHLauncherHK69A1
+  id: FHWeaponLauncherHK69A1
 
 # Mags
 
@@ -83,3 +83,15 @@
 
 - type: Tag
   id: FHMedical #for any medical items that need to go into ifaks
+
+- type: Tag
+  id: FHBrutepack
+
+- type: Tag
+  id: FHOintment
+
+- type: Tag
+  id: FHGauze
+
+- type: Tag
+  id: FHGauzePacketTrash

@@ -4,7 +4,7 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 10/18/2026 15:43:56
+  time: 10/21/2026 16:00:11
   entityCount: 5116
 maps:
 - 1
@@ -26498,7 +26498,7 @@ entities:
   - uid: 1998
     components:
     - type: Transform
-      pos: 8.501553,-4.460704
+      pos: 8.454103,-4.518748
       parent: 1
     - type: Item
       heldPrefix: folded
@@ -26509,7 +26509,7 @@ entities:
   - uid: 1999
     components:
     - type: Transform
-      pos: 8.576552,-4.5044537
+      pos: 8.579103,-4.487498
       parent: 1
     - type: Item
       heldPrefix: folded
@@ -26520,7 +26520,7 @@ entities:
   - uid: 2001
     components:
     - type: Transform
-      pos: 8.389052,-4.5044537
+      pos: 8.438478,-4.378123
       parent: 1
     - type: Item
       heldPrefix: folded
@@ -26531,12 +26531,10 @@ entities:
   - uid: 2002
     components:
     - type: Transform
-      pos: 4.2660728,-8.367287
+      pos: 5.631018,-8.393747
       parent: 1
     - type: Item
       heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -26544,12 +26542,10 @@ entities:
   - uid: 2003
     components:
     - type: Transform
-      pos: 4.5646844,-8.408954
+      pos: 4.8968043,-8.386019
       parent: 1
     - type: Item
       heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -26557,12 +26553,10 @@ entities:
   - uid: 2004
     components:
     - type: Transform
-      pos: 4.842462,-8.402009
+      pos: 4.489558,-8.393747
       parent: 1
     - type: Item
       heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -26570,12 +26564,10 @@ entities:
   - uid: 2005
     components:
     - type: Transform
-      pos: 5.092462,-8.408954
+      pos: 5.203256,-8.447985
       parent: 1
     - type: Item
       heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -26583,12 +26575,10 @@ entities:
   - uid: 2006
     components:
     - type: Transform
-      pos: 5.3146844,-8.415898
+      pos: 5.9226155,-8.447985
       parent: 1
     - type: Item
       heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -26596,12 +26586,10 @@ entities:
   - uid: 2007
     components:
     - type: Transform
-      pos: 5.6410728,-8.429787
+      pos: 4.683459,-8.385485
       parent: 1
     - type: Item
       heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -26609,12 +26597,10 @@ entities:
   - uid: 2008
     components:
     - type: Transform
-      pos: 5.9466286,-8.436731
+      pos: 6.524266,-8.510485
       parent: 1
     - type: Item
       heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -26622,12 +26608,10 @@ entities:
   - uid: 2009
     components:
     - type: Transform
-      pos: 6.3285737,-8.464509
+      pos: 5.836766,-8.479235
       parent: 1
     - type: Item
       heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -26635,12 +26619,10 @@ entities:
   - uid: 2010
     components:
     - type: Transform
-      pos: 6.5091286,-8.402009
+      pos: 6.133641,-8.49486
       parent: 1
     - type: Item
       heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -26648,12 +26630,10 @@ entities:
   - uid: 2011
     components:
     - type: Transform
-      pos: 6.731351,-8.478398
+      pos: 5.336766,-8.479235
       parent: 1
     - type: Item
       heldPrefix: folded
-    - type: MultiHandedItem
-      handsNeeded: 1
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -26661,7 +26641,7 @@ entities:
   - uid: 2012
     components:
     - type: Transform
-      pos: 8.282803,-4.460704
+      pos: 8.454103,-4.518748
       parent: 1
     - type: Item
       heldPrefix: folded
@@ -26672,7 +26652,18 @@ entities:
   - uid: 2013
     components:
     - type: Transform
-      pos: 8.239053,-4.4669538
+      pos: 8.391603,-4.424998
+      parent: 1
+    - type: Item
+      heldPrefix: folded
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          ents: []
+  - uid: 2015
+    components:
+    - type: Transform
+      pos: 8.672853,-4.518748
       parent: 1
     - type: Item
       heldPrefix: folded
@@ -26683,18 +26674,7 @@ entities:
   - uid: 2016
     components:
     - type: Transform
-      pos: 8.326552,-4.460704
-      parent: 1
-    - type: Item
-      heldPrefix: folded
-    - type: ContainerContainer
-      containers:
-        ballistic-ammo: !type:Container
-          ents: []
-  - uid: 2017
-    components:
-    - type: Transform
-      pos: 8.389052,-4.460704
+      pos: 8.282228,-4.409373
       parent: 1
     - type: Item
       heldPrefix: folded
