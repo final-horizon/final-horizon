@@ -2,6 +2,8 @@ using Content.Shared._Starfall.Particles.Visuals;
 using Content.Shared.Body.Components;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Gibbing;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 
@@ -18,6 +20,10 @@ public sealed partial class GibMistParticleSystem : EntitySystem
 {
     [Dependency] private IPrototypeManager _proto = null!;
     [Dependency] private SharedTransformSystem _transform = null!;
+    [Dependency] private SharedAudioSystem _audio = null!;
+
+    private static readonly SoundSpecifier GibMistSound =
+        new SoundCollectionSpecifier("GibMist", AudioParams.Default.WithVariation(0.1f));
 
     public override void Initialize()
     {
@@ -31,6 +37,8 @@ public sealed partial class GibMistParticleSystem : EntitySystem
         var contents = ent.Comp.BloodReferenceSolution.Contents;
         if (contents.Count > 0 && _proto.TryIndex(contents[0].Reagent.Prototype, out ReagentPrototype? reagentProto))
             color = reagentProto.SubstanceColor;
+
+        _audio.PlayPvs(GibMistSound, Transform(ent).Coordinates);
 
         RaiseNetworkEvent(new GibMistParticleEvent(_transform.GetMapCoordinates(ent), color), Filter.Pvs(ent.Owner));
     }

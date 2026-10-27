@@ -6,6 +6,7 @@
   name: Humvee
   description: use the door
   components:
+  - type: Appearance
   - type: Sprite
     sprite: _FinalHorizon/Objects/Vehicles/Humvee.rsi
     state: state1
@@ -39,7 +40,7 @@
         density: 200
         hard: true
         layer:
-        - TableLayer
+        - WallLayer
         - BulletImpassable
         mask:
         - TableMask
@@ -50,7 +51,7 @@
         density: 200
         hard: true
         layer:
-        - TableLayer
+        - WallLayer
         - BulletImpassable
         mask:
         - TableMask
@@ -61,10 +62,20 @@
         density: 100
         hard: true
         layer:
-        - TableLayer
+        - WallLayer
         - BulletImpassable
         mask:
         - TableMask
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          MetalBulletImpact
+    soundTypes:
+      Heat:
+        collection:
+          MetalLaserImpact
+
 
 - type: entity
   id: FHVehicleM113
@@ -104,7 +115,7 @@
         density: 200
         hard: true
         layer:
-        - TableLayer
+        - WallLayer
         - BulletImpassable
         mask:
         - TableMask
@@ -115,7 +126,7 @@
         density: 50
         hard: true
         layer:
-        - TableLayer
+        - WallLayer
         - BulletImpassable
         mask:
         - TableMask
@@ -126,10 +137,19 @@
         density: 50
         hard: true
         layer:
-        - TableLayer
+        - WallLayer
         - BulletImpassable
         mask:
         - TableMask
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          MetalBulletImpact
+    soundTypes:
+      Heat:
+        collection:
+          MetalLaserImpact
 
 #pact
 
@@ -172,7 +192,7 @@
         density: 200
         hard: true
         layer:
-        - TableLayer
+        - WallLayer
         - BulletImpassable
         mask:
         - TableMask
@@ -183,7 +203,7 @@
         density: 200
         hard: true
         layer:
-        - TableLayer
+        - WallLayer
         - BulletImpassable
         mask:
         - TableMask
@@ -194,10 +214,19 @@
         density: 100
         hard: true
         layer:
-        - TableLayer
+        - WallLayer
         - BulletImpassable
         mask:
         - TableMask
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          MetalBulletImpact
+    soundTypes:
+      Heat:
+        collection:
+          MetalLaserImpact
 
 - type: entity
   id: FHVehicleBTR80
@@ -237,7 +266,7 @@
         density: 200
         hard: true
         layer:
-        - TableLayer
+        - WallLayer
         - BulletImpassable
         mask:
         - TableMask
@@ -248,7 +277,7 @@
         density: 50
         hard: true
         layer:
-        - TableLayer
+        - WallLayer
         - BulletImpassable
         mask:
         - TableMask
@@ -259,7 +288,16 @@
         density: 50
         hard: true
         layer:
-        - TableLayer
+        - WallLayer
         - BulletImpassable
         mask:
         - TableMask
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          MetalBulletImpact
+    soundTypes:
+      Heat:
+        collection:
+          MetalLaserImpact

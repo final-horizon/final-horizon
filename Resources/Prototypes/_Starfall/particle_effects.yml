@@ -138,9 +138,7 @@
   alphaOverLifetime:
     - time: 0.0
       value: 1
-    - time: 0.08
-      value: 1
-    - time: 0.5
+    - time: 0.2
       value: 0.6
     - time: 1.0
       value: 0.0
@@ -150,14 +148,15 @@
     - time: 0.0
       value: 0.3
     - time: 0.2
-      value: 1.2
+      value: 0.5
     - time: 1.0
-      value: 2.0
-  lifetime: 1.4
-  lifetimeVariance: 0.4
+      value: 0.8
+  lifetime: 5
+  lifetimeVariance: 0.2
+  speed: 100
   speedVariance: 1.2
   gravity: 1
-  drag: 0.85
+  drag: 200
   noiseStrength: 0.5
   noiseFrequency: 0.9
   startRotationVariance: 60

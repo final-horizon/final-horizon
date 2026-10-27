@@ -29,3 +29,44 @@
     type: Box
     boxExtents: 0.3, 0.3
   spreadAngle: 90
+
+- type: particleEffect
+  id: FHFireSmoke
+  sprite:
+    sprite: Effects/chemsmoke.rsi
+    state: chemsmoke
+  startColor: "#555555AA"
+  endColor: "#33333300"
+  alphaOverLifetime:
+    - time: 0.0
+      value: 0.0
+    - time: 0.05
+      value: 1.0
+    - time: 0.99
+      value: 1.0
+    - time: 1.0
+      value: 0.0
+  particleSize: 0.4
+  sizeVariance: 0.4
+  sizeOverLifetime:
+    - time: 0.0
+      value: 0.5
+    - time: 1.0
+      value: 1.4
+  lifetime: 10
+  lifetimeVariance: 0.8
+  speed: 0.3
+  speedVariance: 0.1
+  gravity: -0.4
+  drag: 0.15
+  noiseStrength: 0.1
+  noiseFrequency: 0.5
+  startRotationVariance: 180
+  rotationSpeedVariance: 40
+  emissionRate: 8
+  maxCount: 70
+  simulationSpace: grid
+  shape:
+    type: CircleFill
+    radius: 0.25
+  spreadAngle: 25
