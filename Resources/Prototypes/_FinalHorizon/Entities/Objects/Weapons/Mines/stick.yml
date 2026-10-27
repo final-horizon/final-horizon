@@ -16,5 +16,5 @@
     sound:
       collection: FHStickBreak
       params:
-        volume: 10 # make this louder?
-        maxDistance: 25 # and more obnoxious?
+        volume: 10
+        maxDistance: 25

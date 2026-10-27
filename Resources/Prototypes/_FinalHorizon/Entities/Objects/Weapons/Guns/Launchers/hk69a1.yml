@@ -1,0 +1,56 @@
+- type: entity
+  name: Granata Pistole HK69A1
+  parent: FHWeaponBasePistol
+  id: FHWeaponLauncherHK69A1
+  description: A standalone grenade launcher, currently in use by the Bundeswehr. Originally designed as an underbarrel design, the HK69A1 eventually became a lone weapon for easier deployment. Can fire smoke rounds as well.
+  components:
+  - type: Tag
+    tags:
+    - FHWeaponLauncherHK69A1
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Launchers/hk69a1.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Launchers/hk69a1.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+  - type: Item
+    size: Small
+  - type: Gun
+    minAngle: 1
+    maxAngle: 1
+    angleIncrease: 0
+    angleDecay: 0
+    fireRate: 5
+    projectileSpeed: 25
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Gunshots/m203.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundBoltClosed:
+      path: /Audio/_FinalHorizon/Weapons/Guns/MagIn/m203_insertgrenade.ogg
+    soundBoltOpened:
+      path: /Audio/_FinalHorizon/Weapons/Guns/MagOut/m203_openbarrel.ogg
+    soundRack:
+      path: /Audio/_FinalHorizon/Weapons/Guns/MagOut/m203_openbarrel.ogg
+    canActivateInhand: false
+  - type: ContainerContainer
+    containers:
+      gun_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeM406
+            - CartridgeM406S
+  - type: Appearance
+    appearnaceDataInit:
+      enum.AmmoVisuals.MagLoaded: false

@@ -51,3 +51,45 @@
     damage:
       types:
         Blunt: 40
+
+- type: entity
+  parent: BaseBulletTrigger
+  id: FHBulletGrenadeVOG25S
+  name: grenade
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Cartridges/vog25s.rsi
+    layers:
+      - state: active
+  - type: SmokeOnTrigger
+    duration: 15
+    spreadAmount: 20
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - timer
+    sound: /Audio/Items/smoke_grenade_smoke.ogg
+    positional: true
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
+
+- type: entity
+  parent: BaseBulletTrigger
+  id: FHBulletGrenadeM406S
+  name: grenade
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Objects/Weapons/Guns/Ammunition/Cartridges/m406s.rsi
+    layers:
+      - state: active
+  - type: SmokeOnTrigger
+    duration: 15
+    spreadAmount: 20
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - timer
+    sound: /Audio/Items/smoke_grenade_smoke.ogg
+    positional: true
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false

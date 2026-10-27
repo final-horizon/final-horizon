@@ -8,9 +8,9 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: Brutepack
-        - id: Ointment
-        - id: Gauze
+        - id: FHBrutepack
+        - id: FHOintment
+        - id: FHGauze
         - id: MedicationBoxPillsTricordrazine # BF14
         - id: MedicationBoxSyrettesInaprovaline # FH
         - id: BlisterPackIron # BF14
@@ -25,7 +25,7 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: Ointment
+        - id: FHOintment
           amount: 2
         - id: MedicationBoxPillsKelotane # BF14
 
@@ -38,9 +38,9 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: Brutepack
+        - id: FHBrutepack
           amount: 2
-        - id: Gauze
+        - id: FHGauze
         - id: MedicationBoxPillsBicaridine # BF14
         - id: BlisterPackIron # BF14
         - id: SyringeSaline # BF14
