@@ -1,5 +1,6 @@
 using System.Numerics;
 using Content.Client.Graphics;
+using Content.Client.Light.EntitySystems;
 using Content.Client.Parallax;
 using Content.Client.Weather;
 using Content.Shared.Salvage;
@@ -12,6 +13,7 @@ using Robust.Shared.Enums;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Content.Shared.Maps;
 
 namespace Content.Client.Overlays;
 
@@ -23,6 +25,7 @@ public sealed partial class StencilOverlay : Overlay
     private static readonly ProtoId<ShaderPrototype> CircleShader = "WorldGradientCircle";
     private static readonly ProtoId<ShaderPrototype> StencilMask = "StencilMask";
     private static readonly ProtoId<ShaderPrototype> StencilDraw = "StencilDraw";
+    private static readonly ProtoId<ShaderPrototype> StencilClear = "StencilClear"; //CrystallEdge: resets the stencil buffer between the weather ground and drops mask/draw cycles
 
     [Dependency] private readonly IClyde _clyde = default!;
     [Dependency] private readonly IEntityManager _entManager = default!;
@@ -35,6 +38,8 @@ public sealed partial class StencilOverlay : Overlay
     private readonly SpriteSystem _sprite;
     private readonly WeatherSystem _weather;
     private readonly StatusEffectsSystem _statusEffects;
+    private TurfSystem _turf = default!; //CrystallEdge: used to exclude space tiles from the weather ground/splash layer
+    private GridStencilSystem _gridStencil = default!; //CrystallEdge: builds the tile masks used by the weather stencil
     private HashSet<Entity<WeatherStatusEffectComponent, StatusEffectComponent>>? _weatherSet = new();
 
     public override OverlaySpace Space => OverlaySpace.WorldSpaceBelowFOV;
@@ -53,6 +58,8 @@ public sealed partial class StencilOverlay : Overlay
         _weather = weather;
         _statusEffects = statusEffects;
         IoCManager.InjectDependencies(this);
+        _turf = _entManager.System<TurfSystem>(); //CrystallEdge
+        _gridStencil = _entManager.System<GridStencilSystem>(); //CrystallEdge
         _shader = _protoManager.Index(CircleShader).InstanceUnique();
     }
 
@@ -70,7 +77,7 @@ public sealed partial class StencilOverlay : Overlay
         }
 
         if (_statusEffects.TryEffectsWithComp(mapUid, out _weatherSet))
-            DrawWeather(args, res, _weatherSet, invMatrix);
+            DrawWeather(args, _weatherSet);
 
         if (_entManager.TryGetComponent<RestrictedRangeComponent>(mapUid, out var restrictedRangeComponent))
             DrawRestrictedRange(args, res, restrictedRangeComponent, invMatrix);
