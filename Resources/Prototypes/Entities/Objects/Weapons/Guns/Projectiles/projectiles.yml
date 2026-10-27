@@ -55,6 +55,10 @@
   components:
   - type: Reflective
   - type: FlyBySound
+    sound: !type:SoundCollectionSpecifier
+      collection: BulletMiss
+      params:
+        variation: 0.3
   - type: Clickable
   - type: Sprite
     noRot: false

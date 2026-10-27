@@ -24,5 +24,5 @@ public sealed partial class FlyBySoundComponent : Component
 
     [DataField("range")]
     [AutoNetworkedField]
-    public float Range = 1.5f;
+    public float Range = 2f;
 }
