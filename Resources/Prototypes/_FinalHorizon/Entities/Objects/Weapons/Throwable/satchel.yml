@@ -1,5 +1,5 @@
 - type: entity
-  name: Satchel
+  name: Explosive Satchel
   suffix: nato
   description: the standard satchel used for destroying fortifications.
   parent: TimerGrenadeBase
@@ -28,7 +28,7 @@
     worn: false
 
 - type: entity
-  name: Satchel
+  name: Explosive Satchel
   suffix: pact
   description: the standard satchel used for destroying fortifications.
   parent: TimerGrenadeBase
