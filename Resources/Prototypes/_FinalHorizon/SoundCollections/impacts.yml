@@ -38,6 +38,12 @@
    - "/Audio/_FinalHorizon/Effects/impact/bullet_impact_stone4.wav"
 
 - type: soundCollection
+  id: WoodBulletImpact #TODO: PLACEHOLDER GET REAL SOUNDS NOT THIS BS
+  files:
+   - "/Audio/_FinalHorizon/Effects/impact/bullet_impact_vest1.wav"
+   - "/Audio/_FinalHorizon/Effects/impact/bullet_impact_vest4.wav"
+
+- type: soundCollection
   id: GibMist
   files:
    - "/Audio/_FinalHorizon/Effects/body/bodysplat.ogg"
