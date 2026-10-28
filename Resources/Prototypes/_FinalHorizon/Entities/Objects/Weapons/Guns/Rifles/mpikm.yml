@@ -2,7 +2,7 @@
   name: MPi-KM
   parent: FHWeaponBase
   id: FHWeaponRifleMPIKM
-  description: The standard issue rifle of the Nationale Volksarmee. Produced in East German factories as a licensed variant of the Soviet AKM rifle. Uses polymer furniture, rather than wood. 
+  description: The standard issue rifle of the Nationale Volksarmee. Produced in East German factories as a licensed variant of the Soviet AKM rifle. Uses polymer furniture, rather than wood.
   components:
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Guns/Rifles/mpikm.rsi
@@ -70,7 +70,7 @@
     appearanceDataInit:
      enum.AmmoVisuals.MagLoaded: false
   - type: FarGunshot
-    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak74.ogg
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak_dist.ogg
 
 - type: entity
   name: MPi-KM + GP-25

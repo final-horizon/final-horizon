@@ -83,4 +83,4 @@
   - type: WieldableDoAfter
     timer: 0.6
   - type: FarGunshot
-    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak74.ogg
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak_dist.ogg
