@@ -1,0 +1,27 @@
+# Make a better system to play ambient sounds in the future
+- type: ambientMusic
+  id: FHDistantCombat
+  fadeIn: true
+  interruptable: true
+  sound:
+    params:
+      volume: -12
+    collection: FHDistantCombat
+  rules: OnWarMap
+
+- type: rules
+  id: OnWarMap
+  rules:
+    - !type:IsOnSpecificMapRule
+      maps:
+        - "Small Village"
+        - "Alsfeld"
+
+- type: soundCollection
+  id: FHDistantCombat
+  files:
+    - /Audio/_FinalHorizon/Effects/Ambience/0Background0.ogg
+    - /Audio/_FinalHorizon/Effects/Ambience/0Background1.ogg
+    - /Audio/_FinalHorizon/Effects/Ambience/0Background2.ogg
+    - /Audio/_FinalHorizon/Effects/Ambience/0Background3.ogg
+    - /Audio/_FinalHorizon/Effects/Ambience/0Background4.ogg
