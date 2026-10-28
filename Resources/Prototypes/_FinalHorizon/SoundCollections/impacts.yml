@@ -1,0 +1,49 @@
+- type: soundCollection
+  id: MeatBulletImpact
+  files:
+  - "/Audio/_FinalHorizon/Effects/body/bulletbodyimpact_1.wav"
+  - "/Audio/_FinalHorizon/Effects/body/bulletbodyimpact_2.wav"
+  - "/Audio/_FinalHorizon/Effects/body/bulletbodyimpact_3.wav"
+  - "/Audio/_FinalHorizon/Effects/body/bulletbodyimpact_4.wav"
+  - "/Audio/_FinalHorizon/Effects/body/bulletbodyimpact_5.wav"
+  - "/Audio/_FinalHorizon/Effects/body/bulletbodyimpact_6.wav"
+  - "/Audio/_FinalHorizon/Effects/body/flesh_impact_bullet1.wav"
+  - "/Audio/_FinalHorizon/Effects/body/flesh_impact_bullet2.wav"
+  - "/Audio/_FinalHorizon/Effects/body/flesh_impact_bullet3.wav"
+  - "/Audio/_FinalHorizon/Effects/body/flesh_impact_bullet4.wav"
+
+# - type: soundCollection #commented cause this one sounds like pots and pans
+#   id: MetalBulletImpact
+#   files:
+#   - "/Audio/_FinalHorizon/Effects/impact/bullet_impact_metal1.wav"
+#   - "/Audio/_FinalHorizon/Effects/impact/bullet_impact_metal2.wav"
+#   - "/Audio/_FinalHorizon/Effects/impact/bullet_impact_metal3.wav"
+#   - "/Audio/_FinalHorizon/Effects/impact/bullet_impact_metal4.wav"
+
+- type: soundCollection
+  id: MetalBulletImpact
+  files:
+  - "/Audio/_FinalHorizon/Effects/impact/blt_s_metal1.ogg"
+  - "/Audio/_FinalHorizon/Effects/impact/blt_s_metal2.ogg"
+  - "/Audio/_FinalHorizon/Effects/impact/blt_s_metal3.ogg"
+  - "/Audio/_FinalHorizon/Effects/impact/blt_s_metal4.ogg"
+  - "/Audio/_FinalHorizon/Effects/impact/blt_s_metal5.ogg"
+
+- type: soundCollection
+  id: StoneBulletImpact
+  files:
+   - "/Audio/_FinalHorizon/Effects/impact/bullet_impact_stone1.wav"
+   - "/Audio/_FinalHorizon/Effects/impact/bullet_impact_stone2.wav"
+   - "/Audio/_FinalHorizon/Effects/impact/bullet_impact_stone3.wav"
+   - "/Audio/_FinalHorizon/Effects/impact/bullet_impact_stone4.wav"
+
+- type: soundCollection
+  id: GibMist
+  files:
+   - "/Audio/_FinalHorizon/Effects/body/bodysplat.ogg"
+   - "/Audio/_FinalHorizon/Effects/body/bodysplat2.ogg"
+
+- type: soundCollection
+  id: BulletMiss
+  files:
+  - /Audio/_FinalHorizon/Effects/impact/whiz-supersonic.ogg

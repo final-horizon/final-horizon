@@ -1,0 +1,72 @@
+#not done dont use
+- type: particleEffect
+  id: FHBulletImpactConcrete
+  sprite:
+    sprite: _Starfall/Particles/generic.rsi
+    state: curl
+  colorOverLifetime:
+    - time: 0.0
+      color: "#FFFFFFFF"
+    - time: 0.15
+      color: "#a3a3a2"
+    - time: 0.65
+      color: "#676767cc"
+    - time: 1.0
+      color: "#2e2e2e"
+  particleSize: 0.5
+  sizeVariance: 0.2
+  stretchFactor: 0.6
+  lifetime: 0.05
+  lifetimeVariance: 0.01
+  speed: 10
+  speedVariance: 1.5
+  gravity: -1.0
+  drag: 0.08
+  maxCount: 7
+  burst: true
+  simulationSpace: grid
+  shape:
+    type: Box
+    boxExtents: 0.3, 0.3
+  spreadAngle: 90
+
+- type: particleEffect
+  id: FHFireSmoke
+  sprite:
+    sprite: Effects/chemsmoke.rsi
+    state: chemsmoke
+  startColor: "#555555AA"
+  endColor: "#33333300"
+  alphaOverLifetime:
+    - time: 0.0
+      value: 0.0
+    - time: 0.05
+      value: 1.0
+    - time: 0.99
+      value: 1.0
+    - time: 1.0
+      value: 0.0
+  particleSize: 0.4
+  sizeVariance: 0.4
+  sizeOverLifetime:
+    - time: 0.0
+      value: 0.5
+    - time: 1.0
+      value: 1.4
+  lifetime: 10
+  lifetimeVariance: 0.8
+  speed: 0.3
+  speedVariance: 0.1
+  gravity: -0.4
+  drag: 0.15
+  noiseStrength: 0.1
+  noiseFrequency: 0.5
+  startRotationVariance: 180
+  rotationSpeedVariance: 40
+  emissionRate: 8
+  maxCount: 70
+  simulationSpace: grid
+  shape:
+    type: CircleFill
+    radius: 0.25
+  spreadAngle: 25

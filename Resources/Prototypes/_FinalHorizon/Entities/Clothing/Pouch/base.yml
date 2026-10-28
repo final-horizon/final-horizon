@@ -3,6 +3,11 @@
   parent: Clothing
   id: FHClothingPouchBase
   components:
+  - type: EmitSoundOnPickup
+    sound:
+      collection: GearPickup
+      params:
+        volume: 200 #help me
   - type: Sprite
     state: icon
   - type: Item
@@ -10,7 +15,10 @@
   - type: Clothing
     slots: [beltpouch]
     equipSound:
-      path: /Audio/Items/belt_equip.ogg
+      collection: GearPickup
+      params:
+        volume: 10
+        variation: 0.1
     quickEquip: false
   - type: Storage
     maxItemSize: Normal

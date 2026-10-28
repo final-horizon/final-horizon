@@ -4,7 +4,9 @@ using Content.Shared.Weapons.Ranged.Systems;
 using Robust.Client.Player;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Physics.Events;
+using Robust.Shared.Player;
 using Robust.Shared.Random;
+using Robust.Shared.Timing;
 
 namespace Content.Client.Weapons.Ranged.Systems;
 
@@ -12,6 +14,7 @@ public sealed class FlyBySoundSystem : SharedFlyBySoundSystem
 {
     [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
 
     public override void Initialize()
@@ -39,7 +42,13 @@ public sealed class FlyBySoundSystem : SharedFlyBySoundSystem
             return;
         }
 
+        // Cooldown so repeated contact begin/end doesn't spam the sound.
+        if (_timing.CurTime < ent.Comp.NextPlay)
+            return;
+
+        ent.Comp.NextPlay = _timing.CurTime + TimeSpan.FromSeconds(1);
+
         // Play attached to our entity because the projectile may immediately delete or the likes.
-        _audio.PlayPredicted(ent.Comp.Sound, attachedEnt.Value, attachedEnt.Value);
+        _audio.PlayEntity(ent.Comp.Sound, Filter.Local(), attachedEnt.Value, false);
     }
 }

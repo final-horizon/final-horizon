@@ -51,10 +51,14 @@
   id: BaseBullet
   name: BaseBullet
   description: If you can see this you're probably dead!
-  abstract: true
+  abstract: false
   components:
   - type: Reflective
   - type: FlyBySound
+    sound: !type:SoundCollectionSpecifier
+      collection: BulletMiss
+      params:
+        variation: 0.3
   - type: Clickable
   - type: Sprite
     noRot: false
@@ -86,7 +90,7 @@
         - LowImpassable
         hard: False
   - type: Projectile
-    impactEffect: BulletImpactEffect
+    impactEffect: BulletImpactEffect #todo make this look good
     damage:
       types:
         Piercing: 14
