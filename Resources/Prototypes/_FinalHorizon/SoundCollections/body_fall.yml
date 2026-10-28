@@ -1,0 +1,7 @@
+- type: soundCollection
+  id: BodyFall
+  files:
+  - /Audio/_FinalHorizon/Effects/body/bodyfall1.ogg
+  - /Audio/_FinalHorizon/Effects/body/bodyfall2.ogg
+  - /Audio/_FinalHorizon/Effects/body/bodyfall3.ogg
+
