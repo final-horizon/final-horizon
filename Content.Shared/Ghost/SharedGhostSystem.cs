@@ -134,12 +134,14 @@ namespace Content.Shared.Ghost
     [Serializable, NetSerializable]
     public struct GhostWarp
     {
-        public GhostWarp(NetEntity entity, string displayName, bool isWarpPoint, string job) // FH
+        public GhostWarp(NetEntity entity, string displayName, bool isWarpPoint, string? job, string? department = null, MobState? mobState = null) // FH
         {
             Entity = entity;
             DisplayName = displayName;
             IsWarpPoint = isWarpPoint;
             Job = job; // FH
+            Department = department; // FH
+            MobState = mobState; // FH
         }
 
         /// <summary>
@@ -158,7 +160,10 @@ namespace Content.Shared.Ghost
         /// </summary>
         public bool IsWarpPoint { get;  }
 
-        public string Job { get; } // FH
+        public string? Job { get; } // FH
+        public string? Department { get; } // FH
+
+        public MobState? MobState { get; } // FH
     }
 
     /// <summary>

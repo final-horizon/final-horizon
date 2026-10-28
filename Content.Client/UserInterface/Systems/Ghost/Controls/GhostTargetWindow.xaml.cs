@@ -11,88 +11,224 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls
     [GenerateTypedNameReferences]
     public sealed partial class GhostTargetWindow : DefaultWindow
     {
-        private List<(string, string, NetEntity)> _warps = new(); // FH
+        // FH start
+        // Pretty much entirely changes this menu
+        // Was partially slop coded so its messy but its okay for this kind of thing
+        private List<GhostWarp> _warps = new();
         private string _searchText = string.Empty;
+        private enum WarpSortColumn
+        {
+            Name,
+            Job,
+            Department,
+            MobState
+        }
+
+        private WarpSortColumn _sortColumn = WarpSortColumn.Name;
+        private bool _sortAscending = true;
 
         public event Action<NetEntity>? WarpClicked;
         public event Action? OnGhostnadoClicked;
+        public event Action? OnRefreshClicked;
 
         public GhostTargetWindow()
         {
             RobustXamlLoader.Load(this);
             SearchBar.OnTextChanged += OnSearchTextChanged;
 
-            GhostnadoButton.OnPressed += _ => OnGhostnadoClicked?.Invoke();
+            RefreshButton.OnPressed += _ => OnRefreshClicked?.Invoke();
+            SortNameButton.OnPressed += _ => SetSort(WarpSortColumn.Name);
+            SortJobButton.OnPressed += _ => SetSort(WarpSortColumn.Job);
+            SortDepartmentButton.OnPressed += _ => SetSort(WarpSortColumn.Department);
+            SortMobStateButton.OnPressed += _ => SetSort(WarpSortColumn.MobState);
         }
 
         public void UpdateWarps(IEnumerable<GhostWarp> warps)
         {
-            // Server COULD send these sorted but how about we just use the client to do it instead
-            _warps = warps
-                .OrderBy(w => w.IsWarpPoint) // FH start
-                .ThenBy(w => w.Job, StringComparer.Ordinal)
-                .ThenBy(w => w.DisplayName, StringComparer.Ordinal) // FH end
-                .Select(w =>
-                {
-                    var name = w.IsWarpPoint
-                        ? Loc.GetString("ghost-target-window-current-button", ("name", w.DisplayName))
-                        : w.DisplayName;
-
-                    return (name, w.Job, w.Entity); // FH
-                })
-                .ToList();
+            _warps = [.. warps];
         }
 
         public void Populate()
         {
+            SortWarps();
+
             ButtonContainer.RemoveAllChildren();
             AddButtons();
+
+            UpdateSortButtonLabels();
         }
 
         private void AddButtons()
         {
-            foreach (var (name, job, warpTarget) in _warps) // FH
+            foreach (var warp in _warps)
             {
-                var currentButtonRef = new Button
+                var panel = new PanelContainer
                 {
-                    Text = job + "  |  " + name, // FH
-                    TextAlign = Label.AlignMode.Left, // FH
-                    HorizontalAlignment = HAlignment.Center,
+                    HorizontalExpand = true,
+                    MinSize = new Vector2(500, 30),
+                };
+
+                var row = new BoxContainer
+                {
+                    Orientation = BoxContainer.LayoutOrientation.Horizontal,
+                    HorizontalExpand = true,
+                    SeparationOverride = 8,
+                };
+
+                var nameLabel = new Label
+                {
+                    Text = warp.DisplayName,
                     VerticalAlignment = VAlignment.Center,
-                    HorizontalExpand = true, // FH
-                    SizeFlagsStretchRatio = 1,
-                    MinSize = new Vector2(340, 20),
+                    HorizontalExpand = true,
+                    SizeFlagsStretchRatio = 2,
                     ClipText = true,
                 };
 
-                currentButtonRef.OnPressed += _ => WarpClicked?.Invoke(warpTarget);
-                currentButtonRef.Visible = ButtonIsVisible(currentButtonRef);
+                var jobLabel = new Label
+                {
+                    Text = warp.Job,
+                    VerticalAlignment = VAlignment.Center,
+                    HorizontalExpand = true,
+                    SizeFlagsStretchRatio = 1,
+                    ClipText = true,
+                };
 
-                ButtonContainer.AddChild(currentButtonRef);
+                var departmentLabel = new Label
+                {
+                    Text = warp.Department,
+                    VerticalAlignment = VAlignment.Center,
+                    HorizontalExpand = true,
+                    SizeFlagsStretchRatio = 1,
+                    ClipText = true,
+                };
+
+                var mobStateLabel = new Label
+                {
+                    Text = warp.MobState.ToString(),
+                    VerticalAlignment = VAlignment.Center,
+                    HorizontalExpand = true,
+                    SizeFlagsStretchRatio = 1,
+                    ClipText = true,
+                };
+
+                var followButton = new Button
+                {
+                    Text = "Follow",
+                    VerticalAlignment = VAlignment.Center,
+                    HorizontalExpand = true,
+                    SizeFlagsStretchRatio = 1,
+                };
+
+                followButton.OnPressed += _ => WarpClicked?.Invoke(warp.Entity);
+
+                row.AddChild(nameLabel);
+                row.AddChild(jobLabel);
+                row.AddChild(departmentLabel);
+                row.AddChild(mobStateLabel);
+                row.AddChild(followButton);
+
+                panel.AddChild(row);
+
+                panel.Visible = WarpMatchesSearch(warp);
+
+                ButtonContainer.AddChild(panel);
             }
         }
 
-        private bool ButtonIsVisible(Button button)
+        private bool WarpMatchesSearch(GhostWarp warp)
         {
-            return string.IsNullOrEmpty(_searchText) || button.Text == null || button.Text.Contains(_searchText, StringComparison.OrdinalIgnoreCase);
+            if (string.IsNullOrWhiteSpace(_searchText))
+                return true;
+
+            return ContainsSearchText(warp.DisplayName)
+                || ContainsSearchText(warp.Job)
+                || ContainsSearchText(warp.Department)
+                || ContainsSearchText(warp.MobState.ToString());
+        }
+
+        private bool ContainsSearchText(string? text)
+        {
+            return text?.Contains(
+                _searchText,
+                StringComparison.OrdinalIgnoreCase
+            ) ?? false;
         }
 
         private void UpdateVisibleButtons()
         {
+            var index = 0;
+
             foreach (var child in ButtonContainer.Children)
             {
-                if (child is Button button)
-                    button.Visible = ButtonIsVisible(button);
+                if (child is PanelContainer panel && index < _warps.Count)
+                {
+                    panel.Visible = WarpMatchesSearch(_warps[index]);
+                    index++;
+                }
             }
         }
 
         private void OnSearchTextChanged(LineEdit.LineEditEventArgs args)
         {
             _searchText = args.Text;
-
             UpdateVisibleButtons();
-            // Reset scroll bar so they can see the relevant results.
             GhostScroll.SetScrollValue(Vector2.Zero);
         }
+
+        private void SetSort(WarpSortColumn column)
+        {
+            if (_sortColumn == column)
+            {
+                _sortAscending = !_sortAscending;
+            }
+            else
+            {
+                _sortColumn = column;
+                _sortAscending = true;
+            }
+
+            UpdateSortButtonLabels();
+            Populate();
+        }
+
+        private void SortWarps()
+        {
+            _warps = (_sortColumn switch
+            {
+                WarpSortColumn.Name => _sortAscending
+                    ? _warps.OrderBy(w => w.DisplayName, StringComparer.OrdinalIgnoreCase)
+                    : _warps.OrderByDescending(w => w.DisplayName, StringComparer.OrdinalIgnoreCase),
+
+                WarpSortColumn.Job => _sortAscending
+                    ? _warps.OrderBy(w => w.Job, StringComparer.OrdinalIgnoreCase)
+                    : _warps.OrderByDescending(w => w.Job, StringComparer.OrdinalIgnoreCase),
+
+                WarpSortColumn.Department => _sortAscending
+                    ? _warps.OrderBy(w => w.Department, StringComparer.OrdinalIgnoreCase)
+                    : _warps.OrderByDescending(w => w.Department, StringComparer.OrdinalIgnoreCase),
+
+                WarpSortColumn.MobState => _sortAscending
+                    ? _warps.OrderBy(w => w.MobState.ToString(), StringComparer.OrdinalIgnoreCase)
+                    : _warps.OrderByDescending(w => w.MobState.ToString(), StringComparer.OrdinalIgnoreCase),
+
+                _ => _warps.OrderBy(w => w.DisplayName, StringComparer.OrdinalIgnoreCase)
+            }).ToList();
+        }
+
+        private void UpdateSortButtonLabels()
+        {
+            SortNameButton.Text = "Name" +
+                (_sortColumn == WarpSortColumn.Name ? (_sortAscending ? " ▲" : " ▼") : "");
+
+            SortJobButton.Text = "Job" +
+                (_sortColumn == WarpSortColumn.Job ? (_sortAscending ? " ▲" : " ▼") : "");
+
+            SortDepartmentButton.Text = "Department" +
+                (_sortColumn == WarpSortColumn.Department ? (_sortAscending ? " ▲" : " ▼") : "");
+
+            SortMobStateButton.Text = "Mob State" +
+                (_sortColumn == WarpSortColumn.MobState ? (_sortAscending ? " ▲" : " ▼") : "");
+        }
+        // FH end
     }
 }

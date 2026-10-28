@@ -1,4 +1,4 @@
-﻿using Content.Client.Gameplay;
+using Content.Client.Gameplay;
 using Content.Client.Ghost;
 using Content.Client.UserInterface.Systems.Gameplay;
 using Content.Client.UserInterface.Systems.Ghost.Widgets;
@@ -126,7 +126,7 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         Gui.ReturnToBodyPressed += ReturnToBody;
         Gui.GhostRolesPressed += GhostRolesPressed;
         Gui.TargetWindow.WarpClicked += OnWarpClicked;
-        Gui.TargetWindow.OnGhostnadoClicked += OnGhostnadoClicked;
+        Gui.TargetWindow.OnRefreshClicked += RequestWarpsWithoutOpen; // FH
 
         UpdateGui();
     }
@@ -155,6 +155,14 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         Gui?.TargetWindow.Populate();
         Gui?.TargetWindow.OpenCentered();
     }
+
+    // FH start
+    private void RequestWarpsWithoutOpen()
+    {
+        _system?.RequestWarps();
+        Gui?.TargetWindow.Populate();
+    }
+    // FH end
 
     private void GhostRolesPressed()
     {

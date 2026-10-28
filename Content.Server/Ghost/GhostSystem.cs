@@ -357,7 +357,7 @@ namespace Content.Server.Ghost
 
             while (allQuery.MoveNext(out var uid, out var warp))
             {
-                yield return new GhostWarp(GetNetEntity(uid), warp.Location ?? Name(uid), true, "invalid"); // FH
+                yield return new GhostWarp(GetNetEntity(uid), warp.Location ?? Name(uid), true, "Warp Point"); // FH
             }
         }
 
@@ -372,11 +372,24 @@ namespace Content.Server.Ghost
 
                 TryComp<MindContainerComponent>(attached, out var mind);
 
-                var jobName = _jobs.MindTryGetJobName(mind?.Mind);
-                var playerInfo = $"{Comp<MetaDataComponent>(attached).EntityName} ({jobName})";
+                string? jobName = null; // FH start
+                string? departmentName = null;
+                if (_jobs.MindTryGetJob(mind?.Mind, out var job))
+                {
+                    jobName = Loc.GetString(job.Name);
+                    if (_jobs.TryGetDepartment(jobName, out var departmentProto))
+                    {
+                        departmentName = Loc.GetString(departmentProto.Name);
+                    }
+                }
 
-                if (_mobState.IsAlive(attached) || _mobState.IsCritical(attached))
-                    yield return new GhostWarp(GetNetEntity(attached), playerInfo, false, jobName); // FH
+                var name = $"{Comp<MetaDataComponent>(attached).EntityName}";
+
+                MobState? mobState = null;
+                if (TryComp<MobStateComponent>(attached, out var state))
+                    mobState = state.CurrentState;
+
+                yield return new GhostWarp(GetNetEntity(attached), name, false, jobName, departmentName, mobState); // FH end
             }
         }
 
