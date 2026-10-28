@@ -33,3 +33,6 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.90
     sprintModifier: 0.90
+  - type: HeldSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90
