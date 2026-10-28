@@ -10,7 +10,6 @@
   #- type: FloorOccluder # Disabled for now. I should make a dedicated system to mask the top of players sprites to show above the grass sprite similar to how flooroccluder does it
   - type: Transform
     anchored: true
-  - type: Clickable
   - type: Sprite
     sprite: _FinalHorizon/Objects/Decoration/Flora/grass_tall.rsi
     drawdepth: Mobs # i think it looks better like this but its up to you
