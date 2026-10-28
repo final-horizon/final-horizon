@@ -51,7 +51,7 @@
   id: BaseBullet
   name: BaseBullet
   description: If you can see this you're probably dead!
-  abstract: true
+  abstract: false
   components:
   - type: Reflective
   - type: FlyBySound

@@ -1,0 +1,7 @@
+- type: soundCollection
+  id: GearPickup
+  files:
+  - "/Audio/_FinalHorizon/Clothing/gear1.wav"
+  - "/Audio/_FinalHorizon/Clothing/gear2.wav"
+  - "/Audio/_FinalHorizon/Clothing/gear3.wav"
+  - "/Audio/_FinalHorizon/Clothing/gear4.wav"

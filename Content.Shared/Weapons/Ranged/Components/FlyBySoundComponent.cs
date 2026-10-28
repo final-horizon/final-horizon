@@ -13,7 +13,7 @@ public sealed partial class FlyBySoundComponent : Component
     /// Probability that the sound plays
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("prob")]
-    public float Prob = 1f; // in the game the whole Time GG
+    public float Prob = 1f;
 
     [ViewVariables(VVAccess.ReadWrite), DataField("sound")]
     [AutoNetworkedField]
@@ -25,4 +25,6 @@ public sealed partial class FlyBySoundComponent : Component
     [DataField("range")]
     [AutoNetworkedField]
     public float Range = 2f;
+
+    public TimeSpan NextPlay;
 }
