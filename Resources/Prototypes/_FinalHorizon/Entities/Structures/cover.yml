@@ -201,3 +201,11 @@
     trackAllDamage: true
     damageOverlay:
       sprite: _FinalHorizon/Structures/Cover/sandbag.rsi
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          ClothBulletImpact #sounds fine imo, not good doe
+        params:
+         volume: -5
+         variation: -1

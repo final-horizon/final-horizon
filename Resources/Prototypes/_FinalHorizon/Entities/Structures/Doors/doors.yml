@@ -64,6 +64,11 @@
   - type: BlockWeather
   - type: NavMapDoor
   - type: SunShadowCast
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
 
 - type: entity
   parent: FHBaseDoor
@@ -237,6 +242,11 @@
   - type: BlockWeather
   - type: NavMapDoor
   - type: SunShadowCast
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
 
 - type: entity
   parent: FHBaseDoor
@@ -289,6 +299,11 @@
     openTimeTwo: 0.2
     openingAnimationTime: 1
     closingAnimationTime: 1
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          MetalBulletImpact
 
 - type: entity
   parent: FHBaseDoor
@@ -315,6 +330,11 @@
     openTimeTwo: 0.1
     openingAnimationTime: 0.6
     closingAnimationTime: 0.6
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
 
 - type: entity
   parent: BaseStructure
@@ -380,3 +400,8 @@
   - type: BlockWeather
   - type: NavMapDoor
   - type: SunShadowCast
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          SteelBulletImpact

@@ -11,6 +11,11 @@
       types:
         Poison: -0.5
         Blunt: -0.5
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
 
 - type: entity
   parent: Bed
@@ -25,6 +30,11 @@
       types:
         Poison: -0.5
         Blunt: -0.5
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
 
 - type: entity
   parent: Bed
@@ -35,6 +45,11 @@
     sprite: _FinalHorizon/Structures/Furniture/bed.rsi
     state: wp_cot
     noRot: false
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
 
 - type: entity
   parent: Bed
@@ -45,7 +60,11 @@
     sprite: _FinalHorizon/Structures/Furniture/bed.rsi
     state: nato_cot
     noRot: false
-
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
 - type: entity
   parent: Bed
   id: FHBedEmpty
@@ -60,3 +79,8 @@
       types:
         Poison: -0.02
         Blunt: -0.02
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
