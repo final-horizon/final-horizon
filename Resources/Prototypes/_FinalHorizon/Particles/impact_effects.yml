@@ -1,0 +1,40 @@
+- type: particleEffect
+  id: FHImpactConcrete
+  sprite:
+    sprite: _Starfall/Particles/generic.rsi
+    state: curl
+  startColor: "#FFFFFFFF"
+  endColor: "#FFFFFF00"
+  alphaOverLifetime:
+    - time: 0.0
+      value: 1
+    - time: 0.2
+      value: 0.6
+    - time: 1.0
+      value: 0.0
+  particleSize: 0.5
+  sizeVariance: 0.3
+  sizeOverLifetime:
+    - time: 0.0
+      value: 2
+    - time: 0.5
+      value: 1
+    - time: 1.0
+      value: 0
+  lifetime: 2
+  lifetimeVariance: 0.5
+  speed: 3
+  speedVariance: 2
+  gravity: 0
+  drag: 1
+  noiseStrength: 0.5
+  noiseFrequency: 0.9
+  rotationSpeed: 5
+  rotationSpeedVariance: 60
+  maxCount: 55
+  burst: true
+  simulationSpace: grid
+  shape:
+    type: CircleFill
+    radius: 0.1
+  spreadAngle: 60

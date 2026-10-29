@@ -4,6 +4,7 @@ using Content.Server.Destructible;
 using Content.Server.Effects;
 using Content.Server.Weapons.Ranged.Systems;
 using Content.Shared._ES.Camera;
+using Content.Shared._Starfall.Particles;
 using Content.Shared.Camera;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Components;
@@ -107,9 +108,17 @@ public sealed class ProjectileSystem : SharedProjectileSystem
         if (component.DeleteOnCollide && component.ProjectileSpent)
             QueueDel(uid);
 
-        if (component.ImpactEffect != null && TryComp(uid, out TransformComponent? xform))
+        if (TryComp(uid, out TransformComponent? xform))
         {
-            RaiseNetworkEvent(new ImpactEffectEvent(component.ImpactEffect, GetNetCoordinates(xform.Coordinates)), Filter.Pvs(xform.Coordinates, entityMan: EntityManager));
+            if (component.ImpactEffect != null)
+            {
+                RaiseNetworkEvent(new ImpactEffectEvent(component.ImpactEffect, GetNetCoordinates(xform.Coordinates)), Filter.Pvs(xform.Coordinates, entityMan: EntityManager));
+            }
+
+            if (TryComp(target, out ParticleOnHitByProjectileComponent? particleComp) && TryComp(uid, out ParticleOnHitByProjectileCauserComponent? particleCompCauser))
+            {
+                RaiseNetworkEvent(new ParticleOnHitByProjectileEvent(particleComp.Effect, particleCompCauser.EffectIntensity, xform.LocalRotation, xform.MapPosition), Filter.Pvs(xform.Coordinates, entityMan: EntityManager));
+            }
         }
     }
 

@@ -1,4 +1,6 @@
+using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization;
 
 namespace Content.Shared._Starfall.Particles;
 
@@ -35,3 +37,42 @@ public sealed partial class ParticleOnThrownComponent : ParticleOnEventBase
 public sealed partial class ParticleOnGunShotProjectileComponent : ParticleOnEventBase
 {
 }
+
+// FH start
+/// <summary>
+/// Spawns a particle on this entity when a projectile hits it.
+/// </summary>
+[RegisterComponent]
+public sealed partial class ParticleOnHitByProjectileComponent : ParticleOnEventBase
+{
+}
+
+/// <summary>
+/// A component that must be on a projectile to trigger the ParticleOnHitByProjectileComponent.
+/// </summary>
+[RegisterComponent]
+public sealed partial class ParticleOnHitByProjectileCauserComponent : Component
+{
+    /// <summary>
+    /// The intensity of the effect.
+    /// </summary>
+    public float EffectIntensity = 1;
+}
+
+[Serializable, NetSerializable]
+public sealed class ParticleOnHitByProjectileEvent : EntityEventArgs
+{
+    public ProtoId<ParticleEffectPrototype> Effect;
+    public float EffectIntensity;
+    public Angle Angle;
+    public MapCoordinates Pos;
+
+    public ParticleOnHitByProjectileEvent(ProtoId<ParticleEffectPrototype> effect, float effectIntensity, Angle angle, MapCoordinates pos)
+    {
+        Effect = effect;
+        EffectIntensity = effectIntensity;
+        Angle = angle;
+        Pos = pos;
+    }
+}
+// FH end

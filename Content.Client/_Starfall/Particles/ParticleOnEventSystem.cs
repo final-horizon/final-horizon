@@ -1,7 +1,9 @@
 using Content.Shared._Starfall.Particles;
 using Content.Shared._Starfall.Particles.Effects;
+using Content.Shared.Projectiles;
 using Content.Shared.Throwing;
 using Content.Shared.Weapons.Ranged.Events;
+using Robust.Shared.Physics;
 
 namespace Content.Client._Starfall.Particles;
 
@@ -29,6 +31,8 @@ public sealed partial class ParticleOnEventSystem : EntitySystem
         SubscribeLocalEvent<ParticleOnThrownComponent, ComponentShutdown>(OnThrownShutdown);
 
         SubscribeLocalEvent<ParticleOnGunShotProjectileComponent, AmmoShotEvent>(OnGunShotProjectile);
+
+        SubscribeNetworkEvent<ParticleOnHitByProjectileEvent>(OnHitByProjectile); // FH
     }
 
     private void OnThrown(Entity<ParticleOnThrownComponent> ent, ref ThrownEvent args)
@@ -66,4 +70,15 @@ public sealed partial class ParticleOnEventSystem : EntitySystem
             _particles.CreateParticle(ent.Comp.Effect, projectile, ent.Comp.ColorOverride);
         }
     }
+
+    // FH start - move to its own system?
+    private void OnHitByProjectile(ParticleOnHitByProjectileEvent args)
+    {
+        ParticleRuntimeOverrides overrides = new()
+        {
+            EmitAngle = -args.Angle
+        };
+        _particles.SpawnEffect(args.Effect, args.Pos, null, null, overrides);
+    }
+    // FH end
 }

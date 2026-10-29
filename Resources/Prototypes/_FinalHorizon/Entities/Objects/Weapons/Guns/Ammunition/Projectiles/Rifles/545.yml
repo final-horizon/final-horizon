@@ -8,3 +8,5 @@
     damage:
       types:
         Piercing: 30
+  - type: ParticleOnHitByProjectileCauser
+    effectIntensity: 1

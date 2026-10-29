@@ -51,6 +51,8 @@
       Brute:
         collection:
           StoneBulletImpact
+  - type: ParticleOnHitByProjectile
+    effect: FHImpactConcrete
 
 - type: entity
   parent: BaseWall
