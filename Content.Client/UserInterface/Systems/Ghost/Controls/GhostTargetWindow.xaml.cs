@@ -28,7 +28,6 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls
         private bool _sortAscending = true;
 
         public event Action<NetEntity>? WarpClicked;
-        public event Action? OnGhostnadoClicked;
         public event Action? OnRefreshClicked;
 
         public GhostTargetWindow()
