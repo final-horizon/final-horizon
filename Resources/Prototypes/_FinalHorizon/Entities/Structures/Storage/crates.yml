@@ -58,6 +58,12 @@
       paper_label: !type:ContainerSlot
   - type: RequireProjectileTarget
   - type: Appearance
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
+
 
 - type: entity
   parent: FHCrateWood
@@ -75,6 +81,7 @@
       map: ["enum.StorageVisualLayers.Base"]
     - state: open
       map: ["enum.StorageVisualLayers.Door"]
+
 
 - type: entity
   parent: FHCrateWood

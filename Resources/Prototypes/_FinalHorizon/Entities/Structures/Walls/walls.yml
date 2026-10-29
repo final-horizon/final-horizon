@@ -131,7 +131,8 @@
     soundGroups:
       Brute:
         collection:
-          WoodBulletImpact
+          StoneBulletImpact
+
 - type: entity
   parent: BaseWall
   id: FHWallFramedBlank

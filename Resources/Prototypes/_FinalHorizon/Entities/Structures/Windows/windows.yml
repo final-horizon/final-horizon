@@ -10,3 +10,19 @@
   - type: Icon
     sprite: _FinalHorizon/Structures/Windows/window.rsi
     state: full
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          GlassBulletImpact
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

@@ -126,6 +126,11 @@
   - type: IconSmooth
     key: walls
     base: brick
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          StoneBulletImpact
 
 - type: entity
   parent: BaseWall
@@ -799,6 +804,11 @@
   - type: IconSmooth
     key: walls
     base: sandstone
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          StoneBulletImpact
 
 - type: entity
   parent: BaseWall
@@ -1320,6 +1330,11 @@
   - type: IconSmooth
     key: woods
     base: wood
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
 
 - type: entity
   parent: BaseWall
@@ -1774,3 +1789,8 @@
   - type: Occluder
   - type: BlockWeather
   - type: SunShadowCast
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
