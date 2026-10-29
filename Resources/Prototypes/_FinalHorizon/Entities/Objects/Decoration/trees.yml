@@ -58,6 +58,11 @@
             max: 8
   - type: Occluder
     boundingBox: "-0.35, -0.35, 0.35, 0.35"
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
 
 - type: entity
   parent: FHBaseTree
