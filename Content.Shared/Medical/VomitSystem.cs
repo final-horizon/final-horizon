@@ -16,6 +16,8 @@ using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
+using Content.Shared._Funkystation.WallStains; // Funky Wall Stains
+using Content.Shared._Funkystation.Fluids;
 
 namespace Content.Shared.Medical;
 
@@ -120,6 +122,10 @@ public sealed class VomitSystem : EntitySystem
             // Makes a vomit solution the size of 90% of the chemicals removed from the chemstream
             solution.AddReagent(new ReagentId(VomitPrototype, _bloodstream.GetEntityBloodData((uid, bloodStream))), vomitAmount);
         }
+
+        // Funky Wall Stains
+        var splashEv = new SplashOnWallEvent(Transform(uid).Coordinates, solution.Clone());
+        RaiseLocalEvent(ref splashEv);
 
         if (_puddle.TrySpillAt(uid, solution, out var puddle, false))
         {

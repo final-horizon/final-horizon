@@ -11,6 +11,13 @@ namespace Content.Shared.Fluids.Components
     [RegisterComponent, NetworkedComponent, Access(typeof(SharedPuddleSystem))]
     public sealed partial class PuddleComponent : Component
     {
+
+        [DataField]
+        public bool AffectsMovement = true;
+
+        [DataField]
+        public bool AffectsSound = true;
+
         [DataField]
         public SoundSpecifier SpillSound = new SoundPathSpecifier("/Audio/Effects/Fluids/splat.ogg");
 

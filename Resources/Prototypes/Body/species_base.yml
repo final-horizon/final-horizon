@@ -162,6 +162,7 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
+  - type: FootprintOwner # Funky change
 
 - type: entity
   abstract: true

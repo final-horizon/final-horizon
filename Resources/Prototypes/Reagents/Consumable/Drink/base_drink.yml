@@ -20,6 +20,7 @@
   tileReactions:
   - !type:ExtinguishTileReaction { }
   - !type:SpillIfPuddlePresentTileReaction { }
+  flammability: 1 # Funky change
 
 - type: reagent
   id: BaseSoda

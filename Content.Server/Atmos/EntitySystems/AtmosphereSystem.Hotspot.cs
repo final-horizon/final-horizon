@@ -10,6 +10,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Content.Server._Funkystation.Atmos.Events; // Funky
 
 namespace Content.Server.Atmos.EntitySystems;
 
@@ -200,6 +201,11 @@ public sealed partial class AtmosphereSystem
     {
         if (tile.Air == null)
             return;
+            
+        // Funky start
+        var ev = new TileExposedEvent(tile.GridIndices, exposedTemperature, exposedVolume, sparkSourceUid);
+        RaiseLocalEvent(gridAtmosphere.Owner, ref ev);
+        // Funky end
 
         if (!IsMixtureOxidizer(tile.Air))
             return;

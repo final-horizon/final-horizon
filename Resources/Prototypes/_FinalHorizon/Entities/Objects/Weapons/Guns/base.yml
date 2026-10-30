@@ -38,7 +38,14 @@
       path: /Audio/_FinalHorizon/Weapons/Guns/Draw/generic_draw.ogg
       params:
         volume: -2
-
+  - type: Stainable
+    iconVisuals:
+    - sprite: _Funkystation/Effects/blood.rsi
+      state: itemblood
+  - type: Solution
+    solution:
+      stain:
+        maxVol: 5
 
 - type: entity
   parent: FHWeaponBase
