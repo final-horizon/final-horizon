@@ -35,7 +35,8 @@
           types:
             Heat: 2
             Poison: 1
-
+  flammability: 5 # Funky change
+  selfOxidizing: true # Funky change
 - type: reagent
   id: Napalm
   name: reagent-name-napalm
@@ -65,7 +66,8 @@
             Caustic: 0.5 # based off napalm being an irritant
       - !type:Flammable
         multiplier: 0.4
-
+  flammability: 5 # Funky change
+  selfOxidizing: true # Funky change
 - type: reagent
   id: Phlogiston
   name: reagent-name-phlogiston

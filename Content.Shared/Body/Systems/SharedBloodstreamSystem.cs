@@ -23,6 +23,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+using Content.Shared._Funkystation.WallStains; // Funky Wall Stains
 
 namespace Content.Shared.Body.Systems;
 
@@ -211,6 +212,20 @@ public abstract class SharedBloodstreamSystem : EntitySystem
         var total = bloodloss.GetTotal();
         var totalFloat = total.Float();
         TryModifyBleedAmount(ent.AsNullable(), totalFloat);
+
+        // Funky Wall Stains
+        if (totalFloat >= 2f
+            && SolutionContainer.ResolveSolution(ent.Owner, ent.Comp.BloodSolutionName, ref ent.Comp.BloodSolution, out var bloodForSplatter)
+            && bloodForSplatter.Volume > 0)
+        {
+            var splatterAmount = FixedPoint2.Min(FixedPoint2.New(totalFloat * 0.15f), bloodForSplatter.Volume);
+            if (splatterAmount > 0)
+            {
+                var splatterSolution = SolutionContainer.SplitSolution(ent.Comp.BloodSolution.Value, splatterAmount);
+                var splashEv = new SplashOnWallEvent(Transform(ent.Owner).Coordinates, splatterSolution);
+                RaiseLocalEvent(ref splashEv);
+            }
+        }
 
         // Critical hit. Causes target to lose blood, using the bleed rate modifier of the weapon, currently divided by 5
         // The crit chance is currently the bleed rate modifier divided by 25.
@@ -483,6 +498,11 @@ public abstract class SharedBloodstreamSystem : EntitySystem
 
         if (tempSolution.Volume > ent.Comp.BleedPuddleThreshold)
         {
+            // Funky Wall Stains
+            var xform = Transform(ent.Owner);
+            var splashEv = new SplashOnWallEvent(xform.Coordinates, tempSolution.Clone());
+            RaiseLocalEvent(ref splashEv);
+
             _puddle.TrySpillAt(ent.Owner, tempSolution, out _, sound: false);
 
             tempSolution.RemoveAllSolution();
@@ -542,9 +562,13 @@ public abstract class SharedBloodstreamSystem : EntitySystem
             SolutionContainer.RemoveAllSolution(ent.Comp.TemporarySolution.Value);
         }
 
+        // Funky Wall Stains
+        var xform = Transform(ent);
+        var splashEv = new SplashOnWallEvent(xform.Coordinates, tempSol.Clone());
+        RaiseLocalEvent(ref splashEv);
+
         _puddle.TrySpillAt(ent, tempSol, out _);
     }
-
     /// <summary>
     /// Change what someone's blood is made of, on the fly.
     /// </summary>

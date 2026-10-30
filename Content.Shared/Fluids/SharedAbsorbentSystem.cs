@@ -12,6 +12,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Content.Shared._Funkystation.Footprints;
 
 namespace Content.Shared.Fluids;
 
@@ -356,6 +357,8 @@ public abstract class SharedAbsorbentSystem : EntitySystem
         localPos = userXform.LocalRotation.RotateVec(localPos);
 
         _melee.DoLunge(user, absorbEnt, Angle.Zero, localPos, null);
+
+        RaiseLocalEvent(target, new FootprintCleanEvent());
 
         return true;
     }

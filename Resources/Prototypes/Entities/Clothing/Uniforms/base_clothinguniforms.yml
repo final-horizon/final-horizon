@@ -24,6 +24,8 @@
       reagents:
       - ReagentId: Fiber
         Quantity: 30
+      stain:
+        maxVol: 5
   - type: Tag
     tags:
     - ClothMade
@@ -32,6 +34,22 @@
   - type: ClothingSpeedModifier # FH start
     walkModifier: 1.2
     sprintModifier: 1.2 # FH end
+  - type: Appearance
+  - type: Stainable
+    clothingVisuals:
+      jumpsuit:
+      - sprite: _Funkystation/Effects/blood.rsi
+        state: uniformblood
+    itemVisuals:
+      left:
+      - sprite: Effects/Stains/jumpsuit.rsi
+        state: inhand-right
+      right:
+      - sprite: Effects/Stains/jumpsuit.rsi
+        state: inhand-left
+    iconVisuals:
+    - sprite: _Funkystation/Effects/blood.rsi
+      state: uniformbloodicon
 
 - type: entity
   abstract: true

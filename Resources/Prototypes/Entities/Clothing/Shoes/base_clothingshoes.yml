@@ -17,6 +17,8 @@
       reagents:
       - ReagentId: Fiber
         Quantity: 30
+      stain:
+        maxVol: 5
   - type: Tag
     tags:
     - ClothMade
@@ -26,6 +28,15 @@
   - type: ClothingSpeedModifier # FH start
     walkModifier: 1.2
     sprintModifier: 1.2 # FH end
+  - type: Appearance
+  - type: Stainable
+    clothingVisuals:
+      shoes:
+      - sprite: _Funkystation/Effects/blood.rsi
+        state: shoeblood
+    iconVisuals:
+    - sprite: _Funkystation/Effects/blood.rsi
+      state: shoebloodicon
 
 - type: entity
   abstract: true

@@ -8,7 +8,27 @@
     - outerClothing
   - type: Sprite
     state: icon
-
+  - type: Appearance
+  - type: Stainable
+    clothingVisuals:
+      outerClothing:
+      - sprite: _Funkystation/Effects/blood.rsi
+        state: outerclothing
+    iconVisuals:
+    - sprite: _Funkystation/Effects/blood.rsi
+      state: outerclothing
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 30
+      stain:
+        maxVol: 5
+  - type: StainBlocker
+    slots: [INNERCLOTHING]
+    
 - type: entity
   abstract: true
   parent: ClothingOuterBase

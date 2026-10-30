@@ -23,6 +23,26 @@
         Heat: 0.80
   - type: ExplosionResistance
     damageCoefficient: 0.90
+  - type: Appearance
+  - type: Stainable
+    clothingVisuals:
+      outerClothing:
+      - sprite: _Funkystation/Effects/blood.rsi
+        state: outerclothing
+    iconVisuals:
+    - sprite: _Funkystation/Effects/blood.rsi
+      state: outerclothing
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 30
+      stain:
+        maxVol: 5
+  - type: StainBlocker
+    slots: [INNERCLOTHING]
 
 #Standard armor vest, allowed for security only
 - type: entity

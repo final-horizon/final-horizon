@@ -19,6 +19,15 @@ public sealed partial class AbsorbentComponent : Component
     [DataField, AutoNetworkedField]
     public Dictionary<Color, float> Progress = [];
 
+    [DataField]
+    public float FootprintCleaningRange = 0.2f;
+
+    /// <summary>
+    /// How many footprints within FootprintCleaningRange can be cleaned at once.
+    /// </summary>
+    [DataField]
+    public int MaxCleanedFootprints = 9;
+
     /// <summary>
     /// Name for solution container, that should be used for absorbed solution storage and as source of absorber solution.
     /// Default is 'absorbed'.
