@@ -21,7 +21,7 @@
     table: !type:GroupSelector
       children:
       - !type:GroupSelector
-        prob: 0.05
+        prob: 0.01
         children:
         - id: FHMineClaymoreActive
         - id: FHMineM16APMActive
@@ -140,7 +140,7 @@
     table: !type:GroupSelector
       children:
       - !type:GroupSelector
-        prob: 0.05 #lowered cause it was 1 in 10
+        prob: 0.01 #lowered cause it was 1 in 10, lowered even more dude its like every 3 tiles
         children:
         - id: FHMineClaymoreActive
         - id: FHMineM16APMActive
