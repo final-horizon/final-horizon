@@ -3,65 +3,116 @@ using Content.Shared.Light.Components;
 using Content.Shared.StatusEffectNew.Components;
 using Content.Shared.Weather;
 using Robust.Client.Graphics;
-using Robust.Shared.Map.Components;
 
 namespace Content.Client.Overlays;
 
 public sealed partial class StencilOverlay
 {
-    private List<Entity<MapGridComponent>> _grids = new();
-
     private void DrawWeather(
         in OverlayDrawArgs args,
-        CachedResources res,
-        HashSet<Entity<WeatherStatusEffectComponent, StatusEffectComponent>> weathers,
-        Matrix3x2 invMatrix)
+        HashSet<Entity<WeatherStatusEffectComponent, StatusEffectComponent>> weathers)
     {
         var worldHandle = args.WorldHandle;
-        var mapId = args.MapId;
         var worldAABB = args.WorldAABB;
         var worldBounds = args.WorldBounds;
         var position = args.Viewport.Eye?.Position.Position ?? Vector2.Zero;
+        var eye = args.Viewport.Eye; //CrystallEdge: we need Eye for calculation of isometric wall offset direction
 
         // Cut out the irrelevant bits via stencil
         // This is why we don't just use parallax; we might want specific tiles to get drawn over
         // particularly for planet maps or stations.
-        worldHandle.RenderInRenderTarget(res.Blep!,
-            () =>
+        var stencil = _gridStencil.GetTileStencil(args,
+            "weather-blocked",
+            "weather-blocked-grid-stencil",
+            (grid, tile) =>
             {
-                var xformQuery = _entManager.GetEntityQuery<TransformComponent>();
-                _grids.Clear();
+                if (eye is null) //CrystallEdge: isometric wall offset requires an eye to compute
+                    return false;
 
-                // idk if this is safe to cache in a field and clear sloth help
-                _mapManager.FindGridsIntersecting(mapId, worldAABB, ref _grids);
-
-                foreach (var grid in _grids)
-                {
-                    var matrix = _transform.GetWorldMatrix(grid, xformQuery);
-                    var matty = Matrix3x2.Multiply(matrix, invMatrix);
-                    worldHandle.SetTransform(matty);
-                    _entManager.TryGetComponent(grid.Owner, out RoofComponent? roofComp);
-
-                    foreach (var tile in _map.GetTilesIntersecting(grid.Owner, grid, worldAABB))
-                    {
-                        // Ignored tiles for stencil
-                        if (_weather.CanWeatherAffect((grid.Owner, grid, roofComp), tile))
-                            continue;
-
-                        var gridTile = new Box2(tile.GridIndices * grid.Comp.TileSize,
-                            (tile.GridIndices + Vector2i.One) * grid.Comp.TileSize);
-
-                        worldHandle.DrawRect(gridTile, Color.White);
-                    }
-                }
+                _entManager.TryGetComponent(grid.Owner, out RoofComponent? roofComp);
+                // Ignored tiles for stencil.
+                return !_weather.CanWeatherAffect((grid.Owner, grid.Comp, roofComp), tile);
             },
-            Color.Transparent);
+            ignoreEmpty: false, //CrystallEdge: empty tiles are still evaluated by CanWeatherAffect
+            (grid, tile) => //CrystallEdge: isometric wall offset
+            {
+                Angle rotation = eye!.Rotation * -1f;
+                var offset = rotation.ToWorldVec() * -0.5f;
+                return new Box2(
+                    tile.GridIndices * grid.Comp.TileSize + offset,
+                    (tile.GridIndices + Vector2i.One) * grid.Comp.TileSize + offset);
+            });
+
+        var curTime = _timing.RealTime;
+
+        var hasGroundLayer = false;
+
+        foreach (var (_, weather, _) in weathers)
+        {
+            if (weather.GroundSprite != null)
+            {
+                hasGroundLayer = true;
+                break;
+            }
+        }
+
+        // Ground/splash layer - drawn first so it sits underneath the falling-drops layer, and only on
+        // solid (non-space) tiles that weather can actually affect, not over gaps/chasms.
+        if (hasGroundLayer)
+        {
+            var groundStencil = _gridStencil.GetTileStencil(args,
+                "weather-ground",
+                "weather-ground-grid-stencil",
+                (grid, tile) =>
+                {
+                    if (eye is null)
+                        return false;
+
+                    _entManager.TryGetComponent(grid.Owner, out RoofComponent? roofComp);
+                    return !_weather.CanWeatherAffect((grid.Owner, grid.Comp, roofComp), tile) || _turf.IsSpace(tile);
+                },
+                ignoreEmpty: false,
+                (grid, tile) =>
+                {
+                    Angle rotation = eye!.Rotation * -1f;
+                    var offset = rotation.ToWorldVec() * -0.5f;
+                    return new Box2(
+                        tile.GridIndices * grid.Comp.TileSize + offset,
+                        (tile.GridIndices + Vector2i.One) * grid.Comp.TileSize + offset);
+                });
+
+            worldHandle.SetTransform(Matrix3x2.Identity);
+            worldHandle.UseShader(_protoManager.Index(StencilMask).Instance());
+            worldHandle.DrawTextureRect(groundStencil.Texture, worldBounds);
+
+            foreach (var (uid, weather, status) in weathers)
+            {
+                if (weather.GroundSprite is not { } groundSpriteSpecifier)
+                    continue;
+
+                var alpha = _weather.GetWeatherPercent((uid, status));
+                var groundSprite = _sprite.GetFrame(groundSpriteSpecifier, curTime);
+
+                worldHandle.UseShader(_protoManager.Index(StencilDraw).Instance());
+                _parallax.DrawParallax(worldHandle,
+                    worldAABB,
+                    groundSprite,
+                    curTime,
+                    position,
+                    Vector2.Zero,
+                    modulate: (weather.Color ?? Color.White).WithAlpha(alpha));
+            }
+
+            // The ground mask above left stencil bits set for tiles it blocked (including space tiles the
+            // drops layer below is allowed to cover) - clear them so the drops layer's own mask starts clean.
+            worldHandle.UseShader(_protoManager.Index(StencilClear).Instance());
+            worldHandle.DrawTextureRect(groundStencil.Texture, worldBounds);
+        }
+        // CrystallEdge end
 
         worldHandle.SetTransform(Matrix3x2.Identity);
         worldHandle.UseShader(_protoManager.Index(StencilMask).Instance());
-        worldHandle.DrawTextureRect(res.Blep!.Texture, worldBounds);
-        var curTime = _timing.RealTime;
-
+        worldHandle.DrawTextureRect(stencil.Texture, worldBounds);
 
         foreach (var (uid, weather, status) in weathers)
         {

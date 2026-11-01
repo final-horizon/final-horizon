@@ -69,6 +69,11 @@
         - Opaque
         - MidImpassable
         - LowImpassable
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
 
 - type: entity
   parent: FHFenceWooden
@@ -103,6 +108,11 @@
         - Opaque
         - MidImpassable
         - LowImpassable
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
 
 # green fence
 - type: entity
@@ -172,6 +182,11 @@
         - Opaque
         - MidImpassable
         - LowImpassable
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
 
 - type: entity
   parent: FHFenceGreen
@@ -206,6 +221,11 @@
         - Opaque
         - MidImpassable
         - LowImpassable
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
 
 # concrete fence
 - type: entity
@@ -275,6 +295,11 @@
         - LowImpassable
         - BulletImpassable
   - type: Occluder
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          StoneBulletImpact
 
 - type: entity
   parent: FHFenceConcrete
@@ -309,6 +334,11 @@
         - Opaque
         - MidImpassable
         - LowImpassable
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          StoneBulletImpact
 
 # tall fence
 - type: entity
@@ -383,6 +413,11 @@
         - LowImpassable
         - BulletImpassable
   - type: Occluder
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
 
 - type: entity
   parent: FHFenceTall
@@ -418,3 +453,8 @@
         - MidImpassable
         - LowImpassable
         - BulletImpassable
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact

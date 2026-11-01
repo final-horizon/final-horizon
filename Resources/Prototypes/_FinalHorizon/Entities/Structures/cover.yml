@@ -60,6 +60,7 @@
   name: concrete blocks
   description: A wall of concrete blocks.
   components:
+  - type: SparksOnDamage # _Starfall
   - type: Sprite
     sprite: _FinalHorizon/Structures/Cover/blocks.rsi
     state: base
@@ -94,7 +95,17 @@
     delay: 1.5
   - type: Clickable
   - type: Cover
-    hitChance: 0.40
+    hitChance: 0.90
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          StoneBulletImpact
+    soundTypes:
+      Heat:
+        collection:
+          MetalLaserImpact
+
 
 # sandbags
 - type: entity

@@ -7,6 +7,7 @@
   - type: InteractionOutline
   - type: Anchorable
     delay: 2
+  - type: SparksOnDamage # _Starfall
   - type: Physics
     bodyType: Static
   - type: Transform

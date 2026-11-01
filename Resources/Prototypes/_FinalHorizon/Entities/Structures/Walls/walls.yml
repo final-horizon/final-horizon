@@ -20,6 +20,11 @@
   - type: IconSmooth
     key: walls
     base: tent
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
 
 - type: entity
   parent: BaseWall
@@ -41,6 +46,11 @@
   - type: IconSmooth
     key: walls
     base: concrete
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          StoneBulletImpact
 
 - type: entity
   parent: BaseWall
@@ -65,6 +75,11 @@
         layer:
         - WallLayer
         density: 4000
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          StoneBulletImpact
 
 - type: entity
   parent: BaseWall
@@ -86,6 +101,11 @@
   - type: IconSmooth
     key: walls
     base: framed
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          StoneBulletImpact
 
 - type: entity
   parent: BaseWall
@@ -107,7 +127,11 @@
   - type: IconSmooth
     key: walls
     base: framed
-
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
 - type: entity
   parent: BaseWall
   id: FHWallFramedBlank
@@ -128,3 +152,8 @@
   - type: IconSmooth
     key: walls
     base: framed
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          StoneBulletImpact

@@ -3,6 +3,7 @@
   parent: BaseStructure
   abstract: true
   components:
+  - type: SparksOnDamage # _Starfall
   - type: Physics
     bodyType: Static
   - type: Fixtures
