@@ -1,0 +1,11 @@
+- type: WoundType
+  id: BleedLight
+
+- type: WoundType
+  id: BleedMedium
+
+- type: WoundType
+  id: BleedHeavy
+
+- type: WoundType
+  id: BleedVeryHeavy

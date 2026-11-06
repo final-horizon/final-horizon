@@ -4,6 +4,7 @@ using Content.Server.Destructible;
 using Content.Server.Effects;
 using Content.Server.Weapons.Ranged.Systems;
 using Content.Shared._ES.Camera;
+using Content.Shared._FinalHorizon.Damage;
 using Content.Shared._Starfall.Particles;
 using Content.Shared.Camera;
 using Content.Shared.Damage;
@@ -28,6 +29,8 @@ public sealed class ProjectileSystem : SharedProjectileSystem
     [Dependency] private readonly DestructibleSystem _destructibleSystem = default!;
     [Dependency] private readonly GunSystem _guns = default!;
     [Dependency] private readonly SharedCameraRecoilSystem _sharedCameraRecoil = default!;
+
+    [Dependency] private readonly WoundSystem _wound = default!; // FH
 
     public override void Initialize()
     {
@@ -74,7 +77,8 @@ public sealed class ProjectileSystem : SharedProjectileSystem
         }
         var deleted = Deleted(target);
 
-        if (_damageableSystem.TryChangeDamage((target, damageableComponent), ev.Damage, out var damage, component.IgnoreResistances, origin: component.Shooter) && Exists(component.Shooter))
+        if (!_wound.HandleGunshotDamage(target, ev.Damage) && // FH
+            _damageableSystem.TryChangeDamage((target, damageableComponent), ev.Damage, out var damage, component.IgnoreResistances, origin: component.Shooter) && Exists(component.Shooter))
         {
             if (!deleted)
             {
@@ -90,6 +94,7 @@ public sealed class ProjectileSystem : SharedProjectileSystem
         else
         {
             component.ProjectileSpent = true;
+            damage = null; // FH
         }
 
         if (!deleted)
