@@ -1,8 +1,11 @@
 using Content.Shared.Body;
+using Content.Shared.Body.Components;
+using Content.Shared.Body.Systems;
 using Content.Shared.Chat;
 using Content.Shared.Damage;
 using Content.Shared.Examine;
 using Content.Shared.FixedPoint;
+using Content.Shared.HealthExaminable;
 using Content.Shared.Popups;
 using Content.Shared_FinalHorizon.Damage;
 using Robust.Shared.Network;
@@ -18,10 +21,12 @@ public sealed partial class WoundSystem : EntitySystem
     [Dependency] private readonly IRobustRandom _rand = default!;
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private readonly IPrototypeManager _proto = default!;
+    [Dependency] private readonly SharedBloodstreamSystem _bloodstream = default!;
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<BodyComponent, ExaminedEvent>(OnBodyExamine);
+        SubscribeLocalEvent<BodyComponent, HealthBeingExaminedEvent>(OnBodyExamine);
     }
     public bool HandleGunshotDamage(EntityUid ent, DamageSpecifier damage)
     {
@@ -64,12 +69,13 @@ public sealed partial class WoundSystem : EntitySystem
         }
         ;
         CreateWound(organ, realDamage, woundType);
+        UpdateBleedingFromWounds(ent);
         _popup.PopupPredicted($"Applied wound to organ {organ.Owner.ToString()} with type {woundType} and damage {realDamage}", ent, ent);
         return true;
     }
     public void CreateWound(EntityUid ent, FixedPoint2 damage, ProtoId<WoundTypePrototype> woundType)
     {
-        if (TryComp<WoundableComponent>(ent, out var woundable))
+        if (TryComp<WoundableComponent>(ent, out var woundable) && _proto.TryIndex<WoundTypePrototype>(woundType, out _))
         {
             var wound = new Wound
             {
@@ -77,13 +83,37 @@ public sealed partial class WoundSystem : EntitySystem
                 WoundType = woundType
             };
             woundable.Wounds.Add(wound);
-            woundable.Dirty();
+            DirtyField<WoundableComponent>(ent, "Wounds");
         }
     }
 
-    public void OnBodyExamine(EntityUid ent, BodyComponent comp, ref ExaminedEvent args)
+    // Updates bleed caused by wounds
+    private void UpdateBleedingFromWounds(EntityUid uid)
+    {
+        if (!TryComp<BodyComponent>(uid, out var body) ||
+            !_bodySystem.TryGetOrgansWithComponent<WoundableComponent>(uid, out var organs) ||
+            !TryComp<BloodstreamComponent>(uid, out var bloodStream))
+            return;
+
+        var bleed = 0f;
+        foreach (var organ in organs)
+        {
+            foreach (var wound in organ.Comp.Wounds)
+            {
+                if (_proto.TryIndex(wound.WoundType, out var woundProto))
+                    bleed += woundProto.BleedRate;
+            }
+        }
+
+        bloodStream.BleedFromWounds = bleed;
+        DirtyField<BloodstreamComponent>(uid, "BleedFromWounds");
+        _bloodstream.TryModifyBleedAmount(uid, 0);
+    }
+
+    public void OnBodyExamine(EntityUid ent, BodyComponent comp, ref HealthBeingExaminedEvent args)
     {
         var msg = new FormattedMessage();
+        msg.PushNewline();
         msg.AddText("Current wounds are:");
         if (!_bodySystem.TryGetOrgansWithComponent<WoundableComponent>(ent, out var organs))
             return;
@@ -108,6 +138,6 @@ public sealed partial class WoundSystem : EntitySystem
                 msg.AddText(" is ok");
         }
         msg.PushNewline();
-        args.AddMessage(msg);
+        args.Message.AddMessage(msg);
     }
 }

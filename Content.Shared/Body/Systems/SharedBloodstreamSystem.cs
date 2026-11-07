@@ -208,7 +208,7 @@ public abstract class SharedBloodstreamSystem : EntitySystem
             return;
 
         // Does the calculation of how much bleed rate should be added/removed, then applies it
-        var oldBleedAmount = ent.Comp.BleedAmount;
+        var oldBleedAmount = ent.Comp.BleedOnBody; // FH
         var total = bloodloss.GetTotal();
         var totalFloat = total.Float();
         TryModifyBleedAmount(ent.AsNullable(), totalFloat);
@@ -521,10 +521,10 @@ public abstract class SharedBloodstreamSystem : EntitySystem
         if (!Resolve(ent, ref ent.Comp, logMissing: false))
             return false;
 
-        ent.Comp.BleedAmount += amount;
-        ent.Comp.BleedAmount = Math.Clamp(ent.Comp.BleedAmount, 0, ent.Comp.MaxBleedAmount);
+        ent.Comp.BleedOnBody += amount; // FH
+        ent.Comp.BleedOnBody = Math.Clamp(ent.Comp.BleedOnBody, 0, ent.Comp.MaxBleedAmount); // FH
 
-        DirtyField(ent, ent.Comp, nameof(BloodstreamComponent.BleedAmount));
+        DirtyField(ent, ent.Comp, nameof(BloodstreamComponent.BleedOnBody)); // FH
 
         if (ent.Comp.BleedAmount == 0)
             _alertsSystem.ClearAlert(ent.Owner, ent.Comp.BleedingAlert);

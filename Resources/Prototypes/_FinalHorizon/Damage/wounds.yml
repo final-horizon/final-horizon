@@ -1,11 +1,15 @@
-- type: WoundType
+- type: woundType
   id: BleedLight
+  bleedRate: 0.5
 
-- type: WoundType
+- type: woundType
   id: BleedMedium
+  bleedRate: 1
 
-- type: WoundType
+- type: woundType
   id: BleedHeavy
+  bleedRate: 2
 
-- type: WoundType
+- type: woundType
   id: BleedVeryHeavy
+  bleedRate: 4

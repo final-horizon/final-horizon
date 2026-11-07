@@ -7,7 +7,7 @@ using Robust.Shared.Serialization;
 
 namespace Content.Shared._FinalHorizon.Damage;
 
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(fieldDeltas: true)]
 public sealed partial class WoundableComponent : Component
 {
     [DataField, AutoNetworkedField]

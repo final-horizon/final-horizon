@@ -8,7 +8,9 @@ public sealed partial class WoundTypePrototype : IPrototype
     [IdDataField]
     public string ID { get; private set; } = default!;
 
-    // Rate of bleed from this wound. Unimplemented
+    /// <summary>
+    /// Rate of bleed from this wound.
+    /// </summary>
     [DataField]
     public float BleedRate = 0;
 

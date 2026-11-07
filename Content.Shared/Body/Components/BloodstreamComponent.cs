@@ -17,7 +17,7 @@ namespace Content.Shared.Body.Components;
 /// </summary>
 [RegisterComponent, NetworkedComponent,]
 [AutoGenerateComponentState(fieldDeltas: true), AutoGenerateComponentPause]
-[Access(typeof(SharedBloodstreamSystem))]
+//[Access(typeof(SharedBloodstreamSystem))] // FH
 public sealed partial class BloodstreamComponent : Component
 {
     public const string DefaultBloodSolutionName = "bloodstream";
@@ -49,6 +49,20 @@ public sealed partial class BloodstreamComponent : Component
     [ViewVariables]
     public TimeSpan AdjustedUpdateInterval => UpdateInterval * UpdateIntervalMultiplier;
 
+    // FH start
+    /// <summary>
+    /// Bleed rate on this entity.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public float BleedOnBody = 0;
+
+    /// <summary>
+    /// Bleed rate from the wounds on organs on this entitys body.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public float BleedFromWounds = 0;
+    // FH end
+
     /// <summary>
     /// How much is this entity currently bleeding?
     /// Higher numbers mean more blood lost every tick.
@@ -59,8 +73,8 @@ public sealed partial class BloodstreamComponent : Component
     /// <remarks>
     /// This generally corresponds to an amount of damage and can't go above 100.
     /// </remarks>
-    [DataField, AutoNetworkedField]
-    public float BleedAmount;
+    [ViewVariables] // FH
+    public float BleedAmount => BleedOnBody + BleedFromWounds; // FH
 
     /// <summary>
     /// How much should bleeding be reduced every update interval?
