@@ -18,5 +18,6 @@ public sealed partial class WoundableComponent : Component
 public sealed partial class Wound
 {
     public FixedPoint2 Damage = 0;
-    public ProtoId<WoundTypePrototype>? WoundType;
+    public ProtoId<WoundTypePrototype> WoundType;
+    public bool Tended = false;
 }

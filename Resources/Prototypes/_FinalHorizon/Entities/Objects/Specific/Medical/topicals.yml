@@ -35,30 +35,36 @@
     storedSprite:
       state: ointment-storage
       sprite: Objects/Specific/Medical/medical.rsi
-  - type: Healing
-    damageContainers:
-      - Biological
-    damage:
-      types:
-        Heat: -10 # FH
-        Cold: -10 # FH
-        Shock: -10 # FH
-        Caustic: -10 # FH
-    healingBeginSound:
-      path: "/Audio/Items/Medical/ointment_begin.ogg"
-      params:
-        volume: 1.0
-        variation: 0.125
-    healingEndSound:
-      path: "/Audio/Items/Medical/ointment_end.ogg"
-      params:
-        volume: 1.0
-        variation: 0.125
+  #- type: Healing
+  #  damageContainers:
+  #    - Biological
+  #  damage:
+  #    types:
+  #      Heat: -10 # FH
+  #      Cold: -10 # FH
+  #      Shock: -10 # FH
+  #      Caustic: -10 # FH
+  #  healingBeginSound:
+  #    path: "/Audio/Items/Medical/ointment_begin.ogg"
+  #    params:
+  #      volume: 1.0
+  #      variation: 0.125
+  #  healingEndSound:
+  #    path: "/Audio/Items/Medical/ointment_end.ogg"
+  #    params:
+  #      volume: 1.0
+  #      variation: 0.125
   - type: Stack
     stackType: FHOintment
     count: 10
   - type: StackPrice
     price: 5
+  - type: WoundTopical
+    usableWounds:
+    - BleedLight
+    - BleedMedium
+    - BleedHeavy
+    - BleedVeryHeavy
 
 - type: entity
   id: FHOintment1

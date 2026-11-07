@@ -156,6 +156,7 @@
   - type: Aim # FH
   - type: EyeCursorOffset # FH
   - type: SquadIndicator # FH
+  - type: BodyPartTargeting # FH
   - type: Tag
     tags:
     - CanPilot

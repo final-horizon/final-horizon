@@ -18,7 +18,16 @@ public sealed partial class WoundTypePrototype : IPrototype
     [DataField]
     public float PainMultiplier = 0;
 
-    // The type of wound this turns into when healed with the correct item. Null will remove the wound when healed. Unimplemented
+    // A multiplier to the constant pain recieved when having this wound while its tended. Unimplemented
     [DataField]
-    public ProtoId<WoundTypePrototype>? MendedWoundType { get; set; }
+    public float TendedPainMultiplier = 0;
+
+    [DataField]
+    public Color Color = Color.Red;
+
+    [DataField]
+    public float SelfTendChance = 0.02f;
+
+    [DataField]
+    public float TendedHealChance = 0.10f;
 }
