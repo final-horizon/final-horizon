@@ -34,6 +34,8 @@
         volume: -2
     soundEmpty:
       path: /Audio/_FinalHorizon/Weapons/Guns/Empty/gen_empty.ogg
+    minAngle: 52
+    maxAngle: 52
   - type: ChamberMagazineAmmoProvider
     soundRack:
       path: /Audio/_FinalHorizon/Weapons/Guns/Cock/g3_boltpull.ogg

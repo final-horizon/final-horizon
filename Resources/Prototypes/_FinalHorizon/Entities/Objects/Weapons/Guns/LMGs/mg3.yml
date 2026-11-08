@@ -33,6 +33,8 @@
         volume: -2
     soundEmpty:
       path: /Audio/_FinalHorizon/Weapons/Guns/Empty/gen_empty.ogg
+    minAngle: -55
+    maxAngle: -55
   - type: ChamberMagazineAmmoProvider
     soundRack:
       path: /Audio/_FinalHorizon/Weapons/Guns/Cock/m249_charge.ogg
@@ -69,3 +71,6 @@
   - type: Appearance
     appearanceDataInit:
      enum.AmmoVisuals.MagLoaded: false
+  - type: HeldSpeedModifier
+    walkModifier: 0.75
+    sprintModifier: 0.75

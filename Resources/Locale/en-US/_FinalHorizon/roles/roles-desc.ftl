@@ -29,6 +29,7 @@ job-description-BDW-sniper = A soldier who uses a sniper. Equipped with an G3SG/
 job-description-BDW-rto = A soldier who operates a long range radio. Equipped with an G3A3.
 job-description-BDW-grenadier = A rifleman who has a grenade launcher. Equipped with a G3A3 and an HK69A1.
 job-description-BDW-antitank = A soldier who uses a rocket launcher. Equipped with a SMAW.
+job-description-BDW-reservist = A soldier who uses a rifle. Equipped with an G3A3.
 
 job-description-NVA-platoonleader = Lead your platoon of soldiers. Equipped with an MPi-KM.
 job-description-NVA-teamleader = Lead your squad of soldiers. Equipped with an MPi-KM + GP-25.
@@ -39,3 +40,4 @@ job-description-NVA-sniper = A soldier who uses a sniper. Equipped with an SVD.
 job-description-NVA-autorifleman = A soldier who uses a bigger rifle. Equipped with an LMGK.
 job-description-NVA-rto = A soldier who operates a long range radio. Equipped with an MPi-KM.
 job-description-NVA-grenadier = A soldier who uses a rocket launcher. Equipped with an RPG-7.
+job-description-NVA-reservist = A soldier who uses a rifle. Equipped with an MPi-KM.

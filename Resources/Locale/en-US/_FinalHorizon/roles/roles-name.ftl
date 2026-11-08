@@ -29,6 +29,7 @@ job-name-BDW-grenadier = Grenadier
 job-name-BDW-antitank = Panzerjäger
 job-name-BDW-sniper = Scharfschütze
 job-name-BDW-rto = Gruppenfunker
+job-name-BDW-reservist = Reservist
 
 job-name-NVA-platoonleader = Zugführer
 job-name-NVA-teamleader = Gruppenführer
@@ -39,3 +40,4 @@ job-name-NVA-grenadier = Grenadier
 job-name-NVA-sniper = Scharfschütze
 job-name-NVA-autorifleman = Leichtmaschinengewehrschütze
 job-name-NVA-rto = Gruppenfunker
+job-name-NVA-reservist = Reservist
