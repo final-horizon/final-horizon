@@ -29,10 +29,10 @@ jobs:
       with:
         dotnet-version: 10.0.x
 
-    - name: Get Engine Tag
+    - name: Fetch engine tags
       run: |
         cd RobustToolbox
-        git fetch --depth=1
+        git fetch --force --tags
 
     - name: Install dependencies
       run: dotnet restore
