@@ -3,21 +3,29 @@
   bleedRate: 0.5
   selfTendChance: 0.10
   tendedHealChance: 0.40
+  painMultiplier: 0.25
+  tendedPainMultiplier: 0.02
 
 - type: woundType
   id: BleedMedium
   bleedRate: 1
   selfTendChance: 0.05
   tendedHealChance: 0.25
+  painMultiplier: 0.25
+  tendedPainMultiplier: 0.02
 
 - type: woundType
   id: BleedHeavy
   bleedRate: 2
   selfTendChance: 0.02
   tendedHealChance: 0.15
+  painMultiplier: 0.25
+  tendedPainMultiplier: 0.02
 
 - type: woundType
   id: BleedVeryHeavy
   bleedRate: 4
   selfTendChance: 0.00
   tendedHealChance: 0.5
+  painMultiplier: 0.25
+  tendedPainMultiplier: 0.02

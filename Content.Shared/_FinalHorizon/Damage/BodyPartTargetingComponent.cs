@@ -6,11 +6,12 @@ namespace Content.Shared_FinalHorizon.Damage;
 public sealed partial class BodyPartTargetingComponent : Component
 {
     [DataField, AutoNetworkedField]
-    public TargetableBodyParts TargetedPart = TargetableBodyParts.Torso;
+    public TargetableBodyParts TargetedPart { get; set; }
 }
 
 public enum TargetableBodyParts
 {
+    Invalid,
     Head,
     Torso,
     LeftArm,

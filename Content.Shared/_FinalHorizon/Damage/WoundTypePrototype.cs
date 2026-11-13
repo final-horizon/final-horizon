@@ -16,11 +16,11 @@ public sealed partial class WoundTypePrototype : IPrototype
 
     // A multiplier to the constant pain recieved when having this wound. Unimplemented
     [DataField]
-    public float PainMultiplier = 0;
+    public float PainMultiplier = 0.8f;
 
     // A multiplier to the constant pain recieved when having this wound while its tended. Unimplemented
     [DataField]
-    public float TendedPainMultiplier = 0;
+    public float TendedPainMultiplier = 0.2f;
 
     [DataField]
     public Color Color = Color.Red;

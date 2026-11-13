@@ -157,6 +157,7 @@
   - type: EyeCursorOffset # FH
   - type: SquadIndicator # FH
   - type: BodyPartTargeting # FH
+  - type: BodyPain # FH
   - type: Tag
     tags:
     - CanPilot

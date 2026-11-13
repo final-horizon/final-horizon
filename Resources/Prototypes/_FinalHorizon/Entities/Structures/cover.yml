@@ -105,7 +105,9 @@
       Heat:
         collection:
           MetalLaserImpact
-
+  - type: Tag
+    tags:
+      - DirectionalWindow
 
 # sandbags
 - type: entity
@@ -149,6 +151,9 @@
   - type: Construction
     graph: SandbagCover
     node: incomplete
+  - type: Tag
+    tags:
+      - DirectionalWindow
 
 - type: entity
   id: FHSandbagCover
@@ -209,3 +214,6 @@
         params:
          volume: -5
          variation: -1
+  - type: Tag
+    tags:
+      - DirectionalWindow

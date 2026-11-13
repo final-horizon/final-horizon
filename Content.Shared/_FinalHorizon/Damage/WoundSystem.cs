@@ -1,9 +1,7 @@
 using Content.Shared.Body;
 using Content.Shared.Body.Components;
 using Content.Shared.Body.Systems;
-using Content.Shared.Chat;
 using Content.Shared.Damage;
-using Content.Shared.Examine;
 using Content.Shared.FixedPoint;
 using Content.Shared.HealthExaminable;
 using Content.Shared.Interaction;
@@ -14,8 +12,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
-using System.Linq;
-using System.Security.Cryptography;
 
 namespace Content.Shared._FinalHorizon.Damage;
 
@@ -30,6 +26,7 @@ public sealed partial class WoundSystem : EntitySystem
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     public Dictionary<TargetableBodyParts, ProtoId<OrganCategoryPrototype>> TargetableOrgans = new()
     {
+        [TargetableBodyParts.Invalid] = "Torso",
         [TargetableBodyParts.Head] = "Head",
         [TargetableBodyParts.Torso] = "Torso",
         [TargetableBodyParts.LeftArm] = "ArmLeft",
@@ -50,12 +47,13 @@ public sealed partial class WoundSystem : EntitySystem
     }
     public bool HandleGunshotDamage(EntityUid ent, DamageSpecifier damage)
     {
-        // predict this system later
-        if (_net.IsClient)
+        var organs = GetWoundableOrgans(ent);
+        if (organs.Count == 0)
             return false;
 
-        if (!_bodySystem.TryGetOrgansWithComponent<WoundableComponent>(ent, out var organs))
-            return false;
+        // predict this system later
+        if (_net.IsClient)
+            return true;
 
         // Select the organ to apply the wound to here
         var organ = _rand.Pick(organs);
@@ -89,8 +87,8 @@ public sealed partial class WoundSystem : EntitySystem
         }
         ;
         CreateWound(organ, ent, realDamage, woundType);
-        if (TryComp<OrganComponent>(organ.Owner, out var organComp))
-            _popup.PopupPredicted($"{organComp.Category} | {woundType} | {realDamage}", ent, ent);
+        //if (TryComp<OrganComponent>(organ.Owner, out var organComp))
+        //    _popup.PopupPredicted($"{organComp.Category} | {woundType} | {realDamage}", ent, ent);
         return true;
     }
     public void CreateWound(EntityUid ent, EntityUid bodyEnt, FixedPoint2 damage, ProtoId<WoundTypePrototype> woundType)
@@ -117,21 +115,19 @@ public sealed partial class WoundSystem : EntitySystem
         DirtyField<WoundableComponent>(comp.Owner, "Wounds");
         if (_net.IsServer)
         {
-            if (_bodySystem.TryGetOrgansWithComponent<WoundableComponent>(bodyEnt, out var organs))
+            var organs = GetWoundableOrgans(bodyEnt);
+            var hasWounds = false;
+            foreach (var organ in organs)
             {
-                var hasWounds = false;
-                foreach (var organ in organs)
+                if (organ.Comp.Wounds.Count > 0)
                 {
-                    if (organ.Comp.Wounds.Count > 0)
-                    {
-                        hasWounds = true;
-                        break;
-                    }
+                    hasWounds = true;
+                    break;
                 }
-
-                if (!hasWounds)
-                    RemCompDeferred<BodyHasWoundsComponent>(bodyEnt);
             }
+
+            if (!hasWounds)
+                RemCompDeferred<BodyHasWoundsComponent>(bodyEnt);
         }
     }
 
@@ -146,10 +142,10 @@ public sealed partial class WoundSystem : EntitySystem
     private void UpdateBleedingFromWounds(EntityUid uid)
     {
         if (!TryComp<BodyComponent>(uid, out var body) ||
-            !_bodySystem.TryGetOrgansWithComponent<WoundableComponent>(uid, out var organs) ||
             !TryComp<BloodstreamComponent>(uid, out var bloodStream))
             return;
 
+        var organs = GetWoundableOrgans(uid);
         var bleed = 0f;
         foreach (var organ in organs)
         {
@@ -165,13 +161,22 @@ public sealed partial class WoundSystem : EntitySystem
         _bloodstream.TryModifyBleedAmount(uid, 0);
     }
 
+    public List<Entity<WoundableComponent>> GetWoundableOrgans(EntityUid uid)
+    {
+        if (!HasComp<BodyComponent>(uid) ||
+            !_bodySystem.TryGetOrgansWithComponent<WoundableComponent>(uid, out var organs) ||
+            organs is null)
+            return new List<Entity<WoundableComponent>>();
+
+        return organs;
+    }
+
     public void OnBodyExamine(EntityUid ent, BodyComponent comp, ref HealthBeingExaminedEvent args)
     {
         var msg = new FormattedMessage();
         msg.PushNewline();
         msg.AddText("Current wounds are:");
-        if (!_bodySystem.TryGetOrgansWithComponent<WoundableComponent>(ent, out var organs))
-            return;
+        var organs = GetWoundableOrgans(ent);
 
         foreach (var organ in organs)
         {
@@ -212,10 +217,10 @@ public sealed partial class WoundSystem : EntitySystem
         if (args.Handled || !args.CanReach || args.Target == null)
             return;
 
-        if (!TryComp<BodyComponent>(args.Target, out var body) ||
-            !_bodySystem.TryGetOrgansWithComponent<WoundableComponent>(args.Target.Value, out var organs))
+        if (!TryComp<BodyComponent>(args.Target, out var body))
             return;
 
+        var organs = GetWoundableOrgans(args.Target.Value);
         var targetedOrganCatagory = "Torso";
         if (TryComp<BodyPartTargetingComponent>(args.User, out var targetingComp))
         {
@@ -262,9 +267,7 @@ public sealed partial class WoundSystem : EntitySystem
                 continue;
             }
 
-            if (!_bodySystem.TryGetOrgansWithComponent<WoundableComponent>(ent.Owner, out var organs))
-                continue;
-
+            var organs = GetWoundableOrgans(ent.Owner);
             foreach (var organ in organs)
             {
                 for (var i = organ.Comp.Wounds.Count - 1; i >= 0; i--)

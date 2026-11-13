@@ -140,6 +140,7 @@
   - type: Tag
     tags:
       - Window
+      - DirectionalWindow # FH
   - type: MeleeSound
     soundGroups:
       Brute:

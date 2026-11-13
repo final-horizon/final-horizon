@@ -95,3 +95,6 @@
 
 - type: Tag
   id: FHGauzePacketTrash
+
+- type: Tag
+  id: DirectionalWindow
